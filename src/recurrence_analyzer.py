@@ -65,7 +65,8 @@ Tickets:
     )
     response.raise_for_status()
 
-    raw = response.text.strip()
+    body = response.json()
+    raw = (body.get("response") if isinstance(body, dict) else response.text).strip()
     # Strip markdown code fences if present
     if raw.startswith("```"):
         raw = raw.split("```")[1]
