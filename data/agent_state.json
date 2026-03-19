@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-03-18T23:38:22.307108+00:00",
+  "last_run_at": "2026-03-19T22:58:21.555189+00:00",
   "tickets": {
     "PS-1318": {
       "key": "PS-1318",
@@ -73,6 +73,15 @@
       "last_status_change_at": "2025-05-08T15:45:54.309-0500",
       "notified_reasons": []
     },
+    "PS-1373": {
+      "key": "PS-1373",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-19T13:13:21.077-0500",
+      "last_status_change_at": "2026-03-19T13:13:21.077-0500",
+      "notified_reasons": []
+    },
     "PS-1207": {
       "key": "PS-1207",
       "vertical": "fe",
@@ -80,15 +89,6 @@
       "assignee": "abrahan",
       "updated": "2026-03-18T10:02:38.248-0500",
       "last_status_change_at": "2026-02-09T10:25:31.018-0500",
-      "notified_reasons": []
-    },
-    "PS-1373": {
-      "key": "PS-1373",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-17T16:52:08.568-0500",
-      "last_status_change_at": "2026-03-17T16:52:08.568-0500",
       "notified_reasons": []
     },
     "PS-1371": {
@@ -188,6 +188,24 @@
       "assignee": "Damian Fixel",
       "updated": "2026-02-04T08:25:06.723-0500",
       "last_status_change_at": "2026-02-04T08:25:06.723-0500",
+      "notified_reasons": []
+    },
+    "PS-1377": {
+      "key": "PS-1377",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-19T09:19:53.356-0500",
+      "last_status_change_at": "2026-03-19T09:19:53.356-0500",
+      "notified_reasons": []
+    },
+    "PS-1378": {
+      "key": "PS-1378",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-19T09:04:45.660-0500",
+      "last_status_change_at": "2026-03-19T09:04:45.660-0500",
       "notified_reasons": []
     },
     "PS-1376": {
@@ -514,40 +532,31 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
-    "PS-1365": {
-      "key": "PS-1365",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-18T09:57:51.569-0500",
-      "last_status_change_at": "2026-03-17T11:42:26.053-0500",
-      "notified_reasons": []
-    },
-    "PS-1374": {
-      "key": "PS-1374",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-18T08:44:41.447-0500",
-      "last_status_change_at": "2026-03-18T08:44:21.747-0500",
-      "notified_reasons": []
-    },
-    "PS-1375": {
-      "key": "PS-1375",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-17T17:12:17.111-0500",
-      "last_status_change_at": "2026-03-17T17:12:17.111-0500",
-      "notified_reasons": []
-    },
     "PS-1011": {
       "key": "PS-1011",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-03-17T16:52:08.668-0500",
-      "last_status_change_at": "2026-02-02T09:52:52.713-0500",
+      "updated": "2026-03-19T13:13:21.195-0500",
+      "last_status_change_at": "2026-03-19T13:13:09.993-0500",
+      "notified_reasons": []
+    },
+    "PS-1056": {
+      "key": "PS-1056",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-03-19T10:50:16.809-0500",
+      "last_status_change_at": "2026-03-19T10:50:16.809-0500",
+      "notified_reasons": []
+    },
+    "PS-1305": {
+      "key": "PS-1305",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-19T08:44:12.446-0500",
+      "last_status_change_at": "2026-03-19T08:44:12.446-0500",
       "notified_reasons": []
     },
     "PS-1328": {
@@ -584,15 +593,6 @@
       "assignee": null,
       "updated": "2026-03-16T09:29:53.998-0500",
       "last_status_change_at": "2026-03-16T09:29:53.998-0500",
-      "notified_reasons": []
-    },
-    "PS-1305": {
-      "key": "PS-1305",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-13T21:12:09.544-0500",
-      "last_status_change_at": "2026-03-13T21:12:09.544-0500",
       "notified_reasons": []
     },
     "PS-1360": {
@@ -674,15 +674,6 @@
       "assignee": null,
       "updated": "2026-02-26T09:59:35.422-0500",
       "last_status_change_at": "2026-02-26T09:59:35.422-0500",
-      "notified_reasons": []
-    },
-    "PS-1056": {
-      "key": "PS-1056",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-02-23T10:31:56.313-0500",
-      "last_status_change_at": "2026-02-23T10:31:56.313-0500",
       "notified_reasons": []
     },
     "PS-1202": {
