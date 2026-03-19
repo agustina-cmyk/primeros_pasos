@@ -61,7 +61,7 @@ Tickets:
     response = requests.post(
         webhook_url,
         json={"system_prompt": _SYSTEM_PROMPT, "user_message": user_message},
-        timeout=30,
+        timeout=120,
     )
     response.raise_for_status()
 
