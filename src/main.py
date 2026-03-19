@@ -39,7 +39,7 @@ def run(dry_run: bool) -> int:
         return 0
 
     finalized_tickets = []
-    if settings.roam_cpo_channel_id and settings.anthropic_api_key:
+    if settings.roam_cpo_channel_id and settings.llm_webhook_url:
         try:
             base_jql = settings.jira_jql.split(" ORDER BY")[0]
             finalized_tickets = jira.search_finalized_tickets(
