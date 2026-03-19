@@ -1,4 +1,6 @@
 import argparse
+import os
+from datetime import datetime, timezone
 
 from agent import run_agent
 from config import load_settings
@@ -109,10 +111,33 @@ def run(dry_run: bool) -> int:
             roam.post_message(chat_id=cpo_channel_id, text=cpo_body)
             print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
 
-    if not dry_run:
+    if dry_run:
+        _save_html_report(
+            project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
+            plans=plans,
+            outbound_messages=outbound_messages,
+            cpo_body=cpo_body,
+        )
+    else:
         memory.save(next_memory)
     print(f"Finalizado. Enviadas: {sent}, Saltadas: {skipped}.")
     return 0
+
+
+def _save_html_report(project_label, plans, outbound_messages, cpo_body) -> None:
+    from report_builder import build_html_report
+    os.makedirs("reports", exist_ok=True)
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    path = f"reports/report_{timestamp}.html"
+    html = build_html_report(
+        project_label=project_label,
+        plans=plans,
+        outbound_messages=outbound_messages,
+        cpo_body=cpo_body,
+    )
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"[REPORT] Reporte HTML guardado en: {path}")
 
 
 if __name__ == "__main__":
