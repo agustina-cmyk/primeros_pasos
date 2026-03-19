@@ -25,7 +25,7 @@ class Settings:
     roam_channel_ids: Dict[str, str]
     roam_channel_urls: Dict[str, str]
     roam_cpo_channel_id: str
-    anthropic_api_key: str
+    llm_webhook_url: str
     recurrence_lookback_days: int
     vertical_webhooks: Dict[str, str]
     default_roam_webhook: str
@@ -85,7 +85,7 @@ def load_settings() -> Settings:
         roam_channel_ids=_load_json_env("ROAM_CHANNEL_IDS_JSON"),
         roam_channel_urls=_load_json_env("ROAM_CHANNEL_URLS_JSON"),
         roam_cpo_channel_id=os.getenv("ROAM_CPO_CHANNEL_ID", "").strip(),
-        anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", "").strip(),
+        llm_webhook_url=os.getenv("LLM_WEBHOOK_URL", "").strip(),
         recurrence_lookback_days=int(os.getenv("RECURRENCE_LOOKBACK_DAYS", "90")),
         vertical_webhooks=_load_json_env("VERTICAL_WEBHOOKS_JSON"),
         default_roam_webhook=os.getenv("DEFAULT_ROAM_WEBHOOK", "").strip(),

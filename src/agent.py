@@ -44,13 +44,13 @@ def run_agent(
         outbound_messages.append((vertical, title, body))
 
     recurring_patterns = None
-    if settings.anthropic_api_key:
+    if settings.llm_webhook_url:
         try:
             from recurrence_analyzer import analyze_recurrence
             recurring_patterns = analyze_recurrence(
                 active_tickets=tickets,
                 finalized_tickets=finalized_tickets,
-                api_key=settings.anthropic_api_key,
+                webhook_url=settings.llm_webhook_url,
             )
         except Exception as exc:
             print(f"[WARN] Análisis de recurrencia falló: {exc}")
