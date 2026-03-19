@@ -1,0 +1,76 @@
+# .claudeignore
+# Optimizes agent context by excluding irrelevant files from being processed
+# Format follows .gitignore syntax
+
+# Build artifacts - Compiled code and dependencies
+/target/
+*.jar
+*.war
+*.nar
+*.ear
+*.class
+*.zip
+*.tar.gz
+*.rar
+build/
+
+# IDE configurations - Not relevant for code understanding
+.idea/
+*.iml
+*.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# Docker volumes - Local data storage
+docker-volumes/
+/data/
+
+# Environment files - Local configuration (may contain secrets)
+.env
+*local.yml
+*local.env
+*.env
+
+# Terraform - Infrastructure as code state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+**/.terraform/*
+.terraformrc
+terraform.rc
+*.lock.hcl
+/terraform/plan/
+
+# Generated sources - Auto-generated code
+/src/main/generated/
+/src/test/generated/
+**/generated/
+
+# Symlinks and local files
+/ignore_local_files
+
+# Logs - Not useful for code analysis
+*.log
+hs_err_pid*
+crash.log
+crash.*.log
+
+# Maven wrapper - Build tool binaries
+.mvn/wrapper/maven-wrapper.jar
+
+# Git metadata - Internal VCS data
+.git/
+.gitignore
+.gitattributes
+
+# Node modules (if any frontend)
+node_modules/
+
+# OS files
+Thumbs.db
+desktop.ini
+
+dist

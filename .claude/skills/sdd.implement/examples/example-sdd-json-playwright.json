@@ -1,0 +1,16 @@
+{
+  "version": "0.3.0",
+  "agent": "claude-code",
+  "paths": {
+    "docs": "docs",
+    "specs": "specs",
+    "run_tests": "./scripts/run-tests.sh",
+    "clean_test_cache": "./scripts/clean-test-cache.sh"
+  },
+  "autoCommit": true,
+  "baseBranch": "develop",
+  "playwright": {
+    "baseUrl": "http://localhost:5173",
+    "credentialsFile": "e2e/.env.local"
+  }
+}

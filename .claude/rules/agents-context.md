@@ -1,0 +1,1 @@
+When working on files in any directory, check if that directory (or its closest parent) contains an AGENTS.md file. If it does, read it first to understand the module's context, conventions, and navigation pointers before making changes.

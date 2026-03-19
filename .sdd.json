@@ -1,0 +1,12 @@
+{
+  "version": "0.5.0",
+  "agent": "claude-code",
+  "autoCommit": true,
+  "baseBranch": "develop",
+  "paths": {
+    "docs": "docs",
+    "specs": "specs",
+    "run_tests": "./scripts/run-tests.sh",
+    "clean_test_cache": "./scripts/clean-test-cache.sh"
+  }
+}

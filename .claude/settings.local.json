@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__query-docs",
+      "Bash(python src/main.py --dry-run)",
+      "Bash(.venv/bin/python src/main.py --dry-run)",
+      "Bash(.venv/bin/python src/main.py)"
+    ]
+  }
+}
