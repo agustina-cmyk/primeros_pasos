@@ -9,7 +9,7 @@ from memory import AgentMemory
 from roam_client import RoamClient
 
 
-def run(dry_run: bool) -> int:
+def run(dry_run: bool, cpo_only: bool = False) -> int:
     settings = load_settings()
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
@@ -61,13 +61,13 @@ def run(dry_run: bool) -> int:
 
     sent = 0
     skipped = 0
-    if not outbound_messages:
+    if not outbound_messages and not cpo_only:
         print("Sin cambios relevantes para comunicar en esta corrida.")
         if not dry_run:
             memory.save(next_memory)
         return 0
 
-    for vertical, title, body in outbound_messages:
+    for vertical, title, body in ([] if cpo_only else outbound_messages):
         plan = plans[vertical]
         channel_url = settings.roam_channel_urls.get(vertical, "")
         channel_id = settings.roam_channel_ids.get(vertical, "")
@@ -111,7 +111,7 @@ def run(dry_run: bool) -> int:
             roam.post_message(chat_id=cpo_channel_id, text=cpo_body)
             print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
 
-    if dry_run:
+    if dry_run and not cpo_only:
         _save_html_report(
             project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
             plans=plans,
@@ -148,6 +148,11 @@ if __name__ == "__main__":
         help="Muestra el mensaje final por vertical sin enviar a Roam",
     )
     parser.add_argument(
+        "--cpo-only",
+        action="store_true",
+        help="Envía solo el mensaje al canal del CPO, sin notificar canales verticales",
+    )
+    parser.add_argument(
         "--list-roam-chats",
         action="store_true",
         help="Lista los chats accesibles en Roam y sus IDs",
@@ -167,4 +172,4 @@ if __name__ == "__main__":
             print(f"{cid:<50} {ctype:<10} {name}")
         raise SystemExit(0)
 
-    raise SystemExit(run(dry_run=args.dry_run))
+    raise SystemExit(run(dry_run=args.dry_run, cpo_only=args.cpo_only))
