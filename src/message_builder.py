@@ -139,6 +139,15 @@ def build_cpo_message(
         lines.append(f"- **{vertical}**: {' · '.join(parts)}")
     lines.append("")
 
+    # Tickets sin asignar
+    unassigned = [t for t in active if not t.assignee]
+    if unassigned:
+        lines.append(f"**⚠️ Tickets sin asignar ({len(unassigned)})**")
+        for t in unassigned:
+            alert = " 🚨" if (t.criticality or "").lower() == "highest" else ""
+            lines.append(f"- [{t.key}]({t.url}) ({t.vertical}) — {t.summary}{alert}")
+        lines.append("")
+
     # Tickets más estancados
     stale_with_age = []
     for t in stale:
