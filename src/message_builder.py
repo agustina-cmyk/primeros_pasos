@@ -146,8 +146,9 @@ def build_cpo_message(
     no_vertical = [t for t in active if t.vertical == "sin_vertical"]
     attention = list({t.key: t for t in unassigned + no_vertical}.values())
     if attention:
+        limit = 20
         lines.append(f"**⚠️ Requieren atención ({len(attention)})**")
-        for t in attention:
+        for t in attention[:limit]:
             tags = []
             if not t.assignee:
                 tags.append("sin asignar")
@@ -155,6 +156,8 @@ def build_cpo_message(
                 tags.append("sin vertical")
             alert = " 🚨" if (t.criticality or "").lower() == "highest" else ""
             lines.append(f"- [{t.key}]({t.url}) ({', '.join(tags)}) — {t.summary}{alert}")
+        if len(attention) > limit:
+            lines.append(f"_... y {len(attention) - limit} más._")
         lines.append("")
 
     # Tickets más estancados
