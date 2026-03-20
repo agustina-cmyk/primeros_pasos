@@ -6,6 +6,7 @@ from models import TicketFacts, VerticalPlan
 _SECTION_EMOJI = {
     "notify_created_today": "🆕",
     "notify_finished_today": "✅",
+    "notify_status_changed": "🔄",
     "notify_stale_tickets": "🔴",
 }
 
@@ -57,6 +58,7 @@ def _section_title(action_type: str) -> str:
     return {
         "notify_created_today": "Tickets creados hoy",
         "notify_finished_today": "Tickets finalizados hoy",
+        "notify_status_changed": "Cambios de estado desde la última corrida",
         "notify_stale_tickets": "Tickets estancados",
     }.get(action_type, action_type)
 
@@ -139,13 +141,20 @@ def build_cpo_message(
         lines.append(f"- **{vertical}**: {' · '.join(parts)}")
     lines.append("")
 
-    # Tickets sin asignar
+    # Tickets sin asignar y/o sin vertical
     unassigned = [t for t in active if not t.assignee]
-    if unassigned:
-        lines.append(f"**⚠️ Tickets sin asignar ({len(unassigned)})**")
-        for t in unassigned:
+    no_vertical = [t for t in active if t.vertical == "sin_vertical"]
+    attention = list({t.key: t for t in unassigned + no_vertical}.values())
+    if attention:
+        lines.append(f"**⚠️ Requieren atención ({len(attention)})**")
+        for t in attention:
+            tags = []
+            if not t.assignee:
+                tags.append("sin asignar")
+            if t.vertical == "sin_vertical":
+                tags.append("sin vertical")
             alert = " 🚨" if (t.criticality or "").lower() == "highest" else ""
-            lines.append(f"- [{t.key}]({t.url}) ({t.vertical}) — {t.summary}{alert}")
+            lines.append(f"- [{t.key}]({t.url}) ({', '.join(tags)}) — {t.summary}{alert}")
         lines.append("")
 
     # Tickets más estancados

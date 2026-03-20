@@ -30,6 +30,20 @@ def build_vertical_plan(vertical: str, tickets: List[TicketFacts]) -> VerticalPl
             )
         )
 
+    status_changed = [
+        t for t in tickets
+        if t.status_changed and not t.finalized_today
+    ]
+    if status_changed:
+        actions.append(
+            AgentAction(
+                action_type="notify_status_changed",
+                vertical=vertical,
+                reason="Tickets que cambiaron de estado desde la última corrida.",
+                tickets=_sort_tickets(status_changed),
+            )
+        )
+
     if stale:
         actions.append(
             AgentAction(

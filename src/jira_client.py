@@ -179,6 +179,11 @@ class JiraClient:
     def _last_status_change_at(self, issue: dict) -> str:
         changelog = issue.get("changelog") or {}
         histories = changelog.get("histories") or []
+        total = changelog.get("total", len(histories))
+        # Si el changelog está truncado (paginado), no podemos confiar en el resultado
+        # — el caller hace fallback a `updated` cuando devolvemos vacío
+        if total > len(histories):
+            return ""
         latest = ""
         for history in histories:
             for item in history.get("items") or []:
