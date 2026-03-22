@@ -51,6 +51,18 @@ Todas las variables de configuración del agente. Definidas en `.env` (copiado d
 | `MAX_ITEMS_PER_VERTICAL`  | ❌        | `20`                      | Máximo de tickets listados por vertical en el mensaje.                   |
 | `AGENT_STATE_PATH`        | ❌        | `data/agent_state.json`   | Ruta al archivo de memoria del agente.                                   |
 
+## Módulo de roadmap (opcional)
+
+Si estas variables no están configuradas, el módulo de roadmap se saltea silenciosamente.
+
+| Variable | Requerida | Descripción |
+|----------|-----------|-------------|
+| `ROADMAP_APP_URL` | No | URL base de la aplicación de roadmap (ej: `https://roadmap-app-vaas.vercel.app`) |
+| `ROADMAP_SUPABASE_URL` | No | URL del proyecto Supabase del roadmap (Settings → API en el dashboard) |
+| `ROADMAP_SUPABASE_ANON_KEY` | No | Anon key del proyecto Supabase del roadmap |
+| `PS_AGENT_EMAIL` | No | Email del usuario del agente en el roadmap (ej: `ps_agent@getvaas.com`) |
+| `PS_AGENT_PASSWORD` | No | Contraseña del usuario del agente en el roadmap |
+
 ## Notas
 
 - Las variables JSON se parsean con `json.loads()`. Un valor vacío o `{}` equivale a dict vacío.
