@@ -51,7 +51,7 @@ def run(dry_run: bool, cpo_only: bool = False) -> int:
         except Exception as exc:
             print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
 
-    plans, outbound_messages, cpo_body, next_memory = run_agent(
+    plans, outbound_messages, cpo_body, next_memory, roadmap_plan = run_agent(
         settings=settings,
         tickets=tickets,
         finalized_tickets=finalized_tickets,
@@ -119,6 +119,11 @@ def run(dry_run: bool, cpo_only: bool = False) -> int:
             cpo_body=cpo_body,
         )
     else:
+        # Ejecutar acciones del roadmap antes de guardar memoria
+        if roadmap_plan and roadmap_plan.actions:
+            created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
+            if created_ideas:
+                _notify_cpo_roadmap(settings, roam, created_ideas)
         memory.save(next_memory)
     print(f"Finalizado. Enviadas: {sent}, Saltadas: {skipped}.")
     return 0
@@ -138,6 +143,73 @@ def _save_html_report(project_label, plans, outbound_messages, cpo_body) -> None
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"[REPORT] Reporte HTML guardado en: {path}")
+
+
+def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
+    """Ejecuta las acciones del plan de roadmap y actualiza la memoria."""
+    import roadmap_client
+
+    try:
+        token = roadmap_client.login(
+            supabase_url=settings.roadmap_supabase_url,
+            anon_key=settings.roadmap_supabase_anon_key,
+            email=settings.ps_agent_email,
+            password=settings.ps_agent_password,
+        )
+    except Exception as exc:
+        print(f"[WARN] Roadmap login falló al ejecutar plan: {exc}")
+        return []
+
+    created_ideas = []
+
+    for action in roadmap_plan.actions:
+        try:
+            if action.action == "vote" and action.idea_id:
+                roadmap_client.vote(settings.roadmap_app_url, token, action.idea_id, action.vote_type)
+                next_memory.roadmap.voted_idea_ids[action.idea_id] = action.vote_type
+                print(f"[ROADMAP] Voto '{action.vote_type}' en idea {action.idea_id}")
+
+            elif action.action == "comment" and action.idea_id and action.comment_body:
+                roadmap_client.add_comment(settings.roadmap_app_url, token, action.idea_id, action.comment_body)
+                if action.idea_id not in next_memory.roadmap.commented_idea_ids:
+                    next_memory.roadmap.commented_idea_ids.append(action.idea_id)
+                print(f"[ROADMAP] Comentario en idea {action.idea_id}")
+
+            elif action.action == "reply_comment" and action.idea_id and action.comment_id and action.comment_body:
+                roadmap_client.add_comment(
+                    settings.roadmap_app_url, token, action.idea_id,
+                    action.comment_body, parent_comment_id=action.comment_id,
+                )
+                next_memory.roadmap.replied_comment_ids.append(action.comment_id)
+                print(f"[ROADMAP] Respuesta al comentario {action.comment_id}")
+
+            elif action.action == "create_idea" and action.new_idea:
+                result = roadmap_client.create_idea(settings.roadmap_app_url, token, action.new_idea)
+                idea_id = result["id"]
+                next_memory.roadmap.created_idea_ids.append(idea_id)
+                created_ideas.append({"id": idea_id, "title": action.new_idea.title})
+                print(f"[ROADMAP] Idea creada: {idea_id} — {action.new_idea.title}")
+
+        except Exception as exc:
+            print(f"[WARN] Acción de roadmap falló ({action.action}): {exc}")
+
+    return created_ideas
+
+
+def _notify_cpo_roadmap(settings, roam, created_ideas):
+    """Notifica al CPO sobre ideas creadas en el roadmap."""
+    if not settings.roam_cpo_channel_id or not created_ideas:
+        return
+    lines = ["Nueva idea creada en el roadmap (revisión pendiente)\n"]
+    for idea in created_ideas:
+        link = f"{settings.roadmap_app_url}/ideas/{idea['id']}"
+        lines.append(f"• [{idea['title']}]({link})")
+    message = "\n".join(lines)
+    try:
+        roam.post_message(chat_id=settings.roam_cpo_channel_id, text=message)
+        print(f"[ROADMAP] CPO notificado sobre {len(created_ideas)} idea(s) nueva(s).")
+    except Exception as exc:
+        print(f"[WARN] No se pudo notificar al CPO sobre ideas nuevas: {exc}")
 
 
 if __name__ == "__main__":
