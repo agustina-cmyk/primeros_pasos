@@ -32,6 +32,11 @@ class Settings:
     max_items_per_vertical: int
     stale_ticket_days: int
     agent_state_path: str
+    roadmap_app_url: str = ""
+    roadmap_supabase_url: str = ""
+    roadmap_supabase_anon_key: str = ""
+    ps_agent_email: str = ""
+    ps_agent_password: str = ""
 
 
 def _load_json_env(var_name: str) -> Dict[str, str]:
@@ -92,4 +97,9 @@ def load_settings() -> Settings:
         max_items_per_vertical=int(os.getenv("MAX_ITEMS_PER_VERTICAL", "20")),
         stale_ticket_days=int(os.getenv("STALE_TICKET_DAYS", "15")),
         agent_state_path=os.getenv("AGENT_STATE_PATH", "data/agent_state.json").strip(),
+        roadmap_app_url=os.getenv("ROADMAP_APP_URL", "").strip(),
+        roadmap_supabase_url=os.getenv("ROADMAP_SUPABASE_URL", "").strip(),
+        roadmap_supabase_anon_key=os.getenv("ROADMAP_SUPABASE_ANON_KEY", "").strip(),
+        ps_agent_email=os.getenv("PS_AGENT_EMAIL", "").strip(),
+        ps_agent_password=os.getenv("PS_AGENT_PASSWORD", "").strip(),
     )
