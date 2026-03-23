@@ -98,6 +98,14 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
     all_facts = [f for facts in grouped.values() for f in facts]
     has_changes = any(f.created_today or f.status_changed for f in all_facts)
 
+    # Verificar si hay ideas votadas sin comentar aún
+    voted_without_comment = [
+        idea_id for idea_id in memory_state.roadmap.voted_idea_ids
+        if idea_id not in memory_state.roadmap.commented_idea_ids
+    ]
+    if voted_without_comment:
+        return True
+
     # Verificar si hay comentarios sin responder en ideas creadas o votadas por el agente
     has_pending_comments = False
     idea_ids_to_check = list(set(
