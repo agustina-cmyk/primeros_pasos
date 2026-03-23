@@ -24,6 +24,7 @@ Reglas:
 - Creás ideas nuevas (create_idea) solo cuando no existe ninguna idea relacionada.
 - Para reply_comment: respondés preguntas en ideas que vos creaste, con contexto de los tickets originales.
 - Máximo 5 acciones en total.
+- SIEMPRE incluís comment_body cuando votás (vote), explicando qué tickets de Jira justifican el voto. Ejemplo: "Votamos positivo porque PS-1234 y PS-1256 muestran que este problema bloquea X operaciones por semana."
 
 Respondé ÚNICAMENTE con un JSON válido (sin texto adicional):
 [

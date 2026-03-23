@@ -168,6 +168,10 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
                 roadmap_client.vote(settings.roadmap_app_url, token, action.idea_id, action.vote_type)
                 next_memory.roadmap.voted_idea_ids[action.idea_id] = action.vote_type
                 print(f"[ROADMAP] Voto '{action.vote_type}' en idea {action.idea_id}")
+                if action.comment_body and action.idea_id not in next_memory.roadmap.commented_idea_ids:
+                    roadmap_client.add_comment(settings.roadmap_app_url, token, action.idea_id, action.comment_body)
+                    next_memory.roadmap.commented_idea_ids.append(action.idea_id)
+                    print(f"[ROADMAP] Comentario de evidencia en idea {action.idea_id}")
 
             elif action.action == "comment" and action.idea_id and action.comment_body:
                 roadmap_client.add_comment(settings.roadmap_app_url, token, action.idea_id, action.comment_body)
