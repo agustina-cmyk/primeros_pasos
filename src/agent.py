@@ -3,9 +3,8 @@ from typing import Dict, List, Optional, Tuple
 from classifier import build_next_memory_state, classify_tickets
 from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
-from jira_client import JiraTicket
 from message_builder import build_cpo_message, build_vertical_message
-from models import AgentMemoryState, VerticalPlan
+from models import AgentMemoryState, RoadmapPlan, VerticalPlan
 from planner import build_vertical_plan
 
 
@@ -15,7 +14,7 @@ def run_agent(
     finalized_tickets: List[JiraTicket],
     board_context: JiraBoardContext | None,
     memory_state: AgentMemoryState,
-) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState]:
+) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan]]:
     grouped_facts = classify_tickets(
         tickets=tickets,
         memory_state=memory_state,
@@ -60,8 +59,85 @@ def run_agent(
         grouped_facts=grouped_facts,
         recurring_patterns=recurring_patterns,
     )
+
+    # Análisis de roadmap (opcional)
+    roadmap_plan = None
+    if _should_run_roadmap(settings, tickets, memory_state):
+        try:
+            roadmap_plan = _run_roadmap_analysis(
+                settings=settings,
+                tickets=tickets,
+                recurring_patterns=recurring_patterns or [],
+                memory_state=memory_state,
+            )
+        except Exception as exc:
+            print(f"[WARN] Análisis de roadmap falló: {exc}")
+
     next_memory = build_next_memory_state(grouped_facts)
-    return plans, outbound_messages, cpo_body, next_memory
+    # Preservar la sección roadmap existente para que main.py la actualice
+    next_memory.roadmap = memory_state.roadmap
+
+    return plans, outbound_messages, cpo_body, next_memory, roadmap_plan
+
+
+def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_state: AgentMemoryState) -> bool:
+    """Activa el módulo de roadmap si hay cambios relevantes."""
+    if not settings.roadmap_app_url or not settings.ps_agent_email:
+        return False
+
+    # Verificar si hay tickets nuevos o con cambio de estado
+    grouped = classify_tickets(
+        tickets=tickets,
+        memory_state=memory_state,
+        label_prefix=settings.vertical_label_prefix,
+        label_to_vertical=settings.label_to_vertical,
+        stale_ticket_days=settings.stale_ticket_days,
+    )
+    all_facts = [f for facts in grouped.values() for f in facts]
+    has_changes = any(f.created_today or f.status_changed for f in all_facts)
+
+    # Verificar si hay comentarios sin responder en ideas propias
+    has_pending_comments = False
+    if memory_state.roadmap.created_idea_ids:
+        try:
+            import roadmap_client
+            token = roadmap_client.login(
+                supabase_url=settings.roadmap_supabase_url,
+                anon_key=settings.roadmap_supabase_anon_key,
+                email=settings.ps_agent_email,
+                password=settings.ps_agent_password,
+            )
+            for idea_id in memory_state.roadmap.created_idea_ids:
+                comments = roadmap_client.get_comments(settings.roadmap_app_url, token, idea_id)
+                for c in comments:
+                    if (c.author_email != settings.ps_agent_email
+                            and c.id not in memory_state.roadmap.replied_comment_ids):
+                        has_pending_comments = True
+                        break
+        except Exception as exc:
+            print(f"[WARN] No se pudieron verificar comentarios pendientes: {exc}")
+
+    return has_changes or has_pending_comments
+
+
+def _run_roadmap_analysis(settings, tickets, recurring_patterns, memory_state):
+    import roadmap_client
+    from roadmap_analyzer import analyze_roadmap
+
+    token = roadmap_client.login(
+        supabase_url=settings.roadmap_supabase_url,
+        anon_key=settings.roadmap_supabase_anon_key,
+        email=settings.ps_agent_email,
+        password=settings.ps_agent_password,
+    )
+    ideas = roadmap_client.get_ideas(settings.roadmap_app_url, token)
+    return analyze_roadmap(
+        active_tickets=tickets,
+        recurring_patterns=recurring_patterns,
+        ideas=ideas,
+        roadmap_memory=memory_state.roadmap,
+        webhook_url=settings.llm_webhook_url,
+    )
 
 
 def _project_label(board_id: str, board_context: JiraBoardContext | None) -> str:

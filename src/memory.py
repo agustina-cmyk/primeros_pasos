@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict
 
-from models import AgentMemoryState, TicketStateSnapshot
+from models import AgentMemoryState, RoadmapMemoryState, TicketStateSnapshot
 
 
 class AgentMemory:
@@ -25,9 +25,19 @@ class AgentMemory:
             payload = {k: v for k, v in value.items() if k in allowed_fields}
             tickets[key] = TicketStateSnapshot(**payload)
 
+        roadmap_raw = data.get("roadmap", {})
+        roadmap = RoadmapMemoryState(
+            voted_idea_ids=roadmap_raw.get("voted_idea_ids", {}),
+            commented_idea_ids=roadmap_raw.get("commented_idea_ids", []),
+            replied_comment_ids=roadmap_raw.get("replied_comment_ids", []),
+            created_idea_ids=roadmap_raw.get("created_idea_ids", []),
+            last_run_at=roadmap_raw.get("last_run_at"),
+        )
+
         return AgentMemoryState(
             tickets=tickets,
             last_run_at=data.get("last_run_at"),
+            roadmap=roadmap,
         )
 
     def save(self, state: AgentMemoryState) -> None:
