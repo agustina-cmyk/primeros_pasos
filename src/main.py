@@ -9,7 +9,7 @@ from memory import AgentMemory
 from roam_client import RoamClient
 
 
-def run(dry_run: bool, cpo_only: bool = False) -> int:
+def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notify_only: bool = False) -> int:
     settings = load_settings()
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
@@ -57,17 +57,23 @@ def run(dry_run: bool, cpo_only: bool = False) -> int:
         finalized_tickets=finalized_tickets,
         board_context=board_context,
         memory_state=memory_state,
+        skip_roadmap=notify_only,
     )
 
     sent = 0
     skipped = 0
-    if not outbound_messages and not cpo_only:
+    skip_channels = roadmap_only or dry_run
+    if not outbound_messages and not cpo_only and not roadmap_only:
         print("Sin cambios relevantes para comunicar en esta corrida.")
         if not dry_run:
+            if not notify_only and roadmap_plan and roadmap_plan.actions:
+                created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
+                if created_ideas:
+                    _notify_cpo_roadmap(settings, roam, created_ideas)
             memory.save(next_memory)
         return 0
 
-    for vertical, title, body in ([] if cpo_only else outbound_messages):
+    for vertical, title, body in ([] if (cpo_only or skip_channels) else outbound_messages):
         plan = plans[vertical]
         channel_url = settings.roam_channel_urls.get(vertical, "")
         channel_id = settings.roam_channel_ids.get(vertical, "")
@@ -102,7 +108,7 @@ def run(dry_run: bool, cpo_only: bool = False) -> int:
         sent += 1
 
     cpo_channel_id = settings.roam_cpo_channel_id
-    if cpo_channel_id and cpo_body:
+    if cpo_channel_id and cpo_body and not roadmap_only:
         if dry_run:
             print("=" * 80)
             print(f"[CPO] Canal: {cpo_channel_id}")
@@ -119,8 +125,8 @@ def run(dry_run: bool, cpo_only: bool = False) -> int:
             cpo_body=cpo_body,
         )
     else:
-        # Ejecutar acciones del roadmap antes de guardar memoria
-        if roadmap_plan and roadmap_plan.actions:
+        # Ejecutar acciones del roadmap (siempre, salvo --notify-only)
+        if not notify_only and roadmap_plan and roadmap_plan.actions:
             created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
             if created_ideas:
                 _notify_cpo_roadmap(settings, roam, created_ideas)
@@ -229,6 +235,16 @@ if __name__ == "__main__":
         help="Envía solo el mensaje al canal del CPO, sin notificar canales verticales",
     )
     parser.add_argument(
+        "--roadmap-only",
+        action="store_true",
+        help="Monitorea Jira y ejecuta acciones en el roadmap sin enviar mensajes a los canales de Roam",
+    )
+    parser.add_argument(
+        "--notify-only",
+        action="store_true",
+        help="Envía mensajes a los canales de Roam sin ejecutar el análisis de roadmap (modo notificación diaria)",
+    )
+    parser.add_argument(
         "--list-roam-chats",
         action="store_true",
         help="Lista los chats accesibles en Roam y sus IDs",
@@ -248,4 +264,9 @@ if __name__ == "__main__":
             print(f"{cid:<50} {ctype:<10} {name}")
         raise SystemExit(0)
 
-    raise SystemExit(run(dry_run=args.dry_run, cpo_only=args.cpo_only))
+    raise SystemExit(run(
+        dry_run=args.dry_run,
+        cpo_only=args.cpo_only,
+        roadmap_only=args.roadmap_only,
+        notify_only=args.notify_only,
+    ))
