@@ -1,24 +1,34 @@
-# Jira -> Roam Agent V1
+# Jira → Roam Agent
 
-Agente V1 en Python para:
-1. Leer tickets de un tablero específico de Jira.
-2. Segmentar por vertical según etiquetas.
-3. Comparar contra corridas anteriores usando memoria local.
-4. Decidir qué comunicar por vertical según reglas de negocio.
-5. Enviar updates a distintos canales de Roam (vía webhook HTTP).
+Agente en Python que monitorea el tablero de Production Support en Jira y actúa en dos frentes:
+
+1. **Notificaciones a canales Roam** — informa novedades por vertical (tickets nuevos, resueltos, estancados) y un análisis de recurrencia para el CPO.
+2. **Participación en el roadmap** — vota ideas, deja comentarios con evidencia de tickets reales y crea nuevas ideas cuando detecta necesidades no representadas.
+
+## Scheduling (GitHub Actions)
+
+| Workflow | Frecuencia | Modo |
+|---|---|---|
+| `agent-monitor.yml` | Cada 30 min | `--roadmap-only` — monitorea Jira y actúa en el roadmap |
+| `agent-notify.yml` | Lun–Vie 17:00 GMT-2 | `--notify-only` — envía mensajes a los canales de Roam |
+
+El estado del agente (`data/agent_state.json`) se persiste en git tras cada ejecución.
 
 ## Estructura
 
-- `src/main.py`: punto de entrada y ejecución del agente.
-- `src/agent.py`: ciclo principal del agente.
-- `src/classifier.py`: transforma tickets en hechos útiles (`new`, `needs_info`, `stale`, etc.).
-- `src/jira_client.py`: lectura de tickets en Jira.
-- `src/planner.py`: decide acciones por vertical.
-- `src/message_builder.py`: arma el mensaje final para Roam.
-- `src/memory.py`: guarda y recupera estado entre corridas.
-- `src/models.py`: modelos internos del agente.
-- `src/roam_client.py`: envío del update a webhook de Roam.
-- `src/config.py`: carga de variables de entorno.
+- `src/main.py` — punto de entrada y flags CLI
+- `src/agent.py` — ciclo principal del agente
+- `src/classifier.py` — transforma tickets en hechos (`new`, `needs_info`, `stale`, etc.)
+- `src/jira_client.py` — lectura de tickets de Jira
+- `src/planner.py` — decide acciones por vertical
+- `src/message_builder.py` — arma los mensajes para Roam
+- `src/recurrence_analyzer.py` — detecta patrones recurrentes vía LLM
+- `src/roadmap_client.py` — cliente HTTP para la API del roadmAPP
+- `src/roadmap_analyzer.py` — decide acciones en el roadmap vía LLM
+- `src/roam_client.py` — envío de mensajes a Roam
+- `src/memory.py` — persiste estado entre corridas
+- `src/models.py` — modelos internos
+- `src/config.py` — carga de variables de entorno
 
 ## Setup
 
@@ -29,96 +39,89 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Completa `.env` con:
-- `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`
-- `JIRA_CLOUD_ID` si usas service accounts o scoped API tokens de Atlassian
-- `JIRA_BOARD_ID` (o `JIRA_JQL` custom)
-- `JIRA_SECTION_FIELD`, `JIRA_CRITICALITY_FIELD`, `JIRA_ENVIRONMENT_FIELD`, `JIRA_TYPE_FIELD`
-- `ROAM_CHANNEL_URLS_JSON` con links de canal por vertical
-- `VERTICAL_WEBHOOKS_JSON` con webhook por vertical
-- `STALE_TICKET_DAYS` para tickets sin cambio de estado en los ultimos dias
-- `AGENT_STATE_PATH` para la memoria local del agente
-- opcional: `DEFAULT_ROAM_WEBHOOK`
+## Variables de entorno
 
-## Convenciones de vertical
+### Jira
+| Variable | Descripción |
+|---|---|
+| `JIRA_BASE_URL` | URL base de Jira (ej: `https://pmvaas1.atlassian.net`) |
+| `JIRA_EMAIL` | Email del usuario de la API |
+| `JIRA_API_TOKEN` | Token de API de Jira |
+| `JIRA_CLOUD_ID` | Cloud ID de Atlassian |
+| `JIRA_BOARD_ID` | ID del tablero a monitorear |
+| `JIRA_JQL` | JQL custom (opcional, sobreescribe el board) |
+| `JIRA_SECTION_FIELD` | Campo customfield de sección |
+| `JIRA_CRITICALITY_FIELD` | Campo customfield de criticidad |
+| `JIRA_ENVIRONMENT_FIELD` | Campo de ambiente |
+| `JIRA_TYPE_FIELD` | Campo de tipo de issue |
 
-Orden de resolución:
-1. Etiqueta con prefijo `VERTICAL_LABEL_PREFIX` (default: `vertical:`).
-   Ejemplo: `vertical:pagos`.
-2. Si no existe, mapeo `LABEL_TO_VERTICAL_JSON`.
-3. Si no matchea nada: `sin_vertical`.
+### Roam
+| Variable | Descripción |
+|---|---|
+| `ROAM_API_TOKEN` | Token de API de Roam |
+| `ROAM_CHANNEL_IDS_JSON` | JSON con IDs de canal por vertical |
+| `ROAM_CPO_CHANNEL_ID` | ID del canal del CPO |
 
-Configuracion actual del board fuente compartido por negocio:
-- Board URL: `https://pmvaas1.atlassian.net/jira/software/projects/PS/boards/16`
-- `JIRA_BASE_URL=https://pmvaas1.atlassian.net`
-- `JIRA_CLOUD_ID=<pendiente si usamos service account token>`
-- `JIRA_BOARD_ID=16`
-- Verticales por labels:
-- `payments`: `fefo-team`, `payments`
-- `verification`: `eze-team`, `borbotones`
-- `core`: `pablo-team`
-- `fe`: `frontend`
-- Canales Roam:
-- `payments`: `https://ro.am/r/#/c/Ub93Cr5HRoSA5yd1Cj2shQ/bm9tc2cvbm90aHI`
-- `verification`: `https://ro.am/r/#/c/zIPlNzFfRzGlVRto-Sdhag/bm9tc2cvbm90aHI`
-- `core`: `https://ro.am/r/#/c/9tMTXH-EQ62S2VmAHfEaTg/bm9tc2cvbm90aHI`
-- `fe`: `https://ro.am/r/#/c/prFFf-aKSjG0xJDdSdUjKA/bm9tc2cvbm90aHI`
+### LLM
+| Variable | Descripción |
+|---|---|
+| `LLM_WEBHOOK_URL` | Webhook de n8n para llamadas al LLM |
 
-## Decisiones del agente
-
-En cada corrida el agente clasifica tickets y puede decidir acciones como:
-- `notify_created_today`
-- `notify_finished_today`
-- `notify_stale_tickets`
-
-Solo genera mensajes para verticales con acciones relevantes.
-
-Reglas actuales:
-- Tickets creados hoy: comparte status, resumen e informador.
-- Tickets finalizados hoy: comparte detalle y menciona al informador.
-- Tickets estancados: si no tuvieron cambio de estado en los ultimos 15 dias, comparte detalle y agrega una consulta abierta al canal.
-- Todos los tickets salen con link directo al issue en Jira.
-- El resumen usa descripcion, seccion, criticidad, ambiente y tipo cuando esos campos esten disponibles en Jira.
+### RoadmAPP
+| Variable | Descripción |
+|---|---|
+| `ROADMAP_APP_URL` | URL del roadmAPP (ej: `https://roadmap-app-vaas.vercel.app`) |
+| `ROADMAP_SUPABASE_URL` | URL de Supabase del roadmAPP |
+| `ROADMAP_SUPABASE_ANON_KEY` | Anon key de Supabase del roadmAPP |
+| `PS_AGENT_EMAIL` | Email del agente en el roadmAPP |
+| `PS_AGENT_PASSWORD` | Contraseña del agente en el roadmAPP |
 
 ## Ejecución
 
 ```bash
+# Corrida completa (monitoreo + notificaciones + roadmap)
 python src/main.py
-```
 
-Previsualizar mensaje sin enviar a Roam:
+# Solo roadmap: monitorea Jira y actúa en el roadmap sin enviar mensajes a canales
+python src/main.py --roadmap-only
 
-```bash
+# Solo notificaciones: envía mensajes a los canales sin análisis de roadmap
+python src/main.py --notify-only
+
+# Forzar análisis de roadmap aunque no haya cambios en Jira
+python src/main.py --roadmap-only --force-roadmap
+
+# Solo el mensaje al canal del CPO
+python src/main.py --cpo-only
+
+# Previsualizar sin enviar nada
 python src/main.py --dry-run
 ```
 
-## Ejemplo de configuración
+## Convenciones de vertical
 
-```env
-JIRA_BASE_URL=https://pmvaas1.atlassian.net
-JIRA_CLOUD_ID=<cloud-id>
-JIRA_EMAIL=bot@acme.com
-JIRA_API_TOKEN=xxx
-JIRA_BOARD_ID=16
-JIRA_SECTION_FIELD=customfield_12345
-JIRA_CRITICALITY_FIELD=customfield_45678
-JIRA_ENVIRONMENT_FIELD=environment
-JIRA_TYPE_FIELD=issuetype
-VERTICAL_LABEL_PREFIX=vertical:
-LABEL_TO_VERTICAL_JSON={"fefo-team":"payments","payments":"payments","eze-team":"verification","borbotones":"verification","pablo-team":"core","frontend":"fe"}
-ROAM_CHANNEL_URLS_JSON={"payments":"https://ro.am/r/#/c/Ub93Cr5HRoSA5yd1Cj2shQ/bm9tc2cvbm90aHI","verification":"https://ro.am/r/#/c/zIPlNzFfRzGlVRto-Sdhag/bm9tc2cvbm90aHI","core":"https://ro.am/r/#/c/9tMTXH-EQ62S2VmAHfEaTg/bm9tc2cvbm90aHI","fe":"https://ro.am/r/#/c/prFFf-aKSjG0xJDdSdUjKA/bm9tc2cvbm90aHI"}
-VERTICAL_WEBHOOKS_JSON={"payments":"https://roam/channel-payments","verification":"https://roam/channel-verification","core":"https://roam/channel-core","fe":"https://roam/channel-fe"}
-DEFAULT_ROAM_WEBHOOK=https://roam/general
-STALE_TICKET_DAYS=15
-```
+Orden de resolución de la vertical de un ticket:
+1. Etiqueta con prefijo `VERTICAL_LABEL_PREFIX` (default: `vertical:`)
+2. Mapeo `LABEL_TO_VERTICAL_JSON`
+3. Si no matchea nada: `sin_vertical`
+
+## Módulo de roadmap
+
+El agente participa en el [roadmAPP](https://roadmap-app-vaas.vercel.app) como representante de Production Support. En cada corrida puede:
+
+- **Votar** ideas con evidencia de tickets reales (siempre deja un comentario explicando el porqué)
+- **Comentar** ideas con contexto adicional de Jira
+- **Crear** ideas nuevas cuando detecta un problema recurrente no representado en el roadmap
+
+El análisis se activa automáticamente cuando:
+- Hay tickets nuevos o con cambio de estado en Jira
+- Hay ideas votadas por el agente que aún no tienen comentario de evidencia
+- Hay comentarios de otros usuarios en ideas que el agente creó o votó
+
+Las ideas creadas por el agente quedan con visibilidad `internal` (borrador) hasta que un admin las publique desde el roadmAPP.
 
 ## Notas
 
-- El payload enviado a webhook es:
-  - `title`: resumen corto por vertical.
-  - `body`: secciones según las acciones decididas por el agente.
-- `ROAM_CHANNEL_URLS_JSON` guarda links humanos de los canales y se incluyen en el mensaje/dry-run.
-- `VERTICAL_WEBHOOKS_JSON` sigue reservado para endpoints reales de publicacion.
-- La memoria queda guardada por default en `data/agent_state.json`.
-- Si una vertical no tiene webhook específico ni `DEFAULT_ROAM_WEBHOOK`, se salta.
-- En `--dry-run` el agente no persiste memoria ni publica, solo muestra el plan y el mensaje.
+- La memoria se guarda en `data/agent_state.json` (trackeado en git).
+- En `--dry-run` el agente no persiste memoria ni publica, solo muestra el plan.
+- Si una vertical no tiene canal configurado, se salta sin error.
