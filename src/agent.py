@@ -52,6 +52,7 @@ def run_agent(
                 active_tickets=tickets,
                 finalized_tickets=finalized_tickets,
                 webhook_url=settings.llm_webhook_url,
+                webhook_secret=settings.llm_webhook_secret,
             )
         except Exception as exc:
             print(f"[WARN] Análisis de recurrencia falló: {exc}")
@@ -153,6 +154,7 @@ def _run_roadmap_analysis(settings, tickets, recurring_patterns, memory_state):
         ideas=ideas,
         roadmap_memory=memory_state.roadmap,
         webhook_url=settings.llm_webhook_url,
+        webhook_secret=settings.llm_webhook_secret,
     )
 
 

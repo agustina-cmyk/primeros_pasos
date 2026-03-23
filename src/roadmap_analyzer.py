@@ -47,6 +47,7 @@ def analyze_roadmap(
     ideas: List[RoadmapIdea],
     roadmap_memory: RoadmapMemoryState,
     webhook_url: str,
+    webhook_secret: str = "",
 ) -> RoadmapPlan:
     ticket_summaries = []
     for t in active_tickets:
@@ -80,9 +81,11 @@ def analyze_roadmap(
         f"- Ideas creadas: {roadmap_memory.created_idea_ids}"
     )
 
+    headers = {"X-Webhook-Secret": webhook_secret} if webhook_secret else {}
     response = requests.post(
         webhook_url,
         json={"system_prompt": _SYSTEM_PROMPT, "user_message": user_message},
+        headers=headers,
         timeout=120,
     )
     response.raise_for_status()

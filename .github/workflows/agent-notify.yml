@@ -44,6 +44,7 @@ jobs:
           ROAM_CPO_CHANNEL_ID: ${{ secrets.ROAM_CPO_CHANNEL_ID }}
           ROAM_CHANNEL_IDS: ${{ secrets.ROAM_CHANNEL_IDS }}
           LLM_WEBHOOK_URL: ${{ secrets.LLM_WEBHOOK_URL }}
+          LLM_WEBHOOK_SECRET: ${{ secrets.LLM_WEBHOOK_SECRET }}
           ROADMAP_APP_URL: ${{ secrets.ROADMAP_APP_URL }}
           ROADMAP_SUPABASE_URL: ${{ secrets.ROADMAP_SUPABASE_URL }}
           ROADMAP_SUPABASE_ANON_KEY: ${{ secrets.ROADMAP_SUPABASE_ANON_KEY }}

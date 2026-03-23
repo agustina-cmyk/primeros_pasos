@@ -38,6 +38,7 @@ def analyze_recurrence(
     active_tickets: List[JiraTicket],
     finalized_tickets: List[JiraTicket],
     webhook_url: str,
+    webhook_secret: str = "",
 ) -> List[RecurringPattern]:
     all_tickets = active_tickets + finalized_tickets
     if len(all_tickets) < 2:
@@ -58,9 +59,11 @@ def analyze_recurrence(
 Tickets:
 {json.dumps(ticket_data, ensure_ascii=False, indent=2)}"""
 
+    headers = {"X-Webhook-Secret": webhook_secret} if webhook_secret else {}
     response = requests.post(
         webhook_url,
         json={"system_prompt": _SYSTEM_PROMPT, "user_message": user_message},
+        headers=headers,
         timeout=120,
     )
     response.raise_for_status()
