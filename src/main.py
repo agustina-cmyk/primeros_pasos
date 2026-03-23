@@ -168,9 +168,14 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
         return []
 
     created_ideas = []
+    created_this_run: set = set()
 
     for action in roadmap_plan.actions:
         try:
+            if action.action == "comment" and action.idea_id in created_this_run:
+                print(f"[ROADMAP] Skip comentario en idea recién creada {action.idea_id}")
+                continue
+
             if action.action == "vote" and action.idea_id:
                 roadmap_client.vote(settings.roadmap_app_url, token, action.idea_id, action.vote_type)
                 next_memory.roadmap.voted_idea_ids[action.idea_id] = action.vote_type
@@ -198,6 +203,7 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
                 result = roadmap_client.create_idea(settings.roadmap_app_url, token, action.new_idea)
                 idea_id = result["id"]
                 next_memory.roadmap.created_idea_ids.append(idea_id)
+                created_this_run.add(idea_id)
                 created_ideas.append({"id": idea_id, "title": action.new_idea.title})
                 print(f"[ROADMAP] Idea creada: {idea_id} — {action.new_idea.title}")
 
