@@ -15,6 +15,7 @@ def run_agent(
     board_context: JiraBoardContext | None,
     memory_state: AgentMemoryState,
     skip_roadmap: bool = False,
+    force_roadmap: bool = False,
 ) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan]]:
     grouped_facts = classify_tickets(
         tickets=tickets,
@@ -63,7 +64,7 @@ def run_agent(
 
     # Análisis de roadmap (opcional)
     roadmap_plan = None
-    if not skip_roadmap and _should_run_roadmap(settings, tickets, memory_state):
+    if not skip_roadmap and (force_roadmap or _should_run_roadmap(settings, tickets, memory_state)):
         try:
             roadmap_plan = _run_roadmap_analysis(
                 settings=settings,
@@ -97,9 +98,13 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
     all_facts = [f for facts in grouped.values() for f in facts]
     has_changes = any(f.created_today or f.status_changed for f in all_facts)
 
-    # Verificar si hay comentarios sin responder en ideas propias
+    # Verificar si hay comentarios sin responder en ideas creadas o votadas por el agente
     has_pending_comments = False
-    if memory_state.roadmap.created_idea_ids:
+    idea_ids_to_check = list(set(
+        memory_state.roadmap.created_idea_ids
+        + list(memory_state.roadmap.voted_idea_ids.keys())
+    ))
+    if idea_ids_to_check:
         try:
             import roadmap_client
             token = roadmap_client.login(
@@ -108,13 +113,15 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
                 email=settings.ps_agent_email,
                 password=settings.ps_agent_password,
             )
-            for idea_id in memory_state.roadmap.created_idea_ids:
+            for idea_id in idea_ids_to_check:
                 comments = roadmap_client.get_comments(settings.roadmap_app_url, token, idea_id)
                 for c in comments:
                     if (c.author_email != settings.ps_agent_email
                             and c.id not in memory_state.roadmap.replied_comment_ids):
                         has_pending_comments = True
                         break
+                if has_pending_comments:
+                    break
         except Exception as exc:
             print(f"[WARN] No se pudieron verificar comentarios pendientes: {exc}")
 

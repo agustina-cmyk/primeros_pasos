@@ -9,7 +9,7 @@ from memory import AgentMemory
 from roam_client import RoamClient
 
 
-def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notify_only: bool = False) -> int:
+def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notify_only: bool = False, force_roadmap: bool = False) -> int:
     settings = load_settings()
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
@@ -58,6 +58,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
         board_context=board_context,
         memory_state=memory_state,
         skip_roadmap=notify_only,
+        force_roadmap=force_roadmap,
     )
 
     sent = 0
@@ -245,6 +246,11 @@ if __name__ == "__main__":
         help="Envía mensajes a los canales de Roam sin ejecutar el análisis de roadmap (modo notificación diaria)",
     )
     parser.add_argument(
+        "--force-roadmap",
+        action="store_true",
+        help="Fuerza el análisis de roadmap aunque no haya cambios detectados en Jira",
+    )
+    parser.add_argument(
         "--list-roam-chats",
         action="store_true",
         help="Lista los chats accesibles en Roam y sus IDs",
@@ -269,4 +275,5 @@ if __name__ == "__main__":
         cpo_only=args.cpo_only,
         roadmap_only=args.roadmap_only,
         notify_only=args.notify_only,
+        force_roadmap=args.force_roadmap,
     ))
