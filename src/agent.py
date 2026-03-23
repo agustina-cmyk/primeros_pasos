@@ -14,6 +14,7 @@ def run_agent(
     finalized_tickets: List[JiraTicket],
     board_context: JiraBoardContext | None,
     memory_state: AgentMemoryState,
+    skip_roadmap: bool = False,
 ) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan]]:
     grouped_facts = classify_tickets(
         tickets=tickets,
@@ -62,7 +63,7 @@ def run_agent(
 
     # Análisis de roadmap (opcional)
     roadmap_plan = None
-    if _should_run_roadmap(settings, tickets, memory_state):
+    if not skip_roadmap and _should_run_roadmap(settings, tickets, memory_state):
         try:
             roadmap_plan = _run_roadmap_analysis(
                 settings=settings,
