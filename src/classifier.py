@@ -35,11 +35,11 @@ def classify_tickets(
     memory_state: AgentMemoryState,
     label_prefix: str,
     label_to_vertical: Dict[str, str],
-    stale_ticket_days: int,
+    unchanged_stale_days: int,
 ) -> Dict[str, List[TicketFacts]]:
     grouped: Dict[str, List[TicketFacts]] = defaultdict(list)
     now_local = datetime.now(tz=_ARGENTINA_TZ)
-    stale_cutoff = now_local - timedelta(days=stale_ticket_days)
+    stale_cutoff = now_local - timedelta(days=unchanged_stale_days)
 
     for ticket in tickets:
         vertical = resolve_vertical(ticket.labels, label_prefix, label_to_vertical)
@@ -66,9 +66,9 @@ def classify_tickets(
             url=ticket.url,
             labels=ticket.labels,
             created_today=_is_same_local_day(created_dt, now_local),
-            status_changed_today=_is_same_local_day(last_status_change_dt, now_local),
             finalized_today=ticket.status_category.lower() == "done" and _is_same_local_day(last_status_change_dt, now_local),
             is_stale=bool(last_status_change_dt and last_status_change_dt.astimezone() <= stale_cutoff),
+            days_without_status_change=0,
             changed_since_last_run=_changed_since_last_run(ticket, previous),
             status_changed=bool(previous and previous.status != ticket.status),
             assignee_changed=bool(previous and previous.assignee != ticket.assignee),

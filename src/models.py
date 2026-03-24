@@ -22,9 +22,9 @@ class TicketFacts:
     url: str
     labels: List[str]
     created_today: bool
-    status_changed_today: bool
     finalized_today: bool
     is_stale: bool
+    days_without_status_change: int
     changed_since_last_run: bool
     status_changed: bool
     assignee_changed: bool

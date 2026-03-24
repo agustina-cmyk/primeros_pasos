@@ -22,7 +22,7 @@ def run_agent(
         memory_state=memory_state,
         label_prefix=settings.vertical_label_prefix,
         label_to_vertical=settings.label_to_vertical,
-        stale_ticket_days=settings.stale_ticket_days,
+        unchanged_stale_days=settings.unchanged_stale_days,
     )
 
     project_label = _project_label(settings.jira_board_id, board_context)
@@ -38,7 +38,7 @@ def run_agent(
         title, body = build_vertical_message(
             project_label=project_label,
             plan=plan,
-            channel_url=settings.roam_channel_urls.get(vertical, ""),
+            board_url=settings.jira_board_url,
             max_items=settings.max_items_per_vertical,
             last_run_at=memory_state.last_run_at,
         )
@@ -94,7 +94,7 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
         memory_state=memory_state,
         label_prefix=settings.vertical_label_prefix,
         label_to_vertical=settings.label_to_vertical,
-        stale_ticket_days=settings.stale_ticket_days,
+        unchanged_stale_days=settings.unchanged_stale_days,
     )
     all_facts = [f for facts in grouped.values() for f in facts]
     has_changes = any(f.created_today or f.status_changed for f in all_facts)

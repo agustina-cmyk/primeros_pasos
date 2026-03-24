@@ -31,8 +31,9 @@ class Settings:
     vertical_webhooks: Dict[str, str]
     default_roam_webhook: str
     max_items_per_vertical: int
-    stale_ticket_days: int
+    unchanged_stale_days: int
     agent_state_path: str
+    jira_board_url: str = ""
     roadmap_app_url: str = ""
     roadmap_supabase_url: str = ""
     roadmap_supabase_anon_key: str = ""
@@ -97,7 +98,8 @@ def load_settings() -> Settings:
         vertical_webhooks=_load_json_env("VERTICAL_WEBHOOKS_JSON"),
         default_roam_webhook=os.getenv("DEFAULT_ROAM_WEBHOOK", "").strip(),
         max_items_per_vertical=int(os.getenv("MAX_ITEMS_PER_VERTICAL", "20")),
-        stale_ticket_days=int(os.getenv("STALE_TICKET_DAYS", "15")),
+        unchanged_stale_days=int(os.getenv("UNCHANGED_STALE_DAYS", "5")),
+        jira_board_url=os.getenv("JIRA_BOARD_URL", "").strip(),
         agent_state_path=os.getenv("AGENT_STATE_PATH", "data/agent_state.json").strip(),
         roadmap_app_url=os.getenv("ROADMAP_APP_URL", "").strip(),
         roadmap_supabase_url=os.getenv("ROADMAP_SUPABASE_URL", "").strip(),
