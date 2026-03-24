@@ -128,13 +128,14 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
             roam.post_message(chat_id=cpo_channel_id, text=cpo_body)
             print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
 
-    if dry_run and not cpo_only and not is_weekly_run:
-        _save_html_report(
-            project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
-            plans=plans,
-            outbound_messages=outbound_messages,
-            cpo_body=cpo_body,
-        )
+    if dry_run and not cpo_only:
+        if not is_weekly_run:
+            _save_html_report(
+                project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
+                plans=plans,
+                outbound_messages=outbound_messages,
+                cpo_body=cpo_body,
+            )
     else:
         # Ejecutar acciones del roadmap (siempre, salvo --notify-only)
         if not notify_only and roadmap_plan and roadmap_plan.actions:
