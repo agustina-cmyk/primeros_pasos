@@ -42,7 +42,10 @@ jobs:
           JIRA_TYPE_FIELD: ${{ secrets.JIRA_TYPE_FIELD }}
           ROAM_API_TOKEN: ${{ secrets.ROAM_API_TOKEN }}
           ROAM_CPO_CHANNEL_ID: ${{ secrets.ROAM_CPO_CHANNEL_ID }}
-          ROAM_CHANNEL_IDS: ${{ secrets.ROAM_CHANNEL_IDS }}
+          ROAM_CHANNEL_IDS_JSON: ${{ secrets.ROAM_CHANNEL_IDS_JSON }}
+          ROAM_CHANNEL_URLS_JSON: ${{ secrets.ROAM_CHANNEL_URLS_JSON }}
+          LABEL_TO_VERTICAL_JSON: ${{ secrets.LABEL_TO_VERTICAL_JSON }}
+          VERTICAL_WEBHOOKS_JSON: ${{ secrets.VERTICAL_WEBHOOKS_JSON }}
           LLM_WEBHOOK_URL: ${{ secrets.LLM_WEBHOOK_URL }}
           LLM_WEBHOOK_SECRET: ${{ secrets.LLM_WEBHOOK_SECRET }}
           ROADMAP_APP_URL: ${{ secrets.ROADMAP_APP_URL }}

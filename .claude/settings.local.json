@@ -4,7 +4,9 @@
       "mcp__context7__query-docs",
       "Bash(python src/main.py --dry-run)",
       "Bash(.venv/bin/python src/main.py --dry-run)",
-      "Bash(.venv/bin/python src/main.py)"
+      "Bash(.venv/bin/python src/main.py)",
+      "Bash(source \"/Users/agusalvarez/Documents/Proyectos Vaas/.venv/bin/activate\")",
+      "Bash(./scripts/run-tests.sh tests/test_roadmap_analyzer.py -v)"
     ]
   }
 }

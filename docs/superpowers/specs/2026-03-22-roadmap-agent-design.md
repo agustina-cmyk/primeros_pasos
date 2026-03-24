@@ -1,7 +1,7 @@
-# Diseño: Agente de Representación en Roadmap
+ p# Diseño: Agente de Representación en Roadmap
 
 **Fecha:** 2026-03-22
-**Autor:** Agustín Alvarez (CPO, Vaas)
+**Autor:** Agustina Alvarez (CPO, Vaas)
 **Estado:** Aprobado para implementación
 
 ---
