@@ -1,6 +1,24 @@
 {
-  "last_run_at": "2026-03-23T13:55:13.360055+00:00",
+  "last_run_at": "2026-03-24T02:19:26.954894+00:00",
   "tickets": {
+    "PS-1385": {
+      "key": "PS-1385",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-23T14:12:42.991-0500",
+      "last_status_change_at": "2026-03-23T14:12:42.991-0500",
+      "notified_reasons": []
+    },
+    "PS-1386": {
+      "key": "PS-1386",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-23T13:35:02.428-0500",
+      "last_status_change_at": "2026-03-23T13:35:02.428-0500",
+      "notified_reasons": []
+    },
     "PS-1193": {
       "key": "PS-1193",
       "vertical": "core",
@@ -26,6 +44,15 @@
       "assignee": null,
       "updated": "2026-03-12T21:12:10.922-0500",
       "last_status_change_at": "2026-03-12T21:12:10.922-0500",
+      "notified_reasons": []
+    },
+    "PS-1387": {
+      "key": "PS-1387",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-23T19:03:17.555-0500",
+      "last_status_change_at": "2026-03-23T19:03:17.555-0500",
       "notified_reasons": []
     },
     "PS-1356": {
@@ -397,6 +424,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1364": {
+      "key": "PS-1364",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-23T21:12:22.223-0500",
+      "last_status_change_at": "2026-03-23T21:12:22.223-0500",
+      "notified_reasons": []
+    },
     "PS-1359": {
       "key": "PS-1359",
       "vertical": "verification",
@@ -476,15 +512,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-03-16T10:25:18.686-0500",
       "last_status_change_at": "2026-03-16T10:25:18.686-0500",
-      "notified_reasons": []
-    },
-    "PS-1364": {
-      "key": "PS-1364",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-13T12:24:30.511-0500",
-      "last_status_change_at": "2026-03-13T12:24:30.511-0500",
       "notified_reasons": []
     },
     "PS-1234": {
