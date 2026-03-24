@@ -1,103 +1,119 @@
+from collections import Counter
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
 from models import TicketFacts, VerticalPlan
 
-_SECTION_EMOJI = {
-    "notify_created_today": "🆕",
-    "notify_finished_today": "✅",
-    "notify_status_changed": "🔄",
-    "notify_stale_tickets": "🔴",
-}
-
 
 def build_vertical_message(
     project_label: str,
     plan: VerticalPlan,
-    channel_url: str,
+    board_url: str,
     max_items: int,
     last_run_at: Optional[str] = None,
 ) -> Tuple[str, str]:
-    counts = {action.action_type: len(action.tickets) for action in plan.actions}
-    title = (
-        f"[Jira Agent] {project_label} | Vertical: {plan.vertical} | "
-        f"Creados hoy: {counts.get('notify_created_today', 0)} | "
-        f"Finalizados hoy: {counts.get('notify_finished_today', 0)} | "
-        f"Estancados: {counts.get('notify_stale_tickets', 0)}"
-    )
+    # Todos los tickets del plan para el título
+    all_tickets = [t for action in plan.actions for t in action.tickets]
+    active = [
+        t for t in all_tickets
+        if t.status_category.lower() != "done" or t.finalized_today
+    ]
+    status_counts = Counter(t.status for t in active)
+    if status_counts:
+        status_summary = " · ".join(
+            f"{s}: {c}"
+            for s, c in status_counts.most_common()
+        )
+    else:
+        status_summary = "Sin tickets activos"
 
+    title = f"[Jira Agent] {project_label} | Vertical: {plan.vertical} | {status_summary}"
+
+    last_run_label = _format_last_run(last_run_at)
     lines: List[str] = []
 
-    if not plan.actions:
-        lines.append("Sin cambios relevantes para comunicar en esta corrida.")
-        return title, "\n".join(lines)
+    # Índices de acciones por tipo
+    actions_by_type = {a.action_type: a for a in plan.actions}
 
-    # Resumen de cambios vs última corrida
-    all_tickets = [t for action in plan.actions for t in action.tickets]
-    changed = [t for t in all_tickets if t.status_changed]
-    last_run_label = _format_last_run(last_run_at)
-    if changed:
-        lines.append(f"📋 **Cambios desde {last_run_label}**")
-        for t in changed:
-            lines.append(f"- [{t.key}]({t.url}) — {t.summary} → **{t.status}**")
+    # --- Sección cambios ---
+    changes_action = actions_by_type.get("notify_changes")
+    changes_tickets = changes_action.tickets if changes_action else []
+    lines.append(f"🔄 **Cambios desde {last_run_label}** ({len(changes_tickets)})")
+    lines.append("")
+    if changes_tickets:
+        for t in changes_tickets:
+            lines.append(_ticket_line_changes(t))
+        finalized = [t for t in changes_tickets if t.finalized_today]
+        reporters = _unique_reporters(finalized)
+        if reporters:
+            mentions = ", ".join(f"@{r}" for r in reporters)
+            lines.append(f"_{mentions}: sus tickets fueron cerrados hoy_ ✅")
     else:
-        lines.append(f"📋 _Sin cambios de estado desde {last_run_label}._")
+        lines.append(f"_Sin cambios de estado desde {last_run_label}._")
     lines.append("")
 
-    for action in plan.actions:
-        emoji = _SECTION_EMOJI.get(action.action_type, "📋")
-        lines.append(f"{emoji} **{_section_title(action.action_type)}**")
-        lines.append("")
-        lines.extend(_render_tickets(action.action_type, action.tickets, max_items=max_items))
-        lines.append("")
+    # --- Sección sin movimiento reciente ---
+    recent_action = actions_by_type.get("notify_unchanged_recent")
+    recent_tickets = recent_action.tickets if recent_action else []
+    lines.append(f"📋 **Sin movimiento — menos de 5 días** ({len(recent_tickets)})")
+    lines.append("")
+    if recent_tickets:
+        for t in recent_tickets:
+            lines.append(_ticket_line_unchanged(t))
+    else:
+        lines.append("_Ninguno._")
+    lines.append("")
+
+    # --- Sección sin movimiento estancado ---
+    stale_action = actions_by_type.get("notify_unchanged_stale")
+    stale_tickets = stale_action.tickets if stale_action else []
+    lines.append(f"⏳ **Sin movimiento — más de 5 días** ({len(stale_tickets)})")
+    lines.append("")
+    if stale_tickets:
+        capped = stale_tickets[:max_items]
+        for t in capped:
+            lines.append(_ticket_line_unchanged(t))
+        if len(stale_tickets) > max_items:
+            extra = len(stale_tickets) - max_items
+            if board_url:
+                lines.append(f"_... y {extra} más. [Ver tablero →]({board_url})_")
+            else:
+                lines.append(f"_... y {extra} más._")
+        reporters = _unique_reporters(capped)
+        if reporters:
+            mentions = ", ".join(f"@{r}" for r in reporters)
+            lines.append(
+                f"_{mentions}: ¿estos tickets siguen siendo necesarios? "
+                f"Si aplica, actualizar el estado en Jira._"
+            )
+    else:
+        lines.append("_Ninguno._")
 
     return title, "\n".join(lines).rstrip()
 
 
-def _section_title(action_type: str) -> str:
-    return {
-        "notify_created_today": "Tickets creados hoy",
-        "notify_finished_today": "Tickets finalizados hoy",
-        "notify_status_changed": "Cambios de estado desde la última corrida",
-        "notify_stale_tickets": "Tickets estancados",
-    }.get(action_type, action_type)
+def _ticket_line_changes(t: TicketFacts) -> str:
+    tags = _tags(t)
+    reporter = f"@{t.reporter}" if t.reporter else "sin informador"
+    return f"- [{t.key}]({t.url}) {tags}— {t.summary}\n  {t.status} | {reporter}"
 
 
-def _render_tickets(
-    action_type: str,
-    tickets: List[TicketFacts],
-    max_items: int,
-) -> List[str]:
-    if not tickets:
-        return ["_Sin tickets en esta sección._", ""]
+def _ticket_line_unchanged(t: TicketFacts) -> str:
+    tags = _tags(t)
+    days_label = "–" if t.days_without_status_change == 999 else f"{t.days_without_status_change}d"
+    reporter = f"@{t.reporter}" if t.reporter else "sin informador"
+    return f"- [{t.key}]({t.url}) {tags}— {t.summary}\n  {t.status} · {days_label} | {reporter}"
 
-    output: List[str] = []
-    limited = tickets[:max_items]
 
-    for ticket in limited:
-        reporter = f"**@{ticket.reporter}**" if ticket.reporter else "sin informador"
-        alert = " 🚨" if (ticket.criticality or "").lower() == "highest" else ""
-        output.append(f"- [{ticket.key}]({ticket.url}) — {ticket.summary}{alert}")
-        output.append(f"  Estado: {ticket.status} | Informador: {reporter}")
-
-    if len(tickets) > len(limited):
-        output.append(f"_... y {len(tickets) - len(limited)} más._")
-
-    output.append("")
-
-    # Mensaje al grupo: una sola vez por sección con todos los reporters únicos
-    if action_type == "notify_stale_tickets":
-        reporters = _unique_reporters(limited)
-        if reporters:
-            mentions = ", ".join(f"@{r}" for r in reporters)
-            output.append(f"_{mentions}: ¿estos tickets siguen siendo necesarios? Si aplica, actualizar el estado en Jira._")
-    elif action_type == "notify_finished_today":
-        reporters = _unique_reporters(limited)
-        if reporters:
-            mentions = ", ".join(f"@{r}" for r in reporters)
-            output.append(f"_{mentions}: sus tickets fueron cerrados hoy_ ✅")
-
-    return output
+def _tags(t: TicketFacts) -> str:
+    parts = []
+    if t.created_today:
+        parts.append("🆕")
+    if t.finalized_today:
+        parts.append("✅")
+    if (t.criticality or "").lower() == "highest":
+        parts.append("🚨")
+    return (" ".join(parts) + " ") if parts else ""
 
 
 def build_cpo_message(
@@ -105,8 +121,6 @@ def build_cpo_message(
     grouped_facts: Dict[str, List[TicketFacts]],
     recurring_patterns: Optional[List] = None,
 ) -> str:
-    from datetime import date as date_type
-
     all_tickets = [t for tickets in grouped_facts.values() for t in tickets]
     active = [t for t in all_tickets if t.status_category.lower() != "done"]
     stale = [t for t in active if t.is_stale]
@@ -114,7 +128,6 @@ def build_cpo_message(
     created_today = [t for t in all_tickets if t.created_today]
     finalized_today = [t for t in all_tickets if t.finalized_today]
 
-    today = datetime.now(timezone.utc).date()
     lines: List[str] = []
 
     lines.append(f"📊 **Análisis del tablero — {project_label}**")
@@ -161,17 +174,12 @@ def build_cpo_message(
         lines.append("")
 
     # Tickets más estancados
-    stale_with_age = []
-    for t in stale:
-        last_dt = _parse_iso(t.last_status_change_at)
-        days = (today - last_dt.date()).days if last_dt else None
-        stale_with_age.append((days, t))
-
-    stale_with_age.sort(key=lambda x: x[0] if x[0] is not None else 0, reverse=True)
+    stale_with_age = [(t.days_without_status_change, t) for t in stale]
+    stale_with_age.sort(key=lambda x: x[0], reverse=True)
 
     lines.append("**⏳ Tickets sin movimiento más prolongado**")
     for days, t in stale_with_age[:8]:
-        age_label = f"{days}d" if days is not None else "?"
+        age_label = "–" if days == 999 else f"{days}d"
         alert = " 🚨" if (t.criticality or "").lower() == "highest" else ""
         lines.append(f"- [{t.key}]({t.url}) ({t.vertical}) — {age_label} · {t.summary}{alert}")
     lines.append("")
@@ -207,19 +215,10 @@ def build_cpo_message(
         h_verticals = list(dict.fromkeys(t.vertical for t in highest))
         lines.append(f"- Criticidad Highest activa en: {', '.join(f'**{v}**' for v in h_verticals)}")
     oldest_days = stale_with_age[0][0] if stale_with_age else None
-    if oldest_days and oldest_days > 30:
+    if oldest_days and oldest_days != 999 and oldest_days > 30:
         lines.append(f"- Hay tickets sin movimiento hace más de {oldest_days} días — revisar si siguen siendo relevantes")
 
     return "\n".join(lines)
-
-
-def _parse_iso(raw: str) -> Optional[datetime]:
-    if not raw:
-        return None
-    try:
-        return datetime.fromisoformat(raw.replace("Z", "+00:00"))
-    except ValueError:
-        return None
 
 
 def _unique_reporters(tickets: List[TicketFacts]) -> List[str]:
