@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict
 
-from models import AgentMemoryState, RoadmapMemoryState, TicketStateSnapshot
+from models import AgentMemoryState, RoadmapMemoryState, TicketStateSnapshot, WeeklyTicketSnapshot
 
 
 class AgentMemory:
@@ -34,10 +34,21 @@ class AgentMemory:
             last_run_at=roadmap_raw.get("last_run_at"),
         )
 
+        weekly_buffer_raw = data.get("weekly_buffer", {})
+        weekly_buffer: Dict[str, Dict[str, WeeklyTicketSnapshot]] = {}
+        snap_fields = {f.name for f in fields(WeeklyTicketSnapshot)}
+        for date_str, day_data in weekly_buffer_raw.items():
+            weekly_buffer[date_str] = {
+                key: WeeklyTicketSnapshot(**{k: v for k, v in snap.items() if k in snap_fields})
+                for key, snap in day_data.items()
+            }
+
         return AgentMemoryState(
             tickets=tickets,
             last_run_at=data.get("last_run_at"),
             roadmap=roadmap,
+            weekly_buffer=weekly_buffer,
+            weekly_last_run_at=data.get("weekly_last_run_at"),
         )
 
     def save(self, state: AgentMemoryState) -> None:

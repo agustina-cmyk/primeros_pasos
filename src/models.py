@@ -56,6 +56,19 @@ class TicketStateSnapshot:
 
 
 @dataclass(frozen=True)
+class WeeklyTicketSnapshot:
+    status: str
+    status_category: str
+    days_without_status_change: int
+    is_stale: bool
+    criticality: Optional[str]
+    vertical: str
+    reporter: Optional[str]
+    created: str          # ISO 8601 datetime string from Jira
+    finalized_today: bool
+
+
+@dataclass(frozen=True)
 class RoadmapIdea:
     id: str
     title: str
@@ -116,6 +129,8 @@ class AgentMemoryState:
     tickets: Dict[str, TicketStateSnapshot]
     last_run_at: Optional[str] = None
     roadmap: "RoadmapMemoryState" = field(default_factory=lambda: RoadmapMemoryState())
+    weekly_buffer: Dict[str, Dict[str, "WeeklyTicketSnapshot"]] = field(default_factory=dict)
+    weekly_last_run_at: Optional[str] = None
 
     def to_dict(self) -> Dict[str, object]:
         return {
@@ -128,6 +143,14 @@ class AgentMemoryState:
                 "replied_comment_ids": self.roadmap.replied_comment_ids,
                 "created_idea_ids": self.roadmap.created_idea_ids,
             },
+            "weekly_buffer": {
+                date_str: {
+                    key: asdict(snap)
+                    for key, snap in day_snaps.items()
+                }
+                for date_str, day_snaps in self.weekly_buffer.items()
+            },
+            "weekly_last_run_at": self.weekly_last_run_at,
         }
 
     @classmethod
