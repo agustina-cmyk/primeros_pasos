@@ -6,56 +6,61 @@ from models import AgentAction, TicketFacts, VerticalPlan
 def build_vertical_plan(vertical: str, tickets: List[TicketFacts]) -> VerticalPlan:
     actions: List[AgentAction] = []
 
-    created_today = [ticket for ticket in tickets if ticket.created_today]
-    finished_today = [ticket for ticket in tickets if ticket.finalized_today]
-    stale = [ticket for ticket in tickets if ticket.is_stale]
+    # Excluir tickets done que no finalizaron hoy
+    active = [t for t in tickets if t.status_category.lower() != "done" or t.finalized_today]
 
-    if created_today:
-        actions.append(
-            AgentAction(
-                action_type="notify_created_today",
-                vertical=vertical,
-                reason="Tickets creados hoy.",
-                tickets=_sort_tickets(created_today),
-            )
-        )
-
-    if finished_today:
-        actions.append(
-            AgentAction(
-                action_type="notify_finished_today",
-                vertical=vertical,
-                reason="Tickets que cambiaron de estado hoy y quedaron finalizados.",
-                tickets=_sort_tickets(finished_today),
-            )
-        )
-
-    status_changed = [
-        t for t in tickets
-        if t.status_changed and not t.finalized_today
+    # Bucket 1: cambios (status_changed, created_today, finalized_today)
+    changes = [
+        t for t in active
+        if t.status_changed or t.created_today or t.finalized_today
     ]
-    if status_changed:
-        actions.append(
-            AgentAction(
-                action_type="notify_status_changed",
-                vertical=vertical,
-                reason="Tickets que cambiaron de estado desde la última corrida.",
-                tickets=_sort_tickets(status_changed),
-            )
-        )
+    changes_keys = {t.key for t in changes}
+
+    # Buckets de sin movimiento (solo tickets que no están en changes)
+    unchanged = [t for t in active if t.key not in changes_keys]
+    recent = [t for t in unchanged if not t.is_stale]
+    stale = [t for t in unchanged if t.is_stale]
+
+    if changes:
+        actions.append(AgentAction(
+            action_type="notify_changes",
+            vertical=vertical,
+            reason="Tickets con cambios desde la última corrida.",
+            tickets=_sort_changes(changes),
+        ))
+
+    if recent:
+        actions.append(AgentAction(
+            action_type="notify_unchanged_recent",
+            vertical=vertical,
+            reason="Tickets activos sin cambio de estado en menos de 5 días.",
+            tickets=_sort_recent(recent),
+        ))
 
     if stale:
-        actions.append(
-            AgentAction(
-                action_type="notify_stale_tickets",
-                vertical=vertical,
-                reason="Tickets estancados sin cambio de estado en los ultimos 15 dias.",
-                tickets=_sort_tickets(stale),
-            )
-        )
+        actions.append(AgentAction(
+            action_type="notify_unchanged_stale",
+            vertical=vertical,
+            reason="Tickets activos sin cambio de estado en 5 días o más.",
+            tickets=_sort_stale(stale),
+        ))
 
     return VerticalPlan(vertical=vertical, actions=actions)
 
 
-def _sort_tickets(tickets: List[TicketFacts]) -> List[TicketFacts]:
-    return sorted(tickets, key=lambda ticket: (ticket.updated, ticket.key), reverse=True)
+def _sort_changes(tickets: List[TicketFacts]) -> List[TicketFacts]:
+    return sorted(tickets, key=lambda t: t.updated, reverse=True)
+
+
+def _sort_recent(tickets: List[TicketFacts]) -> List[TicketFacts]:
+    return sorted(tickets, key=lambda t: t.days_without_status_change)
+
+
+def _sort_stale(tickets: List[TicketFacts]) -> List[TicketFacts]:
+    return sorted(
+        tickets,
+        key=lambda t: (
+            0 if (t.criticality or "").lower() == "highest" else 1,
+            -t.days_without_status_change,
+        ),
+    )
