@@ -1,6 +1,24 @@
 {
-  "last_run_at": "2026-03-24T11:14:35.841519+00:00",
+  "last_run_at": "2026-03-24T14:49:35.031046+00:00",
   "tickets": {
+    "PS-1388": {
+      "key": "PS-1388",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-24T09:40:21.983-0500",
+      "last_status_change_at": "2026-03-24T09:40:21.983-0500",
+      "notified_reasons": []
+    },
+    "PS-1386": {
+      "key": "PS-1386",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-24T08:58:38.018-0500",
+      "last_status_change_at": "2026-03-24T08:58:38.018-0500",
+      "notified_reasons": []
+    },
     "PS-1364": {
       "key": "PS-1364",
       "vertical": "sin_vertical",
@@ -17,15 +35,6 @@
       "assignee": null,
       "updated": "2026-03-23T19:03:17.555-0500",
       "last_status_change_at": "2026-03-23T19:03:17.555-0500",
-      "notified_reasons": []
-    },
-    "PS-1386": {
-      "key": "PS-1386",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-23T13:35:02.428-0500",
-      "last_status_change_at": "2026-03-23T13:35:02.428-0500",
       "notified_reasons": []
     },
     "PS-1361": {
@@ -622,7 +631,8 @@
       "cmn38zvbd000crl8lnum6raan": "like",
       "cmn46qk2o000expiqn3c1odx1": "like",
       "cmn4c2kzr000b4nqhtyk32i2p": "like",
-      "cmn4c2k0z00084nqhzjutyyss": "like"
+      "cmn4c2k0z00084nqhzjutyyss": "like",
+      "cmmz0fvo600019zwr5x22q62k": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -639,7 +649,8 @@
       "cmn38zvbd000crl8lnum6raan",
       "cmn46qk2o000expiqn3c1odx1",
       "cmn4c2kzr000b4nqhtyk32i2p",
-      "cmn4c2k0z00084nqhzjutyyss"
+      "cmn4c2k0z00084nqhzjutyyss",
+      "cmmz0fvo600019zwr5x22q62k"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -647,7 +658,9 @@
       "cmn38zvbd000crl8lnum6raan",
       "cmn46qk2o000expiqn3c1odx1",
       "cmn4c2k0z00084nqhzjutyyss",
-      "cmn4c2kzr000b4nqhtyk32i2p"
+      "cmn4c2kzr000b4nqhtyk32i2p",
+      "cmn4qdio300026y79gri2d015",
+      "cmn4qdjny00056y79sgfe7v7b"
     ]
   }
 }
