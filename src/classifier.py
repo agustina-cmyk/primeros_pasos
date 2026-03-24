@@ -1,9 +1,12 @@
 from collections import defaultdict
 from datetime import datetime, timedelta
 from typing import Dict, Iterable, List
+from zoneinfo import ZoneInfo
 
 from jira_client import JiraTicket
 from models import AgentMemoryState, TicketFacts, TicketStateSnapshot
+
+_ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 
 
 def resolve_vertical(
@@ -35,7 +38,7 @@ def classify_tickets(
     stale_ticket_days: int,
 ) -> Dict[str, List[TicketFacts]]:
     grouped: Dict[str, List[TicketFacts]] = defaultdict(list)
-    now_local = datetime.now().astimezone()
+    now_local = datetime.now(tz=_ARGENTINA_TZ)
     stale_cutoff = now_local - timedelta(days=stale_ticket_days)
 
     for ticket in tickets:
