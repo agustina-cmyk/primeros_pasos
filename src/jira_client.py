@@ -104,7 +104,7 @@ class JiraClient:
                         summary=issue_fields.get("summary", ""),
                         labels=[label.lower() for label in issue_fields.get("labels", [])],
                         status=(issue_fields.get("status") or {}).get("name", ""),
-                        status_category=((issue_fields.get("status") or {}).get("statusCategory") or {}).get("name", ""),
+                        status_category=((issue_fields.get("status") or {}).get("statusCategory") or {}).get("key", ""),
                         assignee=assignee.get("displayName"),
                         reporter=reporter.get("displayName"),
                         created=issue_fields.get("created", ""),
