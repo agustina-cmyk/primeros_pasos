@@ -1,6 +1,33 @@
 {
-  "last_run_at": "2026-03-24T22:04:40.695316+00:00",
+  "last_run_at": "2026-03-24T23:54:03.723599+00:00",
   "tickets": {
+    "PS-1398": {
+      "key": "PS-1398",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-24T17:50:57.675-0500",
+      "last_status_change_at": "2026-03-24T17:50:57.675-0500",
+      "notified_reasons": []
+    },
+    "PS-1397": {
+      "key": "PS-1397",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-03-24T17:32:16.530-0500",
+      "last_status_change_at": "2026-03-24T17:32:16.530-0500",
+      "notified_reasons": []
+    },
+    "PS-1396": {
+      "key": "PS-1396",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-24T17:06:49.290-0500",
+      "last_status_change_at": "2026-03-24T17:06:49.290-0500",
+      "notified_reasons": []
+    },
     "PS-1389": {
       "key": "PS-1389",
       "vertical": "sin_vertical",
@@ -710,7 +737,8 @@
       "cmmz0ljre00039zwryplu5uqt": "like",
       "cmmz0rasq00059zwr3g7arhyc": "like",
       "cmmyz031i000d11p6b355k63u": "like",
-      "cmmzc05te00013rlfneyuxjqi": "like"
+      "cmmzc05te00013rlfneyuxjqi": "like",
+      "cmmyzl8yn000f11p69rf9oa1q": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -734,7 +762,8 @@
       "cmmz0ljre00039zwryplu5uqt",
       "cmmz0rasq00059zwr3g7arhyc",
       "cmmyz031i000d11p6b355k63u",
-      "cmmzc05te00013rlfneyuxjqi"
+      "cmmzc05te00013rlfneyuxjqi",
+      "cmmyzl8yn000f11p69rf9oa1q"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
