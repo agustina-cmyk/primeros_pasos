@@ -63,7 +63,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
 
     sent = 0
     skipped = 0
-    skip_channels = roadmap_only or dry_run
+    skip_channels = roadmap_only
     if not outbound_messages and not cpo_only and not roadmap_only:
         print("Sin cambios relevantes para comunicar en esta corrida.")
         if not dry_run:
@@ -168,12 +168,11 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
         return []
 
     created_ideas = []
-    created_this_run: set = set()
 
     for action in roadmap_plan.actions:
         try:
-            if action.action == "comment" and action.idea_id in created_this_run:
-                print(f"[ROADMAP] Skip comentario en idea recién creada {action.idea_id}")
+            if action.action in ("vote", "comment") and action.idea_id in next_memory.roadmap.created_idea_ids:
+                print(f"[ROADMAP] Skip {action.action} en idea propia {action.idea_id}")
                 continue
 
             if action.action == "vote" and action.idea_id:
@@ -203,7 +202,6 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
                 result = roadmap_client.create_idea(settings.roadmap_app_url, token, action.new_idea)
                 idea_id = result["id"]
                 next_memory.roadmap.created_idea_ids.append(idea_id)
-                created_this_run.add(idea_id)
                 created_ideas.append({"id": idea_id, "title": action.new_idea.title})
                 print(f"[ROADMAP] Idea creada: {idea_id} — {action.new_idea.title}")
 
