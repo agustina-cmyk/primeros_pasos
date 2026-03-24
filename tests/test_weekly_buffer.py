@@ -1,8 +1,6 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from datetime import date
-
 from models import AgentMemoryState, WeeklyTicketSnapshot
 
 
@@ -71,6 +69,21 @@ def test_build_next_weekly_buffer_empty_buffer():
     result = _build_next_weekly_buffer(state, "2026-03-18", facts)
     assert "2026-03-18" in result
     assert "PS-5" in result["2026-03-18"]
+
+
+def test_build_next_weekly_buffer_overwrites_existing_today():
+    from agent import _build_next_weekly_buffer
+    state = AgentMemoryState.empty()
+    state.weekly_buffer = {"2026-03-18": {"PS-OLD": WeeklyTicketSnapshot(
+        status="To Do", status_category="new", days_without_status_change=1,
+        is_stale=False, criticality=None, vertical="v", reporter=None,
+        created="2026-03-15T10:00:00.000+0000", finalized_today=False,
+    )}}
+    facts = {"verification": [_make_facts(key="PS-NEW")]}
+    result = _build_next_weekly_buffer(state, "2026-03-18", facts)
+    assert "2026-03-18" in result
+    assert "PS-NEW" in result["2026-03-18"]
+    assert "PS-OLD" not in result["2026-03-18"]  # today's snapshot replaced
 
 
 def test_weekly_ticket_snapshot_fields():
