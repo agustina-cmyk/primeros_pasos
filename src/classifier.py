@@ -1,5 +1,5 @@
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict, Iterable, List
 from zoneinfo import ZoneInfo
 
@@ -39,13 +39,18 @@ def classify_tickets(
 ) -> Dict[str, List[TicketFacts]]:
     grouped: Dict[str, List[TicketFacts]] = defaultdict(list)
     now_local = datetime.now(tz=_ARGENTINA_TZ)
-    stale_cutoff = now_local - timedelta(days=unchanged_stale_days)
 
     for ticket in tickets:
         vertical = resolve_vertical(ticket.labels, label_prefix, label_to_vertical)
         previous = memory_state.tickets.get(ticket.key)
         created_dt = _safe_parse_jira_datetime(ticket.created)
         last_status_change_dt = _safe_parse_jira_datetime(ticket.last_status_change_at)
+
+        days = _compute_days_without_status_change(
+            last_status_change_at=ticket.last_status_change_at,
+            created=ticket.created,
+            now=now_local,
+        )
 
         facts = TicketFacts(
             key=ticket.key,
@@ -67,8 +72,8 @@ def classify_tickets(
             labels=ticket.labels,
             created_today=_is_same_local_day(created_dt, now_local),
             finalized_today=ticket.status_category.lower() == "done" and _is_same_local_day(last_status_change_dt, now_local),
-            is_stale=bool(last_status_change_dt and last_status_change_dt.astimezone() <= stale_cutoff),
-            days_without_status_change=0,
+            is_stale=days >= unchanged_stale_days,
+            days_without_status_change=days,
             changed_since_last_run=_changed_since_last_run(ticket, previous),
             status_changed=bool(previous and previous.status != ticket.status),
             assignee_changed=bool(previous and previous.assignee != ticket.assignee),
@@ -92,6 +97,19 @@ def build_next_memory_state(grouped_facts: Dict[str, List[TicketFacts]]) -> Agen
                 notified_reasons=[],
             )
     return AgentMemoryState(tickets=tickets)
+
+
+def _compute_days_without_status_change(
+    last_status_change_at: str,
+    created: str,
+    now: datetime,
+) -> int:
+    anchor = _safe_parse_jira_datetime(last_status_change_at)
+    if anchor is None:
+        anchor = _safe_parse_jira_datetime(created)
+    if anchor is None:
+        return 999
+    return (now.date() - anchor.astimezone(now.tzinfo).date()).days
 
 
 def _changed_since_last_run(ticket: JiraTicket, previous: TicketStateSnapshot | None) -> bool:
