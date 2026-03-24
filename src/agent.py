@@ -1,10 +1,11 @@
+from datetime import date, datetime
 from typing import Dict, List, Optional, Tuple
 
 from classifier import build_next_memory_state, classify_tickets
 from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
 from message_builder import build_cpo_message, build_vertical_message
-from models import AgentMemoryState, RoadmapPlan, VerticalPlan
+from models import AgentMemoryState, RoadmapPlan, VerticalPlan, WeeklyTicketSnapshot
 from planner import build_vertical_plan
 
 
@@ -162,3 +163,43 @@ def _project_label(board_id: str, board_context: JiraBoardContext | None) -> str
     if board_context is None:
         return f"Board {board_id}"
     return board_context.project_name or board_context.project_key or board_context.board_name
+
+
+def _build_weekly_snapshot(
+    grouped_facts: Dict[str, List],
+) -> Dict[str, WeeklyTicketSnapshot]:
+    result = {}
+    for facts in grouped_facts.values():
+        for f in facts:
+            result[f.key] = WeeklyTicketSnapshot(
+                status=f.status,
+                status_category=f.status_category,
+                days_without_status_change=f.days_without_status_change,
+                is_stale=f.is_stale,
+                criticality=f.criticality,
+                vertical=f.vertical,
+                reporter=f.reporter,
+                created=f.created,
+                finalized_today=f.finalized_today,
+            )
+    return result
+
+
+def _build_next_weekly_buffer(
+    memory_state: AgentMemoryState,
+    today_str: str,
+    grouped_facts: Dict[str, List],
+) -> Dict[str, Dict[str, WeeklyTicketSnapshot]]:
+    existing = dict(memory_state.weekly_buffer)
+
+    # Stale check: if earliest buffer date is from a different ISO week/year, reset
+    if existing:
+        earliest = date.fromisoformat(min(existing.keys()))
+        today = date.fromisoformat(today_str)
+        e_cal = earliest.isocalendar()
+        t_cal = today.isocalendar()
+        if e_cal.week != t_cal.week or e_cal.year != t_cal.year:
+            existing = {}
+
+    today_snapshot = _build_weekly_snapshot(grouped_facts)
+    return {**existing, today_str: today_snapshot}
