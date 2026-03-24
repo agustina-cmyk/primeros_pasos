@@ -1,6 +1,60 @@
 {
-  "last_run_at": "2026-03-24T14:49:35.031046+00:00",
+  "last_run_at": "2026-03-24T18:10:09.640287+00:00",
   "tickets": {
+    "PS-1060": {
+      "key": "PS-1060",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-24T13:07:45.374-0500",
+      "last_status_change_at": "2026-03-24T13:07:45.374-0500",
+      "notified_reasons": []
+    },
+    "PS-1387": {
+      "key": "PS-1387",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Damian Fixel",
+      "updated": "2026-03-24T12:48:26.274-0500",
+      "last_status_change_at": "2026-03-24T12:48:26.274-0500",
+      "notified_reasons": []
+    },
+    "PS-1389": {
+      "key": "PS-1389",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-24T12:48:02.682-0500",
+      "last_status_change_at": "2026-03-24T12:48:02.682-0500",
+      "notified_reasons": []
+    },
+    "PS-1390": {
+      "key": "PS-1390",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Damian Fixel",
+      "updated": "2026-03-24T12:45:08.776-0500",
+      "last_status_change_at": "2026-03-24T12:45:08.776-0500",
+      "notified_reasons": []
+    },
+    "PS-1392": {
+      "key": "PS-1392",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-24T12:44:42.144-0500",
+      "last_status_change_at": "2026-03-24T12:41:57.741-0500",
+      "notified_reasons": []
+    },
+    "PS-1391": {
+      "key": "PS-1391",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-24T12:41:32.316-0500",
+      "last_status_change_at": "2026-03-24T12:41:32.316-0500",
+      "notified_reasons": []
+    },
     "PS-1388": {
       "key": "PS-1388",
       "vertical": "sin_vertical",
@@ -26,15 +80,6 @@
       "assignee": null,
       "updated": "2026-03-23T21:12:22.223-0500",
       "last_status_change_at": "2026-03-23T21:12:22.223-0500",
-      "notified_reasons": []
-    },
-    "PS-1387": {
-      "key": "PS-1387",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-23T19:03:17.555-0500",
-      "last_status_change_at": "2026-03-23T19:03:17.555-0500",
       "notified_reasons": []
     },
     "PS-1361": {
@@ -632,7 +677,10 @@
       "cmn46qk2o000expiqn3c1odx1": "like",
       "cmn4c2kzr000b4nqhtyk32i2p": "like",
       "cmn4c2k0z00084nqhzjutyyss": "like",
-      "cmmz0fvo600019zwr5x22q62k": "like"
+      "cmmz0fvo600019zwr5x22q62k": "like",
+      "cmn4qdjny00056y79sgfe7v7b": "like",
+      "cmn4qdio300026y79gri2d015": "like",
+      "cmmz0ljre00039zwryplu5uqt": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -650,7 +698,10 @@
       "cmn46qk2o000expiqn3c1odx1",
       "cmn4c2kzr000b4nqhtyk32i2p",
       "cmn4c2k0z00084nqhzjutyyss",
-      "cmmz0fvo600019zwr5x22q62k"
+      "cmmz0fvo600019zwr5x22q62k",
+      "cmn4qdjny00056y79sgfe7v7b",
+      "cmn4qdio300026y79gri2d015",
+      "cmmz0ljre00039zwryplu5uqt"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
