@@ -1,12 +1,15 @@
 from datetime import date, datetime
 from typing import Dict, List, Optional, Tuple
+from zoneinfo import ZoneInfo
 
 from classifier import build_next_memory_state, classify_tickets
 from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
-from message_builder import build_cpo_message, build_vertical_message
+from message_builder import build_vertical_message, build_weekly_cpo_message
 from models import AgentMemoryState, RoadmapPlan, VerticalPlan, WeeklyTicketSnapshot
 from planner import build_vertical_plan
+
+_ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 
 
 def run_agent(
@@ -17,6 +20,7 @@ def run_agent(
     memory_state: AgentMemoryState,
     skip_roadmap: bool = False,
     force_roadmap: bool = False,
+    is_weekly_run: bool = False,
 ) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan]]:
     grouped_facts = classify_tickets(
         tickets=tickets,
@@ -58,15 +62,25 @@ def run_agent(
         except Exception as exc:
             print(f"[WARN] Análisis de recurrencia falló: {exc}")
 
-    cpo_body = build_cpo_message(
-        project_label=project_label,
-        grouped_facts=grouped_facts,
-        recurring_patterns=recurring_patterns,
-    )
+    next_memory = build_next_memory_state(grouped_facts)
+    # Preservar la sección roadmap existente para que main.py la actualice
+    next_memory.roadmap = memory_state.roadmap
 
-    # Análisis de roadmap (opcional)
+    today_str = datetime.now(_ARGENTINA_TZ).date().isoformat()
+    next_memory.weekly_buffer = _build_next_weekly_buffer(memory_state, today_str, grouped_facts)
+
+    # Weekly CPO message (only on Friday runs)
+    cpo_body = None
+    if is_weekly_run:
+        cpo_body = build_weekly_cpo_message(
+            project_label=project_label,
+            buffer=next_memory.weekly_buffer,
+            recurring_patterns=recurring_patterns,
+        )
+
+    # Roadmap analysis (weekly only, or forced)
     roadmap_plan = None
-    if not skip_roadmap and (force_roadmap or _should_run_roadmap(settings, tickets, memory_state)):
+    if (is_weekly_run or force_roadmap) and not skip_roadmap:
         try:
             roadmap_plan = _run_roadmap_analysis(
                 settings=settings,
@@ -76,10 +90,6 @@ def run_agent(
             )
         except Exception as exc:
             print(f"[WARN] Análisis de roadmap falló: {exc}")
-
-    next_memory = build_next_memory_state(grouped_facts)
-    # Preservar la sección roadmap existente para que main.py la actualice
-    next_memory.roadmap = memory_state.roadmap
 
     return plans, outbound_messages, cpo_body, next_memory, roadmap_plan
 
