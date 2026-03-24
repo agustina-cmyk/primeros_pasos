@@ -1,8 +1,8 @@
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
-from models import TicketFacts, VerticalPlan
+from models import TicketFacts, VerticalPlan, WeeklyTicketSnapshot
 
 
 def build_vertical_message(
@@ -217,6 +217,163 @@ def build_cpo_message(
     oldest_days = stale_with_age[0][0] if stale_with_age else None
     if oldest_days and oldest_days != 999 and oldest_days > 30:
         lines.append(f"- Hay tickets sin movimiento hace más de {oldest_days} días — revisar si siguen siendo relevantes")
+
+    return "\n".join(lines)
+
+
+def build_weekly_cpo_message(
+    project_label: str,
+    buffer: Dict[str, Dict[str, WeeklyTicketSnapshot]],
+    recurring_patterns: Optional[List] = None,
+) -> str:
+    if not buffer:
+        return "Sin datos acumulados para la semana."
+
+    sorted_dates = sorted(buffer.keys())
+    first_day = buffer[sorted_dates[0]]
+    last_day = buffer[sorted_dates[-1]]
+
+    # ── Bloque 1: Resumen ejecutivo ──────────────────────────────────────────
+    all_keys_ever = {k for day in buffer.values() for k in day}
+    first_keys = set(first_day.keys())
+    last_keys = set(last_day.keys())
+
+    active_at_start = sum(1 for s in first_day.values() if s.status_category.lower() != "done")
+    active_at_end = sum(1 for s in last_day.values() if s.status_category.lower() != "done")
+
+    # Created = present in any day but not in the first snapshot
+    created_count = len(all_keys_ever - first_keys)
+
+    # Resolved = any snapshot where finalized_today is True
+    resolved_keys: set = set()
+    for day_snaps in buffer.values():
+        for key, snap in day_snaps.items():
+            if snap.finalized_today:
+                resolved_keys.add(key)
+    resolved_count = len(resolved_keys)
+
+    # No movement = present in first AND last snapshot with same status every day they appear
+    no_movement_keys = set()
+    for key in first_keys & last_keys:
+        statuses = {
+            day_snaps[key].status
+            for day_snaps in buffer.values()
+            if key in day_snaps
+        }
+        if len(statuses) == 1:
+            no_movement_keys.add(key)
+    no_movement_count = len(no_movement_keys)
+
+    highest_at_end = [
+        (key, snap) for key, snap in last_day.items()
+        if (snap.criticality or "").lower() == "highest" and snap.status_category.lower() != "done"
+    ]
+
+    week_start = sorted_dates[0]
+    week_end = sorted_dates[-1]
+
+    lines: List[str] = []
+    lines.append(f"📊 **Reporte semanal — {project_label}**")
+    lines.append(f"_Semana {week_start} → {week_end}_")
+    lines.append("")
+    lines.append(
+        f"Activos al inicio: **{active_at_start}** | Activos al cierre: **{active_at_end}** | "
+        f"Creados: **{created_count}** | Resueltos: **{resolved_count}** | "
+        f"Sin movimiento: **{no_movement_count}** | Críticos Highest al cierre: **{len(highest_at_end)}**"
+    )
+    lines.append("")
+
+    # ── Bloque 2: Velocidad ──────────────────────────────────────────────────
+    lines.append("**⚡ Velocidad del equipo**")
+
+    # Time to resolve
+    resolution_days = []
+    for key in resolved_keys:
+        fin_date_str = None
+        created_str = None
+        for date_str in sorted_dates:
+            day_snaps = buffer.get(date_str, {})
+            if key in day_snaps:
+                created_str = day_snaps[key].created
+                if day_snaps[key].finalized_today:
+                    fin_date_str = date_str
+                    break
+        if fin_date_str and created_str:
+            try:
+                fin_date = date.fromisoformat(fin_date_str)
+                created_date = date.fromisoformat(created_str[:10])
+                resolution_days.append((fin_date - created_date).days)
+            except (ValueError, IndexError):
+                pass
+
+    if resolution_days:
+        avg_days = sum(resolution_days) / len(resolution_days)
+        lines.append(f"- Tiempo promedio de resolución: **{avg_days:.1f} días** ({len(resolution_days)} tickets)")
+    else:
+        lines.append("- Sin tickets resueltos esta semana.")
+
+    # Tickets that advanced state (present in first+last, status changed across any two days)
+    advanced_by_vertical: Dict[str, int] = {}
+    for key in first_keys & last_keys:
+        statuses_seen = {
+            day_snaps[key].status
+            for day_snaps in buffer.values()
+            if key in day_snaps
+        }
+        if len(statuses_seen) > 1:
+            vertical = last_day[key].vertical
+            advanced_by_vertical[vertical] = advanced_by_vertical.get(vertical, 0) + 1
+
+    if advanced_by_vertical:
+        lines.append("- Tickets que avanzaron de estado:")
+        for vertical, count in sorted(advanced_by_vertical.items(), key=lambda x: -x[1]):
+            lines.append(f"  - **{vertical}**: {count}")
+    else:
+        lines.append("- Sin tickets que avanzaron de estado esta semana.")
+
+    # No movement by vertical
+    no_movement_by_vertical: Dict[str, int] = {}
+    for key in no_movement_keys:
+        if key in last_day:
+            vertical = last_day[key].vertical
+            no_movement_by_vertical[vertical] = no_movement_by_vertical.get(vertical, 0) + 1
+
+    if no_movement_by_vertical:
+        lines.append("- Sin movimiento toda la semana por vertical:")
+        for vertical, count in sorted(no_movement_by_vertical.items(), key=lambda x: -x[1]):
+            lines.append(f"  - **{vertical}**: {count}")
+
+    lines.append("")
+
+    # ── Bloque 3: Patrones recurrentes ───────────────────────────────────────
+    if recurring_patterns:
+        lines.append("**🔁 Patrones recurrentes**")
+        for p in recurring_patterns:
+            keys_str = ", ".join(p.ticket_keys)
+            lines.append(f"- **{p.label}** ({p.count} tickets: {keys_str})")
+            lines.append(f"  → _{p.recommendation}_")
+        lines.append("")
+
+    # ── Bloque 4: Señales para el roadmap ────────────────────────────────────
+    lines.append("**💡 Señales para el roadmap**")
+    active_last = {k: s for k, s in last_day.items() if s.status_category.lower() != "done"}
+    if active_last:
+        stale_by_vertical: Dict[str, int] = {}
+        for snap in active_last.values():
+            if snap.is_stale:
+                stale_by_vertical[snap.vertical] = stale_by_vertical.get(snap.vertical, 0) + 1
+        if stale_by_vertical:
+            top_v = max(stale_by_vertical, key=lambda v: stale_by_vertical[v])
+            lines.append(f"- Vertical con mayor carga estancada al cierre: **{top_v}** ({stale_by_vertical[top_v]} tickets)")
+    if highest_at_end:
+        h_verticals = list(dict.fromkeys(s.vertical for _, s in highest_at_end))
+        lines.append(f"- Criticidad Highest activa en: {', '.join(f'**{v}**' for v in h_verticals)}")
+
+    stale_last = [(s.days_without_status_change, k) for k, s in last_day.items() if s.is_stale]
+    if stale_last:
+        max_days, _ = max(stale_last, key=lambda x: x[0])
+        if max_days != 999 and max_days > 30:
+            lines.append(f"- Hay tickets sin movimiento hace más de {max_days} días — revisar si siguen siendo relevantes")
 
     return "\n".join(lines)
 
