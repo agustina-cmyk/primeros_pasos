@@ -243,6 +243,22 @@ def test_run_agent_returns_cpo_body_on_weekly_run():
     assert "2026-03-18" in next_mem.weekly_buffer   # today appended
 
 
+def test_agent_memory_weekly_last_run_at_persists(tmp_path):
+    from memory import AgentMemory
+    from models import AgentMemoryState
+
+    state_path = tmp_path / "state.json"
+    state = AgentMemoryState.empty()
+    state.weekly_last_run_at = "2026-03-21T17:00:00-03:00"
+
+    mem = AgentMemory(str(state_path))
+    mem.save(state)
+
+    loaded = mem.load()
+    assert loaded.weekly_last_run_at == "2026-03-21T17:00:00-03:00"
+    assert loaded.weekly_buffer == {}
+
+
 def test_run_agent_skip_roadmap_overrides_force_roadmap():
     from unittest.mock import patch, MagicMock
     from agent import run_agent

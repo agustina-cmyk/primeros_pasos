@@ -1,6 +1,7 @@
 import argparse
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 from agent import run_agent
 from config import load_settings
@@ -8,8 +9,13 @@ from jira_client import JiraClient
 from memory import AgentMemory
 from roam_client import RoamClient
 
+_ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 
-def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notify_only: bool = False, force_roadmap: bool = False) -> int:
+
+def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
+        notify_only: bool = False, force_roadmap: bool = False, weekly: bool = False) -> int:
+    is_weekly_run = weekly or datetime.now(_ARGENTINA_TZ).weekday() == 4
+
     settings = load_settings()
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
@@ -59,6 +65,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
         memory_state=memory_state,
         skip_roadmap=notify_only,
         force_roadmap=force_roadmap,
+        is_weekly_run=is_weekly_run,
     )
 
     sent = 0
@@ -71,6 +78,9 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
                 created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
                 if created_ideas:
                     _notify_cpo_roadmap(settings, roam, created_ideas)
+            if is_weekly_run:
+                next_memory.weekly_buffer = {}
+                next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()
             memory.save(next_memory)
         return 0
 
@@ -118,7 +128,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
             roam.post_message(chat_id=cpo_channel_id, text=cpo_body)
             print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
 
-    if dry_run and not cpo_only:
+    if dry_run and not cpo_only and not is_weekly_run:
         _save_html_report(
             project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
             plans=plans,
@@ -131,6 +141,9 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False, notif
             created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
             if created_ideas:
                 _notify_cpo_roadmap(settings, roam, created_ideas)
+        if is_weekly_run:
+            next_memory.weekly_buffer = {}
+            next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()
         memory.save(next_memory)
     print(f"Finalizado. Enviadas: {sent}, Saltadas: {skipped}.")
     return 0
@@ -255,6 +268,11 @@ if __name__ == "__main__":
         help="Fuerza el análisis de roadmap aunque no haya cambios detectados en Jira",
     )
     parser.add_argument(
+        "--weekly",
+        action="store_true",
+        help="Fuerza la corrida semanal: envía mensaje CPO al canal C-level y ejecuta el roadmap agent",
+    )
+    parser.add_argument(
         "--list-roam-chats",
         action="store_true",
         help="Lista los chats accesibles en Roam y sus IDs",
@@ -280,4 +298,5 @@ if __name__ == "__main__":
         roadmap_only=args.roadmap_only,
         notify_only=args.notify_only,
         force_roadmap=args.force_roadmap,
+        weekly=args.weekly,
     ))
