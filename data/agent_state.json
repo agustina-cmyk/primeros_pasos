@@ -1,12 +1,12 @@
 {
-  "last_run_at": "2026-03-24T18:10:09.640287+00:00",
+  "last_run_at": "2026-03-24T20:06:46.962935+00:00",
   "tickets": {
     "PS-1060": {
       "key": "PS-1060",
       "vertical": "sin_vertical",
       "status": "DEV IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-24T13:07:45.374-0500",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-24T14:27:42.506-0500",
       "last_status_change_at": "2026-03-24T13:07:45.374-0500",
       "notified_reasons": []
     },
@@ -680,7 +680,10 @@
       "cmmz0fvo600019zwr5x22q62k": "like",
       "cmn4qdjny00056y79sgfe7v7b": "like",
       "cmn4qdio300026y79gri2d015": "like",
-      "cmmz0ljre00039zwryplu5uqt": "like"
+      "cmmz0ljre00039zwryplu5uqt": "like",
+      "cmmz0rasq00059zwr3g7arhyc": "like",
+      "cmmyz031i000d11p6b355k63u": "like",
+      "cmmzc05te00013rlfneyuxjqi": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -701,7 +704,10 @@
       "cmmz0fvo600019zwr5x22q62k",
       "cmn4qdjny00056y79sgfe7v7b",
       "cmn4qdio300026y79gri2d015",
-      "cmmz0ljre00039zwryplu5uqt"
+      "cmmz0ljre00039zwryplu5uqt",
+      "cmmz0rasq00059zwr3g7arhyc",
+      "cmmyz031i000d11p6b355k63u",
+      "cmmzc05te00013rlfneyuxjqi"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
