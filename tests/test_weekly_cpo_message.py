@@ -99,3 +99,17 @@ def test_build_weekly_cpo_message_includes_patterns():
     result = build_weekly_cpo_message("PS", buffer, recurring_patterns=[pattern])
     assert "Login failures" in result
     assert "Fix the auth service" in result
+
+
+def test_build_weekly_cpo_message_roadmap_signals_stale_vertical():
+    from message_builder import build_weekly_cpo_message
+    buffer = {
+        "2026-03-18": {
+            "PS-1": _snap(stale=True, vertical="payments"),
+            "PS-2": _snap(stale=True, vertical="payments"),
+            "PS-3": _snap(stale=True, vertical="verification"),
+        },
+    }
+    result = build_weekly_cpo_message("PS", buffer)
+    assert "payments" in result   # highest stale count
+    assert "Señales para el roadmap" in result or "roadmap" in result.lower()

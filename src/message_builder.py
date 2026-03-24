@@ -294,7 +294,8 @@ def build_weekly_cpo_message(
         for date_str in sorted_dates:
             day_snaps = buffer.get(date_str, {})
             if key in day_snaps:
-                created_str = day_snaps[key].created
+                if created_str is None:
+                    created_str = day_snaps[key].created
                 if day_snaps[key].finalized_today:
                     fin_date_str = date_str
                     break
