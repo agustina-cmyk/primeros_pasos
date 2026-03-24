@@ -178,16 +178,19 @@ def test_run_agent_builds_weekly_buffer_in_next_memory():
     )
     memory = AgentMemoryState.empty()
 
-    with patch("agent._build_next_weekly_buffer") as mock_buf:
-        mock_buf.return_value = {"2026-03-18": {}}
+    mock_date = MagicMock()
+    mock_date.isoformat.return_value = "2026-03-18"
+
+    with patch("agent.datetime") as mock_dt:
+        mock_dt.now.return_value.date.return_value = mock_date
         _, _, cpo_body, next_mem, _ = run_agent(
             settings=settings, tickets=[ticket], finalized_tickets=[],
             board_context=None, memory_state=memory, is_weekly_run=False,
         )
 
-    assert cpo_body is None                   # daily run → no CPO
-    mock_buf.assert_called_once()             # buffer helper always called
-    assert next_mem.weekly_buffer == {"2026-03-18": {}}
+    assert cpo_body is None                          # daily run → no CPO
+    assert "2026-03-18" in next_mem.weekly_buffer    # today's snapshot added
+    assert "PS-1" in next_mem.weekly_buffer["2026-03-18"]  # PS-1 flows through
 
 
 def test_run_agent_returns_cpo_body_on_weekly_run():
@@ -215,15 +218,21 @@ def test_run_agent_returns_cpo_body_on_weekly_run():
         description="", section="", criticality="", environment="", ticket_type="Bug",
         url="https://jira/PS-1", labels=["vertical:verification"],
     )
+    # Pre-populate with a prior day so the weekly buffer has data when CPO runs
     memory = AgentMemoryState.empty()
-    memory.weekly_buffer = {"2026-03-18": {"PS-1": WeeklyTicketSnapshot(
+    memory.weekly_buffer = {"2026-03-17": {"PS-1": WeeklyTicketSnapshot(
         status="To Do", status_category="new", days_without_status_change=1,
         is_stale=False, criticality=None, vertical="verification", reporter="ana",
-        created="2026-03-18T10:00:00.000+0000", finalized_today=False,
+        created="2026-03-15T10:00:00.000+0000", finalized_today=False,
     )}}
 
-    with patch("agent._build_next_weekly_buffer") as mock_buf:
-        mock_buf.return_value = memory.weekly_buffer
+    mock_date = MagicMock()
+    mock_date.isoformat.return_value = "2026-03-18"
+    mock_date.isocalendar.return_value.week = 12
+    mock_date.isocalendar.return_value.year = 2026
+
+    with patch("agent.datetime") as mock_dt:
+        mock_dt.now.return_value.date.return_value = mock_date
         _, _, cpo_body, next_mem, _ = run_agent(
             settings=settings, tickets=[ticket], finalized_tickets=[],
             board_context=None, memory_state=memory, is_weekly_run=True,
@@ -231,3 +240,45 @@ def test_run_agent_returns_cpo_body_on_weekly_run():
 
     assert cpo_body is not None               # weekly run → CPO built
     assert "Reporte semanal" in cpo_body
+    assert "2026-03-18" in next_mem.weekly_buffer   # today appended
+
+
+def test_run_agent_skip_roadmap_overrides_force_roadmap():
+    from unittest.mock import patch, MagicMock
+    from agent import run_agent
+    from models import AgentMemoryState
+    from config import Settings
+
+    settings = MagicMock(spec=Settings)
+    settings.vertical_label_prefix = "vertical:"
+    settings.label_to_vertical = {}
+    settings.unchanged_stale_days = 5
+    settings.jira_board_id = "PS"
+    settings.jira_board_url = ""
+    settings.max_items_per_vertical = 20
+    settings.llm_webhook_url = None
+    settings.roadmap_app_url = None
+    settings.ps_agent_email = None
+
+    from jira_client import JiraTicket
+    ticket = JiraTicket(
+        key="PS-1", summary="Test", status="To Do", status_category="new",
+        assignee=None, reporter="ana", created="2026-03-18T10:00:00.000+0000",
+        updated="2026-03-18T10:00:00.000+0000", last_status_change_at="2026-03-18T10:00:00.000+0000",
+        description="", section="", criticality="", environment="", ticket_type="Bug",
+        url="https://jira/PS-1", labels=["vertical:verification"],
+    )
+    memory = AgentMemoryState.empty()
+
+    mock_date = MagicMock()
+    mock_date.isoformat.return_value = "2026-03-18"
+
+    with patch("agent.datetime") as mock_dt:
+        mock_dt.now.return_value.date.return_value = mock_date
+        _, _, _, _, roadmap_plan = run_agent(
+            settings=settings, tickets=[ticket], finalized_tickets=[],
+            board_context=None, memory_state=memory,
+            force_roadmap=True, skip_roadmap=True,  # skip wins
+        )
+
+    assert roadmap_plan is None
