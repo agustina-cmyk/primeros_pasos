@@ -1,6 +1,33 @@
 {
-  "last_run_at": "2026-03-25T14:49:16.934763+00:00",
+  "last_run_at": "2026-03-25T18:11:23.591584+00:00",
   "tickets": {
+    "PS-1328": {
+      "key": "PS-1328",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-25T13:02:15.376-0500",
+      "last_status_change_at": "2026-03-25T13:02:05.606-0500",
+      "notified_reasons": []
+    },
+    "PS-1060": {
+      "key": "PS-1060",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-25T13:00:02.649-0500",
+      "last_status_change_at": "2026-03-25T12:59:56.603-0500",
+      "notified_reasons": []
+    },
+    "PS-1316": {
+      "key": "PS-1316",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Damian Fixel",
+      "updated": "2026-03-25T10:18:52.121-0500",
+      "last_status_change_at": "2026-03-25T10:18:52.121-0500",
+      "notified_reasons": []
+    },
     "PS-1202": {
       "key": "PS-1202",
       "vertical": "sin_vertical",
@@ -53,15 +80,6 @@
       "assignee": null,
       "updated": "2026-03-24T16:07:44.898-0500",
       "last_status_change_at": "2026-03-24T16:07:44.898-0500",
-      "notified_reasons": []
-    },
-    "PS-1060": {
-      "key": "PS-1060",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-24T14:27:42.506-0500",
-      "last_status_change_at": "2026-03-24T13:07:45.374-0500",
       "notified_reasons": []
     },
     "PS-1387": {
@@ -208,15 +226,6 @@
       "last_status_change_at": "2026-03-20T14:58:43.786-0500",
       "notified_reasons": []
     },
-    "PS-1328": {
-      "key": "PS-1328",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-20T14:15:07.916-0500",
-      "last_status_change_at": "2026-03-20T14:15:06.135-0500",
-      "notified_reasons": []
-    },
     "PS-1193": {
       "key": "PS-1193",
       "vertical": "sin_vertical",
@@ -332,15 +341,6 @@
       "assignee": null,
       "updated": "2026-03-17T16:42:33.733-0500",
       "last_status_change_at": "2026-03-17T16:42:33.733-0500",
-      "notified_reasons": []
-    },
-    "PS-1316": {
-      "key": "PS-1316",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Damian Fixel",
-      "updated": "2026-03-17T09:03:31.194-0500",
-      "last_status_change_at": "2026-03-17T09:03:25.481-0500",
       "notified_reasons": []
     },
     "PS-1372": {
@@ -725,6 +725,39 @@
   },
   "weekly_buffer": {
     "2026-03-25": {
+      "PS-1328": {
+        "status": "TEST IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Fabiana Torres",
+        "created": "2026-03-06T15:19:25.755-0500",
+        "finalized_today": false
+      },
+      "PS-1060": {
+        "status": "TEST IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Andrea Perez",
+        "created": "2025-12-03T17:51:27.888-0500",
+        "finalized_today": false
+      },
+      "PS-1316": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Agustina \u00c1lvarez",
+        "created": "2026-03-05T08:49:39.750-0500",
+        "finalized_today": true
+      },
       "PS-1202": {
         "status": "On Hold",
         "status_category": "indeterminate",
@@ -789,17 +822,6 @@
         "vertical": "sin_vertical",
         "reporter": "emilio",
         "created": "2026-03-24T16:07:38.718-0500",
-        "finalized_today": false
-      },
-      "PS-1060": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2025-12-03T17:51:27.888-0500",
         "finalized_today": false
       },
       "PS-1387": {
@@ -978,17 +1000,6 @@
         "created": "2026-03-20T14:58:37.004-0500",
         "finalized_today": false
       },
-      "PS-1328": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 5,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Fabiana Torres",
-        "created": "2026-03-06T15:19:25.755-0500",
-        "finalized_today": false
-      },
       "PS-1193": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1130,17 +1141,6 @@
         "vertical": "sin_vertical",
         "reporter": "Agustina \u00c1lvarez",
         "created": "2026-03-16T18:57:13.982-0500",
-        "finalized_today": false
-      },
-      "PS-1316": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-05T08:49:39.750-0500",
         "finalized_today": false
       },
       "PS-1372": {
