@@ -1,6 +1,42 @@
 {
-  "last_run_at": "2026-03-25T18:11:23.591584+00:00",
+  "last_run_at": "2026-03-25T20:05:02.185233+00:00",
   "tickets": {
+    "PS-1245": {
+      "key": "PS-1245",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-03-25T14:50:15.051-0500",
+      "last_status_change_at": "2026-03-25T14:50:15.051-0500",
+      "notified_reasons": []
+    },
+    "PS-1284": {
+      "key": "PS-1284",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-25T14:42:31.854-0500",
+      "last_status_change_at": "2026-03-25T14:42:31.854-0500",
+      "notified_reasons": []
+    },
+    "PS-1386": {
+      "key": "PS-1386",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-25T13:28:49.402-0500",
+      "last_status_change_at": "2026-03-25T13:28:49.402-0500",
+      "notified_reasons": []
+    },
+    "PS-1399": {
+      "key": "PS-1399",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-25T13:21:45.894-0500",
+      "last_status_change_at": "2026-03-25T13:21:45.894-0500",
+      "notified_reasons": []
+    },
     "PS-1328": {
       "key": "PS-1328",
       "vertical": "sin_vertical",
@@ -109,15 +145,6 @@
       "last_status_change_at": "2026-03-24T09:40:21.983-0500",
       "notified_reasons": []
     },
-    "PS-1386": {
-      "key": "PS-1386",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-03-24T08:58:38.018-0500",
-      "last_status_change_at": "2026-03-24T08:58:38.018-0500",
-      "notified_reasons": []
-    },
     "PS-1364": {
       "key": "PS-1364",
       "vertical": "sin_vertical",
@@ -170,15 +197,6 @@
       "assignee": "msimbeni",
       "updated": "2026-03-22T08:02:15.183-0500",
       "last_status_change_at": "2026-03-22T08:02:15.183-0500",
-      "notified_reasons": []
-    },
-    "PS-1245": {
-      "key": "PS-1245",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-22T08:01:58.776-0500",
-      "last_status_change_at": "2026-03-22T08:01:58.776-0500",
       "notified_reasons": []
     },
     "PS-1240": {
@@ -431,15 +449,6 @@
       "assignee": "msimbeni",
       "updated": "2026-03-12T21:12:10.910-0500",
       "last_status_change_at": "2026-03-12T21:12:10.910-0500",
-      "notified_reasons": []
-    },
-    "PS-1284": {
-      "key": "PS-1284",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-12T17:05:17.742-0500",
-      "last_status_change_at": "2026-03-12T14:18:26.381-0500",
       "notified_reasons": []
     },
     "PS-1289": {
@@ -725,6 +734,50 @@
   },
   "weekly_buffer": {
     "2026-03-25": {
+      "PS-1245": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-02-16T16:47:11.658-0500",
+        "finalized_today": false
+      },
+      "PS-1284": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Andrea Perez",
+        "created": "2026-02-27T12:45:43.474-0500",
+        "finalized_today": true
+      },
+      "PS-1386": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "emilio",
+        "created": "2026-03-23T13:34:55.754-0500",
+        "finalized_today": true
+      },
+      "PS-1399": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Thomas Barrett",
+        "created": "2026-03-25T13:21:37.585-0500",
+        "finalized_today": false
+      },
       "PS-1328": {
         "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
@@ -857,17 +910,6 @@
         "created": "2026-03-24T09:40:13.573-0500",
         "finalized_today": false
       },
-      "PS-1386": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "emilio",
-        "created": "2026-03-23T13:34:55.754-0500",
-        "finalized_today": false
-      },
       "PS-1364": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -932,17 +974,6 @@
         "vertical": "sin_vertical",
         "reporter": "Camilo Almario",
         "created": "2026-02-18T11:03:09.237-0500",
-        "finalized_today": false
-      },
-      "PS-1245": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 3,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-02-16T16:47:11.658-0500",
         "finalized_today": false
       },
       "PS-1240": {
@@ -1251,17 +1282,6 @@
         "vertical": "sin_vertical",
         "reporter": "Fabiana Torres",
         "created": "2026-03-02T10:36:20.937-0500",
-        "finalized_today": false
-      },
-      "PS-1284": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 13,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2026-02-27T12:45:43.474-0500",
         "finalized_today": false
       },
       "PS-1289": {
