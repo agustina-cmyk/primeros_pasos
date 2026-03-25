@@ -1,6 +1,15 @@
 {
-  "last_run_at": "2026-03-25T11:11:36.791525+00:00",
+  "last_run_at": "2026-03-25T14:49:16.934763+00:00",
   "tickets": {
+    "PS-1202": {
+      "key": "PS-1202",
+      "vertical": "sin_vertical",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-03-25T09:29:55.667-0500",
+      "last_status_change_at": "2026-03-25T09:29:49.205-0500",
+      "notified_reasons": []
+    },
     "PS-1398": {
       "key": "PS-1398",
       "vertical": "sin_vertical",
@@ -550,15 +559,6 @@
       "last_status_change_at": "2026-02-12T11:51:21.516-0500",
       "notified_reasons": []
     },
-    "PS-1202": {
-      "key": "PS-1202",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "alejandra",
-      "updated": "2026-02-13T09:12:09.598-0500",
-      "last_status_change_at": "2026-02-13T09:12:09.598-0500",
-      "notified_reasons": []
-    },
     "PS-1195": {
       "key": "PS-1195",
       "vertical": "sin_vertical",
@@ -725,6 +725,17 @@
   },
   "weekly_buffer": {
     "2026-03-25": {
+      "PS-1202": {
+        "status": "On Hold",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "Agustina \u00c1lvarez",
+        "created": "2026-02-02T21:14:25.883-0500",
+        "finalized_today": false
+      },
       "PS-1398": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1394,17 +1405,6 @@
         "vertical": "sin_vertical",
         "reporter": "Jorge Alegr\u00eda",
         "created": "2026-02-12T11:49:02.166-0500",
-        "finalized_today": false
-      },
-      "PS-1202": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 40,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-02T21:14:25.883-0500",
         "finalized_today": false
       },
       "PS-1195": {
