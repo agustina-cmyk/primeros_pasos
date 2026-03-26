@@ -1,13 +1,22 @@
 {
-  "last_run_at": "2026-03-26T21:06:02.627972+00:00",
+  "last_run_at": "2026-03-26T22:01:08.057269+00:00",
   "tickets": {
-    "PS-1400": {
-      "key": "PS-1400",
+    "PS-1343": {
+      "key": "PS-1343",
       "vertical": "sin_vertical",
       "status": "DEV IN PROGRESS",
       "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-26T15:34:48.590-0500",
-      "last_status_change_at": "2026-03-26T15:34:48.590-0500",
+      "updated": "2026-03-26T16:50:45.978-0500",
+      "last_status_change_at": "2026-03-26T16:50:45.978-0500",
+      "notified_reasons": []
+    },
+    "PS-1400": {
+      "key": "PS-1400",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-26T16:46:48.051-0500",
+      "last_status_change_at": "2026-03-26T16:46:48.051-0500",
       "notified_reasons": []
     },
     "PS-1328": {
@@ -296,15 +305,6 @@
       "assignee": null,
       "updated": "2026-03-22T08:01:26.715-0500",
       "last_status_change_at": "2026-03-22T08:01:26.715-0500",
-      "notified_reasons": []
-    },
-    "PS-1343": {
-      "key": "PS-1343",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-20T21:12:32.617-0500",
-      "last_status_change_at": "2026-03-20T21:12:32.617-0500",
       "notified_reasons": []
     },
     "PS-1384": {
@@ -1577,8 +1577,19 @@
       }
     },
     "2026-03-26": {
-      "PS-1400": {
+      "PS-1343": {
         "status": "DEV IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "vvanegas",
+        "created": "2026-03-10T12:11:07.804-0500",
+        "finalized_today": false
+      },
+      "PS-1400": {
+        "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
         "days_without_status_change": 0,
         "is_stale": false,
@@ -1938,17 +1949,6 @@
         "vertical": "sin_vertical",
         "reporter": "vvanegas",
         "created": "2026-02-13T14:19:21.052-0500",
-        "finalized_today": false
-      },
-      "PS-1343": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "vvanegas",
-        "created": "2026-03-10T12:11:07.804-0500",
         "finalized_today": false
       },
       "PS-1384": {
