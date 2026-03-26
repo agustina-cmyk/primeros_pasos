@@ -1,4 +1,3 @@
-from collections import Counter
 from datetime import date, datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
@@ -14,20 +13,11 @@ def build_vertical_message(
 ) -> Tuple[str, str]:
     # Todos los tickets del plan para el título
     all_tickets = [t for action in plan.actions for t in action.tickets]
-    active = [
-        t for t in all_tickets
-        if t.status_category.lower() != "done" or t.finalized_today
-    ]
-    status_counts = Counter(t.status for t in active)
-    if status_counts:
-        status_summary = " · ".join(
-            f"{s}: {c}"
-            for s, c in status_counts.most_common()
-        )
-    else:
-        status_summary = "Sin tickets activos"
+    new_in = sum(1 for t in all_tickets if t.created_today)
+    wip = sum(1 for t in all_tickets if t.status_category.lower() != "done" and not t.finalized_today)
+    new_out = sum(1 for t in all_tickets if t.finalized_today)
 
-    title = f"[Jira Agent] {project_label} | Vertical: {plan.vertical} | {status_summary}"
+    title = f"{project_label} Daily Update | New In: {new_in} | WIP: {wip} | New Out: {new_out}"
 
     last_run_label = _format_last_run(last_run_at)
     lines: List[str] = []
@@ -394,12 +384,16 @@ def _format_last_run(last_run_at: Optional[str]) -> str:
         last = datetime.fromisoformat(last_run_at)
         if last.tzinfo is None:
             last = last.replace(tzinfo=timezone.utc)
-        today = datetime.now(timezone.utc).date()
-        delta = (today - last.date()).days
-        if delta == 0:
-            return f"hoy ({last.strftime('%H:%M')})"
-        if delta == 1:
+        now = datetime.now(timezone.utc)
+        delta_days = (now.date() - last.date()).days
+        if delta_days >= 2:
+            return f"el {last.strftime('%d/%m')}"
+        if delta_days == 1:
             return "ayer"
-        return last.strftime("el %d/%m a las %H:%M")
+        minutes = int((now - last).total_seconds() / 60)
+        if minutes < 60:
+            return f"hace {minutes} min"
+        hours = minutes // 60
+        return f"hace {hours}h"
     except ValueError:
         return "el último mensaje"

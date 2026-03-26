@@ -54,21 +54,25 @@ def test_title_shows_status_distribution():
     ticket = _make_facts(status="In Progress", status_category="indeterminate")
     plan = _make_plan(actions=[_make_action("notify_unchanged_recent", [ticket])])
     title, _ = build_vertical_message("PS", plan, board_url="", max_items=20)
-    assert "In Progress: 1" in title
-    assert "Vertical: verification" in title
+    assert "WIP: 1" in title
+    assert "New In: 0" in title
+    assert "New Out: 0" in title
+    assert "PS Daily Update" in title
 
 
 def test_title_no_done_tickets():
     done = _make_facts(status="Done", status_category="done", finalized_today=False)
     plan = _make_plan(actions=[_make_action("notify_unchanged_recent", [done])])
     title, _ = build_vertical_message("PS", plan, board_url="", max_items=20)
-    assert "Done" not in title
+    assert "WIP: 0" in title
 
 
 def test_title_no_active_tickets_shows_fallback():
     plan = _make_plan(actions=[])
     title, _ = build_vertical_message("PS", plan, board_url="", max_items=20)
-    assert "Sin tickets activos" in title
+    assert "WIP: 0" in title
+    assert "New In: 0" in title
+    assert "New Out: 0" in title
 
 
 # --- Sección cambios ---
