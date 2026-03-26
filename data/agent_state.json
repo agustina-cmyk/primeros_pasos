@@ -1,6 +1,51 @@
 {
-  "last_run_at": "2026-03-26T15:58:48.854129+00:00",
+  "last_run_at": "2026-03-26T19:40:54.379114+00:00",
   "tickets": {
+    "PS-1193": {
+      "key": "PS-1193",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "aldana",
+      "updated": "2026-03-26T14:34:11.773-0500",
+      "last_status_change_at": "2026-03-26T14:34:11.773-0500",
+      "notified_reasons": []
+    },
+    "PS-1393": {
+      "key": "PS-1393",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-26T13:26:56.397-0500",
+      "last_status_change_at": "2026-03-26T13:26:56.397-0500",
+      "notified_reasons": []
+    },
+    "PS-1381": {
+      "key": "PS-1381",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-26T13:26:35.321-0500",
+      "last_status_change_at": "2026-03-26T13:26:35.321-0500",
+      "notified_reasons": []
+    },
+    "PS-1402": {
+      "key": "PS-1402",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-26T13:13:59.621-0500",
+      "last_status_change_at": "2026-03-26T13:13:59.621-0500",
+      "notified_reasons": []
+    },
+    "PS-1405": {
+      "key": "PS-1405",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-26T13:13:15.114-0500",
+      "last_status_change_at": "2026-03-26T13:13:15.114-0500",
+      "notified_reasons": []
+    },
     "PS-1401": {
       "key": "PS-1401",
       "vertical": "sin_vertical",
@@ -37,15 +82,6 @@
       "last_status_change_at": "2026-03-26T10:00:33.747-0500",
       "notified_reasons": []
     },
-    "PS-1402": {
-      "key": "PS-1402",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-26T09:56:05.179-0500",
-      "last_status_change_at": "2026-03-26T09:56:05.179-0500",
-      "notified_reasons": []
-    },
     "PS-1400": {
       "key": "PS-1400",
       "vertical": "sin_vertical",
@@ -64,15 +100,6 @@
       "last_status_change_at": "2026-03-26T09:36:01.060-0500",
       "notified_reasons": []
     },
-    "PS-1393": {
-      "key": "PS-1393",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-26T09:04:28.270-0500",
-      "last_status_change_at": "2026-03-26T09:04:28.270-0500",
-      "notified_reasons": []
-    },
     "PS-1379": {
       "key": "PS-1379",
       "vertical": "sin_vertical",
@@ -80,15 +107,6 @@
       "assignee": null,
       "updated": "2026-03-26T08:58:53.882-0500",
       "last_status_change_at": "2026-03-26T08:58:53.882-0500",
-      "notified_reasons": []
-    },
-    "PS-1193": {
-      "key": "PS-1193",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "aldana",
-      "updated": "2026-03-26T08:44:27.691-0500",
-      "last_status_change_at": "2026-03-26T08:44:27.691-0500",
       "notified_reasons": []
     },
     "PS-1292": {
@@ -305,15 +323,6 @@
       "assignee": null,
       "updated": "2026-03-20T14:58:43.786-0500",
       "last_status_change_at": "2026-03-20T14:58:43.786-0500",
-      "notified_reasons": []
-    },
-    "PS-1381": {
-      "key": "PS-1381",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-20T11:01:23.795-0500",
-      "last_status_change_at": "2026-03-20T11:01:23.795-0500",
       "notified_reasons": []
     },
     "PS-1314": {
@@ -1568,6 +1577,61 @@
       }
     },
     "2026-03-26": {
+      "PS-1193": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-01-30T15:08:11.080-0500",
+        "finalized_today": false
+      },
+      "PS-1393": {
+        "status": "DEV IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-03-24T16:07:23.341-0500",
+        "finalized_today": false
+      },
+      "PS-1381": {
+        "status": "DEV IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-03-20T11:00:06.687-0500",
+        "finalized_today": false
+      },
+      "PS-1402": {
+        "status": "TEST IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Fabiana Torres",
+        "created": "2026-03-26T09:49:37.148-0500",
+        "finalized_today": false
+      },
+      "PS-1405": {
+        "status": "DEV IN PROGRESS",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "Daniel Borda",
+        "created": "2026-03-26T11:30:46.141-0500",
+        "finalized_today": false
+      },
       "PS-1401": {
         "status": "Finalizada",
         "status_category": "done",
@@ -1612,17 +1676,6 @@
         "created": "2026-03-26T10:00:26.822-0500",
         "finalized_today": false
       },
-      "PS-1402": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Fabiana Torres",
-        "created": "2026-03-26T09:49:37.148-0500",
-        "finalized_today": false
-      },
       "PS-1400": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1645,17 +1698,6 @@
         "created": "2026-03-20T10:38:33.514-0500",
         "finalized_today": true
       },
-      "PS-1393": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-24T16:07:23.341-0500",
-        "finalized_today": false
-      },
       "PS-1379": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1665,17 +1707,6 @@
         "vertical": "sin_vertical",
         "reporter": "Gustavo Corrales",
         "created": "2026-03-20T09:58:54.745-0500",
-        "finalized_today": false
-      },
-      "PS-1193": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-01-30T15:08:11.080-0500",
         "finalized_today": false
       },
       "PS-1292": {
@@ -1940,17 +1971,6 @@
         "vertical": "sin_vertical",
         "reporter": "Santiago Mart\u00e1",
         "created": "2026-03-20T14:58:37.004-0500",
-        "finalized_today": false
-      },
-      "PS-1381": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-20T11:00:06.687-0500",
         "finalized_today": false
       },
       "PS-1314": {
