@@ -165,6 +165,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
                 _notify_cpo_roadmap(settings, roam, created_ideas)
         if sent > 0:
             next_memory.last_message_sent_at = datetime.now(timezone.utc).isoformat()
+            next_memory.last_sent_tickets = dict(next_memory.tickets)
         if is_weekly_run and not roadmap_only:
             next_memory.weekly_buffer = {}
             next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()

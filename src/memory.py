@@ -18,12 +18,19 @@ class AgentMemory:
         with self.path.open("r", encoding="utf-8") as fh:
             data = json.load(fh)
 
-        tickets_raw = data.get("tickets", {})
         allowed_fields = {field.name for field in fields(TicketStateSnapshot)}
+
+        tickets_raw = data.get("tickets", {})
         tickets: Dict[str, TicketStateSnapshot] = {}
         for key, value in tickets_raw.items():
             payload = {k: v for k, v in value.items() if k in allowed_fields}
             tickets[key] = TicketStateSnapshot(**payload)
+
+        last_sent_raw = data.get("last_sent_tickets", {})
+        last_sent_tickets: Dict[str, TicketStateSnapshot] = {}
+        for key, value in last_sent_raw.items():
+            payload = {k: v for k, v in value.items() if k in allowed_fields}
+            last_sent_tickets[key] = TicketStateSnapshot(**payload)
 
         roadmap_raw = data.get("roadmap", {})
         roadmap = RoadmapMemoryState(
@@ -47,6 +54,7 @@ class AgentMemory:
             tickets=tickets,
             last_run_at=data.get("last_run_at"),
             last_message_sent_at=data.get("last_message_sent_at"),
+            last_sent_tickets=last_sent_tickets,
             roadmap=roadmap,
             weekly_buffer=weekly_buffer,
             weekly_last_run_at=data.get("weekly_last_run_at"),

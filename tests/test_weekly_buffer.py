@@ -15,7 +15,7 @@ def _make_facts(**kwargs):
         url="https://jira/PS-001", labels=[],
         created_today=False, finalized_today=False,
         created_since_last_message=False, finalized_since_last_message=False,
-        is_stale=False, days_without_status_change=3, changed_since_last_run=False,
+        is_stale=False, days_without_status_change=3,
         status_changed=False, assignee_changed=False,
     )
     defaults.update(kwargs)

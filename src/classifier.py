@@ -37,14 +37,17 @@ def classify_tickets(
     label_to_vertical: Dict[str, str],
     unchanged_stale_days: int,
     last_message_sent_at: Optional[str] = None,
+    last_sent_tickets: Optional[Dict[str, "TicketStateSnapshot"]] = None,
 ) -> Dict[str, List[TicketFacts]]:
     grouped: Dict[str, List[TicketFacts]] = defaultdict(list)
     now_local = datetime.now(tz=_ARGENTINA_TZ)
     last_message_dt = _safe_parse_iso(last_message_sent_at)
 
+    sent_snapshot = last_sent_tickets if last_sent_tickets is not None else memory_state.tickets
+
     for ticket in tickets:
         vertical = resolve_vertical(ticket.labels, label_prefix, label_to_vertical)
-        previous = memory_state.tickets.get(ticket.key)
+        previous_sent = sent_snapshot.get(ticket.key)
         created_dt = _safe_parse_jira_datetime(ticket.created)
         last_status_change_dt = _safe_parse_jira_datetime(ticket.last_status_change_at)
 
@@ -87,9 +90,8 @@ def classify_tickets(
             finalized_since_last_message=finalized_since_last_message,
             is_stale=days >= unchanged_stale_days,
             days_without_status_change=days,
-            changed_since_last_run=_changed_since_last_run(ticket, previous),
-            status_changed=bool(previous and previous.status != ticket.status),
-            assignee_changed=bool(previous and previous.assignee != ticket.assignee),
+            status_changed=bool(previous_sent and previous_sent.status != ticket.status),
+            assignee_changed=bool(previous_sent and previous_sent.assignee != ticket.assignee),
         )
         grouped[vertical].append(facts)
 
@@ -124,16 +126,6 @@ def _compute_days_without_status_change(
         return 999
     return (now.date() - anchor.astimezone(now.tzinfo).date()).days
 
-
-def _changed_since_last_run(ticket: JiraTicket, previous: TicketStateSnapshot | None) -> bool:
-    if previous is None:
-        return True
-    return (
-        previous.updated != ticket.updated
-        or previous.status != ticket.status
-        or previous.assignee != ticket.assignee
-        or previous.last_status_change_at != ticket.last_status_change_at
-    )
 
 
 def _is_same_local_day(value: datetime | None, reference: datetime) -> bool:

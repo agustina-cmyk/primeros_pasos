@@ -29,6 +29,7 @@ def run_agent(
         label_to_vertical=settings.label_to_vertical,
         unchanged_stale_days=settings.unchanged_stale_days,
         last_message_sent_at=memory_state.last_message_sent_at,
+        last_sent_tickets=memory_state.last_sent_tickets,
     )
 
     project_label = _project_label(settings.jira_board_id, board_context)
