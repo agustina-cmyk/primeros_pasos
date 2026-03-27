@@ -18,15 +18,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
 
-    _now_ar = datetime.now(_ARGENTINA_TZ)
-    _already_ran_weekly = False
-    if memory_state.weekly_last_run_at:
-        try:
-            _last = datetime.fromisoformat(memory_state.weekly_last_run_at).astimezone(_ARGENTINA_TZ)
-            _already_ran_weekly = _last.isocalendar()[:2] == _now_ar.isocalendar()[:2]
-        except ValueError:
-            pass
-    is_weekly_run = weekly or (_now_ar.weekday() == 4 and not _already_ran_weekly)
+    is_weekly_run = weekly or datetime.now(_ARGENTINA_TZ).weekday() == 4
 
     jira = JiraClient(
         base_url=settings.jira_base_url,
@@ -90,7 +82,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
                 created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
                 if created_ideas:
                     _notify_cpo_roadmap(settings, roam, created_ideas)
-            if is_weekly_run:
+            if is_weekly_run and not roadmap_only:
                 next_memory.weekly_buffer = {}
                 next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()
             memory.save(next_memory)
@@ -173,7 +165,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
                 _notify_cpo_roadmap(settings, roam, created_ideas)
         if sent > 0:
             next_memory.last_message_sent_at = datetime.now(timezone.utc).isoformat()
-        if is_weekly_run:
+        if is_weekly_run and not roadmap_only:
             next_memory.weekly_buffer = {}
             next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()
         memory.save(next_memory)
