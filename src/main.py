@@ -14,11 +14,19 @@ _ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 
 def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
         notify_only: bool = False, force_roadmap: bool = False, weekly: bool = False) -> int:
-    is_weekly_run = weekly or datetime.now(_ARGENTINA_TZ).weekday() == 4
-
     settings = load_settings()
     memory = AgentMemory(settings.agent_state_path)
     memory_state = memory.load()
+
+    _now_ar = datetime.now(_ARGENTINA_TZ)
+    _already_ran_weekly = False
+    if memory_state.weekly_last_run_at:
+        try:
+            _last = datetime.fromisoformat(memory_state.weekly_last_run_at).astimezone(_ARGENTINA_TZ)
+            _already_ran_weekly = _last.isocalendar()[:2] == _now_ar.isocalendar()[:2]
+        except ValueError:
+            pass
+    is_weekly_run = weekly or (_now_ar.weekday() == 4 and not _already_ran_weekly)
 
     jira = JiraClient(
         base_url=settings.jira_base_url,
@@ -74,6 +82,10 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
     if not outbound_messages and not cpo_only and not roadmap_only:
         print("Sin cambios relevantes para comunicar en esta corrida.")
         if not dry_run:
+            cpo_channel_id = settings.roam_cpo_channel_id
+            if cpo_channel_id and cpo_body:
+                roam.post_message(chat_id=cpo_channel_id, text=cpo_body)
+                print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
             if not notify_only and roadmap_plan and roadmap_plan.actions:
                 created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
                 if created_ideas:
@@ -147,8 +159,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
                         print(f"  Título: {action.new_idea.title}")
                         print(f"  Categoría: {action.new_idea.category}")
                         print(f"  Descripción:\n{action.new_idea.description}")
-        if not is_weekly_run:
-            _save_html_report(
+        _save_html_report(
                 project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
                 plans=plans,
                 outbound_messages=outbound_messages,
