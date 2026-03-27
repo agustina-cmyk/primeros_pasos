@@ -30,6 +30,8 @@ def _make_facts(**kwargs) -> TicketFacts:
         labels=["eze-team"],
         created_today=False,
         finalized_today=False,
+        created_since_last_message=False,
+        finalized_since_last_message=False,
         is_stale=False,
         days_without_status_change=3,
         changed_since_last_run=False,
@@ -52,7 +54,7 @@ def test_status_changed_goes_to_notify_changes():
 
 
 def test_created_today_goes_to_notify_changes():
-    ticket = _make_facts(created_today=True, days_without_status_change=0)
+    ticket = _make_facts(created_since_last_message=True, days_without_status_change=0)
     plan = build_vertical_plan("verification", [ticket])
     types = [a.action_type for a in plan.actions]
     assert "notify_changes" in types
@@ -60,7 +62,7 @@ def test_created_today_goes_to_notify_changes():
 
 def test_finalized_today_goes_to_notify_changes():
     ticket = _make_facts(
-        finalized_today=True,
+        finalized_since_last_message=True,
         status_category="done",
         days_without_status_change=0,
     )
@@ -105,7 +107,7 @@ def test_notify_changes_ticket_not_in_unchanged_buckets():
 # --- done tickets ---
 
 def test_done_ticket_without_finalized_today_is_excluded():
-    ticket = _make_facts(status_category="done", finalized_today=False)
+    ticket = _make_facts(status_category="done", finalized_since_last_message=False)
     plan = build_vertical_plan("verification", [ticket])
     all_tickets = [t for a in plan.actions for t in a.tickets]
     assert ticket not in all_tickets
@@ -114,7 +116,7 @@ def test_done_ticket_without_finalized_today_is_excluded():
 def test_finalized_today_done_ticket_is_included():
     ticket = _make_facts(
         status_category="done",
-        finalized_today=True,
+        finalized_since_last_message=True,
         days_without_status_change=0,
     )
     plan = build_vertical_plan("verification", [ticket])
@@ -150,7 +152,7 @@ def test_recent_sorted_by_days_asc():
 # --- old action types no longer emitted ---
 
 def test_old_action_types_not_emitted():
-    ticket = _make_facts(created_today=True, days_without_status_change=0)
+    ticket = _make_facts(created_since_last_message=True, days_without_status_change=0)
     plan = build_vertical_plan("verification", [ticket])
     old_types = {"notify_created_today", "notify_finished_today", "notify_status_changed", "notify_stale_tickets"}
     emitted = {a.action_type for a in plan.actions}

@@ -28,6 +28,7 @@ def run_agent(
         label_prefix=settings.vertical_label_prefix,
         label_to_vertical=settings.label_to_vertical,
         unchanged_stale_days=settings.unchanged_stale_days,
+        last_message_sent_at=memory_state.last_message_sent_at,
     )
 
     project_label = _project_label(settings.jira_board_id, board_context)
@@ -45,7 +46,7 @@ def run_agent(
             plan=plan,
             board_url=settings.jira_board_url,
             max_items=settings.max_items_per_vertical,
-            last_run_at=memory_state.last_run_at,
+            last_run_at=memory_state.last_message_sent_at,
         )
         outbound_messages.append((vertical, title, body))
 
@@ -85,6 +86,7 @@ def run_agent(
             roadmap_plan = _run_roadmap_analysis(
                 settings=settings,
                 tickets=tickets,
+                finalized_tickets=finalized_tickets,
                 recurring_patterns=recurring_patterns or [],
                 memory_state=memory_state,
             )
@@ -106,9 +108,10 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
         label_prefix=settings.vertical_label_prefix,
         label_to_vertical=settings.label_to_vertical,
         unchanged_stale_days=settings.unchanged_stale_days,
+        last_message_sent_at=memory_state.last_message_sent_at,
     )
     all_facts = [f for facts in grouped.values() for f in facts]
-    has_changes = any(f.created_today or f.status_changed for f in all_facts)
+    has_changes = any(f.created_since_last_message or f.status_changed for f in all_facts)
 
     # Verificar si hay ideas votadas sin comentar aún
     voted_without_comment = [
@@ -148,7 +151,7 @@ def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_st
     return has_changes or has_pending_comments
 
 
-def _run_roadmap_analysis(settings, tickets, recurring_patterns, memory_state):
+def _run_roadmap_analysis(settings, tickets, finalized_tickets, recurring_patterns, memory_state):
     import roadmap_client
     from roadmap_analyzer import analyze_roadmap
 
@@ -161,6 +164,7 @@ def _run_roadmap_analysis(settings, tickets, recurring_patterns, memory_state):
     ideas = roadmap_client.get_ideas(settings.roadmap_app_url, token)
     return analyze_roadmap(
         active_tickets=tickets,
+        finalized_tickets=finalized_tickets,
         recurring_patterns=recurring_patterns,
         ideas=ideas,
         roadmap_memory=memory_state.roadmap,

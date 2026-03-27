@@ -30,6 +30,8 @@ def _make_facts(**kwargs) -> TicketFacts:
         labels=[],
         created_today=False,
         finalized_today=False,
+        created_since_last_message=False,
+        finalized_since_last_message=False,
         is_stale=False,
         days_without_status_change=3,
         changed_since_last_run=False,
@@ -86,14 +88,14 @@ def test_changes_section_header_present():
 
 
 def test_changes_section_shows_new_tag_for_created_today():
-    ticket = _make_facts(created_today=True)
+    ticket = _make_facts(created_since_last_message=True)
     plan = _make_plan(actions=[_make_action("notify_changes", [ticket])])
     _, body = build_vertical_message("PS", plan, board_url="", max_items=20)
     assert "🆕" in body
 
 
 def test_changes_section_shows_finalized_tag_and_reporter_mention():
-    ticket = _make_facts(finalized_today=True, status_category="done", reporter="agus")
+    ticket = _make_facts(finalized_since_last_message=True, status_category="done", reporter="agus")
     plan = _make_plan(actions=[_make_action("notify_changes", [ticket])])
     _, body = build_vertical_message("PS", plan, board_url="", max_items=20)
     assert "✅" in body

@@ -23,6 +23,8 @@ class TicketFacts:
     labels: List[str]
     created_today: bool
     finalized_today: bool
+    created_since_last_message: bool
+    finalized_since_last_message: bool
     is_stale: bool
     days_without_status_change: int
     changed_since_last_run: bool
@@ -128,6 +130,7 @@ class RoadmapMemoryState:
 class AgentMemoryState:
     tickets: Dict[str, TicketStateSnapshot]
     last_run_at: Optional[str] = None
+    last_message_sent_at: Optional[str] = None
     roadmap: "RoadmapMemoryState" = field(default_factory=lambda: RoadmapMemoryState())
     weekly_buffer: Dict[str, Dict[str, "WeeklyTicketSnapshot"]] = field(default_factory=dict)
     weekly_last_run_at: Optional[str] = None
@@ -135,6 +138,7 @@ class AgentMemoryState:
     def to_dict(self) -> Dict[str, object]:
         return {
             "last_run_at": self.last_run_at,
+            "last_message_sent_at": self.last_message_sent_at,
             "tickets": {key: asdict(snapshot) for key, snapshot in self.tickets.items()},
             "roadmap": {
                 "last_run_at": self.roadmap.last_run_at,

@@ -33,7 +33,7 @@ def build_vertical_message(
     if changes_tickets:
         for t in changes_tickets:
             lines.append(_ticket_line_changes(t))
-        finalized = [t for t in changes_tickets if t.finalized_today]
+        finalized = [t for t in changes_tickets if t.finalized_since_last_message]
         reporters = _unique_reporters(finalized)
         if reporters:
             mentions = ", ".join(f"@{r}" for r in reporters)
@@ -97,9 +97,9 @@ def _ticket_line_unchanged(t: TicketFacts) -> str:
 
 def _tags(t: TicketFacts) -> str:
     parts = []
-    if t.created_today:
+    if t.created_since_last_message:
         parts.append("🆕")
-    if t.finalized_today:
+    if t.finalized_since_last_message:
         parts.append("✅")
     if (t.criticality or "").lower() == "highest":
         parts.append("🚨")

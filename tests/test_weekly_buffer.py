@@ -13,8 +13,9 @@ def _make_facts(**kwargs):
         last_status_change_at="2026-03-15T10:00:00.000+0000",
         description="", section="", criticality="", environment="", ticket_type="Bug",
         url="https://jira/PS-001", labels=[],
-        created_today=False, finalized_today=False, is_stale=False,
-        days_without_status_change=3, changed_since_last_run=False,
+        created_today=False, finalized_today=False,
+        created_since_last_message=False, finalized_since_last_message=False,
+        is_stale=False, days_without_status_change=3, changed_since_last_run=False,
         status_changed=False, assignee_changed=False,
     )
     defaults.update(kwargs)
@@ -174,7 +175,7 @@ def test_run_agent_builds_weekly_buffer_in_next_memory():
         assignee=None, reporter="ana", created="2026-03-18T10:00:00.000+0000",
         updated="2026-03-18T10:00:00.000+0000", last_status_change_at="2026-03-18T10:00:00.000+0000",
         description="", section="", criticality="", environment="", ticket_type="Bug",
-        url="https://jira/PS-1", labels=["vertical:verification"],
+        url="https://jira/PS-1", labels=["vertical:verification"], resolution=None,
     )
     memory = AgentMemoryState.empty()
 
@@ -216,7 +217,7 @@ def test_run_agent_returns_cpo_body_on_weekly_run():
         assignee=None, reporter="ana", created="2026-03-18T10:00:00.000+0000",
         updated="2026-03-18T10:00:00.000+0000", last_status_change_at="2026-03-18T10:00:00.000+0000",
         description="", section="", criticality="", environment="", ticket_type="Bug",
-        url="https://jira/PS-1", labels=["vertical:verification"],
+        url="https://jira/PS-1", labels=["vertical:verification"], resolution=None,
     )
     # Pre-populate with a prior day so the weekly buffer has data when CPO runs
     memory = AgentMemoryState.empty()
@@ -282,7 +283,7 @@ def test_run_agent_skip_roadmap_overrides_force_roadmap():
         assignee=None, reporter="ana", created="2026-03-18T10:00:00.000+0000",
         updated="2026-03-18T10:00:00.000+0000", last_status_change_at="2026-03-18T10:00:00.000+0000",
         description="", section="", criticality="", environment="", ticket_type="Bug",
-        url="https://jira/PS-1", labels=["vertical:verification"],
+        url="https://jira/PS-1", labels=["vertical:verification"], resolution=None,
     )
     memory = AgentMemoryState.empty()
 

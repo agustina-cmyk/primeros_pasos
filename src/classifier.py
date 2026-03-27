@@ -1,6 +1,6 @@
 from collections import defaultdict
-from datetime import datetime
-from typing import Dict, Iterable, List
+from datetime import datetime, timezone
+from typing import Dict, Iterable, List, Optional
 from zoneinfo import ZoneInfo
 
 from jira_client import JiraTicket
@@ -36,9 +36,11 @@ def classify_tickets(
     label_prefix: str,
     label_to_vertical: Dict[str, str],
     unchanged_stale_days: int,
+    last_message_sent_at: Optional[str] = None,
 ) -> Dict[str, List[TicketFacts]]:
     grouped: Dict[str, List[TicketFacts]] = defaultdict(list)
     now_local = datetime.now(tz=_ARGENTINA_TZ)
+    last_message_dt = _safe_parse_iso(last_message_sent_at)
 
     for ticket in tickets:
         vertical = resolve_vertical(ticket.labels, label_prefix, label_to_vertical)
@@ -50,6 +52,15 @@ def classify_tickets(
             last_status_change_at=ticket.last_status_change_at,
             created=ticket.created,
             now=now_local,
+        )
+
+        created_today = _is_same_local_day(created_dt, now_local)
+        finalized_today = ticket.status_category.lower() == "done" and _is_same_local_day(last_status_change_dt, now_local)
+        created_since_last_message = (
+            _is_after(created_dt, last_message_dt) if last_message_dt else created_today
+        )
+        finalized_since_last_message = ticket.status_category.lower() == "done" and (
+            _is_after(last_status_change_dt, last_message_dt) if last_message_dt else finalized_today
         )
 
         facts = TicketFacts(
@@ -70,8 +81,10 @@ def classify_tickets(
             ticket_type=ticket.ticket_type,
             url=ticket.url,
             labels=ticket.labels,
-            created_today=_is_same_local_day(created_dt, now_local),
-            finalized_today=ticket.status_category.lower() == "done" and _is_same_local_day(last_status_change_dt, now_local),
+            created_today=created_today,
+            finalized_today=finalized_today,
+            created_since_last_message=created_since_last_message,
+            finalized_since_last_message=finalized_since_last_message,
             is_stale=days >= unchanged_stale_days,
             days_without_status_change=days,
             changed_since_last_run=_changed_since_last_run(ticket, previous),
@@ -127,6 +140,22 @@ def _is_same_local_day(value: datetime | None, reference: datetime) -> bool:
     if value is None:
         return False
     return value.astimezone(reference.tzinfo).date() == reference.date()
+
+
+def _safe_parse_iso(raw_value: Optional[str]) -> datetime | None:
+    if not raw_value:
+        return None
+    try:
+        dt = datetime.fromisoformat(raw_value)
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def _is_after(dt: datetime | None, reference: datetime | None) -> bool:
+    if dt is None or reference is None:
+        return False
+    return dt > reference
 
 
 def _safe_parse_jira_datetime(raw_value: str) -> datetime | None:

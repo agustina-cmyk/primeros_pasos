@@ -29,6 +29,7 @@ def _make_ticket(**kwargs) -> JiraTicket:
         environment="",
         ticket_type="Bug",
         url="https://jira.example.com/PS-001",
+        resolution=None,
     )
     defaults.update(kwargs)
     return JiraTicket(**defaults)

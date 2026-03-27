@@ -129,6 +129,24 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
             print(f"[OK] Análisis CPO enviado a canal {cpo_channel_id}.")
 
     if dry_run and not cpo_only:
+        if roadmap_plan:
+            print("=" * 80)
+            print("[ROADMAP DRY-RUN]")
+            if roadmap_plan.skip_reason:
+                print(f"Sin acciones: {roadmap_plan.skip_reason}")
+            else:
+                for i, action in enumerate(roadmap_plan.actions, 1):
+                    print(f"\n--- Acción {i}: {action.action.upper()} ---")
+                    if action.idea_id:
+                        print(f"  Idea ID: {action.idea_id}")
+                    if action.vote_type:
+                        print(f"  Voto: {action.vote_type}")
+                    if action.comment_body:
+                        print(f"  Comentario:\n{action.comment_body}")
+                    if action.new_idea:
+                        print(f"  Título: {action.new_idea.title}")
+                        print(f"  Categoría: {action.new_idea.category}")
+                        print(f"  Descripción:\n{action.new_idea.description}")
         if not is_weekly_run:
             _save_html_report(
                 project_label=board_context.project_name or board_context.project_key if board_context else f"Board {settings.jira_board_id}",
@@ -142,6 +160,8 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
             created_ideas = _execute_roadmap_plan(settings, roadmap_plan, next_memory)
             if created_ideas:
                 _notify_cpo_roadmap(settings, roam, created_ideas)
+        if sent > 0:
+            next_memory.last_message_sent_at = datetime.now(timezone.utc).isoformat()
         if is_weekly_run:
             next_memory.weekly_buffer = {}
             next_memory.weekly_last_run_at = datetime.now(timezone.utc).isoformat()
@@ -185,8 +205,8 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
 
     for action in roadmap_plan.actions:
         try:
-            if action.action in ("vote", "comment") and action.idea_id in next_memory.roadmap.created_idea_ids:
-                print(f"[ROADMAP] Skip {action.action} en idea propia {action.idea_id}")
+            if action.action == "vote" and action.idea_id in next_memory.roadmap.created_idea_ids:
+                print(f"[ROADMAP] Skip voto en idea propia {action.idea_id}")
                 continue
 
             if action.action == "vote" and action.idea_id:

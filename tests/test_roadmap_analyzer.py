@@ -28,6 +28,7 @@ def test_analyze_returns_vote_action():
         from roadmap_analyzer import analyze_roadmap
         plan = analyze_roadmap(
             active_tickets=[],
+            finalized_tickets=[],
             recurring_patterns=[],
             ideas=[_make_idea()],
             roadmap_memory=RoadmapMemoryState(),
@@ -46,6 +47,7 @@ def test_analyze_returns_create_idea_action():
         from roadmap_analyzer import analyze_roadmap
         plan = analyze_roadmap(
             active_tickets=[],
+            finalized_tickets=[],
             recurring_patterns=[],
             ideas=[_make_idea()],
             roadmap_memory=RoadmapMemoryState(),
@@ -65,6 +67,7 @@ def test_analyze_caps_at_five_actions():
         from roadmap_analyzer import analyze_roadmap
         plan = analyze_roadmap(
             active_tickets=[],
+            finalized_tickets=[],
             recurring_patterns=[],
             ideas=[_make_idea(id=f"idea-{i}") for i in range(8)],
             roadmap_memory=RoadmapMemoryState(),
@@ -78,6 +81,7 @@ def test_analyze_returns_skip_on_empty_response():
         from roadmap_analyzer import analyze_roadmap
         plan = analyze_roadmap(
             active_tickets=[],
+            finalized_tickets=[],
             recurring_patterns=[],
             ideas=[_make_idea()],
             roadmap_memory=RoadmapMemoryState(),
@@ -96,6 +100,7 @@ def test_analyze_raises_on_invalid_json():
         with pytest.raises(ValueError, match="JSON"):
             analyze_roadmap(
                 active_tickets=[],
+                finalized_tickets=[],
                 recurring_patterns=[],
                 ideas=[_make_idea()],
                 roadmap_memory=RoadmapMemoryState(),

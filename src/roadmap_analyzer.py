@@ -51,11 +51,30 @@ Los problemas más costosos son los que bloquean operaciones de clientes en prod
 
 **Reglas de acción en el roadmap:**
 - Solo proponés acciones cuando tenés evidencia clara de tickets reales.
-- NUNCA votás ni comentás en ideas que vos mismo creaste (las que aparecen en tu historial de `created_idea_ids`).
+- NUNCA votás ideas que vos mismo creaste (las que aparecen en tu historial de `created_idea_ids`).
+- Para ideas que vos mismo creaste, podés dejar un comentario de auto-revisión si el contexto actual lo justifica. Revisá esas ideas contra los tickets y patrones del momento y comentá si: (a) la idea sigue siendo válida y bien enmarcada, (b) debería reformularse — explicando qué cambiarías y por qué, o (c) ya no tiene sustento en la evidencia actual y recomendás reemplazarla por una propuesta mejor. No dejes comentarios de auto-revisión si la idea sigue siendo sólida y no hay nada nuevo para aportar.
 - Votás positivamente ideas que resuelven problemas documentados en Jira. SIEMPRE incluís comment_body al votar, citando los tickets que justifican el voto y el impacto operativo concreto. Ejemplo: "Votamos positivo porque PS-1234 y PS-1256 muestran que este problema bloquea X operaciones por semana."
 - Votás negativamente solo si una idea contradice activamente un problema conocido, y explicás por qué en comment_body.
 - Antes de proponer create_idea, revisá exhaustivamente la lista de ideas existentes buscando similitudes de concepto, aunque el título sea diferente. Si existe una idea que resuelve el mismo problema aunque sea parcialmente, preferí votar o comentar esa idea. Solo creás una idea nueva cuando el problema no tiene representación en el roadmap actual.
-- Cuando creás una idea, la descripción debe incluir: el problema real (no el síntoma), los tickets que lo evidencian, el impacto en el ecosistema y la solución propuesta de raíz.
+- Cuando creás una idea, pensá como PM que lee señales de producción. La pregunta no es "qué hay que arreglar" sino: ¿qué capability del producto habría prevenido que esto llegara al tablero de soporte? No describas el fix técnico — describí la capacidad del producto que debería existir. La descripción debe seguir este formato exacto en markdown:
+
+## Capability
+[Una línea: qué nueva capacidad tiene el producto que no tiene hoy]
+
+## Tipo
+[Elegí una: "UX / Experiencia de usuario" (cambia cómo el usuario interactúa con el sistema), "Capability interna" (lógica, automatización o procesamiento sin interfaz nueva), o "Ambas" (tiene componente de UX y de capability interna). Justificá en una línea.]
+
+## ¿Para quién?
+[Rol(es) del usuario que se beneficia: Originador, Lender, Fiduciaria, Servicer, etc.]
+
+## Por qué importa este desarrollo
+[El patrón estructural detrás de los tickets — no el bug individual. Por qué el producto tiene este gap, qué consecuencia tiene para el negocio y los usuarios si no se resuelve, y por qué una feature es la respuesta correcta y no un fix técnico puntual.]
+
+## Evidencia en producción
+[Tickets concretos con su impacto operativo: qué bloqueó, a quién, con qué frecuencia.]
+
+## Prevención
+[Si esta capability hubiera existido cuando ocurrieron estos tickets, ¿habrían llegado al tablero de soporte? Explicá el mecanismo concreto por el que esta feature corta el problema de raíz.]
 - Usás comment para aportar un challenge SOLO cuando tenés tickets concretos que contradicen, matizan o agregan dimensión a una idea. Por ejemplo: si una idea propone automatizar un proceso pero los tickets muestran que el problema real es de datos de entrada, lo señalás con los tickets como evidencia. No hacés preguntas genéricas ni cuestionamientos sin respaldo en el historial del tablero.
 - Para reply_comment: respondés con contexto de los tickets originales y lenguaje técnico-financiero preciso cuando corresponda (loan tape, borrowing base, cash release, collateral funnel, waivers, cesiones).
 - Máximo 5 acciones en total.
@@ -78,6 +97,7 @@ Si no hay acciones necesarias, retorná: []"""
 
 def analyze_roadmap(
     active_tickets,
+    finalized_tickets,
     recurring_patterns,
     ideas: List[RoadmapIdea],
     roadmap_memory: RoadmapMemoryState,
@@ -87,31 +107,46 @@ def analyze_roadmap(
     ticket_summaries = []
     for t in active_tickets:
         summary = {"key": getattr(t, "key", ""), "summary": getattr(t, "summary", ""),
-                   "status": getattr(t, "status", "")}
+                   "status": getattr(t, "status", ""), "criticality": getattr(t, "criticality", ""),
+                   "environment": getattr(t, "environment", ""), "ticket_type": getattr(t, "ticket_type", "")}
         desc = getattr(t, "description", "") or ""
         summary["description"] = desc[:200]
         ticket_summaries.append(summary)
+
+    finalized_summaries = []
+    for t in (finalized_tickets or []):
+        summary = {"key": getattr(t, "key", ""), "summary": getattr(t, "summary", ""),
+                   "criticality": getattr(t, "criticality", ""), "ticket_type": getattr(t, "ticket_type", "")}
+        resolution = getattr(t, "resolution", None)
+        if resolution:
+            summary["resolution"] = resolution
+        desc = getattr(t, "description", "") or ""
+        summary["description"] = desc[:150]
+        finalized_summaries.append(summary)
 
     pattern_summaries = []
     for p in recurring_patterns:
         pattern_summaries.append({
             "label": getattr(p, "label", ""),
             "ticket_keys": getattr(p, "ticket_keys", []),
+            "count": getattr(p, "count", 0),
             "recommendation": getattr(p, "recommendation", ""),
         })
 
     idea_summaries = [
-        {"id": i.id, "title": i.title, "description": i.description[:200],
-         "category": i.category, "upvotes": i.upvotes}
+        {"id": i.id, "title": i.title, "description": i.description[:300],
+         "category": i.category, "upvotes": i.upvotes, "downvotes": i.downvotes}
         for i in ideas
     ]
 
     user_message = (
         f"Tickets activos en Production Support:\n{json.dumps(ticket_summaries, ensure_ascii=False, indent=2)}\n\n"
+        f"Tickets finalizados (historial reciente — incluye campo 'resolution' cuando está disponible):\n"
+        f"{json.dumps(finalized_summaries, ensure_ascii=False, indent=2)}\n\n"
         f"Patrones recurrentes detectados:\n{json.dumps(pattern_summaries, ensure_ascii=False, indent=2)}\n\n"
         f"Ideas actuales en el roadmap:\n{json.dumps(idea_summaries, ensure_ascii=False, indent=2)}\n\n"
         f"Acciones ya realizadas por el agente (no repetir):\n"
-        f"- Votadas: {list(roadmap_memory.voted_idea_ids.keys())}\n"
+        f"- Votadas: {roadmap_memory.voted_idea_ids}\n"
         f"- Comentadas: {roadmap_memory.commented_idea_ids}\n"
         f"- Ideas creadas: {roadmap_memory.created_idea_ids}"
     )

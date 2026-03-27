@@ -6,13 +6,13 @@ from models import AgentAction, TicketFacts, VerticalPlan
 def build_vertical_plan(vertical: str, tickets: List[TicketFacts]) -> VerticalPlan:
     actions: List[AgentAction] = []
 
-    # Excluir tickets done que no finalizaron hoy
-    active = [t for t in tickets if t.status_category.lower() != "done" or t.finalized_today]
+    # Excluir tickets done que no finalizaron desde el último mensaje
+    active = [t for t in tickets if t.status_category.lower() != "done" or t.finalized_since_last_message]
 
-    # Bucket 1: cambios (status_changed, created_today, finalized_today)
+    # Bucket 1: cambios desde el último mensaje
     changes = [
         t for t in active
-        if t.status_changed or t.created_today or t.finalized_today
+        if t.status_changed or t.created_since_last_message or t.finalized_since_last_message
     ]
     changes_keys = {t.key for t in changes}
 

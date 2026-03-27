@@ -46,6 +46,7 @@ class AgentMemory:
         return AgentMemoryState(
             tickets=tickets,
             last_run_at=data.get("last_run_at"),
+            last_message_sent_at=data.get("last_message_sent_at"),
             roadmap=roadmap,
             weekly_buffer=weekly_buffer,
             weekly_last_run_at=data.get("weekly_last_run_at"),

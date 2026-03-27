@@ -23,6 +23,7 @@ class JiraTicket:
     environment: str
     ticket_type: str
     url: str
+    resolution: Optional[str]
 
 
 @dataclass(frozen=True)
@@ -71,6 +72,7 @@ class JiraClient:
             "priority",
             "environment",
             "issuetype",
+            "resolution",
         ]
         for field_name in [self.section_field, self.criticality_field, self.environment_field, self.type_field]:
             if field_name and field_name not in request_fields:
@@ -116,6 +118,7 @@ class JiraClient:
                         environment=self._field_to_text(issue_fields.get(self.environment_field)),
                         ticket_type=self._field_to_text(issue_fields.get(self.type_field)),
                         url=f"{self.base_url}/browse/{key}",
+                        resolution=self._field_to_text(issue_fields.get("resolution")) or None,
                     )
                 )
                 if len(tickets) >= max_results:
