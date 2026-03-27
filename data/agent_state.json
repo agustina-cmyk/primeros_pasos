@@ -1,13 +1,76 @@
 {
-  "last_run_at": "2026-03-27T14:37:42.202197+00:00",
+  "last_run_at": "2026-03-27T17:40:28.135230+00:00",
   "tickets": {
+    "PS-1253": {
+      "key": "PS-1253",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-27T12:28:41.657-0500",
+      "last_status_change_at": "2026-03-26T21:07:47.211-0500",
+      "notified_reasons": []
+    },
+    "PS-1406": {
+      "key": "PS-1406",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-27T12:28:18.890-0500",
+      "last_status_change_at": "2026-03-27T12:28:18.890-0500",
+      "notified_reasons": []
+    },
+    "PS-1408": {
+      "key": "PS-1408",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-27T12:23:17.549-0500",
+      "last_status_change_at": "2026-03-27T12:23:17.549-0500",
+      "notified_reasons": []
+    },
     "PS-1193": {
       "key": "PS-1193",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": "aldana",
-      "updated": "2026-03-27T09:26:04.910-0500",
-      "last_status_change_at": "2026-03-27T09:26:04.910-0500",
+      "updated": "2026-03-27T12:15:40.381-0500",
+      "last_status_change_at": "2026-03-27T12:15:40.381-0500",
+      "notified_reasons": []
+    },
+    "PS-1405": {
+      "key": "PS-1405",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-27T11:54:31.825-0500",
+      "last_status_change_at": "2026-03-27T11:54:31.825-0500",
+      "notified_reasons": []
+    },
+    "PS-1245": {
+      "key": "PS-1245",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-03-27T11:47:21.063-0500",
+      "last_status_change_at": "2026-03-27T11:46:08.591-0500",
+      "notified_reasons": []
+    },
+    "PS-1403": {
+      "key": "PS-1403",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-03-27T10:59:45.186-0500",
+      "last_status_change_at": "2026-03-27T10:59:45.186-0500",
+      "notified_reasons": []
+    },
+    "PS-1407": {
+      "key": "PS-1407",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-03-27T09:58:27.306-0500",
+      "last_status_change_at": "2026-03-27T09:58:27.306-0500",
       "notified_reasons": []
     },
     "PS-1372": {
@@ -28,15 +91,6 @@
       "last_status_change_at": "2026-03-27T09:12:22.136-0500",
       "notified_reasons": []
     },
-    "PS-1407": {
-      "key": "PS-1407",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-27T08:00:48.383-0500",
-      "last_status_change_at": "2026-03-27T08:00:48.383-0500",
-      "notified_reasons": []
-    },
     "PS-1402": {
       "key": "PS-1402",
       "vertical": "sin_vertical",
@@ -53,15 +107,6 @@
       "assignee": null,
       "updated": "2026-03-26T21:12:20.606-0500",
       "last_status_change_at": "2026-03-26T21:12:20.606-0500",
-      "notified_reasons": []
-    },
-    "PS-1406": {
-      "key": "PS-1406",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-26T20:25:56.571-0500",
-      "last_status_change_at": "2026-03-26T20:25:56.571-0500",
       "notified_reasons": []
     },
     "PS-1322": {
@@ -109,24 +154,6 @@
       "last_status_change_at": "2026-03-26T18:00:56.005-0500",
       "notified_reasons": []
     },
-    "PS-1403": {
-      "key": "PS-1403",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-26T14:46:53.385-0500",
-      "last_status_change_at": "2026-03-26T14:46:53.385-0500",
-      "notified_reasons": []
-    },
-    "PS-1405": {
-      "key": "PS-1405",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-26T13:13:15.114-0500",
-      "last_status_change_at": "2026-03-26T13:13:15.114-0500",
-      "notified_reasons": []
-    },
     "PS-1404": {
       "key": "PS-1404",
       "vertical": "sin_vertical",
@@ -143,15 +170,6 @@
       "assignee": null,
       "updated": "2026-03-26T08:58:53.882-0500",
       "last_status_change_at": "2026-03-26T08:58:53.882-0500",
-      "notified_reasons": []
-    },
-    "PS-1245": {
-      "key": "PS-1245",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-03-25T14:50:15.051-0500",
-      "last_status_change_at": "2026-03-25T14:50:15.051-0500",
       "notified_reasons": []
     },
     "PS-1399": {
@@ -589,5 +607,5 @@
     ]
   },
   "weekly_buffer": {},
-  "weekly_last_run_at": "2026-03-27T14:37:42.202122+00:00"
+  "weekly_last_run_at": "2026-03-27T17:40:28.135167+00:00"
 }
