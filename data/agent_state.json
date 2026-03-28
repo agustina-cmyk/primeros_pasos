@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-03-28T17:04:50.409244+00:00",
+  "last_run_at": "2026-03-28T18:03:39.142150+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1409": {
+      "key": "PS-1409",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "msimbeni",
+      "updated": "2026-03-28T12:35:07.971-0500",
+      "last_status_change_at": "2026-03-28T12:35:07.971-0500",
+      "notified_reasons": []
+    },
     "PS-1391": {
       "key": "PS-1391",
       "vertical": "sin_vertical",
@@ -550,6 +559,17 @@
   },
   "weekly_buffer": {
     "2026-03-28": {
+      "PS-1409": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "mariana",
+        "created": "2026-03-28T12:34:59.666-0500",
+        "finalized_today": false
+      },
       "PS-1391": {
         "status": "Tareas por hacer",
         "status_category": "new",
