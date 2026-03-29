@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-03-29T15:51:24.296678+00:00",
+  "last_run_at": "2026-03-29T17:05:38.502173+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1371": {
+      "key": "PS-1371",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-29T12:04:50.337-0500",
+      "last_status_change_at": "2026-03-29T12:04:50.337-0500",
+      "notified_reasons": []
+    },
+    "PS-1360": {
+      "key": "PS-1360",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-03-29T12:03:31.977-0500",
+      "last_status_change_at": "2026-03-29T12:03:31.977-0500",
+      "notified_reasons": []
+    },
+    "PS-1408": {
+      "key": "PS-1408",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-29T12:00:35.534-0500",
+      "last_status_change_at": "2026-03-29T12:00:35.534-0500",
+      "notified_reasons": []
+    },
     "PS-1391": {
       "key": "PS-1391",
       "vertical": "sin_vertical",
@@ -9,15 +36,6 @@
       "assignee": "Emiliano Gallardo",
       "updated": "2026-03-27T15:15:01.635-0500",
       "last_status_change_at": "2026-03-27T15:15:01.635-0500",
-      "notified_reasons": []
-    },
-    "PS-1408": {
-      "key": "PS-1408",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-27T12:23:17.549-0500",
-      "last_status_change_at": "2026-03-27T12:23:17.549-0500",
       "notified_reasons": []
     },
     "PS-1193": {
@@ -45,15 +63,6 @@
       "assignee": null,
       "updated": "2026-03-27T09:12:22.136-0500",
       "last_status_change_at": "2026-03-27T09:12:22.136-0500",
-      "notified_reasons": []
-    },
-    "PS-1371": {
-      "key": "PS-1371",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-26T21:12:20.606-0500",
-      "last_status_change_at": "2026-03-26T21:12:20.606-0500",
       "notified_reasons": []
     },
     "PS-1322": {
@@ -189,15 +198,6 @@
       "assignee": null,
       "updated": "2026-03-22T21:12:32.218-0500",
       "last_status_change_at": "2026-03-22T21:12:32.218-0500",
-      "notified_reasons": []
-    },
-    "PS-1360": {
-      "key": "PS-1360",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-22T21:12:32.217-0500",
-      "last_status_change_at": "2026-03-22T21:12:32.217-0500",
       "notified_reasons": []
     },
     "PS-1355": {
@@ -1135,6 +1135,39 @@
       }
     },
     "2026-03-29": {
+      "PS-1371": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Agustina \u00c1lvarez",
+        "created": "2026-03-16T18:57:13.982-0500",
+        "finalized_today": false
+      },
+      "PS-1360": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-03-12T14:35:39.599-0500",
+        "finalized_today": false
+      },
+      "PS-1408": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-03-27T11:58:57.846-0500",
+        "finalized_today": true
+      },
       "PS-1391": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1144,17 +1177,6 @@
         "vertical": "sin_vertical",
         "reporter": "Camilo Almario",
         "created": "2026-03-24T10:35:32.730-0500",
-        "finalized_today": false
-      },
-      "PS-1408": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-27T11:58:57.846-0500",
         "finalized_today": false
       },
       "PS-1193": {
@@ -1188,17 +1210,6 @@
         "vertical": "sin_vertical",
         "reporter": "Agustina \u00c1lvarez",
         "created": "2026-03-16T22:46:43.769-0500",
-        "finalized_today": false
-      },
-      "PS-1371": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 3,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-16T18:57:13.982-0500",
         "finalized_today": false
       },
       "PS-1322": {
@@ -1364,17 +1375,6 @@
         "vertical": "sin_vertical",
         "reporter": "Fabiana Torres",
         "created": "2026-03-12T14:04:39.604-0500",
-        "finalized_today": false
-      },
-      "PS-1360": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 7,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-12T14:35:39.599-0500",
         "finalized_today": false
       },
       "PS-1355": {
