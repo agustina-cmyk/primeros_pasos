@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-03-29T23:04:36.171737+00:00",
+  "last_run_at": "2026-03-30T06:17:39.028646+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1371": {
@@ -18,15 +18,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-03-29T12:03:31.977-0500",
       "last_status_change_at": "2026-03-29T12:03:31.977-0500",
-      "notified_reasons": []
-    },
-    "PS-1408": {
-      "key": "PS-1408",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-29T12:00:35.534-0500",
-      "last_status_change_at": "2026-03-29T12:00:35.534-0500",
       "notified_reasons": []
     },
     "PS-1391": {
@@ -549,596 +540,11 @@
     ]
   },
   "weekly_buffer": {
-    "2026-03-28": {
-      "PS-1409": {
-        "status": "Finalizada",
-        "status_category": "done",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "mariana",
-        "created": "2026-03-28T12:34:59.666-0500",
-        "finalized_today": true
-      },
-      "PS-1391": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-24T10:35:32.730-0500",
-        "finalized_today": false
-      },
-      "PS-1408": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-27T11:58:57.846-0500",
-        "finalized_today": false
-      },
-      "PS-1193": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-01-30T15:08:11.080-0500",
-        "finalized_today": false
-      },
-      "PS-1372": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-16T22:13:14.495-0500",
-        "finalized_today": false
-      },
-      "PS-1373": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-16T22:46:43.769-0500",
-        "finalized_today": false
-      },
+    "2026-03-30": {
       "PS-1371": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-16T18:57:13.982-0500",
-        "finalized_today": false
-      },
-      "PS-1322": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 9,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-05T18:06:42.052-0500",
-        "finalized_today": false
-      },
-      "PS-1356": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "mariana",
-        "created": "2026-03-12T11:37:44.567-0500",
-        "finalized_today": false
-      },
-      "PS-1240": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "vvanegas",
-        "created": "2026-02-13T14:19:21.052-0500",
-        "finalized_today": false
-      },
-      "PS-1381": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-20T11:00:06.687-0500",
-        "finalized_today": false
-      },
-      "PS-916": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Mart\u00edn Strauss",
-        "created": "2025-09-25T15:20:33.623-0500",
-        "finalized_today": false
-      },
-      "PS-1404": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-26T10:19:27.314-0500",
-        "finalized_today": false
-      },
-      "PS-1379": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Gustavo Corrales",
-        "created": "2026-03-20T09:58:54.745-0500",
-        "finalized_today": false
-      },
-      "PS-1399": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 3,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Thomas Barrett",
-        "created": "2026-03-25T13:21:37.585-0500",
-        "finalized_today": false
-      },
-      "PS-1060": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 3,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2025-12-03T17:51:27.888-0500",
-        "finalized_today": false
-      },
-      "PS-1202": {
-        "status": "On Hold",
-        "status_category": "indeterminate",
-        "days_without_status_change": 3,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-02T21:14:25.883-0500",
-        "finalized_today": false
-      },
-      "PS-1396": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 4,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-24T17:05:02.980-0500",
-        "finalized_today": false
-      },
-      "PS-1395": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 4,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-24T16:58:08.558-0500",
-        "finalized_today": false
-      },
-      "PS-1387": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 4,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "emilio",
-        "created": "2026-03-23T19:03:09.819-0500",
-        "finalized_today": false
-      },
-      "PS-1364": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 5,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-13T12:24:05.617-0500",
-        "finalized_today": false
-      },
-      "PS-1359": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Fabiana Torres",
-        "created": "2026-03-12T14:04:39.604-0500",
-        "finalized_today": false
-      },
-      "PS-1360": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-12T14:35:39.599-0500",
-        "finalized_today": false
-      },
-      "PS-1355": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-03-12T10:10:34.229-0500",
-        "finalized_today": false
-      },
-      "PS-1252": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-02-18T11:03:09.237-0500",
-        "finalized_today": false
-      },
-      "PS-1384": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Mart\u00edn Strauss",
-        "created": "2026-03-20T17:45:42.323-0500",
-        "finalized_today": false
-      },
-      "PS-1383": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Mart\u00edn Strauss",
-        "created": "2026-03-20T17:44:56.639-0500",
-        "finalized_today": false
-      },
-      "PS-1382": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Santiago Mart\u00e1",
-        "created": "2026-03-20T14:58:37.004-0500",
-        "finalized_today": false
-      },
-      "PS-1314": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-04T19:28:18.856-0500",
-        "finalized_today": false
-      },
-      "PS-957": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 8,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Daniel Borda",
-        "created": "2025-10-16T17:36:57.879-0500",
-        "finalized_today": false
-      },
-      "PS-1256": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 9,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-19T12:36:34.802-0500",
-        "finalized_today": false
-      },
-      "PS-1264": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 12,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "emilio",
-        "created": "2026-02-23T14:00:16.564-0500",
-        "finalized_today": false
-      },
-      "PS-1352": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 12,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Gustavo Corrales",
-        "created": "2026-03-12T09:22:29.175-0500",
-        "finalized_today": false
-      },
-      "PS-1317": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 12,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2026-03-05T09:45:47.052-0500",
-        "finalized_today": false
-      },
-      "PS-1296": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 15,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-03T09:10:11.426-0500",
-        "finalized_today": false
-      },
-      "PS-1234": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 15,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-02-11T12:02:20.529-0500",
-        "finalized_today": false
-      },
-      "PS-1293": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 16,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-02T12:40:40.796-0500",
-        "finalized_today": false
-      },
-      "PS-1227": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 17,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2026-02-09T17:59:31.139-0500",
-        "finalized_today": false
-      },
-      "PS-1267": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 19,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-23T20:21:39.050-0500",
-        "finalized_today": false
-      },
-      "PS-1206": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 19,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-04T08:36:08.268-0500",
-        "finalized_today": false
-      },
-      "PS-1268": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 22,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-23T23:08:14.101-0500",
-        "finalized_today": false
-      },
-      "PS-1097": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 26,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2025-12-19T05:40:41.372-0500",
-        "finalized_today": false
-      },
-      "PS-767": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 30,
-        "is_stale": true,
-        "criticality": "Low",
-        "vertical": "sin_vertical",
-        "reporter": "Gustavo Corrales",
-        "created": "2025-07-10T11:20:30.281-0500",
-        "finalized_today": false
-      },
-      "PS-1259": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 33,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Santiago Mart\u00e1",
-        "created": "2026-02-20T10:54:31.472-0500",
-        "finalized_today": false
-      },
-      "PS-1236": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 44,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-02-12T11:49:02.166-0500",
-        "finalized_today": false
-      },
-      "PS-1191": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 47,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2026-01-30T11:49:06.534-0500",
-        "finalized_today": false
-      },
-      "PS-1173": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 47,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Fabiana Torres",
-        "created": "2026-01-27T19:33:57.919-0500",
-        "finalized_today": false
-      },
-      "PS-1179": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 49,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "vvanegas",
-        "created": "2026-01-28T09:50:43.031-0500",
-        "finalized_today": false
-      },
-      "PS-1172": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 50,
-        "is_stale": true,
-        "criticality": "Low",
-        "vertical": "sin_vertical",
-        "reporter": "Andrea Perez",
-        "created": "2026-01-27T16:32:26.877-0500",
-        "finalized_today": false
-      },
-      "PS-1020": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 52,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2025-11-16T20:26:13.182-0500",
-        "finalized_today": false
-      },
-      "PS-1062": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 52,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Valentina Valencia",
-        "created": "2025-12-04T18:01:30.606-0500",
-        "finalized_today": false
-      },
-      "PS-1122": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 72,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-01-05T15:59:48.013-0500",
-        "finalized_today": false
-      },
-      "PS-923": {
-        "status": "On Hold",
-        "status_category": "indeterminate",
-        "days_without_status_change": 183,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Camila",
-        "created": "2025-09-26T16:22:03.724-0500",
-        "finalized_today": false
-      }
-    },
-    "2026-03-29": {
-      "PS-1371": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 0,
+        "days_without_status_change": 1,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1149,7 +555,7 @@
       "PS-1360": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 0,
+        "days_without_status_change": 1,
         "is_stale": false,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1157,21 +563,10 @@
         "created": "2026-03-12T14:35:39.599-0500",
         "finalized_today": false
       },
-      "PS-1408": {
-        "status": "Finalizada",
-        "status_category": "done",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-27T11:58:57.846-0500",
-        "finalized_today": true
-      },
       "PS-1391": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 2,
+        "days_without_status_change": 3,
         "is_stale": false,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1182,7 +577,7 @@
       "PS-1193": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 2,
+        "days_without_status_change": 3,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1193,7 +588,7 @@
       "PS-1372": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 2,
+        "days_without_status_change": 3,
         "is_stale": false,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1204,7 +599,7 @@
       "PS-1373": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 2,
+        "days_without_status_change": 3,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1215,7 +610,7 @@
       "PS-1322": {
         "status": "DEV IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 10,
+        "days_without_status_change": 11,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1226,7 +621,7 @@
       "PS-1356": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1237,7 +632,7 @@
       "PS-1240": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1248,7 +643,7 @@
       "PS-1381": {
         "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1259,7 +654,7 @@
       "PS-916": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1270,7 +665,7 @@
       "PS-1404": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1281,7 +676,7 @@
       "PS-1379": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 3,
+        "days_without_status_change": 4,
         "is_stale": false,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1292,8 +687,8 @@
       "PS-1399": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 4,
-        "is_stale": false,
+        "days_without_status_change": 5,
+        "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
         "reporter": "Thomas Barrett",
@@ -1303,8 +698,8 @@
       "PS-1060": {
         "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 4,
-        "is_stale": false,
+        "days_without_status_change": 5,
+        "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
         "reporter": "Andrea Perez",
@@ -1314,8 +709,8 @@
       "PS-1202": {
         "status": "On Hold",
         "status_category": "indeterminate",
-        "days_without_status_change": 4,
-        "is_stale": false,
+        "days_without_status_change": 5,
+        "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
         "reporter": "Agustina \u00c1lvarez",
@@ -1325,7 +720,7 @@
       "PS-1396": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 5,
+        "days_without_status_change": 6,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1336,7 +731,7 @@
       "PS-1395": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 5,
+        "days_without_status_change": 6,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1347,7 +742,7 @@
       "PS-1387": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 5,
+        "days_without_status_change": 6,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1358,7 +753,7 @@
       "PS-1364": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 6,
+        "days_without_status_change": 7,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1369,7 +764,7 @@
       "PS-1359": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 7,
+        "days_without_status_change": 8,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1380,7 +775,7 @@
       "PS-1355": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 7,
+        "days_without_status_change": 8,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1391,7 +786,7 @@
       "PS-1252": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 7,
+        "days_without_status_change": 8,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1402,7 +797,7 @@
       "PS-1384": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 9,
+        "days_without_status_change": 10,
         "is_stale": true,
         "criticality": "Highest",
         "vertical": "sin_vertical",
@@ -1413,7 +808,7 @@
       "PS-1383": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 9,
+        "days_without_status_change": 10,
         "is_stale": true,
         "criticality": "Highest",
         "vertical": "sin_vertical",
@@ -1424,7 +819,7 @@
       "PS-1382": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 9,
+        "days_without_status_change": 10,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1435,7 +830,7 @@
       "PS-1314": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 9,
+        "days_without_status_change": 10,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1446,7 +841,7 @@
       "PS-957": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 9,
+        "days_without_status_change": 10,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1457,7 +852,7 @@
       "PS-1256": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 10,
+        "days_without_status_change": 11,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1468,7 +863,7 @@
       "PS-1264": {
         "status": "DEV IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 13,
+        "days_without_status_change": 14,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1479,7 +874,7 @@
       "PS-1352": {
         "status": "DEV IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 13,
+        "days_without_status_change": 14,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1490,7 +885,7 @@
       "PS-1317": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 13,
+        "days_without_status_change": 14,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1501,7 +896,7 @@
       "PS-1296": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 16,
+        "days_without_status_change": 17,
         "is_stale": true,
         "criticality": "Highest",
         "vertical": "sin_vertical",
@@ -1512,7 +907,7 @@
       "PS-1234": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 16,
+        "days_without_status_change": 17,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1521,23 +916,23 @@
         "finalized_today": false
       },
       "PS-1293": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 17,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-02T12:40:40.796-0500",
-        "finalized_today": false
-      },
-      "PS-1227": {
         "status": "Tareas por hacer",
         "status_category": "new",
         "days_without_status_change": 18,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
+        "reporter": "Camilo Almario",
+        "created": "2026-03-02T12:40:40.796-0500",
+        "finalized_today": false
+      },
+      "PS-1227": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 19,
+        "is_stale": true,
+        "criticality": "High",
+        "vertical": "sin_vertical",
         "reporter": "Andrea Perez",
         "created": "2026-02-09T17:59:31.139-0500",
         "finalized_today": false
@@ -1545,7 +940,7 @@
       "PS-1267": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 20,
+        "days_without_status_change": 21,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1556,7 +951,7 @@
       "PS-1206": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 20,
+        "days_without_status_change": 21,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1567,7 +962,7 @@
       "PS-1268": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 23,
+        "days_without_status_change": 24,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1578,7 +973,7 @@
       "PS-1097": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 27,
+        "days_without_status_change": 28,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1589,7 +984,7 @@
       "PS-767": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 31,
+        "days_without_status_change": 32,
         "is_stale": true,
         "criticality": "Low",
         "vertical": "sin_vertical",
@@ -1600,7 +995,7 @@
       "PS-1259": {
         "status": "DEV IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 34,
+        "days_without_status_change": 35,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1611,7 +1006,7 @@
       "PS-1236": {
         "status": "DEV IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 45,
+        "days_without_status_change": 46,
         "is_stale": true,
         "criticality": "Highest",
         "vertical": "sin_vertical",
@@ -1622,7 +1017,7 @@
       "PS-1191": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 48,
+        "days_without_status_change": 49,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1633,7 +1028,7 @@
       "PS-1173": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 48,
+        "days_without_status_change": 49,
         "is_stale": true,
         "criticality": "Medium",
         "vertical": "sin_vertical",
@@ -1644,7 +1039,7 @@
       "PS-1179": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 50,
+        "days_without_status_change": 51,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1655,7 +1050,7 @@
       "PS-1172": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 51,
+        "days_without_status_change": 52,
         "is_stale": true,
         "criticality": "Low",
         "vertical": "sin_vertical",
@@ -1666,7 +1061,7 @@
       "PS-1020": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 53,
+        "days_without_status_change": 54,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1677,7 +1072,7 @@
       "PS-1062": {
         "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
-        "days_without_status_change": 53,
+        "days_without_status_change": 54,
         "is_stale": true,
         "criticality": "Highest",
         "vertical": "sin_vertical",
@@ -1688,7 +1083,7 @@
       "PS-1122": {
         "status": "Tareas por hacer",
         "status_category": "new",
-        "days_without_status_change": 73,
+        "days_without_status_change": 74,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
@@ -1699,7 +1094,7 @@
       "PS-923": {
         "status": "On Hold",
         "status_category": "indeterminate",
-        "days_without_status_change": 184,
+        "days_without_status_change": 185,
         "is_stale": true,
         "criticality": "High",
         "vertical": "sin_vertical",
