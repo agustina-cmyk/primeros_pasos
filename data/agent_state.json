@@ -1,7 +1,43 @@
 {
-  "last_run_at": "2026-03-30T18:06:14.562248+00:00",
+  "last_run_at": "2026-03-30T20:09:05.336900+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1396": {
+      "key": "PS-1396",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-30T13:51:33.087-0500",
+      "last_status_change_at": "2026-03-30T13:51:33.087-0500",
+      "notified_reasons": []
+    },
+    "PS-1314": {
+      "key": "PS-1314",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-30T13:51:30.627-0500",
+      "last_status_change_at": "2026-03-30T13:51:30.627-0500",
+      "notified_reasons": []
+    },
+    "PS-1404": {
+      "key": "PS-1404",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-30T13:51:28.892-0500",
+      "last_status_change_at": "2026-03-30T13:51:28.892-0500",
+      "notified_reasons": []
+    },
+    "PS-1395": {
+      "key": "PS-1395",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-30T13:51:25.753-0500",
+      "last_status_change_at": "2026-03-30T13:51:25.753-0500",
+      "notified_reasons": []
+    },
     "PS-1412": {
       "key": "PS-1412",
       "vertical": "sin_vertical",
@@ -155,15 +191,6 @@
       "last_status_change_at": "2026-03-26T18:00:56.005-0500",
       "notified_reasons": []
     },
-    "PS-1404": {
-      "key": "PS-1404",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-26T10:19:34.016-0500",
-      "last_status_change_at": "2026-03-26T10:19:34.016-0500",
-      "notified_reasons": []
-    },
     "PS-1202": {
       "key": "PS-1202",
       "vertical": "sin_vertical",
@@ -171,24 +198,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-03-25T09:29:55.667-0500",
       "last_status_change_at": "2026-03-25T09:29:49.205-0500",
-      "notified_reasons": []
-    },
-    "PS-1396": {
-      "key": "PS-1396",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-24T17:06:49.290-0500",
-      "last_status_change_at": "2026-03-24T17:06:49.290-0500",
-      "notified_reasons": []
-    },
-    "PS-1395": {
-      "key": "PS-1395",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-24T16:58:15.349-0500",
-      "last_status_change_at": "2026-03-24T16:58:15.349-0500",
       "notified_reasons": []
     },
     "PS-1387": {
@@ -261,15 +270,6 @@
       "assignee": null,
       "updated": "2026-03-20T14:58:43.786-0500",
       "last_status_change_at": "2026-03-20T14:58:43.786-0500",
-      "notified_reasons": []
-    },
-    "PS-1314": {
-      "key": "PS-1314",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-20T09:52:43.439-0500",
-      "last_status_change_at": "2026-03-20T09:52:43.439-0500",
       "notified_reasons": []
     },
     "PS-957": {
@@ -568,6 +568,50 @@
   },
   "weekly_buffer": {
     "2026-03-30": {
+      "PS-1396": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-03-24T17:05:02.980-0500",
+        "finalized_today": false
+      },
+      "PS-1314": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Camilo Almario",
+        "created": "2026-03-04T19:28:18.856-0500",
+        "finalized_today": false
+      },
+      "PS-1404": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-03-26T10:19:27.314-0500",
+        "finalized_today": false
+      },
+      "PS-1395": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-03-24T16:58:08.558-0500",
+        "finalized_today": false
+      },
       "PS-1412": {
         "status": "DISCARDED",
         "status_category": "done",
@@ -755,17 +799,6 @@
         "created": "2025-09-25T15:20:33.623-0500",
         "finalized_today": false
       },
-      "PS-1404": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 4,
-        "is_stale": false,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-26T10:19:27.314-0500",
-        "finalized_today": false
-      },
       "PS-1202": {
         "status": "On Hold",
         "status_category": "indeterminate",
@@ -775,28 +808,6 @@
         "vertical": "sin_vertical",
         "reporter": "Agustina \u00c1lvarez",
         "created": "2026-02-02T21:14:25.883-0500",
-        "finalized_today": false
-      },
-      "PS-1396": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-24T17:05:02.980-0500",
-        "finalized_today": false
-      },
-      "PS-1395": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 6,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-24T16:58:08.558-0500",
         "finalized_today": false
       },
       "PS-1387": {
@@ -885,17 +896,6 @@
         "vertical": "sin_vertical",
         "reporter": "Santiago Mart\u00e1",
         "created": "2026-03-20T14:58:37.004-0500",
-        "finalized_today": false
-      },
-      "PS-1314": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 10,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Camilo Almario",
-        "created": "2026-03-04T19:28:18.856-0500",
         "finalized_today": false
       },
       "PS-957": {
