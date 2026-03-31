@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-03-31T22:06:31.289134+00:00",
+  "last_run_at": "2026-03-31T23:59:23.528047+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1418": {
+      "key": "PS-1418",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-03-31T18:52:46.720-0500",
+      "last_status_change_at": "2026-03-31T18:52:46.720-0500",
+      "notified_reasons": []
+    },
     "PS-1416": {
       "key": "PS-1416",
       "vertical": "sin_vertical",
@@ -1148,6 +1157,17 @@
       }
     },
     "2026-03-31": {
+      "PS-1418": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-03-31T18:50:52.347-0500",
+        "finalized_today": false
+      },
       "PS-1416": {
         "status": "READY FOR TEST",
         "status_category": "new",
