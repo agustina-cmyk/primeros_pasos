@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-03-31T10:14:25.044723+00:00",
+  "last_run_at": "2026-03-31T14:49:19.597203+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1364": {
+      "key": "PS-1364",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-31T08:31:41.448-0500",
+      "last_status_change_at": "2026-03-31T08:31:41.448-0500",
+      "notified_reasons": []
+    },
+    "PS-1322": {
+      "key": "PS-1322",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-03-31T08:17:38.622-0500",
+      "last_status_change_at": "2026-03-31T08:17:38.622-0500",
+      "notified_reasons": []
+    },
     "PS-1384": {
       "key": "PS-1384",
       "vertical": "sin_vertical",
@@ -36,15 +54,6 @@
       "assignee": "Ander",
       "updated": "2026-03-30T21:12:24.874-0500",
       "last_status_change_at": "2026-03-30T21:12:24.874-0500",
-      "notified_reasons": []
-    },
-    "PS-1364": {
-      "key": "PS-1364",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-30T19:52:47.611-0500",
-      "last_status_change_at": "2026-03-30T19:52:47.611-0500",
       "notified_reasons": []
     },
     "PS-1396": {
@@ -153,15 +162,6 @@
       "assignee": null,
       "updated": "2026-03-27T09:12:22.136-0500",
       "last_status_change_at": "2026-03-27T09:12:22.136-0500",
-      "notified_reasons": []
-    },
-    "PS-1322": {
-      "key": "PS-1322",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-26T18:46:16.533-0500",
-      "last_status_change_at": "2026-03-19T18:54:02.466-0500",
       "notified_reasons": []
     },
     "PS-1381": {
@@ -1103,6 +1103,28 @@
       }
     },
     "2026-03-31": {
+      "PS-1364": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Jorge Alegr\u00eda",
+        "created": "2026-03-13T12:24:05.617-0500",
+        "finalized_today": true
+      },
+      "PS-1322": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-03-05T18:06:42.052-0500",
+        "finalized_today": true
+      },
       "PS-1384": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -1145,17 +1167,6 @@
         "vertical": "sin_vertical",
         "reporter": "Gustavo Corrales",
         "created": "2026-03-20T09:58:54.745-0500",
-        "finalized_today": false
-      },
-      "PS-1364": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 1,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Jorge Alegr\u00eda",
-        "created": "2026-03-13T12:24:05.617-0500",
         "finalized_today": false
       },
       "PS-1396": {
@@ -1288,17 +1299,6 @@
         "vertical": "sin_vertical",
         "reporter": "Agustina \u00c1lvarez",
         "created": "2026-03-16T22:46:43.769-0500",
-        "finalized_today": false
-      },
-      "PS-1322": {
-        "status": "DEV IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 12,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "brayan",
-        "created": "2026-03-05T18:06:42.052-0500",
         "finalized_today": false
       },
       "PS-1381": {
