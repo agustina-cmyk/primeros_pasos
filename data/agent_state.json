@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-03-30T22:07:02.519864+00:00",
+  "last_run_at": "2026-03-31T00:02:18.805707+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1413": {
+      "key": "PS-1413",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-03-30T17:47:56.738-0500",
+      "last_status_change_at": "2026-03-30T17:47:53.026-0500",
+      "notified_reasons": []
+    },
     "PS-1356": {
       "key": "PS-1356",
       "vertical": "sin_vertical",
@@ -36,15 +45,6 @@
       "assignee": "aldana",
       "updated": "2026-03-30T16:39:28.884-0500",
       "last_status_change_at": "2026-03-30T16:37:34.257-0500",
-      "notified_reasons": []
-    },
-    "PS-1413": {
-      "key": "PS-1413",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-30T16:33:10.690-0500",
-      "last_status_change_at": "2026-03-30T16:33:10.690-0500",
       "notified_reasons": []
     },
     "PS-1364": {
@@ -577,6 +577,17 @@
   },
   "weekly_buffer": {
     "2026-03-30": {
+      "PS-1413": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "emilio",
+        "created": "2026-03-30T16:32:54.113-0500",
+        "finalized_today": true
+      },
       "PS-1356": {
         "status": "Finalizada",
         "status_category": "done",
@@ -620,17 +631,6 @@
         "reporter": "Jorge Alegr\u00eda",
         "created": "2026-01-30T15:08:11.080-0500",
         "finalized_today": true
-      },
-      "PS-1413": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "emilio",
-        "created": "2026-03-30T16:32:54.113-0500",
-        "finalized_today": false
       },
       "PS-1364": {
         "status": "DEV IN PROGRESS",
