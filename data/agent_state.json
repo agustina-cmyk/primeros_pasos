@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-01T22:07:47.335265+00:00",
+  "last_run_at": "2026-04-01T23:57:30.966985+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1420": {
+      "key": "PS-1420",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-04-01T17:07:04.065-0500",
+      "last_status_change_at": "2026-04-01T13:42:25.138-0500",
+      "notified_reasons": []
+    },
     "PS-1293": {
       "key": "PS-1293",
       "vertical": "sin_vertical",
@@ -54,15 +63,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-04-01T15:07:16.673-0500",
       "last_status_change_at": "2026-04-01T15:07:12.160-0500",
-      "notified_reasons": []
-    },
-    "PS-1420": {
-      "key": "PS-1420",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-01T13:42:25.138-0500",
-      "last_status_change_at": "2026-04-01T13:42:25.138-0500",
       "notified_reasons": []
     },
     "PS-1415": {
@@ -1749,6 +1749,17 @@
       }
     },
     "2026-04-01": {
+      "PS-1420": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Gustavo Corrales",
+        "created": "2026-04-01T10:29:00.703-0500",
+        "finalized_today": true
+      },
       "PS-1293": {
         "status": "Finalizada",
         "status_category": "done",
@@ -1814,17 +1825,6 @@
         "reporter": "Juan Pablo Portilla",
         "created": "2026-04-01T10:25:42.838-0500",
         "finalized_today": false
-      },
-      "PS-1420": {
-        "status": "Finalizada",
-        "status_category": "done",
-        "days_without_status_change": 0,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Gustavo Corrales",
-        "created": "2026-04-01T10:29:00.703-0500",
-        "finalized_today": true
       },
       "PS-1415": {
         "status": "Finalizada",
