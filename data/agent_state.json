@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-03T16:07:50.302561+00:00",
+  "last_run_at": "2026-04-03T18:06:31.434840+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1387": {
@@ -453,7 +453,8 @@
       "cmngbmev8000113i30mqrvsfc": "like",
       "cmngeh34x000i16who3a3dh6w": "like",
       "cmngeg8iz000e16whe7dsabas": "like",
-      "cmndt25te0001noylwf23qr6w": "like"
+      "cmndt25te0001noylwf23qr6w": "like",
+      "cmngavc4g0005lcvd1ipaokb4": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -492,7 +493,8 @@
       "cmngeh34x000i16who3a3dh6w",
       "cmngeg8iz000e16whe7dsabas",
       "cmndt25te0001noylwf23qr6w",
-      "cmnitkm4e0002unpb3249uy23"
+      "cmnitkm4e0002unpb3249uy23",
+      "cmngavc4g0005lcvd1ipaokb4"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -509,5 +511,5 @@
     ]
   },
   "weekly_buffer": {},
-  "weekly_last_run_at": "2026-04-03T16:07:50.302502+00:00"
+  "weekly_last_run_at": "2026-04-03T18:06:31.434767+00:00"
 }
