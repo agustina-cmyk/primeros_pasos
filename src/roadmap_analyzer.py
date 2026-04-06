@@ -1,4 +1,6 @@
 import json
+import os
+from datetime import datetime, timezone
 from typing import List
 
 import requests
@@ -151,10 +153,13 @@ def analyze_roadmap(
         f"- Ideas creadas: {roadmap_memory.created_idea_ids}"
     )
 
+    payload = {"system_prompt": _SYSTEM_PROMPT, "user_message": user_message}
+    input_stats = _log_llm_input(payload)
+
     headers = {"X-Webhook-Secret": webhook_secret} if webhook_secret else {}
     response = requests.post(
         webhook_url,
-        json={"system_prompt": _SYSTEM_PROMPT, "user_message": user_message},
+        json=payload,
         headers=headers,
         timeout=120,
     )
@@ -174,7 +179,7 @@ def analyze_roadmap(
         raise ValueError(f"roadmap_analyzer: JSON inválido en respuesta del webhook: {exc}") from exc
 
     if not items:
-        return RoadmapPlan(actions=[], skip_reason="Claude no detectó acciones necesarias")
+        return RoadmapPlan(actions=[], skip_reason="Claude no detectó acciones necesarias", input_stats=input_stats)
 
     actions = []
     for item in items:
@@ -198,7 +203,7 @@ def analyze_roadmap(
     if len(actions) > _MAX_ACTIONS:
         actions = _apply_cap(actions)
 
-    return RoadmapPlan(actions=actions, skip_reason=None)
+    return RoadmapPlan(actions=actions, skip_reason=None, input_stats=input_stats)
 
 
 def _apply_cap(actions: List[RoadmapAction]) -> List[RoadmapAction]:
@@ -206,3 +211,33 @@ def _apply_cap(actions: List[RoadmapAction]) -> List[RoadmapAction]:
     ordered = sorted(actions, key=lambda a: _ACTION_PRIORITY.index(a.action)
                      if a.action in _ACTION_PRIORITY else len(_ACTION_PRIORITY))
     return ordered[:_MAX_ACTIONS]
+
+
+def _log_llm_input(payload: dict) -> dict:
+    stats = {}
+    try:
+        os.makedirs("reports", exist_ok=True)
+        timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        path = f"reports/roadmap_input_{timestamp}.json"
+        system_chars = len(payload.get("system_prompt", ""))
+        user_chars = len(payload.get("user_message", ""))
+        total_chars = system_chars + user_chars
+        stats = {
+            "system_prompt_chars": system_chars,
+            "user_message_chars": user_chars,
+            "total_chars": total_chars,
+            "estimated_tokens": round(total_chars / 4),
+            "log_path": path,
+        }
+        log = {
+            "timestamp": timestamp,
+            "stats": stats,
+            "system_prompt": payload.get("system_prompt", ""),
+            "user_message": payload.get("user_message", ""),
+        }
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(log, f, ensure_ascii=False, indent=2)
+        print(f"[ROADMAP] Input LLM guardado en: {path} ({total_chars} chars, ~{round(total_chars / 4)} tokens)")
+    except Exception as exc:
+        print(f"[WARN] No se pudo guardar el input del LLM: {exc}")
+    return stats

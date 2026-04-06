@@ -102,6 +102,7 @@ class RoadmapAction:
 class RoadmapPlan:
     actions: List[RoadmapAction]
     skip_reason: Optional[str]
+    input_stats: Optional[Dict] = None
 
 
 @dataclass

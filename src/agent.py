@@ -102,6 +102,16 @@ def run_agent(
         except Exception as exc:
             print(f"[WARN] Análisis de roadmap falló: {exc}")
 
+    if cpo_body and roadmap_plan and roadmap_plan.input_stats:
+        s = roadmap_plan.input_stats
+        cpo_body += (
+            f"\n\n---\n🤖 **Input al LLM (roadmap agent)**\n"
+            f"System prompt: {s['system_prompt_chars']:,} chars | "
+            f"User message: {s['user_message_chars']:,} chars | "
+            f"Total: {s['total_chars']:,} chars (~{s['estimated_tokens']:,} tokens)\n"
+            f"Log: `{s['log_path']}`"
+        )
+
     return plans, outbound_messages, cpo_body, next_memory, roadmap_plan
 
 
