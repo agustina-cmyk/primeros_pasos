@@ -1,14 +1,59 @@
 {
-  "last_run_at": "2026-04-06T14:16:55.209728+00:00",
+  "last_run_at": "2026-04-06T17:11:45.796740+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1416": {
+      "key": "PS-1416",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-04-06T11:56:41.525-0500",
+      "last_status_change_at": "2026-04-06T11:56:41.525-0500",
+      "notified_reasons": []
+    },
+    "PS-1202": {
+      "key": "PS-1202",
+      "vertical": "sin_vertical",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-04-06T11:44:25.698-0500",
+      "last_status_change_at": "2026-04-06T11:44:25.698-0500",
+      "notified_reasons": []
+    },
+    "PS-1425": {
+      "key": "PS-1425",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-06T10:49:29.932-0500",
+      "last_status_change_at": "2026-04-06T10:49:29.932-0500",
+      "notified_reasons": []
+    },
     "PS-1424": {
       "key": "PS-1424",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-04-06T09:11:45.346-0500",
-      "last_status_change_at": "2026-04-06T09:11:45.346-0500",
+      "updated": "2026-04-06T10:07:33.520-0500",
+      "last_status_change_at": "2026-04-06T10:07:33.520-0500",
+      "notified_reasons": []
+    },
+    "PS-1419": {
+      "key": "PS-1419",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-06T09:53:24.213-0500",
+      "last_status_change_at": "2026-04-06T09:53:24.213-0500",
+      "notified_reasons": []
+    },
+    "PS-1422": {
+      "key": "PS-1422",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-04-06T09:25:53.107-0500",
+      "last_status_change_at": "2026-04-06T09:25:53.107-0500",
       "notified_reasons": []
     },
     "PS-1404": {
@@ -45,33 +90,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-04-02T21:12:10.827-0500",
       "last_status_change_at": "2026-04-02T21:12:10.827-0500",
-      "notified_reasons": []
-    },
-    "PS-1422": {
-      "key": "PS-1422",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-01T15:26:49.488-0500",
-      "last_status_change_at": "2026-04-01T15:26:49.488-0500",
-      "notified_reasons": []
-    },
-    "PS-1419": {
-      "key": "PS-1419",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-01T15:07:16.673-0500",
-      "last_status_change_at": "2026-04-01T15:07:12.160-0500",
-      "notified_reasons": []
-    },
-    "PS-1416": {
-      "key": "PS-1416",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "aldana",
-      "updated": "2026-04-01T12:33:48.041-0500",
-      "last_status_change_at": "2026-04-01T12:33:48.041-0500",
       "notified_reasons": []
     },
     "PS-1417": {
@@ -234,15 +252,6 @@
       "assignee": null,
       "updated": "2026-03-26T18:00:56.005-0500",
       "last_status_change_at": "2026-03-26T18:00:56.005-0500",
-      "notified_reasons": []
-    },
-    "PS-1202": {
-      "key": "PS-1202",
-      "vertical": "sin_vertical",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-03-25T09:29:55.667-0500",
-      "last_status_change_at": "2026-03-25T09:29:49.205-0500",
       "notified_reasons": []
     },
     "PS-1359": {
@@ -523,6 +532,39 @@
   },
   "weekly_buffer": {
     "2026-04-06": {
+      "PS-1416": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "aldana",
+        "created": "2026-03-31T12:46:09.321-0500",
+        "finalized_today": true
+      },
+      "PS-1202": {
+        "status": "On Hold",
+        "status_category": "indeterminate",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Medium",
+        "vertical": "sin_vertical",
+        "reporter": "Agustina \u00c1lvarez",
+        "created": "2026-02-02T21:14:25.883-0500",
+        "finalized_today": false
+      },
+      "PS-1425": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "mariana",
+        "created": "2026-04-06T10:44:01.528-0500",
+        "finalized_today": false
+      },
       "PS-1424": {
         "status": "Tareas por hacer",
         "status_category": "new",
@@ -533,6 +575,28 @@
         "reporter": "Daniel Borda",
         "created": "2026-04-06T09:07:09.914-0500",
         "finalized_today": false
+      },
+      "PS-1419": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "Juan Pablo Portilla",
+        "created": "2026-04-01T10:25:42.838-0500",
+        "finalized_today": true
+      },
+      "PS-1422": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "Mart\u00edn Valencia Romero",
+        "created": "2026-04-01T11:58:39.355-0500",
+        "finalized_today": true
       },
       "PS-1404": {
         "status": "Tareas por hacer",
@@ -576,39 +640,6 @@
         "vertical": "sin_vertical",
         "reporter": "emilio",
         "created": "2026-03-23T19:03:09.819-0500",
-        "finalized_today": false
-      },
-      "PS-1422": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 5,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Mart\u00edn Valencia Romero",
-        "created": "2026-04-01T11:58:39.355-0500",
-        "finalized_today": false
-      },
-      "PS-1419": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 5,
-        "is_stale": true,
-        "criticality": "Highest",
-        "vertical": "sin_vertical",
-        "reporter": "Juan Pablo Portilla",
-        "created": "2026-04-01T10:25:42.838-0500",
-        "finalized_today": false
-      },
-      "PS-1416": {
-        "status": "TEST IN PROGRESS",
-        "status_category": "indeterminate",
-        "days_without_status_change": 5,
-        "is_stale": true,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "aldana",
-        "created": "2026-03-31T12:46:09.321-0500",
         "finalized_today": false
       },
       "PS-1417": {
@@ -807,17 +838,6 @@
         "vertical": "sin_vertical",
         "reporter": "Mart\u00edn Strauss",
         "created": "2025-09-25T15:20:33.623-0500",
-        "finalized_today": false
-      },
-      "PS-1202": {
-        "status": "On Hold",
-        "status_category": "indeterminate",
-        "days_without_status_change": 12,
-        "is_stale": true,
-        "criticality": "Medium",
-        "vertical": "sin_vertical",
-        "reporter": "Agustina \u00c1lvarez",
-        "created": "2026-02-02T21:14:25.883-0500",
         "finalized_today": false
       },
       "PS-1359": {
