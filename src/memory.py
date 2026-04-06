@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict
 
-from models import AgentMemoryState, RoadmapMemoryState, TicketStateSnapshot
+from models import AgentMemoryState, RecurrenceMemoryState, RecurringPatternSnapshot, RoadmapMemoryState, TicketStateSnapshot
 
 
 class AgentMemory:
@@ -41,6 +41,16 @@ class AgentMemory:
             last_run_at=roadmap_raw.get("last_run_at"),
         )
 
+        recurrence_raw = data.get("recurrence", {})
+        recurrence = RecurrenceMemoryState(
+            last_run_at=recurrence_raw.get("last_run_at"),
+            analyzed_ticket_keys=recurrence_raw.get("analyzed_ticket_keys", []),
+            patterns=[
+                RecurringPatternSnapshot(**p)
+                for p in recurrence_raw.get("patterns", [])
+            ],
+        )
+
         return AgentMemoryState(
             tickets=tickets,
             last_run_at=data.get("last_run_at"),
@@ -48,6 +58,7 @@ class AgentMemory:
             last_sent_tickets=last_sent_tickets,
             roadmap=roadmap,
             weekly_last_run_at=data.get("weekly_last_run_at"),
+            recurrence=recurrence,
         )
 
     def save(self, state: AgentMemoryState) -> None:

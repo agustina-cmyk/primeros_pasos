@@ -54,25 +54,37 @@ def run_agent(
     recurring_patterns = None
     if settings.llm_webhook_url:
         try:
-            from recurrence_analyzer import analyze_recurrence
+            from recurrence_analyzer import analyze_recurrence, build_next_recurrence_memory
             recurring_patterns = analyze_recurrence(
                 active_tickets=tickets,
                 finalized_tickets=finalized_tickets,
                 webhook_url=settings.llm_webhook_url,
                 webhook_secret=settings.llm_webhook_secret,
+                recurrence_memory=memory_state.recurrence,
             )
         except Exception as exc:
             print(f"[WARN] Análisis de recurrencia falló: {exc}")
 
     next_memory = build_next_memory_state(grouped_facts)
-    # Preservar la sección roadmap existente para que main.py la actualice
+    # Preservar secciones existentes para que main.py las actualice
     next_memory.roadmap = memory_state.roadmap
+    if recurring_patterns is not None:
+        next_memory.recurrence = build_next_recurrence_memory(
+            previous=memory_state.recurrence,
+            new_patterns=recurring_patterns,
+            all_tickets=tickets + finalized_tickets,
+        )
+    else:
+        next_memory.recurrence = memory_state.recurrence
 
     # Weekly CPO message (only on Friday runs)
     cpo_body = None
     if is_weekly_run:
         today = datetime.now(_ARGENTINA_TZ).date()
-        week_start = today - timedelta(days=today.weekday())  # lunes de la semana actual
+        # week_end = el viernes más reciente (hoy si es viernes, sino el último viernes)
+        days_since_friday = (today.weekday() - 4) % 7
+        week_end = today - timedelta(days=days_since_friday)
+        week_start = week_end - timedelta(days=4)  # lunes de esa semana
         week_start_str = week_start.isoformat()
         resolved_this_week = [
             t for t in finalized_tickets
@@ -84,7 +96,7 @@ def run_agent(
             active_facts=active_facts,
             resolved_this_week=resolved_this_week,
             week_start=week_start,
-            week_end=today,
+            week_end=week_end,
             recurring_patterns=recurring_patterns,
         )
 

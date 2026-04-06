@@ -106,6 +106,22 @@ class RoadmapPlan:
 
 
 @dataclass
+class RecurringPatternSnapshot:
+    label: str
+    ticket_keys: List[str]
+    count: int
+    recommendation: str
+    last_seen_at: str  # ISO date — última vez que se detectó este patrón
+
+
+@dataclass
+class RecurrenceMemoryState:
+    patterns: List[RecurringPatternSnapshot] = field(default_factory=list)
+    analyzed_ticket_keys: List[str] = field(default_factory=list)  # todos los keys ya procesados
+    last_run_at: Optional[str] = None
+
+
+@dataclass
 class RoadmapMemoryState:
     voted_idea_ids: Dict[str, str] = field(default_factory=dict)  # id → "like"|"dislike"
     commented_idea_ids: List[str] = field(default_factory=list)
@@ -122,6 +138,7 @@ class AgentMemoryState:
     roadmap: "RoadmapMemoryState" = field(default_factory=lambda: RoadmapMemoryState())
     last_sent_tickets: Dict[str, "TicketStateSnapshot"] = field(default_factory=dict)
     weekly_last_run_at: Optional[str] = None
+    recurrence: "RecurrenceMemoryState" = field(default_factory=lambda: RecurrenceMemoryState())
 
     def to_dict(self) -> Dict[str, object]:
         return {
@@ -137,6 +154,11 @@ class AgentMemoryState:
                 "created_idea_ids": self.roadmap.created_idea_ids,
             },
             "weekly_last_run_at": self.weekly_last_run_at,
+            "recurrence": {
+                "last_run_at": self.recurrence.last_run_at,
+                "analyzed_ticket_keys": self.recurrence.analyzed_ticket_keys,
+                "patterns": [asdict(p) for p in self.recurrence.patterns],
+            },
         }
 
     @classmethod
