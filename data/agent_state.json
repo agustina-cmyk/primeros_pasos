@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-06T10:37:26.077373+00:00",
+  "last_run_at": "2026-04-06T14:16:55.209728+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1424": {
+      "key": "PS-1424",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-06T09:11:45.346-0500",
+      "last_status_change_at": "2026-04-06T09:11:45.346-0500",
+      "notified_reasons": []
+    },
     "PS-1404": {
       "key": "PS-1404",
       "vertical": "sin_vertical",
@@ -514,6 +523,17 @@
   },
   "weekly_buffer": {
     "2026-04-06": {
+      "PS-1424": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Daniel Borda",
+        "created": "2026-04-06T09:07:09.914-0500",
+        "finalized_today": false
+      },
       "PS-1404": {
         "status": "Tareas por hacer",
         "status_category": "new",
