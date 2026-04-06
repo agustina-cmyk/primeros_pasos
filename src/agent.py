@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from zoneinfo import ZoneInfo
 
@@ -6,7 +6,7 @@ from classifier import build_next_memory_state, classify_tickets
 from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
 from message_builder import build_vertical_message, build_weekly_cpo_message
-from models import AgentMemoryState, RoadmapPlan, VerticalPlan, WeeklyTicketSnapshot
+from models import AgentMemoryState, RoadmapPlan, VerticalPlan
 from planner import build_vertical_plan
 
 _ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
@@ -68,15 +68,23 @@ def run_agent(
     # Preservar la sección roadmap existente para que main.py la actualice
     next_memory.roadmap = memory_state.roadmap
 
-    today_str = datetime.now(_ARGENTINA_TZ).date().isoformat()
-    next_memory.weekly_buffer = _build_next_weekly_buffer(memory_state, today_str, grouped_facts)
-
     # Weekly CPO message (only on Friday runs)
     cpo_body = None
     if is_weekly_run:
+        today = datetime.now(_ARGENTINA_TZ).date()
+        week_start = today - timedelta(days=today.weekday())  # lunes de la semana actual
+        week_start_str = week_start.isoformat()
+        resolved_this_week = [
+            t for t in finalized_tickets
+            if t.last_status_change_at[:10] >= week_start_str
+        ]
+        active_facts = [f for facts in grouped_facts.values() for f in facts]
         cpo_body = build_weekly_cpo_message(
             project_label=project_label,
-            buffer=next_memory.weekly_buffer,
+            active_facts=active_facts,
+            resolved_this_week=resolved_this_week,
+            week_start=week_start,
+            week_end=today,
             recurring_patterns=recurring_patterns,
         )
 
@@ -178,43 +186,3 @@ def _project_label(board_id: str, board_context: JiraBoardContext | None) -> str
     if board_context is None:
         return f"Board {board_id}"
     return board_context.project_name or board_context.project_key or board_context.board_name
-
-
-def _build_weekly_snapshot(
-    grouped_facts: Dict[str, List],
-) -> Dict[str, WeeklyTicketSnapshot]:
-    result = {}
-    for facts in grouped_facts.values():
-        for f in facts:
-            result[f.key] = WeeklyTicketSnapshot(
-                status=f.status,
-                status_category=f.status_category,
-                days_without_status_change=f.days_without_status_change,
-                is_stale=f.is_stale,
-                criticality=f.criticality,
-                vertical=f.vertical,
-                reporter=f.reporter,
-                created=f.created,
-                finalized_today=f.finalized_today,
-            )
-    return result
-
-
-def _build_next_weekly_buffer(
-    memory_state: AgentMemoryState,
-    today_str: str,
-    grouped_facts: Dict[str, List],
-) -> Dict[str, Dict[str, WeeklyTicketSnapshot]]:
-    existing = dict(memory_state.weekly_buffer)
-
-    # Stale check: if earliest buffer date is from a different ISO week/year, reset
-    if existing:
-        earliest = date.fromisoformat(min(existing.keys()))
-        today = date.fromisoformat(today_str)
-        e_cal = earliest.isocalendar()
-        t_cal = today.isocalendar()
-        if e_cal.week != t_cal.week or e_cal.year != t_cal.year:
-            existing = {}
-
-    today_snapshot = _build_weekly_snapshot(grouped_facts)
-    return {**existing, today_str: today_snapshot}
