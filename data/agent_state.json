@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-04-08T10:17:50.616135+00:00",
+  "last_run_at": "2026-04-08T14:58:34.613778+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1428": {
+      "key": "PS-1428",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-08T09:50:34.764-0500",
+      "last_status_change_at": "2026-04-07T16:46:46.538-0500",
+      "notified_reasons": []
+    },
+    "PS-1424": {
+      "key": "PS-1424",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-08T09:16:02.579-0500",
+      "last_status_change_at": "2026-04-08T09:16:02.579-0500",
+      "notified_reasons": []
+    },
     "PS-1395": {
       "key": "PS-1395",
       "vertical": "sin_vertical",
@@ -72,15 +90,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-04-06T15:33:51.364-0500",
       "last_status_change_at": "2026-04-06T15:33:51.364-0500",
-      "notified_reasons": []
-    },
-    "PS-1424": {
-      "key": "PS-1424",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-06T14:19:49.781-0500",
-      "last_status_change_at": "2026-04-06T14:19:49.781-0500",
       "notified_reasons": []
     },
     "PS-1379": {
@@ -1615,6 +1624,28 @@
       }
     },
     "2026-04-08": {
+      "PS-1428": {
+        "status": "Finalizada",
+        "status_category": "done",
+        "days_without_status_change": 1,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Agustina \u00c1lvarez",
+        "created": "2026-04-06T17:13:31.450-0500",
+        "finalized_today": false
+      },
+      "PS-1424": {
+        "status": "Tareas por hacer",
+        "status_category": "new",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "High",
+        "vertical": "sin_vertical",
+        "reporter": "Daniel Borda",
+        "created": "2026-04-06T09:07:09.914-0500",
+        "finalized_today": false
+      },
       "PS-1395": {
         "status": "TEST IN PROGRESS",
         "status_category": "indeterminate",
@@ -1701,17 +1732,6 @@
         "vertical": "sin_vertical",
         "reporter": "Daniel Borda",
         "created": "2025-10-16T17:36:57.879-0500",
-        "finalized_today": false
-      },
-      "PS-1424": {
-        "status": "Tareas por hacer",
-        "status_category": "new",
-        "days_without_status_change": 2,
-        "is_stale": false,
-        "criticality": "High",
-        "vertical": "sin_vertical",
-        "reporter": "Daniel Borda",
-        "created": "2026-04-06T09:07:09.914-0500",
         "finalized_today": false
       },
       "PS-1379": {
