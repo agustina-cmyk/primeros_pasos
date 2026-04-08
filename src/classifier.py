@@ -43,7 +43,7 @@ def classify_tickets(
     now_local = datetime.now(tz=_ARGENTINA_TZ)
     last_message_dt = _safe_parse_iso(last_message_sent_at)
 
-    sent_snapshot = last_sent_tickets if last_sent_tickets is not None else memory_state.tickets
+    sent_snapshot = last_sent_tickets if last_sent_tickets else memory_state.tickets
 
     for ticket in tickets:
         vertical = resolve_vertical(ticket.labels, label_prefix, label_to_vertical)

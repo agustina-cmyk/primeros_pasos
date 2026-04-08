@@ -111,7 +111,7 @@ class JiraClient:
                         reporter=reporter.get("displayName"),
                         created=issue_fields.get("created", ""),
                         updated=issue_fields.get("updated", ""),
-                        last_status_change_at=self._last_status_change_at(issue) or issue_fields.get("updated", ""),
+                        last_status_change_at=self._last_status_change_at(issue) or issue_fields.get("created", ""),
                         description=self._adf_to_text(issue_fields.get("description")),
                         section=self._field_to_text(issue_fields.get(self.section_field)) if self.section_field else "",
                         criticality=self._field_to_text(issue_fields.get(self.criticality_field)) if self.criticality_field else self._field_to_text(issue_fields.get("priority")),
