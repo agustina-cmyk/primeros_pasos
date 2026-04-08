@@ -14,7 +14,7 @@ def build_vertical_message(
 ) -> Tuple[str, str]:
     # Todos los tickets del plan para el título
     all_tickets = [t for action in plan.actions for t in action.tickets]
-    new_in = sum(1 for t in all_tickets if t.created_today)
+    new_in = sum(1 for t in all_tickets if t.created_since_last_message)
     wip = sum(1 for t in all_tickets if t.status_category.lower() != "done" and not t.finalized_today)
     new_out = sum(1 for t in all_tickets if t.finalized_today)
 
