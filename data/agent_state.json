@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-08T21:30:20.719620+00:00",
+  "last_run_at": "2026-04-08T23:27:35.532319+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1435": {
+      "key": "PS-1435",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-04-08T18:12:02.202-0500",
+      "last_status_change_at": "2026-04-08T17:42:52.942-0500",
+      "notified_reasons": []
+    },
     "PS-1424": {
       "key": "PS-1424",
       "vertical": "sin_vertical",
@@ -1651,6 +1660,17 @@
       }
     },
     "2026-04-08": {
+      "PS-1435": {
+        "status": "DISCARDED",
+        "status_category": "done",
+        "days_without_status_change": 0,
+        "is_stale": false,
+        "criticality": "Highest",
+        "vertical": "sin_vertical",
+        "reporter": "brayan",
+        "created": "2026-04-08T17:34:09.609-0500",
+        "finalized_today": true
+      },
       "PS-1424": {
         "status": "Tareas por hacer",
         "status_category": "new",
