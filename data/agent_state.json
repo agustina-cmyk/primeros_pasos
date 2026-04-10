@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-04-10T17:38:48.541019+00:00",
+  "last_run_at": "2026-04-10T19:59:44.014306+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1444": {
       "key": "PS-1444",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "aldana",
-      "updated": "2026-04-10T12:19:13.015-0500",
-      "last_status_change_at": "2026-04-10T12:19:05.130-0500",
+      "updated": "2026-04-10T12:36:41.656-0500",
+      "last_status_change_at": "2026-04-10T12:36:41.656-0500",
       "notified_reasons": []
     },
     "PS-1443": {
@@ -505,7 +505,9 @@
       "cmnkjnwi40003xuwdfxqeaz0y": "like",
       "cmngedps4000a16wh43c66e93": "like",
       "cmnkjeqo80001xuwdbk871zck": "like",
-      "cmnt5wzqs00019p24hi6yo61l": "like"
+      "cmnt5wzqs00019p24hi6yo61l": "like",
+      "cmnkk24p40005xuwdxh57gy8x": "like",
+      "cmnt38h0n00018t7ybhuky9u6": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -550,7 +552,10 @@
       "cmnkjnwi40003xuwdfxqeaz0y",
       "cmngedps4000a16wh43c66e93",
       "cmnkjeqo80001xuwdbk871zck",
-      "cmnt5wzqs00019p24hi6yo61l"
+      "cmnt5wzqs00019p24hi6yo61l",
+      "cmnkk24p40005xuwdxh57gy8x",
+      "cmnt38h0n00018t7ybhuky9u6",
+      "cmnt6wqbv000bdedthrly6s8b"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -569,7 +574,7 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-10T17:37:25.244984+00:00",
+    "last_run_at": "2026-04-10T19:58:06.881304+00:00",
     "analyzed_ticket_keys": [
       "PS-1444",
       "PS-1443",
