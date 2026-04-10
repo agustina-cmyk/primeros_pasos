@@ -1,14 +1,32 @@
 {
-  "last_run_at": "2026-04-10T10:17:45.028618+00:00",
+  "last_run_at": "2026-04-10T14:34:35.798365+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1381": {
+      "key": "PS-1381",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-10T09:26:58.466-0500",
+      "last_status_change_at": "2026-03-26T18:14:39.413-0500",
+      "notified_reasons": []
+    },
     "PS-1441": {
       "key": "PS-1441",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-09T16:33:58.635-0500",
-      "last_status_change_at": "2026-04-09T16:33:58.635-0500",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-04-10T09:23:37.430-0500",
+      "last_status_change_at": "2026-04-10T09:23:37.430-0500",
+      "notified_reasons": []
+    },
+    "PS-1364": {
+      "key": "PS-1364",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-10T09:14:06.814-0500",
+      "last_status_change_at": "2026-04-10T09:14:06.814-0500",
       "notified_reasons": []
     },
     "PS-1442": {
@@ -191,15 +209,6 @@
       "last_status_change_at": "2026-03-31T15:31:20.153-0500",
       "notified_reasons": []
     },
-    "PS-1364": {
-      "key": "PS-1364",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-31T12:30:44.046-0500",
-      "last_status_change_at": "2026-03-31T12:30:44.046-0500",
-      "notified_reasons": []
-    },
     "PS-1356": {
       "key": "PS-1356",
       "vertical": "sin_vertical",
@@ -279,15 +288,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-03-29T12:03:31.977-0500",
       "last_status_change_at": "2026-03-29T12:03:31.977-0500",
-      "notified_reasons": []
-    },
-    "PS-1381": {
-      "key": "PS-1381",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-03-26T18:14:39.413-0500",
-      "last_status_change_at": "2026-03-26T18:14:39.413-0500",
       "notified_reasons": []
     },
     "PS-916": {
@@ -482,7 +482,10 @@
       "cmngeg8iz000e16whe7dsabas": "like",
       "cmndt25te0001noylwf23qr6w": "like",
       "cmngavc4g0005lcvd1ipaokb4": "like",
-      "cmmyf7zg50001gxqb2nbucjkx": "like"
+      "cmmyf7zg50001gxqb2nbucjkx": "like",
+      "cmnkjnwi40003xuwdfxqeaz0y": "like",
+      "cmngedps4000a16wh43c66e93": "like",
+      "cmnkjeqo80001xuwdbk871zck": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -523,7 +526,10 @@
       "cmndt25te0001noylwf23qr6w",
       "cmnitkm4e0002unpb3249uy23",
       "cmngavc4g0005lcvd1ipaokb4",
-      "cmmyf7zg50001gxqb2nbucjkx"
+      "cmmyf7zg50001gxqb2nbucjkx",
+      "cmnkjnwi40003xuwdfxqeaz0y",
+      "cmngedps4000a16wh43c66e93",
+      "cmnkjeqo80001xuwdbk871zck"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -540,5 +546,5 @@
     ]
   },
   "weekly_buffer": {},
-  "weekly_last_run_at": "2026-04-10T10:17:45.028554+00:00"
+  "weekly_last_run_at": "2026-04-10T14:34:35.798262+00:00"
 }
