@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-04-10T21:57:56.738702+00:00",
+  "last_run_at": "2026-04-10T23:54:27.831491+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1424": {
+      "key": "PS-1424",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-10T18:31:16.828-0500",
+      "last_status_change_at": "2026-04-10T18:31:16.828-0500",
+      "notified_reasons": []
+    },
+    "PS-1446": {
+      "key": "PS-1446",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-10T18:24:10.222-0500",
+      "last_status_change_at": "2026-04-10T17:08:17.072-0500",
+      "notified_reasons": []
+    },
     "PS-1444": {
       "key": "PS-1444",
       "vertical": "sin_vertical",
@@ -153,15 +171,6 @@
       "assignee": "abrahan",
       "updated": "2026-04-09T09:44:06.866-0500",
       "last_status_change_at": "2026-04-09T09:44:06.866-0500",
-      "notified_reasons": []
-    },
-    "PS-1424": {
-      "key": "PS-1424",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-08T13:34:04.079-0500",
-      "last_status_change_at": "2026-04-06T09:07:09.914-0500",
       "notified_reasons": []
     },
     "PS-1433": {
@@ -516,7 +525,8 @@
       "cmnkjeqo80001xuwdbk871zck": "like",
       "cmnt5wzqs00019p24hi6yo61l": "like",
       "cmnkk24p40005xuwdxh57gy8x": "like",
-      "cmnt38h0n00018t7ybhuky9u6": "like"
+      "cmnt38h0n00018t7ybhuky9u6": "like",
+      "cmntjp5ji0005po7kvwhlyw2b": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -564,7 +574,8 @@
       "cmnt5wzqs00019p24hi6yo61l",
       "cmnkk24p40005xuwdxh57gy8x",
       "cmnt38h0n00018t7ybhuky9u6",
-      "cmnt6wqbv000bdedthrly6s8b"
+      "cmnt6wqbv000bdedthrly6s8b",
+      "cmntjp5ji0005po7kvwhlyw2b"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -583,8 +594,10 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-10T21:56:46.556279+00:00",
+    "last_run_at": "2026-04-10T23:53:14.880191+00:00",
     "analyzed_ticket_keys": [
+      "PS-1424",
+      "PS-1446",
       "PS-1444",
       "PS-1445",
       "PS-1382",
@@ -602,7 +615,6 @@
       "PS-1438",
       "PS-1372",
       "PS-1267",
-      "PS-1424",
       "PS-1433",
       "PS-1432",
       "PS-1097",
@@ -637,6 +649,7 @@
       "PS-1020",
       "PS-1062",
       "PS-923",
+      "PS-1424",
       "PS-1445",
       "PS-1387",
       "PS-1404",
@@ -655,89 +668,11 @@
           "PS-1360",
           "PS-916",
           "PS-1202",
-          "PS-1020"
+          "PS-1020",
+          "PS-1446"
         ],
-        "count": 7,
+        "count": 8,
         "recommendation": "Priorizar diagn\u00f3stico del pipeline extractor->report (mapeo S3, race conditions y normalizaci\u00f3n de estados) y agregar validaciones end-to-end para asegurar consistencia.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Problemas en Manual Review: filtros, preview y persistencia de edits",
-        "ticket_keys": [
-          "PS-1441",
-          "PS-1440",
-          "PS-1172",
-          "PS-1206",
-          "PS-1356"
-        ],
-        "count": 5,
-        "recommendation": "Arreglar estado client-side de Manual Review (filtros reset, preview loader y persistencia/auto-save de cambios) como \u00edtem de UX cr\u00edtico.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Errores y bugs en mapeadores (payment tape / custom rows / account id)",
-        "ticket_keys": [
-          "PS-1314",
-          "PS-1438",
-          "PS-1414",
-          "PS-957"
-        ],
-        "count": 4,
-        "recommendation": "Mejorar logging y mensajes de error en el layer de mapeo, a\u00f1adir validaciones y tests para mapeos de payment tape y custom rows.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Plantillas y versiones desincronizadas (reports y doc templates)",
-        "ticket_keys": [
-          "PS-1227",
-          "PS-1268",
-          "PS-1379",
-          "PS-1445"
-        ],
-        "count": 4,
-        "recommendation": "Implementar fuente \u00fanica para templates y mecanismo de invalidaci\u00f3n de cache/versionado para asegurar que descargas/visualizaciones usen la \u00faltima versi\u00f3n.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Pesta\u00f1a input_extractor / alcance de extracciones incompleto",
-        "ticket_keys": [
-          "PS-1433",
-          "PS-1097",
-          "PS-1234"
-        ],
-        "count": 3,
-        "recommendation": "Unificar l\u00f3gica de agregaci\u00f3n en input_extractor para incluir todos los ref types y soportar nuevos formatos de expedientes (zips) en la ETL.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Fallos en BPM / flujo de verificaci\u00f3n (event handling y filtrado)",
-        "ticket_keys": [
-          "PS-1444",
-          "PS-1236",
-          "PS-1173"
-        ],
-        "count": 3,
-        "recommendation": "Auditar y reforzar el manejo de eventos/idempotencia y la l\u00f3gica de filtrado en los BPMs para evitar cr\u00e9ditos omitidos y estados inconsistentes.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Solapamiento de UI (monto y nombre de cuenta)",
-        "ticket_keys": [
-          "PS-1387",
-          "PS-1062"
-        ],
-        "count": 2,
-        "recommendation": "Corregir estilos/layout en borrower central (responsive y spacing) y a\u00f1adir pruebas visuales para evitar regressiones.",
-        "last_seen_at": "2026-04-10"
-      },
-      {
-        "label": "Problemas en env\u00edos y contenido de emails (recipients y campos mostrados)",
-        "ticket_keys": [
-          "PS-1382",
-          "PS-767"
-        ],
-        "count": 2,
-        "recommendation": "Revisar y centralizar la l\u00f3gica de plantillas de correo y el manejo de destinatarios para asegurar updates y campos mostrados correctos.",
         "last_seen_at": "2026-04-10"
       }
     ]
