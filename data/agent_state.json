@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-11T11:49:04.381724+00:00",
+  "last_run_at": "2026-04-11T14:05:46.286881+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1097": {
+      "key": "PS-1097",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-11T08:56:26.354-0500",
+      "last_status_change_at": "2025-12-19T05:40:41.372-0500",
+      "notified_reasons": []
+    },
     "PS-1417": {
       "key": "PS-1417",
       "vertical": "sin_vertical",
@@ -126,15 +135,6 @@
       "assignee": null,
       "updated": "2026-04-08T10:43:26.507-0500",
       "last_status_change_at": "2026-04-08T10:43:17.998-0500",
-      "notified_reasons": []
-    },
-    "PS-1097": {
-      "key": "PS-1097",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-07T14:59:46.942-0500",
-      "last_status_change_at": "2025-12-19T05:40:41.372-0500",
       "notified_reasons": []
     },
     "PS-1202": {
@@ -522,8 +522,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-11T11:49:04.381676+00:00",
+    "last_run_at": "2026-04-11T14:05:46.286835+00:00",
     "analyzed_ticket_keys": [
+      "PS-1097",
       "PS-1417",
       "PS-1446",
       "PS-1444",
@@ -538,7 +539,6 @@
       "PS-1267",
       "PS-1433",
       "PS-1432",
-      "PS-1097",
       "PS-1202",
       "PS-1373",
       "PS-1371",
