@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-04-10T23:54:27.831491+00:00",
+  "last_run_at": "2026-04-11T05:18:22.380256+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1424": {
-      "key": "PS-1424",
+    "PS-1417": {
+      "key": "PS-1417",
       "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-10T18:31:16.828-0500",
-      "last_status_change_at": "2026-04-10T18:31:16.828-0500",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-10T21:12:09.957-0500",
+      "last_status_change_at": "2026-03-31T15:31:13.055-0500",
       "notified_reasons": []
     },
     "PS-1446": {
@@ -16,7 +16,7 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-10T18:24:10.222-0500",
+      "updated": "2026-04-10T19:09:29.668-0500",
       "last_status_change_at": "2026-04-10T17:08:17.072-0500",
       "notified_reasons": []
     },
@@ -29,15 +29,6 @@
       "last_status_change_at": "2026-04-10T16:16:30.630-0500",
       "notified_reasons": []
     },
-    "PS-1445": {
-      "key": "PS-1445",
-      "vertical": "sin_vertical",
-      "status": "DISCARDED",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-04-10T15:25:19.649-0500",
-      "last_status_change_at": "2026-04-10T15:25:19.649-0500",
-      "notified_reasons": []
-    },
     "PS-1382": {
       "key": "PS-1382",
       "vertical": "sin_vertical",
@@ -45,15 +36,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-04-10T15:03:44.883-0500",
       "last_status_change_at": "2026-04-10T15:03:44.883-0500",
-      "notified_reasons": []
-    },
-    "PS-1387": {
-      "key": "PS-1387",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-04-10T14:59:43.438-0500",
-      "last_status_change_at": "2026-04-10T14:59:43.438-0500",
       "notified_reasons": []
     },
     "PS-1443": {
@@ -65,24 +47,6 @@
       "last_status_change_at": "2026-04-10T12:05:00.336-0500",
       "notified_reasons": []
     },
-    "PS-1404": {
-      "key": "PS-1404",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-10T11:50:17.587-0500",
-      "last_status_change_at": "2026-04-10T11:49:03.754-0500",
-      "notified_reasons": []
-    },
-    "PS-1395": {
-      "key": "PS-1395",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-10T11:48:53.498-0500",
-      "last_status_change_at": "2026-04-10T11:48:53.498-0500",
-      "notified_reasons": []
-    },
     "PS-1256": {
       "key": "PS-1256",
       "vertical": "sin_vertical",
@@ -92,15 +56,6 @@
       "last_status_change_at": "2026-04-10T10:53:20.960-0500",
       "notified_reasons": []
     },
-    "PS-1436": {
-      "key": "PS-1436",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-10T09:50:58.411-0500",
-      "last_status_change_at": "2026-04-10T09:50:58.411-0500",
-      "notified_reasons": []
-    },
     "PS-1381": {
       "key": "PS-1381",
       "vertical": "sin_vertical",
@@ -108,24 +63,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-04-10T09:26:58.466-0500",
       "last_status_change_at": "2026-03-26T18:14:39.413-0500",
-      "notified_reasons": []
-    },
-    "PS-1441": {
-      "key": "PS-1441",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-04-10T09:23:37.430-0500",
-      "last_status_change_at": "2026-04-10T09:23:37.430-0500",
-      "notified_reasons": []
-    },
-    "PS-1364": {
-      "key": "PS-1364",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-10T09:14:06.814-0500",
-      "last_status_change_at": "2026-04-10T09:14:06.814-0500",
       "notified_reasons": []
     },
     "PS-1442": {
@@ -243,15 +180,6 @@
       "assignee": "Ander",
       "updated": "2026-04-06T13:29:48.282-0500",
       "last_status_change_at": "2026-04-06T13:29:48.282-0500",
-      "notified_reasons": []
-    },
-    "PS-1417": {
-      "key": "PS-1417",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-31T15:31:20.153-0500",
-      "last_status_change_at": "2026-03-31T15:31:13.055-0500",
       "notified_reasons": []
     },
     "PS-1356": {
@@ -594,22 +522,15 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-10T23:53:14.880191+00:00",
+    "last_run_at": "2026-04-11T05:18:22.380208+00:00",
     "analyzed_ticket_keys": [
-      "PS-1424",
+      "PS-1417",
       "PS-1446",
       "PS-1444",
-      "PS-1445",
       "PS-1382",
-      "PS-1387",
       "PS-1443",
-      "PS-1404",
-      "PS-1395",
       "PS-1256",
-      "PS-1436",
       "PS-1381",
-      "PS-1441",
-      "PS-1364",
       "PS-1442",
       "PS-1440",
       "PS-1438",
@@ -623,7 +544,6 @@
       "PS-1371",
       "PS-957",
       "PS-1379",
-      "PS-1417",
       "PS-1356",
       "PS-1414",
       "PS-1384",
@@ -648,15 +568,7 @@
       "PS-1172",
       "PS-1020",
       "PS-1062",
-      "PS-923",
-      "PS-1424",
-      "PS-1445",
-      "PS-1387",
-      "PS-1404",
-      "PS-1395",
-      "PS-1436",
-      "PS-1441",
-      "PS-1364"
+      "PS-923"
     ],
     "patterns": [
       {
