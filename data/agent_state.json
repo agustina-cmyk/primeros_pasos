@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-13T07:26:10.589685+00:00",
+  "last_run_at": "2026-04-13T11:55:26.438628+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1097": {
@@ -522,7 +522,7 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-13T07:26:10.589634+00:00",
+    "last_run_at": "2026-04-13T11:55:26.438584+00:00",
     "analyzed_ticket_keys": [
       "PS-1097",
       "PS-1417",
