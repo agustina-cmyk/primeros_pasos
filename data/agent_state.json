@@ -1,14 +1,32 @@
 {
-  "last_run_at": "2026-04-13T11:55:26.438628+00:00",
+  "last_run_at": "2026-04-13T16:21:04.531979+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1268": {
+      "key": "PS-1268",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-04-13T09:59:17.473-0500",
+      "last_status_change_at": "2026-04-13T09:59:17.473-0500",
+      "notified_reasons": []
+    },
+    "PS-957": {
+      "key": "PS-957",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Damian Fixel",
+      "updated": "2026-04-13T09:24:13.046-0500",
+      "last_status_change_at": "2026-04-13T09:24:13.046-0500",
+      "notified_reasons": []
+    },
     "PS-1097": {
       "key": "PS-1097",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-11T08:56:26.354-0500",
-      "last_status_change_at": "2025-12-19T05:40:41.372-0500",
+      "updated": "2026-04-13T08:23:53.397-0500",
+      "last_status_change_at": "2026-04-13T08:23:53.397-0500",
       "notified_reasons": []
     },
     "PS-1417": {
@@ -164,15 +182,6 @@
       "last_status_change_at": "2026-03-16T18:57:13.982-0500",
       "notified_reasons": []
     },
-    "PS-957": {
-      "key": "PS-957",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-04-06T15:33:51.364-0500",
-      "last_status_change_at": "2025-10-16T17:36:57.879-0500",
-      "notified_reasons": []
-    },
     "PS-1379": {
       "key": "PS-1379",
       "vertical": "sin_vertical",
@@ -315,15 +324,6 @@
       "assignee": "abrahan",
       "updated": "2026-03-09T15:55:40.837-0500",
       "last_status_change_at": "2026-02-04T08:36:08.268-0500",
-      "notified_reasons": []
-    },
-    "PS-1268": {
-      "key": "PS-1268",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-06T09:12:09.313-0500",
-      "last_status_change_at": "2026-02-23T23:08:14.101-0500",
       "notified_reasons": []
     },
     "PS-767": {
@@ -522,8 +522,10 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-13T11:55:26.438584+00:00",
+    "last_run_at": "2026-04-13T16:21:04.531929+00:00",
     "analyzed_ticket_keys": [
+      "PS-1268",
+      "PS-957",
       "PS-1097",
       "PS-1417",
       "PS-1446",
@@ -542,7 +544,6 @@
       "PS-1202",
       "PS-1373",
       "PS-1371",
-      "PS-957",
       "PS-1379",
       "PS-1356",
       "PS-1414",
@@ -559,7 +560,6 @@
       "PS-1234",
       "PS-1227",
       "PS-1206",
-      "PS-1268",
       "PS-767",
       "PS-1259",
       "PS-1236",
@@ -568,7 +568,9 @@
       "PS-1172",
       "PS-1020",
       "PS-1062",
-      "PS-923"
+      "PS-923",
+      "PS-1268",
+      "PS-957"
     ],
     "patterns": [
       {
