@@ -1,7 +1,43 @@
 {
-  "last_run_at": "2026-04-15T14:56:54.077907+00:00",
+  "last_run_at": "2026-04-15T18:48:10.370683+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1456": {
+      "key": "PS-1456",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-04-15T13:16:49.631-0500",
+      "last_status_change_at": "2026-04-15T13:16:49.631-0500",
+      "notified_reasons": []
+    },
+    "PS-1457": {
+      "key": "PS-1457",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": null,
+      "updated": "2026-04-15T13:04:55.989-0500",
+      "last_status_change_at": "2026-04-15T13:04:55.989-0500",
+      "notified_reasons": []
+    },
+    "PS-1444": {
+      "key": "PS-1444",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-04-15T12:36:01.467-0500",
+      "last_status_change_at": "2026-04-15T12:36:01.467-0500",
+      "notified_reasons": []
+    },
+    "PS-1453": {
+      "key": "PS-1453",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-04-15T11:37:25.031-0500",
+      "last_status_change_at": "2026-04-15T11:02:47.920-0500",
+      "notified_reasons": []
+    },
     "PS-1227": {
       "key": "PS-1227",
       "vertical": "sin_vertical",
@@ -27,15 +63,6 @@
       "assignee": null,
       "updated": "2026-04-14T17:24:58.996-0500",
       "last_status_change_at": "2026-04-14T17:24:52.140-0500",
-      "notified_reasons": []
-    },
-    "PS-1453": {
-      "key": "PS-1453",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-14T17:02:43.758-0500",
-      "last_status_change_at": "2026-04-14T17:01:46.309-0500",
       "notified_reasons": []
     },
     "PS-1440": {
@@ -108,15 +135,6 @@
       "assignee": "abrahan",
       "updated": "2026-04-14T08:29:15.508-0500",
       "last_status_change_at": "2026-04-14T08:29:15.508-0500",
-      "notified_reasons": []
-    },
-    "PS-1444": {
-      "key": "PS-1444",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "aldana",
-      "updated": "2026-04-13T14:30:33.300-0500",
-      "last_status_change_at": "2026-04-13T14:30:33.300-0500",
       "notified_reasons": []
     },
     "PS-1417": {
@@ -486,12 +504,15 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-15T14:56:54.077863+00:00",
+    "last_run_at": "2026-04-15T18:48:10.370620+00:00",
     "analyzed_ticket_keys": [
+      "PS-1456",
+      "PS-1457",
+      "PS-1444",
+      "PS-1453",
       "PS-1227",
       "PS-1451",
       "PS-1454",
-      "PS-1453",
       "PS-1440",
       "PS-1452",
       "PS-1206",
@@ -500,7 +521,6 @@
       "PS-1450",
       "PS-1449",
       "PS-1172",
-      "PS-1444",
       "PS-1417",
       "PS-1382",
       "PS-1442",
@@ -528,7 +548,9 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923"
+      "PS-923",
+      "PS-1444",
+      "PS-1453"
     ],
     "patterns": [
       {
@@ -545,11 +567,12 @@
           "PS-1448",
           "PS-1450",
           "PS-1452",
-          "PS-1451"
+          "PS-1451",
+          "PS-1457"
         ],
-        "count": 12,
+        "count": 13,
         "recommendation": "Priorizar diagn\u00f3stico del pipeline extractor->report (mapeo S3, race conditions y normalizaci\u00f3n de estados) y agregar validaciones end-to-end para asegurar consistencia.",
-        "last_seen_at": "2026-04-14"
+        "last_seen_at": "2026-04-15"
       }
     ]
   }
