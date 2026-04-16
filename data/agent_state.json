@@ -1,14 +1,50 @@
 {
-  "last_run_at": "2026-04-16T10:45:40.222989+00:00",
+  "last_run_at": "2026-04-16T16:10:39.047677+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1443": {
-      "key": "PS-1443",
+    "PS-1240": {
+      "key": "PS-1240",
+      "vertical": "sin_vertical",
+      "status": "On Hold",
+      "assignee": "aldana",
+      "updated": "2026-04-16T11:06:36.304-0500",
+      "last_status_change_at": "2026-04-16T10:32:26.556-0500",
+      "notified_reasons": []
+    },
+    "PS-1462": {
+      "key": "PS-1462",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-16T10:54:52.395-0500",
+      "last_status_change_at": "2026-04-16T10:45:44.636-0500",
+      "notified_reasons": []
+    },
+    "PS-1414": {
+      "key": "PS-1414",
       "vertical": "sin_vertical",
       "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-04-15T18:54:57.315-0500",
-      "last_status_change_at": "2026-04-15T18:54:57.315-0500",
+      "assignee": "abrahan",
+      "updated": "2026-04-16T10:34:29.511-0500",
+      "last_status_change_at": "2026-03-31T10:09:08.795-0500",
+      "notified_reasons": []
+    },
+    "PS-1379": {
+      "key": "PS-1379",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ander",
+      "updated": "2026-04-16T10:34:19.390-0500",
+      "last_status_change_at": "2026-04-06T13:29:48.282-0500",
+      "notified_reasons": []
+    },
+    "PS-1461": {
+      "key": "PS-1461",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-04-16T10:12:27.538-0500",
+      "last_status_change_at": "2026-04-16T09:35:12.625-0500",
       "notified_reasons": []
     },
     "PS-1457": {
@@ -16,8 +52,17 @@
       "vertical": "sin_vertical",
       "status": "READY FOR TEST",
       "assignee": null,
-      "updated": "2026-04-15T17:12:38.458-0500",
+      "updated": "2026-04-16T07:33:26.915-0500",
       "last_status_change_at": "2026-04-15T17:12:38.458-0500",
+      "notified_reasons": []
+    },
+    "PS-1443": {
+      "key": "PS-1443",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-04-15T18:54:57.315-0500",
+      "last_status_change_at": "2026-04-15T18:54:57.315-0500",
       "notified_reasons": []
     },
     "PS-1356": {
@@ -182,24 +227,6 @@
       "last_status_change_at": "2026-04-07T07:54:43.365-0500",
       "notified_reasons": []
     },
-    "PS-1379": {
-      "key": "PS-1379",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ander",
-      "updated": "2026-04-06T13:29:48.282-0500",
-      "last_status_change_at": "2026-04-06T13:29:48.282-0500",
-      "notified_reasons": []
-    },
-    "PS-1414": {
-      "key": "PS-1414",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-03-31T10:09:08.795-0500",
-      "last_status_change_at": "2026-03-31T10:09:08.795-0500",
-      "notified_reasons": []
-    },
     "PS-1384": {
       "key": "PS-1384",
       "vertical": "sin_vertical",
@@ -216,15 +243,6 @@
       "assignee": null,
       "updated": "2026-03-30T13:51:30.627-0500",
       "last_status_change_at": "2026-03-04T19:28:18.856-0500",
-      "notified_reasons": []
-    },
-    "PS-1240": {
-      "key": "PS-1240",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "aldana",
-      "updated": "2026-03-30T11:45:34.632-0500",
-      "last_status_change_at": "2026-02-13T14:19:21.052-0500",
       "notified_reasons": []
     },
     "PS-1391": {
@@ -486,10 +504,15 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-16T10:45:40.222946+00:00",
+    "last_run_at": "2026-04-16T16:10:39.047598+00:00",
     "analyzed_ticket_keys": [
-      "PS-1443",
+      "PS-1240",
+      "PS-1462",
+      "PS-1414",
+      "PS-1379",
+      "PS-1461",
       "PS-1457",
+      "PS-1443",
       "PS-1356",
       "PS-1460",
       "PS-1456",
@@ -508,11 +531,8 @@
       "PS-1438",
       "PS-1432",
       "PS-1202",
-      "PS-1379",
-      "PS-1414",
       "PS-1384",
       "PS-1314",
-      "PS-1240",
       "PS-1391",
       "PS-1060",
       "PS-1360",
@@ -528,7 +548,8 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923"
+      "PS-923",
+      "PS-1461"
     ],
     "patterns": [
       {
@@ -551,17 +572,18 @@
         ],
         "count": 14,
         "recommendation": "Priorizar diagn\u00f3stico del pipeline extractor->report (mapeo S3, race conditions y normalizaci\u00f3n de estados) y agregar validaciones end-to-end para asegurar consistencia.",
-        "last_seen_at": "2026-04-15"
+        "last_seen_at": "2026-04-16"
       },
       {
         "label": "Persistencia de cambios en Manual Review (ediciones/Checkmate no se guardan)",
         "ticket_keys": [
           "PS-1459",
-          "PS-1460"
+          "PS-1460",
+          "PS-1461"
         ],
-        "count": 2,
+        "count": 3,
         "recommendation": "Investigar y corregir fallo de persistencia en Manual Review/Checkmate (API de guardado, locking y UI), a\u00f1adir logs y pruebas e2e para asegurar que las correcciones manuales se persisten.",
-        "last_seen_at": "2026-04-15"
+        "last_seen_at": "2026-04-16"
       }
     ]
   }
