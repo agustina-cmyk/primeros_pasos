@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-16T00:04:31.344809+00:00",
+  "last_run_at": "2026-04-16T06:25:08.013895+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1443": {
@@ -38,24 +38,6 @@
       "last_status_change_at": "2026-04-15T16:38:16.036-0500",
       "notified_reasons": []
     },
-    "PS-1449": {
-      "key": "PS-1449",
-      "vertical": "sin_vertical",
-      "status": "DISCARDED",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-15T15:58:01.231-0500",
-      "last_status_change_at": "2026-04-15T15:58:01.231-0500",
-      "notified_reasons": []
-    },
-    "PS-1451": {
-      "key": "PS-1451",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-15T15:53:10.697-0500",
-      "last_status_change_at": "2026-04-15T15:53:10.697-0500",
-      "notified_reasons": []
-    },
     "PS-1456": {
       "key": "PS-1456",
       "vertical": "sin_vertical",
@@ -74,15 +56,6 @@
       "last_status_change_at": "2026-04-15T15:12:26.209-0500",
       "notified_reasons": []
     },
-    "PS-1458": {
-      "key": "PS-1458",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-15T14:46:12.573-0500",
-      "last_status_change_at": "2026-04-15T14:45:46.166-0500",
-      "notified_reasons": []
-    },
     "PS-1452": {
       "key": "PS-1452",
       "vertical": "sin_vertical",
@@ -90,24 +63,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-04-15T13:57:03.850-0500",
       "last_status_change_at": "2026-04-14T16:02:35.865-0500",
-      "notified_reasons": []
-    },
-    "PS-1444": {
-      "key": "PS-1444",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-15T12:36:01.467-0500",
-      "last_status_change_at": "2026-04-15T12:36:01.467-0500",
-      "notified_reasons": []
-    },
-    "PS-1453": {
-      "key": "PS-1453",
-      "vertical": "sin_vertical",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-04-15T11:37:25.031-0500",
-      "last_status_change_at": "2026-04-15T11:02:47.920-0500",
       "notified_reasons": []
     },
     "PS-1227": {
@@ -531,20 +486,15 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-16T00:04:31.344757+00:00",
+    "last_run_at": "2026-04-16T06:25:08.013849+00:00",
     "analyzed_ticket_keys": [
       "PS-1443",
       "PS-1457",
       "PS-1356",
       "PS-1460",
-      "PS-1449",
-      "PS-1451",
       "PS-1456",
       "PS-1459",
-      "PS-1458",
       "PS-1452",
-      "PS-1444",
-      "PS-1453",
       "PS-1227",
       "PS-1454",
       "PS-1440",
@@ -578,12 +528,7 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923",
-      "PS-1449",
-      "PS-1451",
-      "PS-1458",
-      "PS-1444",
-      "PS-1453"
+      "PS-923"
     ],
     "patterns": [
       {
