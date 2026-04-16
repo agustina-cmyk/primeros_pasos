@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-04-16T16:10:39.047677+00:00",
+  "last_run_at": "2026-04-16T20:03:15.189881+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1463": {
+      "key": "PS-1463",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": "aldana",
+      "updated": "2026-04-16T14:00:23.781-0500",
+      "last_status_change_at": "2026-04-16T14:00:23.781-0500",
+      "notified_reasons": []
+    },
+    "PS-1443": {
+      "key": "PS-1443",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-04-16T13:43:16.825-0500",
+      "last_status_change_at": "2026-04-16T13:43:16.825-0500",
+      "notified_reasons": []
+    },
     "PS-1240": {
       "key": "PS-1240",
       "vertical": "sin_vertical",
@@ -54,15 +72,6 @@
       "assignee": null,
       "updated": "2026-04-16T07:33:26.915-0500",
       "last_status_change_at": "2026-04-15T17:12:38.458-0500",
-      "notified_reasons": []
-    },
-    "PS-1443": {
-      "key": "PS-1443",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-04-15T18:54:57.315-0500",
-      "last_status_change_at": "2026-04-15T18:54:57.315-0500",
       "notified_reasons": []
     },
     "PS-1356": {
@@ -504,15 +513,16 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-16T16:10:39.047598+00:00",
+    "last_run_at": "2026-04-16T20:03:15.189808+00:00",
     "analyzed_ticket_keys": [
+      "PS-1463",
+      "PS-1443",
       "PS-1240",
       "PS-1462",
       "PS-1414",
       "PS-1379",
       "PS-1461",
       "PS-1457",
-      "PS-1443",
       "PS-1356",
       "PS-1460",
       "PS-1456",
@@ -549,6 +559,7 @@
       "PS-1020",
       "PS-1062",
       "PS-923",
+      "PS-1463",
       "PS-1461"
     ],
     "patterns": [
@@ -568,9 +579,10 @@
           "PS-1452",
           "PS-1451",
           "PS-1457",
-          "PS-1460"
+          "PS-1460",
+          "PS-1463"
         ],
-        "count": 14,
+        "count": 15,
         "recommendation": "Priorizar diagn\u00f3stico del pipeline extractor->report (mapeo S3, race conditions y normalizaci\u00f3n de estados) y agregar validaciones end-to-end para asegurar consistencia.",
         "last_seen_at": "2026-04-16"
       },
