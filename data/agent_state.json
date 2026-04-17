@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-17T14:17:07.490184+00:00",
+  "last_run_at": "2026-04-17T15:34:15.499199+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1466": {
+      "key": "PS-1466",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-17T10:09:59.999-0500",
+      "last_status_change_at": "2026-04-17T10:09:51.812-0500",
+      "notified_reasons": []
+    },
     "PS-1456": {
       "key": "PS-1456",
       "vertical": "sin_vertical",
@@ -426,8 +435,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-17T14:15:19.397624+00:00",
+    "last_run_at": "2026-04-17T15:34:12.346781+00:00",
     "analyzed_ticket_keys": [
+      "PS-1466",
       "PS-1456",
       "PS-1462",
       "PS-1464",
@@ -485,7 +495,7 @@
         ],
         "count": 16,
         "recommendation": "Priorizar diagn\u00f3stico del pipeline extractor->report (mapeo S3, race conditions y normalizaci\u00f3n de estados) y agregar validaciones end-to-end para asegurar consistencia.",
-        "last_seen_at": "2026-04-16"
+        "last_seen_at": "2026-04-17"
       },
       {
         "label": "Persistencia de cambios en Manual Review (ediciones/Checkmate no se guardan)",
@@ -497,7 +507,7 @@
         ],
         "count": 4,
         "recommendation": "Investigar y corregir fallo de persistencia en Manual Review/Checkmate (API de guardado, locking y UI), a\u00f1adir logs y pruebas e2e para asegurar que las correcciones manuales se persisten.",
-        "last_seen_at": "2026-04-16"
+        "last_seen_at": "2026-04-17"
       }
     ]
   }
