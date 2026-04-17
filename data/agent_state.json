@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-17T15:34:15.499199+00:00",
+  "last_run_at": "2026-04-17T16:43:06.775550+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1457": {
+      "key": "PS-1457",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-04-17T11:04:12.738-0500",
+      "last_status_change_at": "2026-04-17T11:04:12.738-0500",
+      "notified_reasons": []
+    },
     "PS-1466": {
       "key": "PS-1466",
       "vertical": "sin_vertical",
@@ -63,15 +72,6 @@
       "assignee": "Ander",
       "updated": "2026-04-16T10:34:19.390-0500",
       "last_status_change_at": "2026-04-06T13:29:48.282-0500",
-      "notified_reasons": []
-    },
-    "PS-1457": {
-      "key": "PS-1457",
-      "vertical": "sin_vertical",
-      "status": "READY FOR TEST",
-      "assignee": null,
-      "updated": "2026-04-16T07:33:26.915-0500",
-      "last_status_change_at": "2026-04-15T17:12:38.458-0500",
       "notified_reasons": []
     },
     "PS-1356": {
@@ -361,7 +361,8 @@
       "cmntjder40001po7ktu6vcwlh": "like",
       "cmnyz0wzx0001k4sq6m0cieoy": "like",
       "cmnyz4lxt0003k4sqq3mzze5r": "like",
-      "cmnrn660w0001k82y5p7anvd9": "like"
+      "cmnrn660w0001k82y5p7anvd9": "like",
+      "cmnxiw34i0007jzj2z9wfbbnj": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -416,7 +417,8 @@
       "cmntjder40001po7ktu6vcwlh",
       "cmnyz0wzx0001k4sq6m0cieoy",
       "cmnyz4lxt0003k4sqq3mzze5r",
-      "cmnrn660w0001k82y5p7anvd9"
+      "cmnrn660w0001k82y5p7anvd9",
+      "cmnxiw34i0007jzj2z9wfbbnj"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -435,8 +437,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-17T15:34:12.346781+00:00",
+    "last_run_at": "2026-04-17T16:41:38.540068+00:00",
     "analyzed_ticket_keys": [
+      "PS-1457",
       "PS-1466",
       "PS-1456",
       "PS-1462",
@@ -444,7 +447,6 @@
       "PS-1240",
       "PS-1414",
       "PS-1379",
-      "PS-1457",
       "PS-1356",
       "PS-1460",
       "PS-1459",
@@ -470,7 +472,8 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923"
+      "PS-923",
+      "PS-1457"
     ],
     "patterns": [
       {
