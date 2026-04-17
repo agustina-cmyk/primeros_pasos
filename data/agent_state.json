@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-17T17:41:01.833817+00:00",
+  "last_run_at": "2026-04-17T18:43:17.905731+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1467": {
+      "key": "PS-1467",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-04-17T12:49:28.545-0500",
+      "last_status_change_at": "2026-04-17T12:49:28.545-0500",
+      "notified_reasons": []
+    },
     "PS-1457": {
       "key": "PS-1457",
       "vertical": "sin_vertical",
@@ -437,8 +446,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-17T17:39:39.537927+00:00",
+    "last_run_at": "2026-04-17T18:42:09.231115+00:00",
     "analyzed_ticket_keys": [
+      "PS-1467",
       "PS-1457",
       "PS-1466",
       "PS-1456",
@@ -473,6 +483,7 @@
       "PS-1020",
       "PS-1062",
       "PS-923",
+      "PS-1467",
       "PS-1457"
     ],
     "patterns": [
