@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-17T22:28:32.596722+00:00",
+  "last_run_at": "2026-04-17T23:08:46.280983+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1449": {
+      "key": "PS-1449",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-17T17:46:43.557-0500",
+      "last_status_change_at": "2026-04-15T15:58:01.231-0500",
+      "notified_reasons": []
+    },
     "PS-1373": {
       "key": "PS-1373",
       "vertical": "sin_vertical",
@@ -446,8 +455,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-17T22:27:25.068322+00:00",
+    "last_run_at": "2026-04-17T23:07:39.476877+00:00",
     "analyzed_ticket_keys": [
+      "PS-1449",
       "PS-1373",
       "PS-1464",
       "PS-1460",
@@ -483,6 +493,7 @@
       "PS-1020",
       "PS-1062",
       "PS-923",
+      "PS-1449",
       "PS-1467",
       "PS-1457"
     ],
