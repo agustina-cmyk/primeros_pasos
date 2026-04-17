@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-17T09:52:35.153150+00:00",
+  "last_run_at": "2026-04-17T10:47:07.263248+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1456": {
@@ -350,7 +350,8 @@
       "cmnxjvhuf00015aqpdpfwaa32": "like",
       "cmntjiszq0003po7kn8x8pgim": "like",
       "cmntjder40001po7ktu6vcwlh": "like",
-      "cmnyz0wzx0001k4sq6m0cieoy": "like"
+      "cmnyz0wzx0001k4sq6m0cieoy": "like",
+      "cmnyz4lxt0003k4sqq3mzze5r": "like"
     },
     "commented_idea_ids": [
       "cmn2im5it000ezxa8xqkaishn",
@@ -403,7 +404,8 @@
       "cmnxjvhuf00015aqpdpfwaa32",
       "cmntjiszq0003po7kn8x8pgim",
       "cmntjder40001po7ktu6vcwlh",
-      "cmnyz0wzx0001k4sq6m0cieoy"
+      "cmnyz0wzx0001k4sq6m0cieoy",
+      "cmnyz4lxt0003k4sqq3mzze5r"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -422,7 +424,7 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-17T09:51:38.058756+00:00",
+    "last_run_at": "2026-04-17T10:45:30.406731+00:00",
     "analyzed_ticket_keys": [
       "PS-1456",
       "PS-1462",
