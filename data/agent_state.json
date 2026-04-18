@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-18T00:01:11.460118+00:00",
+  "last_run_at": "2026-04-18T02:39:51.478224+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1449": {
@@ -440,7 +440,8 @@
       "cmnrn660w0001k82y5p7anvd9",
       "cmnxiw34i0007jzj2z9wfbbnj",
       "cmnyxgq5r0001dspr5xq38s2p",
-      "cmnxj8bsw000bjzj2b9o77f6g"
+      "cmnxj8bsw000bjzj2b9o77f6g",
+      "cmo3kng23000fchyjt1ct3304"
     ],
     "replied_comment_ids": [],
     "created_idea_ids": [
@@ -460,7 +461,7 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-18T00:00:07.312204+00:00",
+    "last_run_at": "2026-04-18T02:38:36.798292+00:00",
     "analyzed_ticket_keys": [
       "PS-1449",
       "PS-1373",
