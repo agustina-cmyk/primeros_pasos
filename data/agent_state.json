@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-19T02:09:11.069127+00:00",
+  "last_run_at": "2026-04-19T05:13:47.413742+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1432": {
+      "key": "PS-1432",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-18T21:12:09.555-0500",
+      "last_status_change_at": "2026-04-08T10:43:17.998-0500",
+      "notified_reasons": []
+    },
     "PS-1373": {
       "key": "PS-1373",
       "vertical": "sin_vertical",
@@ -126,15 +135,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-04-10T15:03:44.883-0500",
       "last_status_change_at": "2026-04-10T15:03:44.883-0500",
-      "notified_reasons": []
-    },
-    "PS-1432": {
-      "key": "PS-1432",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-08T10:43:26.507-0500",
-      "last_status_change_at": "2026-04-08T10:43:17.998-0500",
       "notified_reasons": []
     },
     "PS-1202": {
@@ -434,8 +434,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-19T02:09:11.069078+00:00",
+    "last_run_at": "2026-04-19T05:13:47.413699+00:00",
     "analyzed_ticket_keys": [
+      "PS-1432",
       "PS-1373",
       "PS-1464",
       "PS-1460",
@@ -450,7 +451,6 @@
       "PS-1227",
       "PS-1417",
       "PS-1382",
-      "PS-1432",
       "PS-1202",
       "PS-1384",
       "PS-1314",
