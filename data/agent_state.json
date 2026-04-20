@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-20T18:50:27.197473+00:00",
+  "last_run_at": "2026-04-20T19:53:36.354705+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1468": {
@@ -443,7 +443,7 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-20T18:50:27.197429+00:00",
+    "last_run_at": "2026-04-20T19:53:36.354659+00:00",
     "analyzed_ticket_keys": [
       "PS-1468",
       "PS-1432",
