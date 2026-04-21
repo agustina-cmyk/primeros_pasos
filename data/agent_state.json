@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-21T04:24:23.310321+00:00",
+  "last_run_at": "2026-04-21T06:17:40.151197+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1469": {
@@ -9,15 +9,6 @@
       "assignee": null,
       "updated": "2026-04-20T16:40:33.970-0500",
       "last_status_change_at": "2026-04-20T16:39:32.833-0500",
-      "notified_reasons": []
-    },
-    "PS-1468": {
-      "key": "PS-1468",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-20T13:03:22.117-0500",
-      "last_status_change_at": "2026-04-20T13:03:22.117-0500",
       "notified_reasons": []
     },
     "PS-1432": {
@@ -452,10 +443,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-21T04:24:23.310273+00:00",
+    "last_run_at": "2026-04-21T06:17:40.151149+00:00",
     "analyzed_ticket_keys": [
       "PS-1469",
-      "PS-1468",
       "PS-1432",
       "PS-1373",
       "PS-1464",
@@ -488,8 +478,7 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923",
-      "PS-1468"
+      "PS-923"
     ],
     "patterns": [
       {
