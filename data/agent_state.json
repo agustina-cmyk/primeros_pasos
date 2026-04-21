@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-04-21T15:03:55.524368+00:00",
+  "last_run_at": "2026-04-21T16:34:45.924599+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1466": {
+      "key": "PS-1466",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-21T11:02:41.525-0500",
+      "last_status_change_at": "2026-04-17T10:09:51.812-0500",
+      "notified_reasons": []
+    },
+    "PS-1472": {
+      "key": "PS-1472",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-21T10:52:49.499-0500",
+      "last_status_change_at": "2026-04-21T10:45:04.034-0500",
+      "notified_reasons": []
+    },
+    "PS-1462": {
+      "key": "PS-1462",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-21T10:42:59.053-0500",
+      "last_status_change_at": "2026-04-16T10:45:44.636-0500",
+      "notified_reasons": []
+    },
     "PS-1471": {
       "key": "PS-1471",
       "vertical": "sin_vertical",
@@ -65,15 +92,6 @@
       "last_status_change_at": "2026-04-15T16:38:16.036-0500",
       "notified_reasons": []
     },
-    "PS-1466": {
-      "key": "PS-1466",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-17T14:55:09.619-0500",
-      "last_status_change_at": "2026-04-17T10:09:51.812-0500",
-      "notified_reasons": []
-    },
     "PS-1456": {
       "key": "PS-1456",
       "vertical": "sin_vertical",
@@ -81,15 +99,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-04-16T17:11:05.245-0500",
       "last_status_change_at": "2026-04-16T17:11:05.245-0500",
-      "notified_reasons": []
-    },
-    "PS-1462": {
-      "key": "PS-1462",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-16T17:08:53.592-0500",
-      "last_status_change_at": "2026-04-16T10:45:44.636-0500",
       "notified_reasons": []
     },
     "PS-1240": {
