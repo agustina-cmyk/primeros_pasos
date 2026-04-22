@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-04-22T22:08:28.062761+00:00",
+  "last_run_at": "2026-04-22T23:10:09.146442+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1479": {
       "key": "PS-1479",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
+      "status": "Finalizada",
       "assignee": null,
-      "updated": "2026-04-22T16:21:19.143-0500",
-      "last_status_change_at": "2026-04-22T16:19:59.117-0500",
+      "updated": "2026-04-22T17:54:46.439-0500",
+      "last_status_change_at": "2026-04-22T17:54:14.585-0500",
       "notified_reasons": []
     },
     "PS-1478": {
