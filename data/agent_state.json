@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-22T18:56:51.016243+00:00",
+  "last_run_at": "2026-04-22T20:01:40.154382+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1477": {
@@ -7,7 +7,7 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-04-22T13:54:54.951-0500",
+      "updated": "2026-04-22T14:10:00.421-0500",
       "last_status_change_at": "2026-04-22T13:39:50.221-0500",
       "notified_reasons": []
     },
