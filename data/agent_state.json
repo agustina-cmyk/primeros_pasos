@@ -1,14 +1,41 @@
 {
-  "last_run_at": "2026-04-23T20:42:28.735974+00:00",
+  "last_run_at": "2026-04-23T21:36:42.706737+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1384": {
+      "key": "PS-1384",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-04-23T16:22:20.852-0500",
+      "last_status_change_at": "2026-04-23T16:22:20.852-0500",
+      "notified_reasons": []
+    },
+    "PS-1473": {
+      "key": "PS-1473",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-04-23T16:21:50.402-0500",
+      "last_status_change_at": "2026-04-23T16:21:50.402-0500",
+      "notified_reasons": []
+    },
+    "PS-1314": {
+      "key": "PS-1314",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-04-23T16:21:09.129-0500",
+      "last_status_change_at": "2026-04-23T16:21:09.129-0500",
+      "notified_reasons": []
+    },
     "PS-1480": {
       "key": "PS-1480",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
+      "status": "Finalizada",
       "assignee": "msimbeni",
-      "updated": "2026-04-23T15:17:54.498-0500",
-      "last_status_change_at": "2026-04-23T12:44:51.785-0500",
+      "updated": "2026-04-23T16:19:37.293-0500",
+      "last_status_change_at": "2026-04-23T16:19:37.293-0500",
       "notified_reasons": []
     },
     "PS-1234": {
@@ -63,15 +90,6 @@
       "assignee": null,
       "updated": "2026-04-21T15:24:03.100-0500",
       "last_status_change_at": "2026-04-21T15:23:27.570-0500",
-      "notified_reasons": []
-    },
-    "PS-1473": {
-      "key": "PS-1473",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-21T14:58:35.544-0500",
-      "last_status_change_at": "2026-04-21T14:58:27.680-0500",
       "notified_reasons": []
     },
     "PS-1466": {
@@ -216,24 +234,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-04-07T07:54:43.365-0500",
       "last_status_change_at": "2026-04-07T07:54:43.365-0500",
-      "notified_reasons": []
-    },
-    "PS-1384": {
-      "key": "PS-1384",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-30T21:12:24.951-0500",
-      "last_status_change_at": "2026-03-20T17:45:42.323-0500",
-      "notified_reasons": []
-    },
-    "PS-1314": {
-      "key": "PS-1314",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-03-30T13:51:30.627-0500",
-      "last_status_change_at": "2026-03-04T19:28:18.856-0500",
       "notified_reasons": []
     },
     "PS-1391": {
