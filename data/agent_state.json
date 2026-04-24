@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-04-24T16:43:38.489753+00:00",
+  "last_run_at": "2026-04-24T17:42:36.934513+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1470": {
       "key": "PS-1470",
       "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
+      "status": "READY FOR TEST",
       "assignee": "Vicente Matallana",
-      "updated": "2026-04-24T11:29:44.278-0500",
-      "last_status_change_at": "2026-04-24T11:29:44.278-0500",
+      "updated": "2026-04-24T12:37:57.548-0500",
+      "last_status_change_at": "2026-04-24T12:37:57.548-0500",
       "notified_reasons": []
     },
     "PS-1060": {
