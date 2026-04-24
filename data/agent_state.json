@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-04-24T12:56:48.748099+00:00",
+  "last_run_at": "2026-04-24T14:29:25.541587+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1379": {
+      "key": "PS-1379",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Ander",
+      "updated": "2026-04-24T08:36:28.380-0500",
+      "last_status_change_at": "2026-04-24T08:36:28.380-0500",
+      "notified_reasons": []
+    },
+    "PS-1466": {
+      "key": "PS-1466",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-24T08:18:08.843-0500",
+      "last_status_change_at": "2026-04-24T08:18:08.843-0500",
+      "notified_reasons": []
+    },
+    "PS-1477": {
+      "key": "PS-1477",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-24T08:14:20.717-0500",
+      "last_status_change_at": "2026-04-22T13:39:50.221-0500",
+      "notified_reasons": []
+    },
     "PS-1470": {
       "key": "PS-1470",
       "vertical": "sin_vertical",
@@ -27,15 +54,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-04-23T13:03:16.611-0500",
       "last_status_change_at": "2026-02-11T12:02:20.529-0500",
-      "notified_reasons": []
-    },
-    "PS-1477": {
-      "key": "PS-1477",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-22T15:55:21.606-0500",
-      "last_status_change_at": "2026-04-22T13:39:50.221-0500",
       "notified_reasons": []
     },
     "PS-1464": {
@@ -72,15 +90,6 @@
       "assignee": null,
       "updated": "2026-04-21T15:24:03.100-0500",
       "last_status_change_at": "2026-04-21T15:23:27.570-0500",
-      "notified_reasons": []
-    },
-    "PS-1466": {
-      "key": "PS-1466",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-21T11:02:41.525-0500",
-      "last_status_change_at": "2026-04-17T10:09:51.812-0500",
       "notified_reasons": []
     },
     "PS-1471": {
@@ -135,15 +144,6 @@
       "assignee": "abrahan",
       "updated": "2026-04-16T10:34:29.511-0500",
       "last_status_change_at": "2026-03-31T10:09:08.795-0500",
-      "notified_reasons": []
-    },
-    "PS-1379": {
-      "key": "PS-1379",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ander",
-      "updated": "2026-04-16T10:34:19.390-0500",
-      "last_status_change_at": "2026-04-06T13:29:48.282-0500",
       "notified_reasons": []
     },
     "PS-1356": {
