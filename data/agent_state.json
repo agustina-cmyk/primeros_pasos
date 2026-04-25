@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-04-25T04:11:31.472105+00:00",
+  "last_run_at": "2026-04-25T06:02:12.884440+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1379": {
-      "key": "PS-1379",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-04-24T15:17:03.298-0500",
-      "last_status_change_at": "2026-04-24T15:17:03.298-0500",
-      "notified_reasons": []
-    },
     "PS-1470": {
       "key": "PS-1470",
       "vertical": "sin_vertical",
@@ -18,15 +9,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-04-24T12:37:57.548-0500",
       "last_status_change_at": "2026-04-24T12:37:57.548-0500",
-      "notified_reasons": []
-    },
-    "PS-1060": {
-      "key": "PS-1060",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-24T10:40:15.442-0500",
-      "last_status_change_at": "2026-04-24T10:40:15.442-0500",
       "notified_reasons": []
     },
     "PS-1481": {
