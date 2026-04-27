@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-04-27T22:39:21.510791+00:00",
+  "last_run_at": "2026-04-27T23:41:57.510621+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1483": {
-      "key": "PS-1483",
+    "PS-1466": {
+      "key": "PS-1466",
       "vertical": "sin_vertical",
       "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-27T16:06:55.509-0500",
-      "last_status_change_at": "2026-04-27T16:06:55.509-0500",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-27T18:22:50.593-0500",
+      "last_status_change_at": "2026-04-27T18:22:41.432-0500",
+      "notified_reasons": []
+    },
+    "PS-1227": {
+      "key": "PS-1227",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-04-27T17:53:47.205-0500",
+      "last_status_change_at": "2026-04-27T17:53:47.205-0500",
       "notified_reasons": []
     },
     "PS-1484": {
@@ -16,8 +25,17 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-04-27T16:01:31.063-0500",
+      "updated": "2026-04-27T17:48:46.257-0500",
       "last_status_change_at": "2026-04-27T13:56:37.138-0500",
+      "notified_reasons": []
+    },
+    "PS-1483": {
+      "key": "PS-1483",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-04-27T16:06:55.509-0500",
+      "last_status_change_at": "2026-04-27T16:06:55.509-0500",
       "notified_reasons": []
     },
     "PS-1470": {
@@ -72,15 +90,6 @@
       "assignee": null,
       "updated": "2026-04-24T10:39:41.716-0500",
       "last_status_change_at": "2026-04-24T10:36:08.518-0500",
-      "notified_reasons": []
-    },
-    "PS-1466": {
-      "key": "PS-1466",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-24T08:18:08.843-0500",
-      "last_status_change_at": "2026-04-24T08:18:08.843-0500",
       "notified_reasons": []
     },
     "PS-1373": {
@@ -189,15 +198,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-04-15T16:44:22.712-0500",
       "last_status_change_at": "2026-03-31T10:42:20.577-0500",
-      "notified_reasons": []
-    },
-    "PS-1227": {
-      "key": "PS-1227",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-04-14T22:02:05.101-0500",
-      "last_status_change_at": "2026-03-11T15:16:46.527-0500",
       "notified_reasons": []
     },
     "PS-1417": {
@@ -479,17 +479,18 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-27T22:39:21.510748+00:00",
+    "last_run_at": "2026-04-27T23:41:57.510572+00:00",
     "analyzed_ticket_keys": [
-      "PS-1483",
+      "PS-1466",
+      "PS-1227",
       "PS-1484",
+      "PS-1483",
       "PS-1470",
       "PS-1482",
       "PS-1477",
       "PS-1460",
       "PS-1459",
       "PS-1481",
-      "PS-1466",
       "PS-1373",
       "PS-1234",
       "PS-1464",
@@ -502,7 +503,6 @@
       "PS-1240",
       "PS-1414",
       "PS-1356",
-      "PS-1227",
       "PS-1417",
       "PS-1382",
       "PS-1202",
@@ -519,6 +519,8 @@
       "PS-1020",
       "PS-1062",
       "PS-923",
+      "PS-1466",
+      "PS-1227",
       "PS-1483",
       "PS-1470",
       "PS-1482",
