@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-27T18:46:19.776703+00:00",
+  "last_run_at": "2026-04-27T20:02:57.814812+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1484": {
+      "key": "PS-1484",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-27T13:56:44.092-0500",
+      "last_status_change_at": "2026-04-27T13:56:37.138-0500",
+      "notified_reasons": []
+    },
     "PS-1470": {
       "key": "PS-1470",
       "vertical": "sin_vertical",
@@ -470,8 +479,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-27T18:46:19.776641+00:00",
+    "last_run_at": "2026-04-27T20:02:57.814738+00:00",
     "analyzed_ticket_keys": [
+      "PS-1484",
       "PS-1470",
       "PS-1483",
       "PS-1482",
