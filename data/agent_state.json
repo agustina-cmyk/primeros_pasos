@@ -1,13 +1,22 @@
 {
-  "last_run_at": "2026-04-28T21:05:58.316210+00:00",
+  "last_run_at": "2026-04-28T22:29:25.491110+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1493": {
+      "key": "PS-1493",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-28T16:57:02.991-0500",
+      "last_status_change_at": "2026-04-28T16:56:56.149-0500",
+      "notified_reasons": []
+    },
     "PS-1491": {
       "key": "PS-1491",
       "vertical": "sin_vertical",
       "status": "DISCARDED",
       "assignee": null,
-      "updated": "2026-04-28T15:36:28.312-0500",
+      "updated": "2026-04-28T16:44:05.845-0500",
       "last_status_change_at": "2026-04-28T15:36:28.312-0500",
       "notified_reasons": []
     },
