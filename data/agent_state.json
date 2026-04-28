@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-04-28T01:50:36.701894+00:00",
+  "last_run_at": "2026-04-28T05:21:40.491905+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1466": {
-      "key": "PS-1466",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-27T18:22:50.593-0500",
-      "last_status_change_at": "2026-04-27T18:22:41.432-0500",
-      "notified_reasons": []
-    },
-    "PS-1227": {
-      "key": "PS-1227",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-04-27T17:53:47.205-0500",
-      "last_status_change_at": "2026-04-27T17:53:47.205-0500",
-      "notified_reasons": []
-    },
     "PS-1484": {
       "key": "PS-1484",
       "vertical": "sin_vertical",
@@ -27,42 +9,6 @@
       "assignee": null,
       "updated": "2026-04-27T17:48:46.257-0500",
       "last_status_change_at": "2026-04-27T13:56:37.138-0500",
-      "notified_reasons": []
-    },
-    "PS-1483": {
-      "key": "PS-1483",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-27T16:06:55.509-0500",
-      "last_status_change_at": "2026-04-27T16:06:55.509-0500",
-      "notified_reasons": []
-    },
-    "PS-1470": {
-      "key": "PS-1470",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-04-27T13:13:46.207-0500",
-      "last_status_change_at": "2026-04-27T13:13:46.207-0500",
-      "notified_reasons": []
-    },
-    "PS-1482": {
-      "key": "PS-1482",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-27T10:56:42.671-0500",
-      "last_status_change_at": "2026-04-27T10:51:46.171-0500",
-      "notified_reasons": []
-    },
-    "PS-1477": {
-      "key": "PS-1477",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-27T10:54:48.875-0500",
-      "last_status_change_at": "2026-04-27T10:54:13.598-0500",
       "notified_reasons": []
     },
     "PS-1460": {
@@ -479,15 +425,9 @@
   },
   "weekly_last_run_at": null,
   "recurrence": {
-    "last_run_at": "2026-04-28T01:50:36.701793+00:00",
+    "last_run_at": "2026-04-28T05:21:40.491831+00:00",
     "analyzed_ticket_keys": [
-      "PS-1466",
-      "PS-1227",
       "PS-1484",
-      "PS-1483",
-      "PS-1470",
-      "PS-1482",
-      "PS-1477",
       "PS-1460",
       "PS-1459",
       "PS-1481",
@@ -518,13 +458,7 @@
       "PS-1173",
       "PS-1020",
       "PS-1062",
-      "PS-923",
-      "PS-1466",
-      "PS-1227",
-      "PS-1483",
-      "PS-1470",
-      "PS-1482",
-      "PS-1477"
+      "PS-923"
     ],
     "patterns": [
       {
