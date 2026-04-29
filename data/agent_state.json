@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-04-29T04:07:19.539457+00:00",
+  "last_run_at": "2026-04-29T06:41:41.922957+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1493": {
@@ -9,24 +9,6 @@
       "assignee": "msimbeni",
       "updated": "2026-04-28T19:07:10.734-0500",
       "last_status_change_at": "2026-04-28T16:56:56.149-0500",
-      "notified_reasons": []
-    },
-    "PS-1492": {
-      "key": "PS-1492",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-04-28T18:32:39.575-0500",
-      "last_status_change_at": "2026-04-28T18:32:39.575-0500",
-      "notified_reasons": []
-    },
-    "PS-1491": {
-      "key": "PS-1491",
-      "vertical": "sin_vertical",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-04-28T16:44:05.845-0500",
-      "last_status_change_at": "2026-04-28T15:36:28.312-0500",
       "notified_reasons": []
     },
     "PS-1490": {
@@ -65,24 +47,6 @@
       "last_status_change_at": "2026-04-28T11:09:08.452-0500",
       "notified_reasons": []
     },
-    "PS-1460": {
-      "key": "PS-1460",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-28T11:03:41.851-0500",
-      "last_status_change_at": "2026-04-28T11:03:34.208-0500",
-      "notified_reasons": []
-    },
-    "PS-1485": {
-      "key": "PS-1485",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-28T10:23:34.356-0500",
-      "last_status_change_at": "2026-04-28T10:17:53.577-0500",
-      "notified_reasons": []
-    },
     "PS-1486": {
       "key": "PS-1486",
       "vertical": "sin_vertical",
@@ -90,15 +54,6 @@
       "assignee": null,
       "updated": "2026-04-28T09:50:55.452-0500",
       "last_status_change_at": "2026-04-28T09:50:36.133-0500",
-      "notified_reasons": []
-    },
-    "PS-1464": {
-      "key": "PS-1464",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-04-28T09:14:38.679-0500",
-      "last_status_change_at": "2026-04-28T09:14:38.679-0500",
       "notified_reasons": []
     },
     "PS-1484": {
