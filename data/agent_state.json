@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-04-28T23:28:30.651890+00:00",
+  "last_run_at": "2026-04-29T00:13:39.594023+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1493": {
       "key": "PS-1493",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-28T16:57:02.991-0500",
+      "assignee": "msimbeni",
+      "updated": "2026-04-28T19:07:10.734-0500",
       "last_status_change_at": "2026-04-28T16:56:56.149-0500",
+      "notified_reasons": []
+    },
+    "PS-1492": {
+      "key": "PS-1492",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-04-28T18:32:39.575-0500",
+      "last_status_change_at": "2026-04-28T18:32:39.575-0500",
       "notified_reasons": []
     },
     "PS-1491": {
@@ -18,15 +27,6 @@
       "assignee": null,
       "updated": "2026-04-28T16:44:05.845-0500",
       "last_status_change_at": "2026-04-28T15:36:28.312-0500",
-      "notified_reasons": []
-    },
-    "PS-1492": {
-      "key": "PS-1492",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-28T15:23:35.578-0500",
-      "last_status_change_at": "2026-04-28T15:23:29.476-0500",
       "notified_reasons": []
     },
     "PS-1490": {
