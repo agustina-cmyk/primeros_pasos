@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-04-30T21:45:24.736774+00:00",
+  "last_run_at": "2026-04-30T22:40:08.125086+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1499": {
+      "key": "PS-1499",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-30T17:23:06.914-0500",
+      "last_status_change_at": "2026-04-30T12:26:48.216-0500",
+      "notified_reasons": []
+    },
     "PS-1500": {
       "key": "PS-1500",
       "vertical": "sin_vertical",
@@ -27,15 +36,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-04-30T15:30:08.467-0500",
       "last_status_change_at": "2026-04-30T15:29:45.647-0500",
-      "notified_reasons": []
-    },
-    "PS-1499": {
-      "key": "PS-1499",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-30T14:19:29.391-0500",
-      "last_status_change_at": "2026-04-30T12:26:48.216-0500",
       "notified_reasons": []
     },
     "PS-1234": {
