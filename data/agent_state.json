@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-04-30T01:52:11.985674+00:00",
+  "last_run_at": "2026-04-30T05:21:41.836418+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1495": {
-      "key": "PS-1495",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-04-29T15:11:10.441-0500",
-      "last_status_change_at": "2026-04-29T15:11:10.441-0500",
-      "notified_reasons": []
-    },
-    "PS-1493": {
-      "key": "PS-1493",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-04-29T09:31:37.018-0500",
-      "last_status_change_at": "2026-04-29T09:31:37.018-0500",
-      "notified_reasons": []
-    },
     "PS-1494": {
       "key": "PS-1494",
       "vertical": "sin_vertical",
