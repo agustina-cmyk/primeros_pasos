@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-04-30T22:40:08.125086+00:00",
+  "last_run_at": "2026-04-30T23:41:18.209911+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1500": {
+      "key": "PS-1500",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-30T18:38:22.948-0500",
+      "last_status_change_at": "2026-04-30T16:40:13.586-0500",
+      "notified_reasons": []
+    },
+    "PS-1489": {
+      "key": "PS-1489",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-30T18:16:22.005-0500",
+      "last_status_change_at": "2026-04-30T18:16:22.005-0500",
+      "notified_reasons": []
+    },
     "PS-1499": {
       "key": "PS-1499",
       "vertical": "sin_vertical",
@@ -11,15 +29,6 @@
       "last_status_change_at": "2026-04-30T12:26:48.216-0500",
       "notified_reasons": []
     },
-    "PS-1500": {
-      "key": "PS-1500",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-30T16:40:20.567-0500",
-      "last_status_change_at": "2026-04-30T16:40:13.586-0500",
-      "notified_reasons": []
-    },
     "PS-1498": {
       "key": "PS-1498",
       "vertical": "sin_vertical",
@@ -27,15 +36,6 @@
       "assignee": "Ander",
       "updated": "2026-04-30T15:31:51.406-0500",
       "last_status_change_at": "2026-04-30T15:31:09.714-0500",
-      "notified_reasons": []
-    },
-    "PS-1489": {
-      "key": "PS-1489",
-      "vertical": "sin_vertical",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-30T15:30:08.467-0500",
-      "last_status_change_at": "2026-04-30T15:29:45.647-0500",
       "notified_reasons": []
     },
     "PS-1234": {
