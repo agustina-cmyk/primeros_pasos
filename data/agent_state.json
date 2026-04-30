@@ -1,13 +1,22 @@
 {
-  "last_run_at": "2026-04-30T18:02:35.668368+00:00",
+  "last_run_at": "2026-04-30T19:54:16.217936+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1489": {
+      "key": "PS-1489",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-04-30T14:22:28.122-0500",
+      "last_status_change_at": "2026-04-30T14:22:28.122-0500",
+      "notified_reasons": []
+    },
     "PS-1499": {
       "key": "PS-1499",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-04-30T12:26:56.535-0500",
+      "updated": "2026-04-30T14:19:29.391-0500",
       "last_status_change_at": "2026-04-30T12:26:48.216-0500",
       "notified_reasons": []
     },
@@ -63,15 +72,6 @@
       "assignee": null,
       "updated": "2026-04-30T09:47:03.623-0500",
       "last_status_change_at": "2026-04-30T09:46:56.228-0500",
-      "notified_reasons": []
-    },
-    "PS-1489": {
-      "key": "PS-1489",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-28T12:11:58.457-0500",
-      "last_status_change_at": "2026-04-28T12:11:51.004-0500",
       "notified_reasons": []
     },
     "PS-1488": {
