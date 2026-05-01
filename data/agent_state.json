@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-01T01:54:23.996954+00:00",
+  "last_run_at": "2026-05-01T05:33:48.164348+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1469": {
+      "key": "PS-1469",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-04-30T21:12:30.699-0500",
+      "last_status_change_at": "2026-04-20T16:39:32.833-0500",
+      "notified_reasons": []
+    },
     "PS-1500": {
       "key": "PS-1500",
       "vertical": "sin_vertical",
@@ -11,15 +20,6 @@
       "last_status_change_at": "2026-04-30T16:40:13.586-0500",
       "notified_reasons": []
     },
-    "PS-1489": {
-      "key": "PS-1489",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-30T18:16:22.005-0500",
-      "last_status_change_at": "2026-04-30T18:16:22.005-0500",
-      "notified_reasons": []
-    },
     "PS-1499": {
       "key": "PS-1499",
       "vertical": "sin_vertical",
@@ -27,15 +27,6 @@
       "assignee": null,
       "updated": "2026-04-30T17:23:06.914-0500",
       "last_status_change_at": "2026-04-30T12:26:48.216-0500",
-      "notified_reasons": []
-    },
-    "PS-1498": {
-      "key": "PS-1498",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-04-30T15:31:51.406-0500",
-      "last_status_change_at": "2026-04-30T15:31:09.714-0500",
       "notified_reasons": []
     },
     "PS-1234": {
@@ -54,24 +45,6 @@
       "assignee": "abrahan",
       "updated": "2026-04-30T10:56:09.107-0500",
       "last_status_change_at": "2026-04-30T10:56:00.116-0500",
-      "notified_reasons": []
-    },
-    "PS-1490": {
-      "key": "PS-1490",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-04-30T10:12:10.864-0500",
-      "last_status_change_at": "2026-04-30T10:12:05.069-0500",
-      "notified_reasons": []
-    },
-    "PS-1494": {
-      "key": "PS-1494",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-04-30T10:11:42.738-0500",
-      "last_status_change_at": "2026-04-30T10:11:42.738-0500",
       "notified_reasons": []
     },
     "PS-1496": {
@@ -180,15 +153,6 @@
       "assignee": null,
       "updated": "2026-04-21T08:53:45.792-0500",
       "last_status_change_at": "2026-04-21T08:53:36.731-0500",
-      "notified_reasons": []
-    },
-    "PS-1469": {
-      "key": "PS-1469",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-20T16:40:33.970-0500",
-      "last_status_change_at": "2026-04-20T16:39:32.833-0500",
       "notified_reasons": []
     },
     "PS-1432": {
