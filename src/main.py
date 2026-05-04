@@ -49,9 +49,8 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
     finalized_tickets = []
     if settings.roam_cpo_channel_id and settings.llm_webhook_url:
         try:
-            base_jql = settings.jira_jql.split(" ORDER BY")[0]
             finalized_tickets = jira.search_finalized_tickets(
-                base_jql=base_jql,
+                base_jql=settings.jira_base_jql,
                 lookback_days=settings.recurrence_lookback_days,
             )
         except Exception as exc:

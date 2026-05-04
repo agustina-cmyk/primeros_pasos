@@ -13,6 +13,7 @@ class Settings:
     jira_email: str
     jira_api_token: str
     jira_board_id: str
+    jira_base_jql: str
     jira_jql: str
     jira_max_results: int
     jira_section_field: str
@@ -65,11 +66,19 @@ def load_settings() -> Settings:
     load_dotenv()
 
     jira_board_id = _required("JIRA_BOARD_ID")
+
+    # Base JQL: filtro de "qué tickets le importan a este agente" SIN filtros de
+    # recencia ni estado. Se reusa para el daily (agregando recency) y para el
+    # search de finalizados (agregando statusCategory = Done AND updated >= -Nd).
+    jira_base_jql = os.getenv("JIRA_BASE_JQL", "").strip()
+    if not jira_base_jql:
+        jira_base_jql = f"board = {jira_board_id}"
+
     jira_jql = os.getenv("JIRA_JQL", "").strip()
     if not jira_jql:
         # Incluye todos los tickets abiertos + los que se finalizaron hoy
         jira_jql = (
-            f"board = {jira_board_id} AND "
+            f"({jira_base_jql}) AND "
             f"(statusCategory != Done OR updatedDate >= startOfDay()) "
             f"ORDER BY updated DESC"
         )
@@ -80,6 +89,7 @@ def load_settings() -> Settings:
         jira_email=_required("JIRA_EMAIL"),
         jira_api_token=_required("JIRA_API_TOKEN"),
         jira_board_id=jira_board_id,
+        jira_base_jql=jira_base_jql,
         jira_jql=jira_jql,
         jira_max_results=int(os.getenv("JIRA_MAX_RESULTS", "100")),
         jira_section_field=os.getenv("JIRA_SECTION_FIELD", "").strip(),

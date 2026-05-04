@@ -11,7 +11,8 @@ Todas las variables de configuración del agente. Definidas en `.env` (copiado d
 | `JIRA_API_TOKEN`         | ✅        | —                               | API token de Jira (generado en Atlassian account settings).                |
 | `JIRA_BOARD_ID`          | ✅        | —                               | ID numérico del board. Ej: `16`                                            |
 | `JIRA_CLOUD_ID`          | ❌        | `""`                            | Cloud ID de Atlassian. Requerido para service accounts / scoped tokens.    |
-| `JIRA_JQL`               | ❌        | Auto-generado desde BOARD_ID    | JQL personalizado. Si está vacío se genera: `board = {id} AND (statusCategory != Done OR updatedDate >= startOfDay()) ORDER BY updated DESC` |
+| `JIRA_BASE_JQL`          | ❌        | `board = {JIRA_BOARD_ID}`       | Filtro "qué tickets le importan a este agente", SIN filtros de recencia ni estado. Se reusa para el daily (agrega recency) y para el search de tickets finalizados (agrega `statusCategory = Done AND updated >= -Nd`). Ej: `project = PS`. |
+| `JIRA_JQL`               | ❌        | Auto-generado desde BASE_JQL    | JQL del fetch diario (activos + finalizados hoy). Si está vacío se genera: `({JIRA_BASE_JQL}) AND (statusCategory != Done OR updatedDate >= startOfDay()) ORDER BY updated DESC` |
 | `JIRA_MAX_RESULTS`       | ❌        | `100`                           | Máximo de tickets por corrida.                                             |
 | `JIRA_SECTION_FIELD`     | ❌        | `""`                            | Campo custom de Jira para "sección". Ej: `customfield_12345`               |
 | `JIRA_CRITICALITY_FIELD` | ❌        | `""` (usa `priority`)           | Campo custom para criticidad. Si está vacío usa el campo `priority`.       |
