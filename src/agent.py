@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 from classifier import build_next_memory_state, classify_tickets
 from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
+from llm_usage import aggregate_weekly_llm_usage, format_weekly_usage_block
 from message_builder import build_vertical_message, build_weekly_cpo_message
 from models import AgentMemoryState, RoadmapPlan, VerticalPlan
 from planner import build_vertical_plan
@@ -55,7 +56,7 @@ def run_agent(
     if settings.llm_webhook_url:
         try:
             from recurrence_analyzer import analyze_recurrence, build_next_recurrence_memory
-            recurring_patterns = analyze_recurrence(
+            recurring_patterns, _ = analyze_recurrence(
                 active_tickets=tickets,
                 finalized_tickets=finalized_tickets,
                 webhook_url=settings.llm_webhook_url,
@@ -100,6 +101,10 @@ def run_agent(
             recurring_patterns=recurring_patterns,
         )
 
+        # LLM usage agregado de la semana (incluye runs diarios + roadmap-only)
+        usage = aggregate_weekly_llm_usage(week_start=week_start, week_end=week_end)
+        cpo_body += "\n" + format_weekly_usage_block(usage)
+
     # Roadmap analysis (weekly only, or forced)
     roadmap_plan = None
     if (is_weekly_run or force_roadmap) and not skip_roadmap:
@@ -113,16 +118,6 @@ def run_agent(
             )
         except Exception as exc:
             print(f"[WARN] Análisis de roadmap falló: {exc}")
-
-    if cpo_body and roadmap_plan and roadmap_plan.input_stats:
-        s = roadmap_plan.input_stats
-        cpo_body += (
-            f"\n\n---\n🤖 **Input al LLM (roadmap agent)**\n"
-            f"System prompt: {s['system_prompt_chars']:,} chars | "
-            f"User message: {s['user_message_chars']:,} chars | "
-            f"Total: {s['total_chars']:,} chars (~{s['estimated_tokens']:,} tokens)\n"
-            f"Log: `{s['log_path']}`"
-        )
 
     return plans, outbound_messages, cpo_body, next_memory, roadmap_plan
 

@@ -1,7 +1,7 @@
 import json
 import os
 from datetime import datetime, timezone
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import requests
 
@@ -34,13 +34,13 @@ def analyze_recurrence(
     webhook_url: str,
     webhook_secret: str = "",
     recurrence_memory: Optional[RecurrenceMemoryState] = None,
-) -> List[RecurringPatternSnapshot]:
+) -> Tuple[List[RecurringPatternSnapshot], dict]:
     if recurrence_memory is None:
         recurrence_memory = RecurrenceMemoryState()
 
     all_tickets = active_tickets + finalized_tickets
     if len(all_tickets) < 2:
-        return recurrence_memory.patterns
+        return recurrence_memory.patterns, {}
 
     already_analyzed = set(recurrence_memory.analyzed_ticket_keys)
     new_tickets = [t for t in all_tickets if t.key not in already_analyzed]
@@ -48,7 +48,7 @@ def analyze_recurrence(
     # Si no hay tickets nuevos, devolver patrones existentes tal cual
     if not new_tickets:
         print("[RECURRENCE] Sin tickets nuevos — usando patrones en memoria.")
-        return recurrence_memory.patterns
+        return recurrence_memory.patterns, {}
 
     # Armar contexto: tickets nuevos completos + resumen de patrones previos
     ticket_data = [
@@ -115,7 +115,7 @@ def analyze_recurrence(
             ))
 
     patterns.sort(key=lambda p: p.count, reverse=True)
-    return patterns
+    return patterns, input_stats
 
 
 def build_next_recurrence_memory(
