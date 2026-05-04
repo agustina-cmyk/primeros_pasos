@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-04T11:41:25.875795+00:00",
+  "last_run_at": "2026-05-04T13:19:52.023860+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1496": {
+      "key": "PS-1496",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-05-04T07:03:07.842-0500",
+      "last_status_change_at": "2026-05-04T07:03:07.842-0500",
+      "notified_reasons": []
+    },
     "PS-1476": {
       "key": "PS-1476",
       "vertical": "sin_vertical",
@@ -81,15 +90,6 @@
       "assignee": "abrahan",
       "updated": "2026-04-30T10:56:09.107-0500",
       "last_status_change_at": "2026-04-30T10:56:00.116-0500",
-      "notified_reasons": []
-    },
-    "PS-1496": {
-      "key": "PS-1496",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-30T09:47:03.623-0500",
-      "last_status_change_at": "2026-04-30T09:46:56.228-0500",
       "notified_reasons": []
     },
     "PS-1488": {
