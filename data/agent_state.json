@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-04T17:09:47.922722+00:00",
+  "last_run_at": "2026-05-04T19:00:27.647317+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1500": {
+      "key": "PS-1500",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-04T13:40:14.046-0500",
+      "last_status_change_at": "2026-05-04T13:40:14.046-0500",
+      "notified_reasons": []
+    },
     "PS-1505": {
       "key": "PS-1505",
       "vertical": "sin_vertical",
@@ -99,15 +108,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-04T09:51:14.962-0500",
       "last_status_change_at": "2026-04-20T16:39:32.833-0500",
-      "notified_reasons": []
-    },
-    "PS-1500": {
-      "key": "PS-1500",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-04T09:48:25.448-0500",
-      "last_status_change_at": "2026-04-30T16:40:13.586-0500",
       "notified_reasons": []
     },
     "PS-1459": {
