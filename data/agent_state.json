@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-05T11:55:58.107139+00:00",
+  "last_run_at": "2026-05-05T13:15:24.402512+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1234": {
+      "key": "PS-1234",
+      "vertical": "sin_vertical",
+      "status": "READY FOR DEPLOY",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-05T07:47:17.297-0500",
+      "last_status_change_at": "2026-05-05T07:47:17.297-0500",
+      "notified_reasons": []
+    },
     "PS-1481": {
       "key": "PS-1481",
       "vertical": "sin_vertical",
@@ -135,15 +144,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-04T09:41:37.830-0500",
       "last_status_change_at": "2026-05-04T09:41:23.508-0500",
-      "notified_reasons": []
-    },
-    "PS-1234": {
-      "key": "PS-1234",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-04T08:59:31.868-0500",
-      "last_status_change_at": "2026-05-04T08:59:31.868-0500",
       "notified_reasons": []
     },
     "PS-1476": {
