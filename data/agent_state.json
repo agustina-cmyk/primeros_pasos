@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-05T18:11:32.438045+00:00",
+  "last_run_at": "2026-05-05T19:56:06.855119+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1512": {
+      "key": "PS-1512",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-05T14:32:01.592-0500",
+      "last_status_change_at": "2026-05-05T14:31:53.299-0500",
+      "notified_reasons": []
+    },
     "PS-1234": {
       "key": "PS-1234",
       "vertical": "sin_vertical",
