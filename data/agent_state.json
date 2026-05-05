@@ -1,14 +1,41 @@
 {
-  "last_run_at": "2026-05-05T17:00:10.338934+00:00",
+  "last_run_at": "2026-05-05T18:11:32.438045+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1510": {
-      "key": "PS-1510",
+    "PS-1234": {
+      "key": "PS-1234",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-05T12:51:23.666-0500",
+      "last_status_change_at": "2026-05-05T12:51:18.283-0500",
+      "notified_reasons": []
+    },
+    "PS-1373": {
+      "key": "PS-1373",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-05T12:51:09.165-0500",
+      "last_status_change_at": "2026-05-05T12:51:09.165-0500",
+      "notified_reasons": []
+    },
+    "PS-1511": {
+      "key": "PS-1511",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-05-05T11:41:21.866-0500",
-      "last_status_change_at": "2026-05-05T11:20:18.461-0500",
+      "updated": "2026-05-05T12:08:49.199-0500",
+      "last_status_change_at": "2026-05-05T12:08:01.896-0500",
+      "notified_reasons": []
+    },
+    "PS-1510": {
+      "key": "PS-1510",
+      "vertical": "sin_vertical",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-05-05T12:05:56.629-0500",
+      "last_status_change_at": "2026-05-05T12:05:40.669-0500",
       "notified_reasons": []
     },
     "PS-1459": {
@@ -45,15 +72,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-05T09:39:08.471-0500",
       "last_status_change_at": "2026-05-05T09:39:08.471-0500",
-      "notified_reasons": []
-    },
-    "PS-1234": {
-      "key": "PS-1234",
-      "vertical": "sin_vertical",
-      "status": "READY FOR DEPLOY",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-05T07:47:17.297-0500",
-      "last_status_change_at": "2026-05-05T07:47:17.297-0500",
       "notified_reasons": []
     },
     "PS-1481": {
@@ -234,15 +252,6 @@
       "assignee": null,
       "updated": "2026-04-27T17:48:46.257-0500",
       "last_status_change_at": "2026-04-27T13:56:37.138-0500",
-      "notified_reasons": []
-    },
-    "PS-1373": {
-      "key": "PS-1373",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-04-23T18:38:33.843-0500",
-      "last_status_change_at": "2026-04-23T18:38:33.843-0500",
       "notified_reasons": []
     },
     "PS-1432": {
