@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-05T22:44:29.662576+00:00",
+  "last_run_at": "2026-05-05T23:38:33.693848+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1509": {
+      "key": "PS-1509",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-05T18:00:46.426-0500",
+      "last_status_change_at": "2026-05-05T18:00:46.426-0500",
+      "notified_reasons": []
+    },
     "PS-1514": {
       "key": "PS-1514",
       "vertical": "sin_vertical",
@@ -81,15 +90,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-05-05T10:17:22.370-0500",
       "last_status_change_at": "2026-05-05T10:17:22.370-0500",
-      "notified_reasons": []
-    },
-    "PS-1509": {
-      "key": "PS-1509",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-05-05T10:12:45.369-0500",
-      "last_status_change_at": "2026-05-05T09:52:34.308-0500",
       "notified_reasons": []
     },
     "PS-1020": {
