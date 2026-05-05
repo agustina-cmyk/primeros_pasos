@@ -1,7 +1,52 @@
 {
-  "last_run_at": "2026-05-05T13:15:24.402512+00:00",
+  "last_run_at": "2026-05-05T17:00:10.338934+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1510": {
+      "key": "PS-1510",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-05T11:41:21.866-0500",
+      "last_status_change_at": "2026-05-05T11:20:18.461-0500",
+      "notified_reasons": []
+    },
+    "PS-1459": {
+      "key": "PS-1459",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-05T11:31:55.241-0500",
+      "last_status_change_at": "2026-05-05T11:31:55.241-0500",
+      "notified_reasons": []
+    },
+    "PS-1508": {
+      "key": "PS-1508",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-05T10:17:22.370-0500",
+      "last_status_change_at": "2026-05-05T10:17:22.370-0500",
+      "notified_reasons": []
+    },
+    "PS-1509": {
+      "key": "PS-1509",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-05T10:12:45.369-0500",
+      "last_status_change_at": "2026-05-05T09:52:34.308-0500",
+      "notified_reasons": []
+    },
+    "PS-1020": {
+      "key": "PS-1020",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-05T09:39:08.471-0500",
+      "last_status_change_at": "2026-05-05T09:39:08.471-0500",
+      "notified_reasons": []
+    },
     "PS-1234": {
       "key": "PS-1234",
       "vertical": "sin_vertical",
@@ -117,24 +162,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-04T09:51:14.962-0500",
       "last_status_change_at": "2026-04-20T16:39:32.833-0500",
-      "notified_reasons": []
-    },
-    "PS-1459": {
-      "key": "PS-1459",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-04T09:47:35.188-0500",
-      "last_status_change_at": "2026-04-15T15:12:26.209-0500",
-      "notified_reasons": []
-    },
-    "PS-1020": {
-      "key": "PS-1020",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-04T09:44:21.691-0500",
-      "last_status_change_at": "2025-11-16T20:26:13.182-0500",
       "notified_reasons": []
     },
     "PS-1356": {
