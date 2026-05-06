@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-05-06T21:35:58.487523+00:00",
+  "last_run_at": "2026-05-06T22:38:30.595691+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1515": {
+      "key": "PS-1515",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-06T16:58:53.963-0500",
+      "last_status_change_at": "2026-05-06T11:30:19.858-0500",
+      "notified_reasons": []
+    },
+    "PS-1516": {
+      "key": "PS-1516",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-06T16:58:24.373-0500",
+      "last_status_change_at": "2026-05-06T14:42:33.761-0500",
+      "notified_reasons": []
+    },
     "PS-1513": {
       "key": "PS-1513",
       "vertical": "sin_vertical",
@@ -18,15 +36,6 @@
       "assignee": "Santiago Mart\u00e1",
       "updated": "2026-05-06T15:25:44.490-0500",
       "last_status_change_at": "2026-05-06T15:25:44.490-0500",
-      "notified_reasons": []
-    },
-    "PS-1516": {
-      "key": "PS-1516",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-06T14:43:24.892-0500",
-      "last_status_change_at": "2026-05-06T14:42:33.761-0500",
       "notified_reasons": []
     },
     "PS-1469": {
@@ -72,15 +81,6 @@
       "assignee": "Ander",
       "updated": "2026-05-06T11:31:38.655-0500",
       "last_status_change_at": "2026-04-28T11:09:08.452-0500",
-      "notified_reasons": []
-    },
-    "PS-1515": {
-      "key": "PS-1515",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-06T11:30:34.446-0500",
-      "last_status_change_at": "2026-05-06T11:30:19.858-0500",
       "notified_reasons": []
     },
     "PS-1514": {
