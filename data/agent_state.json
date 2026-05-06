@@ -1,7 +1,43 @@
 {
-  "last_run_at": "2026-05-06T15:06:46.389239+00:00",
+  "last_run_at": "2026-05-06T16:57:04.472515+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1359": {
+      "key": "PS-1359",
+      "vertical": "sin_vertical",
+      "status": "On Hold",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-05-06T11:41:45.083-0500",
+      "last_status_change_at": "2026-05-06T11:41:45.083-0500",
+      "notified_reasons": []
+    },
+    "PS-1486": {
+      "key": "PS-1486",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-05-06T11:32:35.174-0500",
+      "last_status_change_at": "2026-05-06T11:32:26.921-0500",
+      "notified_reasons": []
+    },
+    "PS-1487": {
+      "key": "PS-1487",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Ander",
+      "updated": "2026-05-06T11:31:38.655-0500",
+      "last_status_change_at": "2026-04-28T11:09:08.452-0500",
+      "notified_reasons": []
+    },
+    "PS-1515": {
+      "key": "PS-1515",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-06T11:30:34.446-0500",
+      "last_status_change_at": "2026-05-06T11:30:19.858-0500",
+      "notified_reasons": []
+    },
     "PS-1514": {
       "key": "PS-1514",
       "vertical": "sin_vertical",
@@ -164,15 +200,6 @@
       "last_status_change_at": "2026-03-31T15:31:13.055-0500",
       "notified_reasons": []
     },
-    "PS-1359": {
-      "key": "PS-1359",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-04T09:57:16.902-0500",
-      "last_status_change_at": "2026-03-12T14:04:39.604-0500",
-      "notified_reasons": []
-    },
     "PS-1356": {
       "key": "PS-1356",
       "vertical": "sin_vertical",
@@ -216,24 +243,6 @@
       "assignee": null,
       "updated": "2026-04-28T12:01:08.168-0500",
       "last_status_change_at": "2026-04-28T12:00:58.959-0500",
-      "notified_reasons": []
-    },
-    "PS-1487": {
-      "key": "PS-1487",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-28T11:09:15.662-0500",
-      "last_status_change_at": "2026-04-28T11:09:08.452-0500",
-      "notified_reasons": []
-    },
-    "PS-1486": {
-      "key": "PS-1486",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-04-28T09:50:55.452-0500",
-      "last_status_change_at": "2026-04-28T09:50:36.133-0500",
       "notified_reasons": []
     },
     "PS-1484": {
