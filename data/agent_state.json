@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-05-06T01:47:01.153059+00:00",
+  "last_run_at": "2026-05-06T05:18:58.554210+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1509": {
-      "key": "PS-1509",
+    "PS-1459": {
+      "key": "PS-1459",
       "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-05-05T18:00:46.426-0500",
-      "last_status_change_at": "2026-05-05T18:00:46.426-0500",
+      "status": "READY FOR TEST",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-05T23:46:43.145-0500",
+      "last_status_change_at": "2026-05-05T23:46:43.145-0500",
+      "notified_reasons": []
+    },
+    "PS-1469": {
+      "key": "PS-1469",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-05T23:46:34.194-0500",
+      "last_status_change_at": "2026-05-05T23:46:34.194-0500",
       "notified_reasons": []
     },
     "PS-1514": {
@@ -38,24 +47,6 @@
       "last_status_change_at": "2026-05-05T14:31:53.299-0500",
       "notified_reasons": []
     },
-    "PS-1234": {
-      "key": "PS-1234",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-05T12:51:23.666-0500",
-      "last_status_change_at": "2026-05-05T12:51:18.283-0500",
-      "notified_reasons": []
-    },
-    "PS-1373": {
-      "key": "PS-1373",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-05T12:51:09.165-0500",
-      "last_status_change_at": "2026-05-05T12:51:09.165-0500",
-      "notified_reasons": []
-    },
     "PS-1511": {
       "key": "PS-1511",
       "vertical": "sin_vertical",
@@ -63,24 +54,6 @@
       "assignee": null,
       "updated": "2026-05-05T12:08:49.199-0500",
       "last_status_change_at": "2026-05-05T12:08:01.896-0500",
-      "notified_reasons": []
-    },
-    "PS-1510": {
-      "key": "PS-1510",
-      "vertical": "sin_vertical",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-05-05T12:05:56.629-0500",
-      "last_status_change_at": "2026-05-05T12:05:40.669-0500",
-      "notified_reasons": []
-    },
-    "PS-1459": {
-      "key": "PS-1459",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-05T11:31:55.241-0500",
-      "last_status_change_at": "2026-05-05T11:31:55.241-0500",
       "notified_reasons": []
     },
     "PS-1508": {
@@ -198,15 +171,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-05-04T09:57:16.902-0500",
       "last_status_change_at": "2026-03-12T14:04:39.604-0500",
-      "notified_reasons": []
-    },
-    "PS-1469": {
-      "key": "PS-1469",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-04T09:51:14.962-0500",
-      "last_status_change_at": "2026-04-20T16:39:32.833-0500",
       "notified_reasons": []
     },
     "PS-1356": {
