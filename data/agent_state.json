@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-05-06T12:13:17.917813+00:00",
+  "last_run_at": "2026-05-06T15:06:46.389239+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1514": {
+      "key": "PS-1514",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-06T09:45:40.292-0500",
+      "last_status_change_at": "2026-05-06T09:45:40.292-0500",
+      "notified_reasons": []
+    },
+    "PS-1508": {
+      "key": "PS-1508",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-06T09:38:40.140-0500",
+      "last_status_change_at": "2026-05-06T09:38:40.140-0500",
+      "notified_reasons": []
+    },
     "PS-1459": {
       "key": "PS-1459",
       "vertical": "sin_vertical",
@@ -18,15 +36,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-05T23:46:34.194-0500",
       "last_status_change_at": "2026-05-05T23:46:34.194-0500",
-      "notified_reasons": []
-    },
-    "PS-1514": {
-      "key": "PS-1514",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-05T16:12:57.404-0500",
-      "last_status_change_at": "2026-05-05T16:12:33.035-0500",
       "notified_reasons": []
     },
     "PS-1513": {
@@ -54,15 +63,6 @@
       "assignee": null,
       "updated": "2026-05-05T12:08:49.199-0500",
       "last_status_change_at": "2026-05-05T12:08:01.896-0500",
-      "notified_reasons": []
-    },
-    "PS-1508": {
-      "key": "PS-1508",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-05T10:17:22.370-0500",
-      "last_status_change_at": "2026-05-05T10:17:22.370-0500",
       "notified_reasons": []
     },
     "PS-1020": {
