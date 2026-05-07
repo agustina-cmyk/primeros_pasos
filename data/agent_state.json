@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-06T23:39:39.192015+00:00",
+  "last_run_at": "2026-05-07T01:51:37.803202+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1517": {
+      "key": "PS-1517",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-06T19:23:01.315-0500",
+      "last_status_change_at": "2026-05-06T19:23:01.315-0500",
+      "notified_reasons": []
+    },
     "PS-1515": {
       "key": "PS-1515",
       "vertical": "sin_vertical",
