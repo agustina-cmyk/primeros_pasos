@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-07T01:51:37.803202+00:00",
+  "last_run_at": "2026-05-07T05:21:51.195640+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1517": {
@@ -38,15 +38,6 @@
       "last_status_change_at": "2026-05-06T15:25:55.122-0500",
       "notified_reasons": []
     },
-    "PS-1503": {
-      "key": "PS-1503",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Santiago Mart\u00e1",
-      "updated": "2026-05-06T15:25:44.490-0500",
-      "last_status_change_at": "2026-05-06T15:25:44.490-0500",
-      "notified_reasons": []
-    },
     "PS-1469": {
       "key": "PS-1469",
       "vertical": "sin_vertical",
@@ -74,15 +65,6 @@
       "last_status_change_at": "2026-05-06T11:41:45.083-0500",
       "notified_reasons": []
     },
-    "PS-1486": {
-      "key": "PS-1486",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-05-06T11:32:35.174-0500",
-      "last_status_change_at": "2026-05-06T11:32:26.921-0500",
-      "notified_reasons": []
-    },
     "PS-1487": {
       "key": "PS-1487",
       "vertical": "sin_vertical",
@@ -90,24 +72,6 @@
       "assignee": "Ander",
       "updated": "2026-05-06T11:31:38.655-0500",
       "last_status_change_at": "2026-04-28T11:09:08.452-0500",
-      "notified_reasons": []
-    },
-    "PS-1514": {
-      "key": "PS-1514",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-05-06T09:45:40.292-0500",
-      "last_status_change_at": "2026-05-06T09:45:40.292-0500",
-      "notified_reasons": []
-    },
-    "PS-1508": {
-      "key": "PS-1508",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-06T09:38:40.140-0500",
-      "last_status_change_at": "2026-05-06T09:38:40.140-0500",
       "notified_reasons": []
     },
     "PS-1459": {
