@@ -1,14 +1,32 @@
 {
-  "last_run_at": "2026-05-08T12:51:17.697908+00:00",
+  "last_run_at": "2026-05-08T14:46:37.319245+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1513": {
+      "key": "PS-1513",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-05-08T09:11:37.194-0500",
+      "last_status_change_at": "2026-05-08T09:11:37.194-0500",
+      "notified_reasons": []
+    },
     "PS-1520": {
       "key": "PS-1520",
       "vertical": "sin_vertical",
       "status": "Finalizada",
       "assignee": "aldana",
-      "updated": "2026-05-08T07:47:11.509-0500",
-      "last_status_change_at": "2026-05-08T07:44:53.473-0500",
+      "updated": "2026-05-08T08:50:04.908-0500",
+      "last_status_change_at": "2026-05-08T08:50:04.908-0500",
+      "notified_reasons": []
+    },
+    "PS-1522": {
+      "key": "PS-1522",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-05-08T08:13:19.914-0500",
+      "last_status_change_at": "2026-05-08T08:12:15.988-0500",
       "notified_reasons": []
     },
     "PS-1484": {
@@ -27,15 +45,6 @@
       "assignee": null,
       "updated": "2026-05-07T17:16:11.885-0500",
       "last_status_change_at": "2026-05-07T17:16:02.468-0500",
-      "notified_reasons": []
-    },
-    "PS-1513": {
-      "key": "PS-1513",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "msimbeni",
-      "updated": "2026-05-07T16:30:25.247-0500",
-      "last_status_change_at": "2026-05-06T15:25:55.122-0500",
       "notified_reasons": []
     },
     "PS-1519": {
