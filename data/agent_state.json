@@ -1,7 +1,43 @@
 {
-  "last_run_at": "2026-05-08T17:49:09.455719+00:00",
+  "last_run_at": "2026-05-08T19:02:09.077228+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1516": {
+      "key": "PS-1516",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-08T13:47:38.108-0500",
+      "last_status_change_at": "2026-05-06T14:42:33.761-0500",
+      "notified_reasons": []
+    },
+    "PS-1525": {
+      "key": "PS-1525",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-08T13:47:07.714-0500",
+      "last_status_change_at": "2026-05-08T13:46:59.633-0500",
+      "notified_reasons": []
+    },
+    "PS-1519": {
+      "key": "PS-1519",
+      "vertical": "sin_vertical",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-08T13:44:03.710-0500",
+      "last_status_change_at": "2026-05-08T13:44:03.710-0500",
+      "notified_reasons": []
+    },
+    "PS-1524": {
+      "key": "PS-1524",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-08T13:30:01.826-0500",
+      "last_status_change_at": "2026-05-08T13:30:01.826-0500",
+      "notified_reasons": []
+    },
     "PS-1523": {
       "key": "PS-1523",
       "vertical": "sin_vertical",
@@ -9,15 +45,6 @@
       "assignee": "Emiliano Gallardo",
       "updated": "2026-05-08T10:57:14.302-0500",
       "last_status_change_at": "2026-05-08T10:57:14.302-0500",
-      "notified_reasons": []
-    },
-    "PS-1524": {
-      "key": "PS-1524",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-08T10:32:15.243-0500",
-      "last_status_change_at": "2026-05-08T10:31:43.642-0500",
       "notified_reasons": []
     },
     "PS-1513": {
@@ -65,15 +92,6 @@
       "last_status_change_at": "2026-05-07T17:16:02.468-0500",
       "notified_reasons": []
     },
-    "PS-1519": {
-      "key": "PS-1519",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-07T15:50:03.964-0500",
-      "last_status_change_at": "2026-05-07T15:49:56.517-0500",
-      "notified_reasons": []
-    },
     "PS-1518": {
       "key": "PS-1518",
       "vertical": "sin_vertical",
@@ -99,15 +117,6 @@
       "assignee": null,
       "updated": "2026-05-06T18:04:12.874-0500",
       "last_status_change_at": "2026-05-06T11:30:19.858-0500",
-      "notified_reasons": []
-    },
-    "PS-1516": {
-      "key": "PS-1516",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-06T16:58:24.373-0500",
-      "last_status_change_at": "2026-05-06T14:42:33.761-0500",
       "notified_reasons": []
     },
     "PS-1469": {
