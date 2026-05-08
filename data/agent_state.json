@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-08T11:17:44.612843+00:00",
+  "last_run_at": "2026-05-08T12:51:17.697908+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1520": {
+      "key": "PS-1520",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-05-08T07:47:11.509-0500",
+      "last_status_change_at": "2026-05-08T07:44:53.473-0500",
+      "notified_reasons": []
+    },
     "PS-1484": {
       "key": "PS-1484",
       "vertical": "sin_vertical",
@@ -27,15 +36,6 @@
       "assignee": "msimbeni",
       "updated": "2026-05-07T16:30:25.247-0500",
       "last_status_change_at": "2026-05-06T15:25:55.122-0500",
-      "notified_reasons": []
-    },
-    "PS-1520": {
-      "key": "PS-1520",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "aldana",
-      "updated": "2026-05-07T16:22:36.031-0500",
-      "last_status_change_at": "2026-05-07T16:20:50.599-0500",
       "notified_reasons": []
     },
     "PS-1519": {
