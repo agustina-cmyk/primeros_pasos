@@ -1,14 +1,50 @@
 {
-  "last_run_at": "2026-05-12T12:22:34.366716+00:00",
+  "last_run_at": "2026-05-12T15:16:38.430952+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1533": {
+      "key": "PS-1533",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-05-12T10:15:38.513-0500",
+      "last_status_change_at": "2026-05-12T09:48:26.373-0500",
+      "notified_reasons": []
+    },
+    "PS-1511": {
+      "key": "PS-1511",
+      "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-05-12T09:23:29.118-0500",
+      "last_status_change_at": "2026-05-12T09:23:29.118-0500",
+      "notified_reasons": []
+    },
+    "PS-1317": {
+      "key": "PS-1317",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-12T09:19:54.825-0500",
+      "last_status_change_at": "2026-03-05T09:45:47.052-0500",
+      "notified_reasons": []
+    },
     "PS-1531": {
       "key": "PS-1531",
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-11T18:46:00.447-0500",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-12T08:44:44.652-0500",
       "last_status_change_at": "2026-05-11T18:45:51.401-0500",
+      "notified_reasons": []
+    },
+    "PS-1532": {
+      "key": "PS-1532",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-05-12T08:35:29.656-0500",
+      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
       "notified_reasons": []
     },
     "PS-1529": {
@@ -200,15 +236,6 @@
       "last_status_change_at": "2026-05-05T14:31:53.299-0500",
       "notified_reasons": []
     },
-    "PS-1511": {
-      "key": "PS-1511",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-05T12:08:49.199-0500",
-      "last_status_change_at": "2026-05-05T12:08:01.896-0500",
-      "notified_reasons": []
-    },
     "PS-1481": {
       "key": "PS-1481",
       "vertical": "sin_vertical",
@@ -333,15 +360,6 @@
       "assignee": null,
       "updated": "2026-03-22T21:12:32.211-0500",
       "last_status_change_at": "2026-03-12T10:10:34.229-0500",
-      "notified_reasons": []
-    },
-    "PS-1317": {
-      "key": "PS-1317",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-03-16T10:25:18.686-0500",
-      "last_status_change_at": "2026-03-05T09:45:47.052-0500",
       "notified_reasons": []
     },
     "PS-1259": {
