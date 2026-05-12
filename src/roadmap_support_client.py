@@ -72,25 +72,33 @@ def sync_support_tickets(
     token: str,
     facts: List[TicketFacts],
     timeout: int = 30,
+    batch_size: int = 50,
 ) -> SyncResult:
     """Pushea los tickets clasificados al endpoint /api/support-tickets/sync.
 
     Idempotente: el endpoint hace upsert por key. Backfill automático en la
     primera corrida (cualquier ticket que el agente vea en el board se sincroniza).
+
+    Bachea de a `batch_size` tickets por request para evitar timeouts del
+    serverless function (Vercel) y de la conexión HTTP, ya que cada ticket
+    es un Prisma upsert secuencial del lado servidor.
     """
-    payload = {"tickets": [_ticket_to_payload(f) for f in facts]}
-    response = requests.post(
-        f"{app_url.rstrip('/')}/api/support-tickets/sync",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-        },
-        json=payload,
-        timeout=timeout,
-    )
-    response.raise_for_status()
-    data = response.json()
-    return SyncResult(
-        synced=int(data.get("synced", 0)),
-        errors=list(data.get("errors", [])),
-    )
+    url = f"{app_url.rstrip('/')}/api/support-tickets/sync"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type":  "application/json",
+    }
+
+    total_synced = 0
+    total_errors: List[Dict[str, str]] = []
+
+    for i in range(0, len(facts), batch_size):
+        chunk = facts[i : i + batch_size]
+        payload = {"tickets": [_ticket_to_payload(f) for f in chunk]}
+        response = requests.post(url, headers=headers, json=payload, timeout=timeout)
+        response.raise_for_status()
+        data = response.json()
+        total_synced += int(data.get("synced", 0))
+        total_errors.extend(data.get("errors", []))
+
+    return SyncResult(synced=total_synced, errors=total_errors)
