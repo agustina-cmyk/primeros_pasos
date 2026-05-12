@@ -73,6 +73,7 @@ class JiraClient:
             "environment",
             "issuetype",
             "resolution",
+            "resolutiondate",
         ]
         for field_name in [self.section_field, self.criticality_field, self.environment_field, self.type_field]:
             if field_name and field_name not in request_fields:
@@ -100,18 +101,28 @@ class JiraClient:
                 key = issue.get("key", "")
                 assignee = issue_fields.get("assignee") or {}
                 reporter = issue_fields.get("reporter") or {}
+                status_cat = ((issue_fields.get("status") or {}).get("statusCategory") or {}).get("key", "")
+                # Para tickets Done preferimos resolutiondate (campo nativo y confiable)
+                # sobre _last_status_change_at, que puede dar fallback a `created` si
+                # el changelog está truncado para tickets con mucho historial.
+                resolution_date = issue_fields.get("resolutiondate")
+                last_change = (
+                    resolution_date
+                    if status_cat.lower() == "done" and resolution_date
+                    else self._last_status_change_at(issue)
+                ) or issue_fields.get("created", "")
                 tickets.append(
                     JiraTicket(
                         key=key,
                         summary=issue_fields.get("summary", ""),
                         labels=[label.lower() for label in issue_fields.get("labels", [])],
                         status=(issue_fields.get("status") or {}).get("name", ""),
-                        status_category=((issue_fields.get("status") or {}).get("statusCategory") or {}).get("key", ""),
+                        status_category=status_cat,
                         assignee=assignee.get("displayName"),
                         reporter=reporter.get("displayName"),
                         created=issue_fields.get("created", ""),
                         updated=issue_fields.get("updated", ""),
-                        last_status_change_at=self._last_status_change_at(issue) or issue_fields.get("created", ""),
+                        last_status_change_at=last_change,
                         description=self._adf_to_text(issue_fields.get("description")),
                         section=self._field_to_text(issue_fields.get(self.section_field)) if self.section_field else "",
                         criticality=self._field_to_text(issue_fields.get(self.criticality_field)) if self.criticality_field else self._field_to_text(issue_fields.get("priority")),
