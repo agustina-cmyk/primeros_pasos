@@ -291,6 +291,10 @@ def _sync_support_tickets(settings, grouped_facts, finalized_tickets, memory_sta
     if not all_facts:
         return
 
+    # Breakdown for diagnostics: cuántos abiertos vs cerrados estamos por enviar
+    open_count = sum(1 for f in all_facts if f.status_category != "Done")
+    closed_count = sum(1 for f in all_facts if f.status_category == "Done")
+
     try:
         import roadmap_client
         import roadmap_support_client
@@ -306,7 +310,7 @@ def _sync_support_tickets(settings, grouped_facts, finalized_tickets, memory_sta
             token=token,
             facts=all_facts,
         )
-        print(f"[SUPPORT-SYNC] {result.synced} tickets sincronizados, {len(result.errors)} errores.")
+        print(f"[SUPPORT-SYNC] {result.synced} tickets sincronizados ({open_count} abiertos, {closed_count} cerrados), {len(result.errors)} errores.")
         if result.errors:
             for err in result.errors[:5]:
                 print(f"  [ERROR] {err.get('key')}: {err.get('message')}")
