@@ -49,13 +49,25 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
     # Siempre traemos finalizados para que el sync de soporte pueda marcar
     # tickets como cerrados (resolvedAt). El análisis de recurrencia los usa
     # adicionalmente cuando roam_cpo_channel_id + llm_webhook_url están seteados.
+    #
+    # Importante: los boards de Jira filtran tickets Done por default (solo
+    # muestran lo activo). Si `JIRA_BASE_JQL` no está seteado y derivamos a
+    # `board = X`, no traemos ningún Done. Si tenemos `project_key` del board
+    # context, lo preferimos para que la query alcance al historial completo.
+    if settings.jira_base_jql and not settings.jira_base_jql.startswith("board "):
+        finalized_base_jql = settings.jira_base_jql
+    elif board_context and board_context.project_key:
+        finalized_base_jql = f'project = "{board_context.project_key}"'
+    else:
+        finalized_base_jql = settings.jira_base_jql
+
     finalized_tickets = []
     try:
         finalized_tickets = jira.search_finalized_tickets(
-            base_jql=settings.jira_base_jql,
+            base_jql=finalized_base_jql,
             lookback_days=settings.recurrence_lookback_days,
         )
-        print(f"[FINALIZED] base_jql='{settings.jira_base_jql}' lookback={settings.recurrence_lookback_days}d → {len(finalized_tickets)} tickets")
+        print(f"[FINALIZED] base_jql='{finalized_base_jql}' lookback={settings.recurrence_lookback_days}d → {len(finalized_tickets)} tickets")
     except Exception as exc:
         print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
 
