@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-05-12T04:53:29.354358+00:00",
+  "last_run_at": "2026-05-12T07:36:24.555572+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1530": {
-      "key": "PS-1530",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-11T18:52:22.250-0500",
-      "last_status_change_at": "2026-05-11T18:52:22.250-0500",
-      "notified_reasons": []
-    },
     "PS-1531": {
       "key": "PS-1531",
       "vertical": "sin_vertical",
@@ -18,24 +9,6 @@
       "assignee": null,
       "updated": "2026-05-11T18:46:00.447-0500",
       "last_status_change_at": "2026-05-11T18:45:51.401-0500",
-      "notified_reasons": []
-    },
-    "PS-1526": {
-      "key": "PS-1526",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-11T16:38:08.560-0500",
-      "last_status_change_at": "2026-05-11T16:38:08.560-0500",
-      "notified_reasons": []
-    },
-    "PS-1471": {
-      "key": "PS-1471",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-11T16:18:53.195-0500",
-      "last_status_change_at": "2026-05-11T16:05:41.624-0500",
       "notified_reasons": []
     },
     "PS-1529": {
@@ -63,24 +36,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-05-11T13:20:16.648-0500",
       "last_status_change_at": "2026-05-11T13:20:16.648-0500",
-      "notified_reasons": []
-    },
-    "PS-1356": {
-      "key": "PS-1356",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-05-11T13:07:52.222-0500",
-      "last_status_change_at": "2026-05-11T13:07:52.222-0500",
-      "notified_reasons": []
-    },
-    "PS-1497": {
-      "key": "PS-1497",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-05-11T13:07:30.303-0500",
-      "last_status_change_at": "2026-05-11T13:07:30.303-0500",
       "notified_reasons": []
     },
     "PS-1528": {
