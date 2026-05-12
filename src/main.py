@@ -55,6 +55,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
             base_jql=settings.jira_base_jql,
             lookback_days=settings.recurrence_lookback_days,
         )
+        print(f"[FINALIZED] base_jql='{settings.jira_base_jql}' lookback={settings.recurrence_lookback_days}d → {len(finalized_tickets)} tickets")
     except Exception as exc:
         print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
 
