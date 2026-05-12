@@ -81,7 +81,30 @@ def test_resolved_ticket_includes_resolvedAt(mock_sync_response):
             facts=facts,
         )
     payload = mock_post.call_args.kwargs["json"]
-    assert payload["tickets"][0]["resolvedAt"] == "2026-04-20T15:00:00.000+0000"
+    # Normalized to UTC with "Z" suffix (Python's datetime drops trailing .000 ms)
+    assert payload["tickets"][0]["resolvedAt"] == "2026-04-20T15:00:00Z"
+
+
+def test_normalizes_jira_offset_timestamps(mock_sync_response):
+    """Jira returns "+0000" offsets; we must normalize to ISO 8601 UTC (Zod accepts only `Z`)."""
+    facts = [_make_facts(
+        created="2026-04-15T10:00:00.000+0000",
+        status="Done",
+        status_category="Done",
+        last_status_change_at="2026-04-20T15:30:00.000-0300",
+    )]
+    with patch("roadmap_support_client.requests.post", return_value=mock_sync_response) as mock_post:
+        import roadmap_support_client
+        roadmap_support_client.sync_support_tickets(
+            app_url="https://app.vercel.app",
+            token="test-jwt",
+            facts=facts,
+        )
+    payload = mock_post.call_args.kwargs["json"]
+    # +0000 → Z
+    assert payload["tickets"][0]["createdAt"] == "2026-04-15T10:00:00Z"
+    # -0300 → converted to UTC: 15:30-03 = 18:30Z
+    assert payload["tickets"][0]["resolvedAt"] == "2026-04-20T18:30:00Z"
 
 
 def test_open_ticket_has_null_resolvedAt(mock_sync_response):
