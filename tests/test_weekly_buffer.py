@@ -184,7 +184,7 @@ def test_run_agent_builds_weekly_buffer_in_next_memory():
 
     with patch("agent.datetime") as mock_dt:
         mock_dt.now.return_value.date.return_value = mock_date
-        _, _, cpo_body, next_mem, _ = run_agent(
+        _, _, cpo_body, next_mem, _, _facts = run_agent(
             settings=settings, tickets=[ticket], finalized_tickets=[],
             board_context=None, memory_state=memory, is_weekly_run=False,
         )
@@ -234,7 +234,7 @@ def test_run_agent_returns_cpo_body_on_weekly_run():
 
     with patch("agent.datetime") as mock_dt:
         mock_dt.now.return_value.date.return_value = mock_date
-        _, _, cpo_body, next_mem, _ = run_agent(
+        _, _, cpo_body, next_mem, _, _facts = run_agent(
             settings=settings, tickets=[ticket], finalized_tickets=[],
             board_context=None, memory_state=memory, is_weekly_run=True,
         )
@@ -292,7 +292,7 @@ def test_run_agent_skip_roadmap_overrides_force_roadmap():
 
     with patch("agent.datetime") as mock_dt:
         mock_dt.now.return_value.date.return_value = mock_date
-        _, _, _, _, roadmap_plan = run_agent(
+        _, _, _, _, roadmap_plan, _facts = run_agent(
             settings=settings, tickets=[ticket], finalized_tickets=[],
             board_context=None, memory_state=memory,
             force_roadmap=True, skip_roadmap=True,  # skip wins

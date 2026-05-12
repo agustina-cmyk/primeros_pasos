@@ -56,7 +56,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
         except Exception as exc:
             print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
 
-    plans, outbound_messages, cpo_body, next_memory, roadmap_plan = run_agent(
+    plans, outbound_messages, cpo_body, next_memory, roadmap_plan, grouped_facts = run_agent(
         settings=settings,
         tickets=tickets,
         finalized_tickets=finalized_tickets,
@@ -66,6 +66,9 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
         force_roadmap=force_roadmap,
         is_weekly_run=is_weekly_run,
     )
+
+    if not notify_only:
+        _sync_support_tickets(settings, grouped_facts)
 
     sent = 0
     skipped = 0
@@ -244,6 +247,43 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
             print(f"[WARN] Acción de roadmap falló ({action.action}): {exc}")
 
     return created_ideas
+
+
+def _sync_support_tickets(settings, grouped_facts) -> None:
+    """Pushea los tickets clasificados a la roadmap-app. Best-effort.
+
+    No interrumpe el resto del flow si falla (notificaciones, análisis CPO, etc.).
+    """
+    if not settings.roadmap_app_url:
+        return
+    if not settings.roadmap_supabase_url or not settings.ps_agent_email:
+        return
+
+    all_facts = [f for facts in grouped_facts.values() for f in facts]
+    if not all_facts:
+        return
+
+    try:
+        import roadmap_client
+        import roadmap_support_client
+
+        token = roadmap_client.login(
+            supabase_url=settings.roadmap_supabase_url,
+            anon_key=settings.roadmap_supabase_anon_key,
+            email=settings.ps_agent_email,
+            password=settings.ps_agent_password,
+        )
+        result = roadmap_support_client.sync_support_tickets(
+            app_url=settings.roadmap_app_url,
+            token=token,
+            facts=all_facts,
+        )
+        print(f"[SUPPORT-SYNC] {result.synced} tickets sincronizados, {len(result.errors)} errores.")
+        if result.errors:
+            for err in result.errors[:5]:
+                print(f"  [ERROR] {err.get('key')}: {err.get('message')}")
+    except Exception as exc:
+        print(f"[WARN] Sync de soporte falló: {exc}")
 
 
 def _notify_cpo_roadmap(settings, roam, created_ideas):

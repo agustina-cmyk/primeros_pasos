@@ -7,7 +7,7 @@ from config import Settings
 from jira_client import JiraBoardContext, JiraTicket
 from llm_usage import aggregate_weekly_llm_usage, format_weekly_usage_block
 from message_builder import build_vertical_message, build_weekly_cpo_message
-from models import AgentMemoryState, RoadmapPlan, VerticalPlan
+from models import AgentMemoryState, RoadmapPlan, TicketFacts, VerticalPlan
 from planner import build_vertical_plan
 
 _ARGENTINA_TZ = ZoneInfo("America/Argentina/Buenos_Aires")
@@ -22,7 +22,7 @@ def run_agent(
     skip_roadmap: bool = False,
     force_roadmap: bool = False,
     is_weekly_run: bool = False,
-) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan]]:
+) -> Tuple[Dict[str, VerticalPlan], List[Tuple[str, str, str]], Optional[str], AgentMemoryState, Optional[RoadmapPlan], Dict[str, List[TicketFacts]]]:
     grouped_facts = classify_tickets(
         tickets=tickets,
         memory_state=memory_state,
@@ -119,7 +119,7 @@ def run_agent(
         except Exception as exc:
             print(f"[WARN] Análisis de roadmap falló: {exc}")
 
-    return plans, outbound_messages, cpo_body, next_memory, roadmap_plan
+    return plans, outbound_messages, cpo_body, next_memory, roadmap_plan, grouped_facts
 
 
 def _should_run_roadmap(settings: Settings, tickets: List[JiraTicket], memory_state: AgentMemoryState) -> bool:
