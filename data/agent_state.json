@@ -1,14 +1,50 @@
 {
-  "last_run_at": "2026-05-12T15:16:38.430952+00:00",
+  "last_run_at": "2026-05-12T17:29:41.176008+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1202": {
+      "key": "PS-1202",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-05-12T12:24:49.274-0500",
+      "last_status_change_at": "2026-05-11T13:41:53.554-0500",
+      "notified_reasons": []
+    },
+    "PS-1504": {
+      "key": "PS-1504",
+      "vertical": "sin_vertical",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-12T12:05:45.126-0500",
+      "last_status_change_at": "2026-05-12T12:05:45.126-0500",
+      "notified_reasons": []
+    },
     "PS-1533": {
       "key": "PS-1533",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "abrahan",
-      "updated": "2026-05-12T10:15:38.513-0500",
-      "last_status_change_at": "2026-05-12T09:48:26.373-0500",
+      "updated": "2026-05-12T11:28:40.305-0500",
+      "last_status_change_at": "2026-05-12T11:28:40.305-0500",
+      "notified_reasons": []
+    },
+    "PS-1535": {
+      "key": "PS-1535",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-12T10:56:34.814-0500",
+      "last_status_change_at": "2026-05-12T10:51:05.276-0500",
+      "notified_reasons": []
+    },
+    "PS-1534": {
+      "key": "PS-1534",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-12T10:26:44.699-0500",
+      "last_status_change_at": "2026-05-12T10:26:33.090-0500",
       "notified_reasons": []
     },
     "PS-1511": {
@@ -54,15 +90,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-05-11T15:52:49.003-0500",
       "last_status_change_at": "2026-05-11T15:39:25.335-0500",
-      "notified_reasons": []
-    },
-    "PS-1202": {
-      "key": "PS-1202",
-      "vertical": "sin_vertical",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-11T13:41:53.554-0500",
-      "last_status_change_at": "2026-05-11T13:41:53.554-0500",
       "notified_reasons": []
     },
     "PS-1474": {
@@ -261,15 +288,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-04T14:14:05.571-0500",
       "last_status_change_at": "2026-05-04T14:13:00.132-0500",
-      "notified_reasons": []
-    },
-    "PS-1504": {
-      "key": "PS-1504",
-      "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-04T11:27:49.675-0500",
-      "last_status_change_at": "2026-05-04T11:27:42.584-0500",
       "notified_reasons": []
     },
     "PS-1501": {
