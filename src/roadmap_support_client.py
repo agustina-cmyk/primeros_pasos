@@ -55,7 +55,7 @@ def _normalize_iso(s: str) -> Optional[str]:
 
 def _ticket_to_payload(facts: TicketFacts) -> Dict[str, Any]:
     """Convierte un TicketFacts al shape esperado por el endpoint."""
-    raw_resolved = facts.last_status_change_at if facts.status_category == "Done" else None
+    raw_resolved = facts.last_status_change_at if facts.status_category.lower() == "done" else None
     return {
         "key":         facts.key,
         "createdAt":   _normalize_iso(facts.created),

@@ -305,8 +305,8 @@ def _sync_support_tickets(settings, grouped_facts, finalized_tickets, memory_sta
         return
 
     # Breakdown for diagnostics: cuántos abiertos vs cerrados estamos por enviar
-    open_count = sum(1 for f in all_facts if f.status_category != "Done")
-    closed_count = sum(1 for f in all_facts if f.status_category == "Done")
+    open_count = sum(1 for f in all_facts if f.status_category.lower() != "done")
+    closed_count = sum(1 for f in all_facts if f.status_category.lower() == "done")
 
     try:
         import roadmap_client
