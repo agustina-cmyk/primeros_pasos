@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-05-11T23:27:47.269311+00:00",
+  "last_run_at": "2026-05-12T01:15:07.395787+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1530": {
       "key": "PS-1530",
       "vertical": "sin_vertical",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-05-11T18:52:22.250-0500",
+      "last_status_change_at": "2026-05-11T18:52:22.250-0500",
+      "notified_reasons": []
+    },
+    "PS-1531": {
+      "key": "PS-1531",
+      "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-05-11T18:06:26.649-0500",
-      "last_status_change_at": "2026-05-11T18:01:05.256-0500",
+      "updated": "2026-05-11T18:46:00.447-0500",
+      "last_status_change_at": "2026-05-11T18:45:51.401-0500",
       "notified_reasons": []
     },
     "PS-1526": {
