@@ -46,15 +46,17 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
         print("No se encontraron tickets.")
         return 0
 
+    # Siempre traemos finalizados para que el sync de soporte pueda marcar
+    # tickets como cerrados (resolvedAt). El análisis de recurrencia los usa
+    # adicionalmente cuando roam_cpo_channel_id + llm_webhook_url están seteados.
     finalized_tickets = []
-    if settings.roam_cpo_channel_id and settings.llm_webhook_url:
-        try:
-            finalized_tickets = jira.search_finalized_tickets(
-                base_jql=settings.jira_base_jql,
-                lookback_days=settings.recurrence_lookback_days,
-            )
-        except Exception as exc:
-            print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
+    try:
+        finalized_tickets = jira.search_finalized_tickets(
+            base_jql=settings.jira_base_jql,
+            lookback_days=settings.recurrence_lookback_days,
+        )
+    except Exception as exc:
+        print(f"[WARN] No se pudieron traer tickets finalizados: {exc}")
 
     plans, outbound_messages, cpo_body, next_memory, roadmap_plan, grouped_facts = run_agent(
         settings=settings,
@@ -68,7 +70,7 @@ def run(dry_run: bool, cpo_only: bool = False, roadmap_only: bool = False,
     )
 
     if not notify_only:
-        _sync_support_tickets(settings, grouped_facts)
+        _sync_support_tickets(settings, grouped_facts, finalized_tickets, memory_state)
 
     sent = 0
     skipped = 0
@@ -249,8 +251,13 @@ def _execute_roadmap_plan(settings, roadmap_plan, next_memory):
     return created_ideas
 
 
-def _sync_support_tickets(settings, grouped_facts) -> None:
+def _sync_support_tickets(settings, grouped_facts, finalized_tickets, memory_state) -> None:
     """Pushea los tickets clasificados a la roadmap-app. Best-effort.
+
+    Incluye tanto activos (de grouped_facts, ya clasificados por run_agent)
+    como finalizados recientes (clasificados acá para obtener su vertical).
+    El upsert por key actualiza el resolvedAt de tickets que pasaron a Done
+    desde la última corrida.
 
     No interrumpe el resto del flow si falla (notificaciones, análisis CPO, etc.).
     """
@@ -259,7 +266,28 @@ def _sync_support_tickets(settings, grouped_facts) -> None:
     if not settings.roadmap_supabase_url or not settings.ps_agent_email:
         return
 
+    # Activos: ya vienen clasificados
     all_facts = [f for facts in grouped_facts.values() for f in facts]
+
+    # Finalizados: clasificarlos para obtener vertical. Las flags
+    # (created_today, is_stale, etc.) no las usa el sync — solo necesitamos
+    # vertical + datos crudos del ticket.
+    if finalized_tickets:
+        try:
+            from classifier import classify_tickets
+            finalized_grouped = classify_tickets(
+                tickets=finalized_tickets,
+                memory_state=memory_state,
+                label_prefix=settings.vertical_label_prefix,
+                label_to_vertical=settings.label_to_vertical,
+                unchanged_stale_days=settings.unchanged_stale_days,
+                last_message_sent_at=memory_state.last_message_sent_at,
+                last_sent_tickets=memory_state.last_sent_tickets,
+            )
+            all_facts.extend(f for facts in finalized_grouped.values() for f in facts)
+        except Exception as exc:
+            print(f"[WARN] No se pudieron clasificar finalizados para sync: {exc}")
+
     if not all_facts:
         return
 
