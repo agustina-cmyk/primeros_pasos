@@ -14,6 +14,17 @@ def resolve_vertical(
     label_prefix: str,
     label_to_vertical: Dict[str, str],
 ) -> str:
+    """Asigna un vertical al ticket a partir de sus labels de Jira.
+
+    Precedencia:
+    1. Label con prefijo explícito (ej. `vertical:payments`) → gana siempre.
+    2. Si hay match contra el mapping, los verticales de backend ganan sobre
+       `fe`. Ej. `[frontend, payments]` → `payments`. Lógica: la pista de
+       soporte va al equipo del dominio de negocio, no al de UI cuando hay
+       ambas labels.
+    3. Si el único match es `fe`, ese es el vertical.
+    4. Sin matches → `sin_vertical`.
+    """
     labels_lower = [label.lower() for label in labels]
 
     for label in labels_lower:
@@ -22,11 +33,18 @@ def resolve_vertical(
             if vertical:
                 return vertical
 
+    fe_match: Optional[str] = None
     for label in labels_lower:
         mapped = label_to_vertical.get(label)
-        if mapped:
-            return mapped
+        if not mapped:
+            continue
+        if mapped == "fe":
+            fe_match = mapped
+            continue
+        return mapped  # primer match non-fe gana
 
+    if fe_match:
+        return fe_match
     return "sin_vertical"
 
 

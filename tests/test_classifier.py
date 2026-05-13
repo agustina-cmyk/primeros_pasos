@@ -1,9 +1,44 @@
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
-from classifier import classify_tickets
+from classifier import classify_tickets, resolve_vertical
 from jira_client import JiraTicket
 from models import AgentMemoryState, RoadmapMemoryState
+
+
+_LBL_TO_VERTICAL = {
+    "fefo-team":  "payments",
+    "payments":   "payments",
+    "eze-team":   "verification",
+    "borbotones": "verification",
+    "pablo-team": "core",
+    "frontend":   "fe",
+}
+
+
+def test_resolve_vertical_uses_prefix_when_present():
+    assert resolve_vertical(["vertical:payments"], "vertical:", _LBL_TO_VERTICAL) == "payments"
+
+
+def test_resolve_vertical_maps_single_backend_label():
+    assert resolve_vertical(["eze-team"], "vertical:", _LBL_TO_VERTICAL) == "verification"
+
+
+def test_resolve_vertical_returns_fe_when_only_match():
+    assert resolve_vertical(["frontend"], "vertical:", _LBL_TO_VERTICAL) == "fe"
+
+
+def test_resolve_vertical_prefers_backend_over_fe():
+    # frontend + payments → payments gana (orden A)
+    assert resolve_vertical(["frontend", "payments"], "vertical:", _LBL_TO_VERTICAL) == "payments"
+    # mismo resultado en orden inverso
+    assert resolve_vertical(["payments", "frontend"], "vertical:", _LBL_TO_VERTICAL) == "payments"
+    # fe también cede a otros backends
+    assert resolve_vertical(["frontend", "eze-team"], "vertical:", _LBL_TO_VERTICAL) == "verification"
+
+
+def test_resolve_vertical_returns_sin_vertical_when_no_match():
+    assert resolve_vertical(["random-label"], "vertical:", _LBL_TO_VERTICAL) == "sin_vertical"
 
 
 def _days_ago_str(n: int) -> str:
