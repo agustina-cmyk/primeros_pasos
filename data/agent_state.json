@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-13T02:01:14.687177+00:00",
+  "last_run_at": "2026-05-13T05:51:35.228737+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1542": {
@@ -38,24 +38,6 @@
       "last_status_change_at": "2026-05-12T15:26:58.771-0500",
       "notified_reasons": []
     },
-    "PS-1536": {
-      "key": "PS-1536",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-12T15:20:22.992-0500",
-      "last_status_change_at": "2026-05-12T15:20:22.966-0500",
-      "notified_reasons": []
-    },
-    "PS-1538": {
-      "key": "PS-1538",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-05-12T15:04:08.646-0500",
-      "last_status_change_at": "2026-05-12T15:04:08.624-0500",
-      "notified_reasons": []
-    },
     "PS-1515": {
       "key": "PS-1515",
       "vertical": "sin_vertical",
@@ -81,33 +63,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-12T13:40:17.849-0500",
       "last_status_change_at": "2026-05-12T13:40:05.498-0500",
-      "notified_reasons": []
-    },
-    "PS-1317": {
-      "key": "PS-1317",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-12T12:50:37.260-0500",
-      "last_status_change_at": "2026-05-12T12:50:28.480-0500",
-      "notified_reasons": []
-    },
-    "PS-1529": {
-      "key": "PS-1529",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-12T12:43:16.652-0500",
-      "last_status_change_at": "2026-05-12T12:43:16.627-0500",
-      "notified_reasons": []
-    },
-    "PS-1202": {
-      "key": "PS-1202",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-12T12:42:47.851-0500",
-      "last_status_change_at": "2026-05-12T12:24:49.250-0500",
       "notified_reasons": []
     },
     "PS-1504": {
@@ -144,15 +99,6 @@
       "assignee": null,
       "updated": "2026-05-12T10:26:44.699-0500",
       "last_status_change_at": "2026-05-12T10:26:33.090-0500",
-      "notified_reasons": []
-    },
-    "PS-1511": {
-      "key": "PS-1511",
-      "vertical": "sin_vertical",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-12T09:23:29.118-0500",
-      "last_status_change_at": "2026-05-12T09:23:29.095-0500",
       "notified_reasons": []
     },
     "PS-1531": {
