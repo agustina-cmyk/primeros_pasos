@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-13T13:34:50.289962+00:00",
+  "last_run_at": "2026-05-13T14:01:10.215625+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
@@ -36,6 +36,15 @@
       "assignee": "aldana",
       "updated": "2026-05-11T10:40:36.169-0500",
       "last_status_change_at": "2026-05-11T10:40:21.966-0500",
+      "notified_reasons": []
+    },
+    "PS-1487": {
+      "key": "PS-1487",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "Ander",
+      "updated": "2026-05-08T21:12:15.404-0500",
+      "last_status_change_at": "2026-04-28T11:09:08.452-0500",
       "notified_reasons": []
     },
     "PS-1516": {
@@ -137,24 +146,6 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
-    "PS-1474": {
-      "key": "PS-1474",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-13T08:02:22.427-0500",
-      "last_status_change_at": "2026-05-13T08:02:22.427-0500",
-      "notified_reasons": []
-    },
-    "PS-1535": {
-      "key": "PS-1535",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-13T08:00:48.325-0500",
-      "last_status_change_at": "2026-05-13T08:00:42.500-0500",
-      "notified_reasons": []
-    },
     "PS-1506": {
       "key": "PS-1506",
       "vertical": "fe",
@@ -162,24 +153,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-13T07:47:35.340-0500",
       "last_status_change_at": "2026-05-13T07:47:29.864-0500",
-      "notified_reasons": []
-    },
-    "PS-1542": {
-      "key": "PS-1542",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-12T19:43:50.749-0500",
-      "last_status_change_at": "2026-05-12T16:17:06.426-0500",
-      "notified_reasons": []
-    },
-    "PS-1541": {
-      "key": "PS-1541",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-12T15:27:05.753-0500",
-      "last_status_change_at": "2026-05-12T15:26:58.771-0500",
       "notified_reasons": []
     },
     "PS-1537": {
@@ -198,42 +171,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-12T11:28:40.305-0500",
       "last_status_change_at": "2026-05-12T11:28:40.305-0500",
-      "notified_reasons": []
-    },
-    "PS-1534": {
-      "key": "PS-1534",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-12T10:26:44.699-0500",
-      "last_status_change_at": "2026-05-12T10:26:33.090-0500",
-      "notified_reasons": []
-    },
-    "PS-1532": {
-      "key": "PS-1532",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-05-12T08:35:29.656-0500",
-      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
-      "notified_reasons": []
-    },
-    "PS-1487": {
-      "key": "PS-1487",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "Ander",
-      "updated": "2026-05-08T21:12:15.404-0500",
-      "last_status_change_at": "2026-04-28T11:09:08.452-0500",
-      "notified_reasons": []
-    },
-    "PS-1382": {
-      "key": "PS-1382",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Damian Fixel",
-      "updated": "2026-04-10T15:03:44.883-0500",
-      "last_status_change_at": "2026-04-10T15:03:44.883-0500",
       "notified_reasons": []
     },
     "PS-1062": {
@@ -299,6 +236,15 @@
       "last_status_change_at": "2026-04-08T10:43:17.998-0500",
       "notified_reasons": []
     },
+    "PS-1382": {
+      "key": "PS-1382",
+      "vertical": "payments",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-04-10T15:03:44.883-0500",
+      "last_status_change_at": "2026-04-10T15:03:44.883-0500",
+      "notified_reasons": []
+    },
     "PS-1355": {
       "key": "PS-1355",
       "vertical": "payments",
@@ -353,6 +299,15 @@
       "last_status_change_at": "2026-05-13T08:18:33.789-0500",
       "notified_reasons": []
     },
+    "PS-1474": {
+      "key": "PS-1474",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:02:22.427-0500",
+      "last_status_change_at": "2026-05-13T08:02:22.427-0500",
+      "notified_reasons": []
+    },
     "PS-1417": {
       "key": "PS-1417",
       "vertical": "verification",
@@ -371,6 +326,15 @@
       "last_status_change_at": "2026-05-13T08:01:30.781-0500",
       "notified_reasons": []
     },
+    "PS-1535": {
+      "key": "PS-1535",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:00:48.325-0500",
+      "last_status_change_at": "2026-05-13T08:00:42.500-0500",
+      "notified_reasons": []
+    },
     "PS-1540": {
       "key": "PS-1540",
       "vertical": "verification",
@@ -378,6 +342,24 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-05-13T06:46:09.101-0500",
       "last_status_change_at": "2026-05-12T15:43:18.893-0500",
+      "notified_reasons": []
+    },
+    "PS-1542": {
+      "key": "PS-1542",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-12T19:43:50.749-0500",
+      "last_status_change_at": "2026-05-12T16:17:06.426-0500",
+      "notified_reasons": []
+    },
+    "PS-1541": {
+      "key": "PS-1541",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-12T15:27:05.753-0500",
+      "last_status_change_at": "2026-05-12T15:26:58.771-0500",
       "notified_reasons": []
     },
     "PS-1504": {
@@ -389,6 +371,15 @@
       "last_status_change_at": "2026-05-12T12:05:45.126-0500",
       "notified_reasons": []
     },
+    "PS-1534": {
+      "key": "PS-1534",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-12T10:26:44.699-0500",
+      "last_status_change_at": "2026-05-12T10:26:33.090-0500",
+      "notified_reasons": []
+    },
     "PS-1531": {
       "key": "PS-1531",
       "vertical": "verification",
@@ -396,6 +387,15 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-05-12T08:44:44.652-0500",
       "last_status_change_at": "2026-05-11T18:45:51.401-0500",
+      "notified_reasons": []
+    },
+    "PS-1532": {
+      "key": "PS-1532",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-05-12T08:35:29.656-0500",
+      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
       "notified_reasons": []
     },
     "PS-1469": {
