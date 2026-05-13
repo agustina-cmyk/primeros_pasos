@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-05-13T12:55:57.921812+00:00",
+  "last_run_at": "2026-05-13T13:34:50.289962+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
       "key": "PS-1515",
       "vertical": "core",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "aldana",
-      "updated": "2026-05-13T07:47:30.668-0500",
-      "last_status_change_at": "2026-05-06T11:30:19.858-0500",
+      "updated": "2026-05-13T08:03:07.011-0500",
+      "last_status_change_at": "2026-05-13T08:03:07.011-0500",
       "notified_reasons": []
     },
     "PS-1539": {
@@ -137,6 +137,24 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1474": {
+      "key": "PS-1474",
+      "vertical": "fe",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:02:22.427-0500",
+      "last_status_change_at": "2026-05-13T08:02:22.427-0500",
+      "notified_reasons": []
+    },
+    "PS-1535": {
+      "key": "PS-1535",
+      "vertical": "fe",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:00:48.325-0500",
+      "last_status_change_at": "2026-05-13T08:00:42.500-0500",
+      "notified_reasons": []
+    },
     "PS-1506": {
       "key": "PS-1506",
       "vertical": "fe",
@@ -182,15 +200,6 @@
       "last_status_change_at": "2026-05-12T11:28:40.305-0500",
       "notified_reasons": []
     },
-    "PS-1535": {
-      "key": "PS-1535",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-12T10:56:34.814-0500",
-      "last_status_change_at": "2026-05-12T10:51:05.276-0500",
-      "notified_reasons": []
-    },
     "PS-1534": {
       "key": "PS-1534",
       "vertical": "fe",
@@ -207,15 +216,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-12T08:35:29.656-0500",
       "last_status_change_at": "2026-05-12T08:35:05.947-0500",
-      "notified_reasons": []
-    },
-    "PS-1474": {
-      "key": "PS-1474",
-      "vertical": "fe",
-      "status": "On Hold",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-11T13:20:16.648-0500",
-      "last_status_change_at": "2026-05-11T13:20:16.648-0500",
       "notified_reasons": []
     },
     "PS-1487": {
@@ -344,6 +344,33 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1507": {
+      "key": "PS-1507",
+      "vertical": "verification",
+      "status": "DISCARDED",
+      "assignee": null,
+      "updated": "2026-05-13T08:18:46.433-0500",
+      "last_status_change_at": "2026-05-13T08:18:33.789-0500",
+      "notified_reasons": []
+    },
+    "PS-1417": {
+      "key": "PS-1417",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:01:49.847-0500",
+      "last_status_change_at": "2026-05-13T08:01:49.847-0500",
+      "notified_reasons": []
+    },
+    "PS-1359": {
+      "key": "PS-1359",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-13T08:01:35.026-0500",
+      "last_status_change_at": "2026-05-13T08:01:30.781-0500",
+      "notified_reasons": []
+    },
     "PS-1540": {
       "key": "PS-1540",
       "vertical": "verification",
@@ -371,15 +398,6 @@
       "last_status_change_at": "2026-05-11T18:45:51.401-0500",
       "notified_reasons": []
     },
-    "PS-1417": {
-      "key": "PS-1417",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-11T08:58:23.320-0500",
-      "last_status_change_at": "2026-05-11T08:58:23.320-0500",
-      "notified_reasons": []
-    },
     "PS-1469": {
       "key": "PS-1469",
       "vertical": "verification",
@@ -398,15 +416,6 @@
       "last_status_change_at": "2026-05-06T12:41:58.448-0500",
       "notified_reasons": []
     },
-    "PS-1359": {
-      "key": "PS-1359",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-06T11:41:45.083-0500",
-      "last_status_change_at": "2026-05-06T11:41:45.083-0500",
-      "notified_reasons": []
-    },
     "PS-1459": {
       "key": "PS-1459",
       "vertical": "verification",
@@ -423,15 +432,6 @@
       "assignee": null,
       "updated": "2026-05-05T14:32:01.592-0500",
       "last_status_change_at": "2026-05-05T14:31:53.299-0500",
-      "notified_reasons": []
-    },
-    "PS-1507": {
-      "key": "PS-1507",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-04T17:20:14.177-0500",
-      "last_status_change_at": "2026-05-04T17:20:06.643-0500",
       "notified_reasons": []
     },
     "PS-1191": {
