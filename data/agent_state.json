@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-13T22:56:52.175205+00:00",
+  "last_run_at": "2026-05-13T23:50:22.688398+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
@@ -320,10 +320,10 @@
     "PS-1545": {
       "key": "PS-1545",
       "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-13T17:41:18.061-0500",
-      "last_status_change_at": "2026-05-13T10:47:59.332-0500",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-05-13T18:09:55.342-0500",
+      "last_status_change_at": "2026-05-13T18:05:46.556-0500",
       "notified_reasons": []
     },
     "PS-1552": {
