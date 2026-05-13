@@ -6,6 +6,20 @@ from typing import Dict
 from dotenv import load_dotenv
 
 
+# Mapping default de label de Jira → vertical de producto. Coincide con la
+# configuración documentada en docs/business/glossary.md. Se usa cuando la env
+# var LABEL_TO_VERTICAL_JSON no está seteada (o está vacía). Override total
+# vía LABEL_TO_VERTICAL_JSON cuando el cliente necesita otros mappings.
+DEFAULT_LABEL_TO_VERTICAL: Dict[str, str] = {
+    "fefo-team":  "payments",
+    "payments":   "payments",
+    "eze-team":   "verification",
+    "borbotones": "verification",
+    "pablo-team": "core",
+    "frontend":   "fe",
+}
+
+
 @dataclass(frozen=True)
 class Settings:
     jira_base_url: str
@@ -97,7 +111,7 @@ def load_settings() -> Settings:
         jira_environment_field=os.getenv("JIRA_ENVIRONMENT_FIELD", "environment").strip(),
         jira_type_field=os.getenv("JIRA_TYPE_FIELD", "issuetype").strip(),
         vertical_label_prefix=os.getenv("VERTICAL_LABEL_PREFIX", "vertical:").strip().lower(),
-        label_to_vertical=_load_json_env("LABEL_TO_VERTICAL_JSON"),
+        label_to_vertical=_load_json_env("LABEL_TO_VERTICAL_JSON") or DEFAULT_LABEL_TO_VERTICAL,
         roam_api_token=os.getenv("ROAM_API_TOKEN", "").strip(),
         roam_channel_ids=_load_json_env("ROAM_CHANNEL_IDS_JSON"),
         roam_channel_urls=_load_json_env("ROAM_CHANNEL_URLS_JSON"),
