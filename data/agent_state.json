@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-05-13T18:22:33.289203+00:00",
+  "last_run_at": "2026-05-13T20:16:55.405727+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
       "key": "PS-1515",
       "vertical": "core",
-      "status": "DEV IN PROGRESS",
+      "status": "READY FOR DEPLOY",
       "assignee": "aldana",
-      "updated": "2026-05-13T12:51:45.154-0500",
-      "last_status_change_at": "2026-05-13T08:03:07.011-0500",
+      "updated": "2026-05-13T13:57:44.284-0500",
+      "last_status_change_at": "2026-05-13T13:57:44.284-0500",
       "notified_reasons": []
     },
     "PS-1539": {
@@ -317,6 +317,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1551": {
+      "key": "PS-1551",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ander",
+      "updated": "2026-05-13T15:02:15.315-0500",
+      "last_status_change_at": "2026-05-13T15:02:15.315-0500",
+      "notified_reasons": []
+    },
+    "PS-1548": {
+      "key": "PS-1548",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-13T14:30:49.194-0500",
+      "last_status_change_at": "2026-05-13T11:56:31.486-0500",
+      "notified_reasons": []
+    },
     "PS-1550": {
       "key": "PS-1550",
       "vertical": "verification",
@@ -333,15 +351,6 @@
       "assignee": null,
       "updated": "2026-05-13T12:24:50.290-0500",
       "last_status_change_at": "2026-05-13T12:24:43.333-0500",
-      "notified_reasons": []
-    },
-    "PS-1548": {
-      "key": "PS-1548",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-13T11:56:52.433-0500",
-      "last_status_change_at": "2026-05-13T11:56:31.486-0500",
       "notified_reasons": []
     },
     "PS-1545": {
