@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-15T11:34:03.966270+00:00",
+  "last_run_at": "2026-05-15T13:26:57.911132+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
@@ -268,7 +268,7 @@
       "vertical": "verification",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-05-14T17:23:53.318-0500",
+      "updated": "2026-05-15T07:53:07.791-0500",
       "last_status_change_at": "2026-05-14T17:23:46.077-0500",
       "notified_reasons": []
     },
