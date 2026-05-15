@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-05-15T13:26:57.911132+00:00",
+  "last_run_at": "2026-05-15T15:34:53.347934+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
       "key": "PS-1515",
       "vertical": "core",
-      "status": "TEST IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "aldana",
-      "updated": "2026-05-14T15:06:18.011-0500",
-      "last_status_change_at": "2026-05-14T15:06:18.011-0500",
+      "updated": "2026-05-15T09:19:21.594-0500",
+      "last_status_change_at": "2026-05-15T09:12:41.042-0500",
       "notified_reasons": []
     },
     "PS-1539": {
@@ -173,6 +173,15 @@
       "last_status_change_at": "2026-02-04T08:25:06.723-0500",
       "notified_reasons": []
     },
+    "PS-1556": {
+      "key": "PS-1556",
+      "vertical": "payments",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Santiago Mart\u00e1",
+      "updated": "2026-05-15T09:13:16.713-0500",
+      "last_status_change_at": "2026-05-15T09:13:13.505-0500",
+      "notified_reasons": []
+    },
     "PS-1501": {
       "key": "PS-1501",
       "vertical": "payments",
@@ -180,15 +189,6 @@
       "assignee": null,
       "updated": "2026-05-14T21:12:30.821-0500",
       "last_status_change_at": "2026-05-04T09:59:04.099-0500",
-      "notified_reasons": []
-    },
-    "PS-1556": {
-      "key": "PS-1556",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-14T08:42:46.045-0500",
-      "last_status_change_at": "2026-05-14T08:42:38.724-0500",
       "notified_reasons": []
     },
     "PS-1488": {
@@ -221,10 +221,10 @@
     "PS-1544": {
       "key": "PS-1544",
       "vertical": "sin_vertical",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-13T10:15:25.532-0500",
-      "last_status_change_at": "2026-05-13T10:13:14.306-0500",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-05-15T09:22:02.551-0500",
+      "last_status_change_at": "2026-05-15T09:22:02.530-0500",
       "notified_reasons": []
     },
     "PS-916": {
@@ -263,6 +263,87 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1557": {
+      "key": "PS-1557",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-15T09:41:14.479-0500",
+      "last_status_change_at": "2026-05-15T09:41:14.455-0500",
+      "notified_reasons": []
+    },
+    "PS-1535": {
+      "key": "PS-1535",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-15T09:35:57.306-0500",
+      "last_status_change_at": "2026-05-13T08:00:42.500-0500",
+      "notified_reasons": []
+    },
+    "PS-1359": {
+      "key": "PS-1359",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-05-15T09:24:06.685-0500",
+      "last_status_change_at": "2026-05-15T09:24:06.664-0500",
+      "notified_reasons": []
+    },
+    "PS-1417": {
+      "key": "PS-1417",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-05-15T09:23:40.813-0500",
+      "last_status_change_at": "2026-05-15T09:23:40.781-0500",
+      "notified_reasons": []
+    },
+    "PS-1542": {
+      "key": "PS-1542",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-15T09:23:26.962-0500",
+      "last_status_change_at": "2026-05-15T09:23:26.935-0500",
+      "notified_reasons": []
+    },
+    "PS-1549": {
+      "key": "PS-1549",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-15T09:23:15.492-0500",
+      "last_status_change_at": "2026-05-15T09:23:15.471-0500",
+      "notified_reasons": []
+    },
+    "PS-1552": {
+      "key": "PS-1552",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-15T09:23:00.252-0500",
+      "last_status_change_at": "2026-05-15T09:23:00.228-0500",
+      "notified_reasons": []
+    },
+    "PS-1559": {
+      "key": "PS-1559",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-15T09:22:51.708-0500",
+      "last_status_change_at": "2026-05-15T09:22:51.687-0500",
+      "notified_reasons": []
+    },
+    "PS-1020": {
+      "key": "PS-1020",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-15T08:59:03.879-0500",
+      "last_status_change_at": "2026-05-15T08:59:03.859-0500",
+      "notified_reasons": []
+    },
     "PS-1562": {
       "key": "PS-1562",
       "vertical": "verification",
@@ -288,42 +369,6 @@
       "assignee": null,
       "updated": "2026-05-14T12:28:29.145-0500",
       "last_status_change_at": "2026-05-14T12:27:06.206-0500",
-      "notified_reasons": []
-    },
-    "PS-1549": {
-      "key": "PS-1549",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-14T12:07:20.087-0500",
-      "last_status_change_at": "2026-05-14T12:07:20.087-0500",
-      "notified_reasons": []
-    },
-    "PS-1559": {
-      "key": "PS-1559",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-14T11:36:58.012-0500",
-      "last_status_change_at": "2026-05-14T11:34:31.574-0500",
-      "notified_reasons": []
-    },
-    "PS-1557": {
-      "key": "PS-1557",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-14T10:20:58.437-0500",
-      "last_status_change_at": "2026-05-14T09:54:05.724-0500",
-      "notified_reasons": []
-    },
-    "PS-1552": {
-      "key": "PS-1552",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-13T16:38:48.556-0500",
-      "last_status_change_at": "2026-05-13T16:38:48.556-0500",
       "notified_reasons": []
     },
     "PS-1548": {
@@ -362,42 +407,6 @@
       "last_status_change_at": "2026-05-13T08:02:22.427-0500",
       "notified_reasons": []
     },
-    "PS-1417": {
-      "key": "PS-1417",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-13T08:01:49.847-0500",
-      "last_status_change_at": "2026-05-13T08:01:49.847-0500",
-      "notified_reasons": []
-    },
-    "PS-1359": {
-      "key": "PS-1359",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-13T08:01:35.026-0500",
-      "last_status_change_at": "2026-05-13T08:01:30.781-0500",
-      "notified_reasons": []
-    },
-    "PS-1535": {
-      "key": "PS-1535",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-13T08:00:48.325-0500",
-      "last_status_change_at": "2026-05-13T08:00:42.500-0500",
-      "notified_reasons": []
-    },
-    "PS-1542": {
-      "key": "PS-1542",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-12T19:43:50.749-0500",
-      "last_status_change_at": "2026-05-12T16:17:06.426-0500",
-      "notified_reasons": []
-    },
     "PS-1541": {
       "key": "PS-1541",
       "vertical": "verification",
@@ -432,15 +441,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-06T12:45:24.460-0500",
       "last_status_change_at": "2026-05-06T12:45:24.460-0500",
-      "notified_reasons": []
-    },
-    "PS-1020": {
-      "key": "PS-1020",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-06T12:41:58.448-0500",
-      "last_status_change_at": "2026-05-06T12:41:58.448-0500",
       "notified_reasons": []
     },
     "PS-1459": {
