@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-15T02:02:08.042179+00:00",
+  "last_run_at": "2026-05-15T06:08:07.100204+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1515": {
@@ -173,49 +173,13 @@
       "last_status_change_at": "2026-02-04T08:25:06.723-0500",
       "notified_reasons": []
     },
-    "PS-1481": {
-      "key": "PS-1481",
+    "PS-1501": {
+      "key": "PS-1501",
       "vertical": "payments",
-      "status": "Finalizada",
+      "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-05-14T15:49:51.957-0500",
-      "last_status_change_at": "2026-05-14T15:49:51.940-0500",
-      "notified_reasons": []
-    },
-    "PS-1475": {
-      "key": "PS-1475",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-14T15:49:35.382-0500",
-      "last_status_change_at": "2026-05-14T15:49:35.362-0500",
-      "notified_reasons": []
-    },
-    "PS-1382": {
-      "key": "PS-1382",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-05-14T15:49:24.488-0500",
-      "last_status_change_at": "2026-05-14T15:49:24.463-0500",
-      "notified_reasons": []
-    },
-    "PS-1546": {
-      "key": "PS-1546",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-05-14T15:47:46.789-0500",
-      "last_status_change_at": "2026-05-14T15:47:46.765-0500",
-      "notified_reasons": []
-    },
-    "PS-1553": {
-      "key": "PS-1553",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-05-14T15:47:34.035-0500",
-      "last_status_change_at": "2026-05-14T15:47:34.016-0500",
+      "updated": "2026-05-14T21:12:30.821-0500",
+      "last_status_change_at": "2026-05-04T09:59:04.099-0500",
       "notified_reasons": []
     },
     "PS-1556": {
@@ -234,15 +198,6 @@
       "assignee": null,
       "updated": "2026-05-08T21:12:15.403-0500",
       "last_status_change_at": "2026-04-28T12:00:58.959-0500",
-      "notified_reasons": []
-    },
-    "PS-1501": {
-      "key": "PS-1501",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-04T09:59:14.059-0500",
-      "last_status_change_at": "2026-05-04T09:59:04.099-0500",
       "notified_reasons": []
     },
     "PS-1432": {
@@ -326,15 +281,6 @@
       "last_status_change_at": "2026-05-14T16:52:08.476-0500",
       "notified_reasons": []
     },
-    "PS-1554": {
-      "key": "PS-1554",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-14T15:27:09.768-0500",
-      "last_status_change_at": "2026-05-14T15:27:09.751-0500",
-      "notified_reasons": []
-    },
     "PS-1560": {
       "key": "PS-1560",
       "vertical": "verification",
@@ -369,15 +315,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-05-14T10:20:58.437-0500",
       "last_status_change_at": "2026-05-14T09:54:05.724-0500",
-      "notified_reasons": []
-    },
-    "PS-1555": {
-      "key": "PS-1555",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-14T10:18:27.624-0500",
-      "last_status_change_at": "2026-05-14T10:18:27.597-0500",
       "notified_reasons": []
     },
     "PS-1552": {
