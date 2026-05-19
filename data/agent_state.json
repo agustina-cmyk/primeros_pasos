@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-19T13:49:13.626238+00:00",
+  "last_run_at": "2026-05-19T16:44:57.808632+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1525": {
@@ -227,6 +227,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1563": {
+      "key": "PS-1563",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-19T09:55:09.598-0500",
+      "last_status_change_at": "2026-05-19T09:55:09.573-0500",
+      "notified_reasons": []
+    },
     "PS-1568": {
       "key": "PS-1568",
       "vertical": "verification",
@@ -288,15 +297,6 @@
       "assignee": null,
       "updated": "2026-05-15T15:50:12.118-0500",
       "last_status_change_at": "2026-05-15T15:48:20.429-0500",
-      "notified_reasons": []
-    },
-    "PS-1563": {
-      "key": "PS-1563",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-15T15:40:47.761-0500",
-      "last_status_change_at": "2026-05-15T15:40:00.427-0500",
       "notified_reasons": []
     },
     "PS-1535": {
