@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-19T21:53:05.034567+00:00",
+  "last_run_at": "2026-05-19T22:57:16.691510+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1572": {
+      "key": "PS-1572",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-05-19T17:26:54.212-0500",
+      "last_status_change_at": "2026-05-19T17:26:54.188-0500",
+      "notified_reasons": []
+    },
     "PS-1487": {
       "key": "PS-1487",
       "vertical": "core",
@@ -248,10 +257,19 @@
     "PS-1571": {
       "key": "PS-1571",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-05-19T16:42:34.945-0500",
-      "last_status_change_at": "2026-05-19T16:42:10.926-0500",
+      "updated": "2026-05-19T17:28:52.578-0500",
+      "last_status_change_at": "2026-05-19T17:28:52.578-0500",
+      "notified_reasons": []
+    },
+    "PS-1565": {
+      "key": "PS-1565",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-05-19T17:16:16.846-0500",
+      "last_status_change_at": "2026-05-19T17:16:13.693-0500",
       "notified_reasons": []
     },
     "PS-1551": {
@@ -306,15 +324,6 @@
       "assignee": null,
       "updated": "2026-05-15T21:12:19.950-0500",
       "last_status_change_at": "2026-05-05T14:31:53.299-0500",
-      "notified_reasons": []
-    },
-    "PS-1565": {
-      "key": "PS-1565",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-15T17:56:53.641-0500",
-      "last_status_change_at": "2026-05-15T17:56:45.856-0500",
       "notified_reasons": []
     },
     "PS-1561": {
