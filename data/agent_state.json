@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-20T18:39:13.130215+00:00",
+  "last_run_at": "2026-05-20T20:57:53.833663+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1576": {
+      "key": "PS-1576",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-05-20T15:46:39.607-0500",
+      "last_status_change_at": "2026-05-20T15:46:28.035-0500",
+      "notified_reasons": []
+    },
     "PS-1575": {
       "key": "PS-1575",
       "vertical": "core",
@@ -257,10 +266,10 @@
     "PS-1574": {
       "key": "PS-1574",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-05-20T12:43:13.434-0500",
-      "last_status_change_at": "2026-05-20T12:43:13.434-0500",
+      "updated": "2026-05-20T14:39:14.430-0500",
+      "last_status_change_at": "2026-05-20T14:39:14.409-0500",
       "notified_reasons": []
     },
     "PS-1548": {
