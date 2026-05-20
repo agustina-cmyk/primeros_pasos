@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-19T23:56:14.029036+00:00",
+  "last_run_at": "2026-05-20T02:07:16.903471+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1572": {
@@ -254,6 +254,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1573": {
+      "key": "PS-1573",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-19T19:40:58.040-0500",
+      "last_status_change_at": "2026-05-19T19:40:49.955-0500",
+      "notified_reasons": []
+    },
+    "PS-1532": {
+      "key": "PS-1532",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-05-19T19:05:11.428-0500",
+      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
+      "notified_reasons": []
+    },
     "PS-1571": {
       "key": "PS-1571",
       "vertical": "verification",
@@ -423,15 +441,6 @@
       "assignee": null,
       "updated": "2026-05-12T10:26:44.699-0500",
       "last_status_change_at": "2026-05-12T10:26:33.090-0500",
-      "notified_reasons": []
-    },
-    "PS-1532": {
-      "key": "PS-1532",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-05-12T08:35:29.656-0500",
-      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
       "notified_reasons": []
     },
     "PS-1459": {
