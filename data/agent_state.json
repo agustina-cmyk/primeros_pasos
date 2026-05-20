@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-20T16:21:14.839584+00:00",
+  "last_run_at": "2026-05-20T18:39:13.130215+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1575": {
+      "key": "PS-1575",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-20T12:31:48.145-0500",
+      "last_status_change_at": "2026-05-20T12:31:35.031-0500",
+      "notified_reasons": []
+    },
     "PS-1487": {
       "key": "PS-1487",
       "vertical": "core",
@@ -248,10 +257,28 @@
     "PS-1574": {
       "key": "PS-1574",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-05-20T10:55:05.161-0500",
-      "last_status_change_at": "2026-05-20T09:49:47.516-0500",
+      "updated": "2026-05-20T12:43:13.434-0500",
+      "last_status_change_at": "2026-05-20T12:43:13.434-0500",
+      "notified_reasons": []
+    },
+    "PS-1548": {
+      "key": "PS-1548",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-20T11:51:02.819-0500",
+      "last_status_change_at": "2026-05-20T11:51:02.795-0500",
+      "notified_reasons": []
+    },
+    "PS-1571": {
+      "key": "PS-1571",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-20T11:49:33.748-0500",
+      "last_status_change_at": "2026-05-20T11:49:33.731-0500",
       "notified_reasons": []
     },
     "PS-1573": {
@@ -270,15 +297,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-19T19:05:11.428-0500",
       "last_status_change_at": "2026-05-12T08:35:05.947-0500",
-      "notified_reasons": []
-    },
-    "PS-1571": {
-      "key": "PS-1571",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-19T17:28:52.578-0500",
-      "last_status_change_at": "2026-05-19T17:28:52.578-0500",
       "notified_reasons": []
     },
     "PS-1568": {
@@ -360,15 +378,6 @@
       "assignee": null,
       "updated": "2026-05-14T12:28:29.145-0500",
       "last_status_change_at": "2026-05-14T12:27:06.206-0500",
-      "notified_reasons": []
-    },
-    "PS-1548": {
-      "key": "PS-1548",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-13T15:47:31.511-0500",
-      "last_status_change_at": "2026-05-13T15:44:08.050-0500",
       "notified_reasons": []
     },
     "PS-1531": {
