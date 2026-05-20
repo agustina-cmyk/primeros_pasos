@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-05-20T02:07:16.903471+00:00",
+  "last_run_at": "2026-05-20T06:31:58.047667+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1572": {
-      "key": "PS-1572",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-19T17:26:54.212-0500",
-      "last_status_change_at": "2026-05-19T17:26:54.188-0500",
-      "notified_reasons": []
-    },
     "PS-1487": {
       "key": "PS-1487",
       "vertical": "core",
@@ -279,33 +270,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-05-19T17:28:52.578-0500",
       "last_status_change_at": "2026-05-19T17:28:52.578-0500",
-      "notified_reasons": []
-    },
-    "PS-1565": {
-      "key": "PS-1565",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-19T17:16:16.846-0500",
-      "last_status_change_at": "2026-05-19T17:16:13.693-0500",
-      "notified_reasons": []
-    },
-    "PS-1551": {
-      "key": "PS-1551",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-05-19T11:51:20.482-0500",
-      "last_status_change_at": "2026-05-13T16:36:29.923-0500",
-      "notified_reasons": []
-    },
-    "PS-1563": {
-      "key": "PS-1563",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-19T09:55:09.598-0500",
-      "last_status_change_at": "2026-05-19T09:55:09.573-0500",
       "notified_reasons": []
     },
     "PS-1568": {
