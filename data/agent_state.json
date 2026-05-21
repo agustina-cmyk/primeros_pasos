@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-21T18:52:42.380093+00:00",
+  "last_run_at": "2026-05-21T20:30:50.779405+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1575": {
@@ -257,10 +257,10 @@
     "PS-1580": {
       "key": "PS-1580",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-05-21T13:15:58.947-0500",
-      "last_status_change_at": "2026-05-21T13:15:56.784-0500",
+      "updated": "2026-05-21T14:18:49.507-0500",
+      "last_status_change_at": "2026-05-21T14:18:49.485-0500",
       "notified_reasons": []
     },
     "PS-1459": {
