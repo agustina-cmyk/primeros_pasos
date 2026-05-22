@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-05-22T18:12:34.022174+00:00",
+  "last_run_at": "2026-05-22T20:17:27.594379+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1583": {
+      "key": "PS-1583",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-22T15:06:42.353-0500",
+      "last_status_change_at": "2026-05-22T14:30:08.309-0500",
+      "notified_reasons": []
+    },
     "PS-1582": {
       "key": "PS-1582",
       "vertical": "core",
@@ -254,6 +263,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1531": {
+      "key": "PS-1531",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-05-22T15:14:48.118-0500",
+      "last_status_change_at": "2026-05-22T15:14:48.095-0500",
+      "notified_reasons": []
+    },
+    "PS-1577": {
+      "key": "PS-1577",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-22T14:57:26.189-0500",
+      "last_status_change_at": "2026-05-22T14:57:26.189-0500",
+      "notified_reasons": []
+    },
     "PS-1532": {
       "key": "PS-1532",
       "vertical": "verification",
@@ -279,24 +306,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-05-22T07:24:49.501-0500",
       "last_status_change_at": "2026-05-22T07:24:49.482-0500",
-      "notified_reasons": []
-    },
-    "PS-1531": {
-      "key": "PS-1531",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-21T21:12:08.284-0500",
-      "last_status_change_at": "2026-05-11T18:45:51.401-0500",
-      "notified_reasons": []
-    },
-    "PS-1577": {
-      "key": "PS-1577",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-21T17:34:09.425-0500",
-      "last_status_change_at": "2026-05-20T16:12:39.376-0500",
       "notified_reasons": []
     },
     "PS-1579": {
