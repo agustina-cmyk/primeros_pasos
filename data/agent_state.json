@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-22T04:42:49.373760+00:00",
+  "last_run_at": "2026-05-22T08:17:47.826773+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1527": {
@@ -9,24 +9,6 @@
       "assignee": "aldana",
       "updated": "2026-05-21T21:12:08.285-0500",
       "last_status_change_at": "2026-05-11T10:40:21.966-0500",
-      "notified_reasons": []
-    },
-    "PS-1487": {
-      "key": "PS-1487",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-05-21T15:51:21.707-0500",
-      "last_status_change_at": "2026-05-21T15:51:21.687-0500",
-      "notified_reasons": []
-    },
-    "PS-1575": {
-      "key": "PS-1575",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-05-21T15:51:09.624-0500",
-      "last_status_change_at": "2026-05-21T15:51:09.600-0500",
       "notified_reasons": []
     },
     "PS-1569": {
@@ -270,24 +252,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-05-21T17:34:09.425-0500",
       "last_status_change_at": "2026-05-20T16:12:39.376-0500",
-      "notified_reasons": []
-    },
-    "PS-1580": {
-      "key": "PS-1580",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-21T14:18:49.507-0500",
-      "last_status_change_at": "2026-05-21T14:18:49.485-0500",
-      "notified_reasons": []
-    },
-    "PS-1459": {
-      "key": "PS-1459",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-21T12:28:13.263-0500",
-      "last_status_change_at": "2026-05-21T12:28:13.245-0500",
       "notified_reasons": []
     },
     "PS-1579": {
