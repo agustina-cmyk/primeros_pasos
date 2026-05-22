@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-22T21:40:46.190518+00:00",
+  "last_run_at": "2026-05-22T22:50:30.851043+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1584": {
@@ -272,6 +272,42 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1586": {
+      "key": "PS-1586",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-22T17:42:50.974-0500",
+      "last_status_change_at": "2026-05-22T17:42:43.712-0500",
+      "notified_reasons": []
+    },
+    "PS-1579": {
+      "key": "PS-1579",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-22T17:18:24.088-0500",
+      "last_status_change_at": "2026-05-22T17:18:24.088-0500",
+      "notified_reasons": []
+    },
+    "PS-1563": {
+      "key": "PS-1563",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-22T17:15:46.790-0500",
+      "last_status_change_at": "2026-05-19T09:55:09.573-0500",
+      "notified_reasons": []
+    },
+    "PS-1585": {
+      "key": "PS-1585",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-22T16:56:46.939-0500",
+      "last_status_change_at": "2026-05-22T16:56:39.789-0500",
+      "notified_reasons": []
+    },
     "PS-1562": {
       "key": "PS-1562",
       "vertical": "verification",
@@ -279,15 +315,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-05-22T15:20:26.516-0500",
       "last_status_change_at": "2026-05-22T15:20:26.496-0500",
-      "notified_reasons": []
-    },
-    "PS-1579": {
-      "key": "PS-1579",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-22T15:19:08.365-0500",
-      "last_status_change_at": "2026-05-20T19:57:48.936-0500",
       "notified_reasons": []
     },
     "PS-1578": {
