@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-23T02:16:18.858600+00:00",
+  "last_run_at": "2026-05-23T05:51:25.939562+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1539": {
@@ -9,42 +9,6 @@
       "assignee": null,
       "updated": "2026-05-22T21:12:09.414-0500",
       "last_status_change_at": "2026-05-12T14:17:37.157-0500",
-      "notified_reasons": []
-    },
-    "PS-1584": {
-      "key": "PS-1584",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-22T16:34:41.860-0500",
-      "last_status_change_at": "2026-05-22T16:34:41.851-0500",
-      "notified_reasons": []
-    },
-    "PS-1583": {
-      "key": "PS-1583",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-22T16:23:34.416-0500",
-      "last_status_change_at": "2026-05-22T16:23:17.785-0500",
-      "notified_reasons": []
-    },
-    "PS-1582": {
-      "key": "PS-1582",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-22T12:38:31.556-0500",
-      "last_status_change_at": "2026-05-22T12:38:31.533-0500",
-      "notified_reasons": []
-    },
-    "PS-1581": {
-      "key": "PS-1581",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-05-22T09:27:06.384-0500",
-      "last_status_change_at": "2026-05-22T09:26:36.686-0500",
       "notified_reasons": []
     },
     "PS-1527": {
@@ -191,15 +155,6 @@
       "last_status_change_at": "2026-02-04T08:25:06.723-0500",
       "notified_reasons": []
     },
-    "PS-1501": {
-      "key": "PS-1501",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-05-22T16:01:38.251-0500",
-      "last_status_change_at": "2026-05-22T16:01:38.228-0500",
-      "notified_reasons": []
-    },
     "PS-1488": {
       "key": "PS-1488",
       "vertical": "payments",
@@ -308,15 +263,6 @@
       "last_status_change_at": "2026-05-22T17:18:24.088-0500",
       "notified_reasons": []
     },
-    "PS-1563": {
-      "key": "PS-1563",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-22T17:15:46.790-0500",
-      "last_status_change_at": "2026-05-19T09:55:09.573-0500",
-      "notified_reasons": []
-    },
     "PS-1585": {
       "key": "PS-1585",
       "vertical": "verification",
@@ -326,15 +272,6 @@
       "last_status_change_at": "2026-05-22T16:56:39.789-0500",
       "notified_reasons": []
     },
-    "PS-1562": {
-      "key": "PS-1562",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-05-22T15:20:26.516-0500",
-      "last_status_change_at": "2026-05-22T15:20:26.496-0500",
-      "notified_reasons": []
-    },
     "PS-1578": {
       "key": "PS-1578",
       "vertical": "verification",
@@ -342,24 +279,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-05-22T15:19:07.000-0500",
       "last_status_change_at": "2026-05-20T19:06:15.993-0500",
-      "notified_reasons": []
-    },
-    "PS-1531": {
-      "key": "PS-1531",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-22T15:18:30.555-0500",
-      "last_status_change_at": "2026-05-22T15:14:48.095-0500",
-      "notified_reasons": []
-    },
-    "PS-1535": {
-      "key": "PS-1535",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-05-22T15:17:01.687-0500",
-      "last_status_change_at": "2026-05-22T15:17:01.663-0500",
       "notified_reasons": []
     },
     "PS-1577": {
@@ -387,15 +306,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-05-22T07:25:07.109-0500",
       "last_status_change_at": "2026-05-22T07:25:07.109-0500",
-      "notified_reasons": []
-    },
-    "PS-1566": {
-      "key": "PS-1566",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-22T07:24:49.501-0500",
-      "last_status_change_at": "2026-05-22T07:24:49.482-0500",
       "notified_reasons": []
     },
     "PS-1573": {
