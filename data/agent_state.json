@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-25T14:20:13.680990+00:00",
+  "last_run_at": "2026-05-25T16:37:30.256034+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1539": {
@@ -158,10 +158,10 @@
     "PS-1587": {
       "key": "PS-1587",
       "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-25T08:54:39.806-0500",
-      "last_status_change_at": "2026-05-25T08:53:59.661-0500",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-05-25T10:00:09.066-0500",
+      "last_status_change_at": "2026-05-25T10:00:09.048-0500",
       "notified_reasons": []
     },
     "PS-1488": {
@@ -239,10 +239,28 @@
     "PS-1560": {
       "key": "PS-1560",
       "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-24T21:12:10.469-0500",
-      "last_status_change_at": "2026-05-14T12:27:06.206-0500",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-25T10:40:48.968-0500",
+      "last_status_change_at": "2026-05-25T10:40:48.968-0500",
+      "notified_reasons": []
+    },
+    "PS-1577": {
+      "key": "PS-1577",
+      "vertical": "verification",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-05-25T10:10:26.882-0500",
+      "last_status_change_at": "2026-05-25T10:10:26.882-0500",
+      "notified_reasons": []
+    },
+    "PS-1578": {
+      "key": "PS-1578",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-05-25T09:53:40.393-0500",
+      "last_status_change_at": "2026-05-25T09:53:40.393-0500",
       "notified_reasons": []
     },
     "PS-1550": {
@@ -297,24 +315,6 @@
       "assignee": null,
       "updated": "2026-05-22T16:56:46.939-0500",
       "last_status_change_at": "2026-05-22T16:56:39.789-0500",
-      "notified_reasons": []
-    },
-    "PS-1578": {
-      "key": "PS-1578",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-05-22T15:19:07.000-0500",
-      "last_status_change_at": "2026-05-20T19:06:15.993-0500",
-      "notified_reasons": []
-    },
-    "PS-1577": {
-      "key": "PS-1577",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-22T14:57:26.189-0500",
-      "last_status_change_at": "2026-05-22T14:57:26.189-0500",
       "notified_reasons": []
     },
     "PS-1532": {
