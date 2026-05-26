@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-05-26T17:20:07.913935+00:00",
+  "last_run_at": "2026-05-26T19:32:35.873202+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1588": {
       "key": "PS-1588",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-26T11:57:26.143-0500",
-      "last_status_change_at": "2026-05-26T11:56:26.316-0500",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-05-26T12:25:17.008-0500",
+      "last_status_change_at": "2026-05-26T12:25:16.987-0500",
       "notified_reasons": []
     },
     "PS-1539": {
