@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-27T17:39:07.395134+00:00",
+  "last_run_at": "2026-05-27T19:58:35.724788+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1594": {
@@ -160,7 +160,7 @@
       "vertical": "fe",
       "status": "DEV IN PROGRESS",
       "assignee": "Damian Fixel",
-      "updated": "2026-05-27T12:04:20.478-0500",
+      "updated": "2026-05-27T14:49:07.997-0500",
       "last_status_change_at": "2026-05-27T12:04:20.478-0500",
       "notified_reasons": []
     },
@@ -243,6 +243,15 @@
       "assignee": null,
       "updated": "2026-03-22T21:12:32.211-0500",
       "last_status_change_at": "2026-03-12T10:10:34.229-0500",
+      "notified_reasons": []
+    },
+    "PS-1595": {
+      "key": "PS-1595",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-05-27T13:51:41.799-0500",
+      "last_status_change_at": "2026-05-27T13:49:06.492-0500",
       "notified_reasons": []
     },
     "PS-916": {
