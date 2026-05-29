@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-29T16:34:48.794707+00:00",
+  "last_run_at": "2026-05-29T19:27:57.021086+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1594": {
@@ -137,6 +137,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1533": {
+      "key": "PS-1533",
+      "vertical": "fe",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-05-29T14:17:48.034-0500",
+      "last_status_change_at": "2026-05-29T14:17:48.013-0500",
+      "notified_reasons": []
+    },
     "PS-1591": {
       "key": "PS-1591",
       "vertical": "fe",
@@ -162,15 +171,6 @@
       "assignee": null,
       "updated": "2026-05-19T16:35:43.911-0500",
       "last_status_change_at": "2026-05-19T16:07:32.439-0500",
-      "notified_reasons": []
-    },
-    "PS-1533": {
-      "key": "PS-1533",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-12T11:28:40.305-0500",
-      "last_status_change_at": "2026-05-12T11:28:40.305-0500",
       "notified_reasons": []
     },
     "PS-1062": {
@@ -272,6 +272,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1534": {
+      "key": "PS-1534",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": null,
+      "updated": "2026-05-29T14:21:35.197-0500",
+      "last_status_change_at": "2026-05-29T14:21:34.684-0500",
+      "notified_reasons": []
+    },
+    "PS-1532": {
+      "key": "PS-1532",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-05-29T14:19:55.722-0500",
+      "last_status_change_at": "2026-05-29T14:19:55.115-0500",
+      "notified_reasons": []
+    },
     "PS-1568": {
       "key": "PS-1568",
       "vertical": "verification",
@@ -344,15 +362,6 @@
       "last_status_change_at": "2026-05-13T12:39:31.158-0500",
       "notified_reasons": []
     },
-    "PS-1534": {
-      "key": "PS-1534",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-22T21:12:09.492-0500",
-      "last_status_change_at": "2026-05-12T10:26:33.090-0500",
-      "notified_reasons": []
-    },
     "PS-1541": {
       "key": "PS-1541",
       "vertical": "verification",
@@ -378,15 +387,6 @@
       "assignee": null,
       "updated": "2026-05-22T16:56:46.939-0500",
       "last_status_change_at": "2026-05-22T16:56:39.789-0500",
-      "notified_reasons": []
-    },
-    "PS-1532": {
-      "key": "PS-1532",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-05-22T09:12:07.311-0500",
-      "last_status_change_at": "2026-05-12T08:35:05.947-0500",
       "notified_reasons": []
     },
     "PS-1561": {
