@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-05-30T04:32:44.279058+00:00",
+  "last_run_at": "2026-05-30T07:35:50.666531+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1569": {
@@ -146,24 +146,6 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
-    "PS-1570": {
-      "key": "PS-1570",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-05-29T15:55:34.879-0500",
-      "last_status_change_at": "2026-05-29T15:55:34.860-0500",
-      "notified_reasons": []
-    },
-    "PS-1533": {
-      "key": "PS-1533",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-05-29T14:17:48.034-0500",
-      "last_status_change_at": "2026-05-29T14:17:48.013-0500",
-      "notified_reasons": []
-    },
     "PS-1591": {
       "key": "PS-1591",
       "vertical": "fe",
@@ -279,15 +261,6 @@
       "assignee": null,
       "updated": "2026-05-29T21:12:14.003-0500",
       "last_status_change_at": "2026-05-19T19:40:49.955-0500",
-      "notified_reasons": []
-    },
-    "PS-1471": {
-      "key": "PS-1471",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-05-29T16:32:51.542-0500",
-      "last_status_change_at": "2026-05-11T16:05:41.603-0500",
       "notified_reasons": []
     },
     "PS-1567": {
