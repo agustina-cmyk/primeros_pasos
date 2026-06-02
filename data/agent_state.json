@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-02T11:48:24.770239+00:00",
+  "last_run_at": "2026-06-02T15:57:26.691533+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1597": {
+      "key": "PS-1597",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-06-02T10:29:52.538-0500",
+      "last_status_change_at": "2026-06-02T09:23:48.761-0500",
+      "notified_reasons": []
+    },
     "PS-1537": {
       "key": "PS-1537",
       "vertical": "core",
