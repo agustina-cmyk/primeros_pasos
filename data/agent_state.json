@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-03T00:09:11.927973+00:00",
+  "last_run_at": "2026-06-03T05:23:42.879851+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1597": {
@@ -173,24 +173,6 @@
       "last_status_change_at": "2026-02-04T08:25:06.723-0500",
       "notified_reasons": []
     },
-    "PS-1598": {
-      "key": "PS-1598",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-06-02T16:49:11.888-0500",
-      "last_status_change_at": "2026-06-02T16:49:11.871-0500",
-      "notified_reasons": []
-    },
-    "PS-1599": {
-      "key": "PS-1599",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-06-02T16:48:56.347-0500",
-      "last_status_change_at": "2026-06-02T16:48:56.323-0500",
-      "notified_reasons": []
-    },
     "PS-1596": {
       "key": "PS-1596",
       "vertical": "payments",
@@ -279,6 +261,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1600": {
+      "key": "PS-1600",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-02T19:10:36.268-0500",
+      "last_status_change_at": "2026-06-02T19:10:29.807-0500",
       "notified_reasons": []
     },
     "PS-1573": {
