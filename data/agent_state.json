@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-03T15:11:58.587590+00:00",
+  "last_run_at": "2026-06-03T19:04:13.817551+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1597": {
@@ -266,10 +266,10 @@
     "PS-1600": {
       "key": "PS-1600",
       "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-02T19:10:36.268-0500",
-      "last_status_change_at": "2026-06-02T19:10:29.807-0500",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-06-03T10:55:28.615-0500",
+      "last_status_change_at": "2026-06-03T10:55:25.565-0500",
       "notified_reasons": []
     },
     "PS-1573": {
