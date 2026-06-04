@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-03T22:09:18.352320+00:00",
+  "last_run_at": "2026-06-04T00:11:35.789321+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1597": {
@@ -261,6 +261,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1601": {
+      "key": "PS-1601",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-03T18:16:56.345-0500",
+      "last_status_change_at": "2026-06-03T18:11:35.052-0500",
       "notified_reasons": []
     },
     "PS-1600": {
