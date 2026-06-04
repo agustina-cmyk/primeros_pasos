@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-04T15:53:56.003934+00:00",
+  "last_run_at": "2026-06-04T18:08:37.823738+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1597": {
@@ -160,7 +160,7 @@
       "vertical": "fe",
       "status": "TEST IN PROGRESS",
       "assignee": "Damian Fixel",
-      "updated": "2026-05-27T16:17:02.205-0500",
+      "updated": "2026-06-04T12:25:49.684-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
