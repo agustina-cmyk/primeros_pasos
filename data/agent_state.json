@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-05T16:25:57.431129+00:00",
+  "last_run_at": "2026-06-05T18:20:18.780155+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1602": {
+      "key": "PS-1602",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-06-05T13:04:18.904-0500",
+      "last_status_change_at": "2026-06-05T13:04:18.886-0500",
+      "notified_reasons": []
+    },
     "PS-1537": {
       "key": "PS-1537",
       "vertical": "core",
