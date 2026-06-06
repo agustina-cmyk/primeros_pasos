@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-06T04:33:49.097295+00:00",
+  "last_run_at": "2026-06-06T07:40:37.757018+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1589": {
@@ -9,15 +9,6 @@
       "assignee": null,
       "updated": "2026-06-05T21:12:10.124-0500",
       "last_status_change_at": "2026-05-26T15:02:25.612-0500",
-      "notified_reasons": []
-    },
-    "PS-1602": {
-      "key": "PS-1602",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-06-05T13:04:18.904-0500",
-      "last_status_change_at": "2026-06-05T13:04:18.886-0500",
       "notified_reasons": []
     },
     "PS-1537": {
