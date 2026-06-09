@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-09T21:29:59.161574+00:00",
+  "last_run_at": "2026-06-09T22:58:29.397066+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1614": {
@@ -198,6 +198,15 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
+      "notified_reasons": []
+    },
+    "PS-1615": {
+      "key": "PS-1615",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": "raul",
+      "updated": "2026-06-09T16:35:57.907-0500",
+      "last_status_change_at": "2026-06-09T16:35:57.889-0500",
       "notified_reasons": []
     },
     "PS-1603": {
