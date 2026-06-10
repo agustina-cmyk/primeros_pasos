@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-10T04:55:20.932692+00:00",
+  "last_run_at": "2026-06-10T08:43:31.941255+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1614": {
@@ -182,15 +182,6 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
-    "PS-1062": {
-      "key": "PS-1062",
-      "vertical": "fe",
-      "status": "DISCARDED",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-09T10:43:55.281-0500",
-      "last_status_change_at": "2026-06-09T10:43:55.259-0500",
-      "notified_reasons": []
-    },
     "PS-1591": {
       "key": "PS-1591",
       "vertical": "fe",
@@ -198,33 +189,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
-      "notified_reasons": []
-    },
-    "PS-1615": {
-      "key": "PS-1615",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-06-09T16:35:57.907-0500",
-      "last_status_change_at": "2026-06-09T16:35:57.889-0500",
-      "notified_reasons": []
-    },
-    "PS-1603": {
-      "key": "PS-1603",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-06-09T10:29:30.879-0500",
-      "last_status_change_at": "2026-06-09T10:29:30.859-0500",
-      "notified_reasons": []
-    },
-    "PS-1605": {
-      "key": "PS-1605",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-06-09T10:29:14.630-0500",
-      "last_status_change_at": "2026-06-09T10:29:14.600-0500",
       "notified_reasons": []
     },
     "PS-1488": {
@@ -306,33 +270,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1601": {
-      "key": "PS-1601",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-06-09T11:38:07.055-0500",
-      "last_status_change_at": "2026-06-09T11:38:07.035-0500",
-      "notified_reasons": []
-    },
-    "PS-1611": {
-      "key": "PS-1611",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-06-09T11:36:22.499-0500",
-      "last_status_change_at": "2026-06-09T11:36:22.480-0500",
-      "notified_reasons": []
-    },
-    "PS-1604": {
-      "key": "PS-1604",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-06-09T11:31:59.318-0500",
-      "last_status_change_at": "2026-06-09T11:31:59.294-0500",
       "notified_reasons": []
     },
     "PS-1590": {
