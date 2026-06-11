@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-11T01:45:50.074643+00:00",
+  "last_run_at": "2026-06-11T06:40:03.715289+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1621": {
@@ -7,7 +7,7 @@
       "vertical": "core",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-06-10T20:10:12.251-0500",
+      "updated": "2026-06-10T21:43:19.695-0500",
       "last_status_change_at": "2026-06-10T19:39:32.504-0500",
       "notified_reasons": []
     },
