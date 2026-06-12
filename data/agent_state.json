@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-06-11T22:47:34.537312+00:00",
+  "last_run_at": "2026-06-12T00:15:02.401626+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1628": {
       "key": "PS-1628",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-11T17:13:41.588-0500",
-      "last_status_change_at": "2026-06-11T16:57:36.078-0500",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-06-11T18:48:57.703-0500",
+      "last_status_change_at": "2026-06-11T18:48:57.681-0500",
       "notified_reasons": []
     },
     "PS-1484": {
