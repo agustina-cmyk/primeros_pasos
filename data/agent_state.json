@@ -1,70 +1,7 @@
 {
-  "last_run_at": "2026-06-12T00:15:02.401626+00:00",
+  "last_run_at": "2026-06-12T05:12:48.477774+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1628": {
-      "key": "PS-1628",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-06-11T18:48:57.703-0500",
-      "last_status_change_at": "2026-06-11T18:48:57.681-0500",
-      "notified_reasons": []
-    },
-    "PS-1484": {
-      "key": "PS-1484",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-06-11T14:49:59.164-0500",
-      "last_status_change_at": "2026-06-11T14:49:59.144-0500",
-      "notified_reasons": []
-    },
-    "PS-1594": {
-      "key": "PS-1594",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-06-11T14:49:05.923-0500",
-      "last_status_change_at": "2026-06-11T14:49:02.961-0500",
-      "notified_reasons": []
-    },
-    "PS-1621": {
-      "key": "PS-1621",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-06-11T14:47:39.210-0500",
-      "last_status_change_at": "2026-06-11T14:47:34.531-0500",
-      "notified_reasons": []
-    },
-    "PS-1620": {
-      "key": "PS-1620",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-06-11T14:47:22.880-0500",
-      "last_status_change_at": "2026-06-11T14:47:22.859-0500",
-      "notified_reasons": []
-    },
-    "PS-1625": {
-      "key": "PS-1625",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-06-11T14:46:59.883-0500",
-      "last_status_change_at": "2026-06-11T14:46:59.860-0500",
-      "notified_reasons": []
-    },
-    "PS-1624": {
-      "key": "PS-1624",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-06-11T12:21:11.332-0500",
-      "last_status_change_at": "2026-06-11T12:21:11.312-0500",
-      "notified_reasons": []
-    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -344,15 +281,6 @@
       "last_status_change_at": "2026-06-11T16:20:36.089-0500",
       "notified_reasons": []
     },
-    "PS-1618": {
-      "key": "PS-1618",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-06-11T16:01:26.678-0500",
-      "last_status_change_at": "2026-06-11T16:01:26.656-0500",
-      "notified_reasons": []
-    },
     "PS-1626": {
       "key": "PS-1626",
       "vertical": "verification",
@@ -360,15 +288,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-06-11T14:23:38.221-0500",
       "last_status_change_at": "2026-06-11T14:23:30.034-0500",
-      "notified_reasons": []
-    },
-    "PS-1623": {
-      "key": "PS-1623",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-06-11T13:15:25.154-0500",
-      "last_status_change_at": "2026-06-11T13:15:25.133-0500",
       "notified_reasons": []
     },
     "PS-1622": {
