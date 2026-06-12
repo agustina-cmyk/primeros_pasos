@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-12T18:22:59.327510+00:00",
+  "last_run_at": "2026-06-12T20:33:44.814828+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1525": {
+      "key": "PS-1525",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-06-12T14:46:43.008-0500",
+      "last_status_change_at": "2026-06-12T14:46:14.894-0500",
+      "notified_reasons": []
+    },
     "PS-1610": {
       "key": "PS-1610",
       "vertical": "core",
@@ -81,15 +90,6 @@
       "assignee": "aldana",
       "updated": "2026-05-21T21:12:08.285-0500",
       "last_status_change_at": "2026-05-11T10:40:21.966-0500",
-      "notified_reasons": []
-    },
-    "PS-1525": {
-      "key": "PS-1525",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-18T21:12:09.323-0500",
-      "last_status_change_at": "2026-05-08T13:46:59.633-0500",
       "notified_reasons": []
     },
     "PS-1521": {
@@ -270,6 +270,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1630": {
+      "key": "PS-1630",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-12T14:55:20.664-0500",
+      "last_status_change_at": "2026-06-12T14:55:13.070-0500",
       "notified_reasons": []
     },
     "PS-1622": {
