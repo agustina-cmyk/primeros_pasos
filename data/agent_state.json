@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-06-12T12:49:24.740146+00:00",
+  "last_run_at": "2026-06-12T16:12:47.977575+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1610": {
+      "key": "PS-1610",
+      "vertical": "core",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-12T08:47:47.022-0500",
+      "last_status_change_at": "2026-06-12T08:47:47.022-0500",
+      "notified_reasons": []
+    },
+    "PS-1609": {
+      "key": "PS-1609",
+      "vertical": "core",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-12T08:17:52.768-0500",
+      "last_status_change_at": "2026-06-12T08:17:52.768-0500",
+      "notified_reasons": []
+    },
     "PS-1608": {
       "key": "PS-1608",
       "vertical": "core",
@@ -27,24 +45,6 @@
       "assignee": null,
       "updated": "2026-06-09T10:34:51.062-0500",
       "last_status_change_at": "2026-06-09T10:34:41.639-0500",
-      "notified_reasons": []
-    },
-    "PS-1610": {
-      "key": "PS-1610",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-08T08:54:05.676-0500",
-      "last_status_change_at": "2026-06-08T08:53:56.300-0500",
-      "notified_reasons": []
-    },
-    "PS-1609": {
-      "key": "PS-1609",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-08T08:52:19.306-0500",
-      "last_status_change_at": "2026-06-08T08:52:08.144-0500",
       "notified_reasons": []
     },
     "PS-1589": {
@@ -272,6 +272,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1622": {
+      "key": "PS-1622",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-06-12T08:42:14.998-0500",
+      "last_status_change_at": "2026-06-12T08:42:14.998-0500",
+      "notified_reasons": []
+    },
     "PS-1627": {
       "key": "PS-1627",
       "vertical": "verification",
@@ -288,15 +297,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-06-11T14:23:38.221-0500",
       "last_status_change_at": "2026-06-11T14:23:30.034-0500",
-      "notified_reasons": []
-    },
-    "PS-1622": {
-      "key": "PS-1622",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-06-11T09:37:02.870-0500",
-      "last_status_change_at": "2026-06-11T09:36:51.562-0500",
       "notified_reasons": []
     },
     "PS-1616": {
