@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-06-12T09:41:08.790056+00:00",
+  "last_run_at": "2026-06-12T12:49:24.740146+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1608": {
+      "key": "PS-1608",
+      "vertical": "core",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-12T07:28:55.098-0500",
+      "last_status_change_at": "2026-06-12T07:28:55.098-0500",
+      "notified_reasons": []
+    },
+    "PS-1607": {
+      "key": "PS-1607",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "Andrew Ortiz",
+      "updated": "2026-06-12T07:18:48.892-0500",
+      "last_status_change_at": "2026-06-08T08:49:26.773-0500",
+      "notified_reasons": []
+    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -27,24 +45,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-08T08:52:19.306-0500",
       "last_status_change_at": "2026-06-08T08:52:08.144-0500",
-      "notified_reasons": []
-    },
-    "PS-1608": {
-      "key": "PS-1608",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-08T08:51:12.785-0500",
-      "last_status_change_at": "2026-06-08T08:51:02.347-0500",
-      "notified_reasons": []
-    },
-    "PS-1607": {
-      "key": "PS-1607",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-08T08:49:37.531-0500",
-      "last_status_change_at": "2026-06-08T08:49:26.773-0500",
       "notified_reasons": []
     },
     "PS-1589": {
