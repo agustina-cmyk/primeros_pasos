@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-16T15:48:48.900022+00:00",
+  "last_run_at": "2026-06-16T19:27:20.003213+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1589": {
+      "key": "PS-1589",
+      "vertical": "core",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-16T11:29:01.939-0500",
+      "last_status_change_at": "2026-06-16T11:29:01.939-0500",
+      "notified_reasons": []
+    },
     "PS-1609": {
       "key": "PS-1609",
       "vertical": "core",
@@ -45,15 +54,6 @@
       "assignee": null,
       "updated": "2026-06-09T10:34:51.062-0500",
       "last_status_change_at": "2026-06-09T10:34:41.639-0500",
-      "notified_reasons": []
-    },
-    "PS-1589": {
-      "key": "PS-1589",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-05T21:12:10.124-0500",
-      "last_status_change_at": "2026-05-26T15:02:25.612-0500",
       "notified_reasons": []
     },
     "PS-1569": {
@@ -153,6 +153,15 @@
       "assignee": "Emiliano Gallardo",
       "updated": "2026-03-30T10:07:51.783-0500",
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
+      "notified_reasons": []
+    },
+    "PS-1635": {
+      "key": "PS-1635",
+      "vertical": "fe",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-16T11:32:26.517-0500",
+      "last_status_change_at": "2026-06-16T11:32:26.073-0500",
       "notified_reasons": []
     },
     "PS-1591": {
@@ -272,6 +281,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1627": {
+      "key": "PS-1627",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-06-16T13:36:09.884-0500",
+      "last_status_change_at": "2026-06-16T13:34:46.823-0500",
+      "notified_reasons": []
+    },
+    "PS-1634": {
+      "key": "PS-1634",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-16T10:59:07.403-0500",
+      "last_status_change_at": "2026-06-16T10:58:56.191-0500",
+      "notified_reasons": []
+    },
     "PS-1633": {
       "key": "PS-1633",
       "vertical": "verification",
@@ -306,15 +333,6 @@
       "assignee": "abrahan",
       "updated": "2026-06-12T08:42:14.998-0500",
       "last_status_change_at": "2026-06-12T08:42:14.998-0500",
-      "notified_reasons": []
-    },
-    "PS-1627": {
-      "key": "PS-1627",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-11T16:23:19.000-0500",
-      "last_status_change_at": "2026-06-11T16:20:36.089-0500",
       "notified_reasons": []
     },
     "PS-1626": {
