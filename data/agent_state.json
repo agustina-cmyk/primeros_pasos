@@ -1,32 +1,32 @@
 {
-  "last_run_at": "2026-06-16T10:52:33.657200+00:00",
+  "last_run_at": "2026-06-16T15:48:48.900022+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1610": {
-      "key": "PS-1610",
-      "vertical": "core",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-12T08:47:47.022-0500",
-      "last_status_change_at": "2026-06-12T08:47:47.022-0500",
-      "notified_reasons": []
-    },
     "PS-1609": {
       "key": "PS-1609",
       "vertical": "core",
-      "status": "DEV IN PROGRESS",
+      "status": "TEST IN PROGRESS",
       "assignee": "Damian Fixel",
-      "updated": "2026-06-12T08:17:52.768-0500",
-      "last_status_change_at": "2026-06-12T08:17:52.768-0500",
+      "updated": "2026-06-16T07:58:36.731-0500",
+      "last_status_change_at": "2026-06-16T07:58:36.731-0500",
+      "notified_reasons": []
+    },
+    "PS-1610": {
+      "key": "PS-1610",
+      "vertical": "core",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-16T07:58:36.338-0500",
+      "last_status_change_at": "2026-06-16T07:58:35.645-0500",
       "notified_reasons": []
     },
     "PS-1608": {
       "key": "PS-1608",
       "vertical": "core",
-      "status": "DEV IN PROGRESS",
+      "status": "TEST IN PROGRESS",
       "assignee": "Damian Fixel",
-      "updated": "2026-06-12T07:28:55.098-0500",
-      "last_status_change_at": "2026-06-12T07:28:55.098-0500",
+      "updated": "2026-06-16T07:58:31.851-0500",
+      "last_status_change_at": "2026-06-16T07:58:31.851-0500",
       "notified_reasons": []
     },
     "PS-1607": {
@@ -164,6 +164,15 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1632": {
+      "key": "PS-1632",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-06-16T08:51:17.466-0500",
+      "last_status_change_at": "2026-06-16T08:51:17.444-0500",
+      "notified_reasons": []
+    },
     "PS-1488": {
       "key": "PS-1488",
       "vertical": "payments",
@@ -261,6 +270,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1633": {
+      "key": "PS-1633",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-16T10:19:54.959-0500",
+      "last_status_change_at": "2026-06-16T10:19:44.859-0500",
       "notified_reasons": []
     },
     "PS-1606": {
