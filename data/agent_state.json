@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-06-17T22:29:50.430008+00:00",
+  "last_run_at": "2026-06-17T23:57:25.627108+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1639": {
       "key": "PS-1639",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-17T17:27:47.499-0500",
-      "last_status_change_at": "2026-06-17T17:26:47.345-0500",
+      "status": "DISCARDED",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-06-17T17:45:57.310-0500",
+      "last_status_change_at": "2026-06-17T17:43:46.611-0500",
       "notified_reasons": []
     },
     "PS-1614": {
@@ -144,6 +144,15 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
+      "notified_reasons": []
+    },
+    "PS-1640": {
+      "key": "PS-1640",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-17T18:36:20.683-0500",
+      "last_status_change_at": "2026-06-17T17:57:17.650-0500",
       "notified_reasons": []
     },
     "PS-1488": {
