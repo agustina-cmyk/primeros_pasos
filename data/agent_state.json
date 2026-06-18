@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-18T11:35:02.634048+00:00",
+  "last_run_at": "2026-06-18T14:44:02.907995+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1607": {
+      "key": "PS-1607",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "Andrew Ortiz",
+      "updated": "2026-06-18T09:12:26.251-0500",
+      "last_status_change_at": "2026-06-08T08:49:26.773-0500",
+      "notified_reasons": []
+    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -9,15 +18,6 @@
       "assignee": "abrahan",
       "updated": "2026-06-16T15:48:34.291-0500",
       "last_status_change_at": "2026-06-09T10:34:41.639-0500",
-      "notified_reasons": []
-    },
-    "PS-1607": {
-      "key": "PS-1607",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-06-12T07:18:48.892-0500",
-      "last_status_change_at": "2026-06-08T08:49:26.773-0500",
       "notified_reasons": []
     },
     "PS-1569": {
@@ -227,6 +227,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1585": {
+      "key": "PS-1585",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-06-18T09:38:49.302-0500",
+      "last_status_change_at": "2026-06-18T09:38:49.302-0500",
+      "notified_reasons": []
+    },
     "PS-1638": {
       "key": "PS-1638",
       "vertical": "verification",
@@ -315,15 +324,6 @@
       "assignee": null,
       "updated": "2026-06-05T21:12:10.271-0500",
       "last_status_change_at": "2026-05-26T15:11:11.975-0500",
-      "notified_reasons": []
-    },
-    "PS-1585": {
-      "key": "PS-1585",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-01T21:12:08.755-0500",
-      "last_status_change_at": "2026-05-22T16:56:39.789-0500",
       "notified_reasons": []
     },
     "PS-1568": {
