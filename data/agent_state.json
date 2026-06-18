@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-06-18T02:43:52.740050+00:00",
+  "last_run_at": "2026-06-18T07:26:26.118126+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1639": {
-      "key": "PS-1639",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-06-17T17:45:57.310-0500",
-      "last_status_change_at": "2026-06-17T17:43:46.611-0500",
-      "notified_reasons": []
-    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -153,33 +144,6 @@
       "assignee": null,
       "updated": "2026-06-17T18:36:20.683-0500",
       "last_status_change_at": "2026-06-17T17:57:17.650-0500",
-      "notified_reasons": []
-    },
-    "PS-1488": {
-      "key": "PS-1488",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-06-17T16:07:50.420-0500",
-      "last_status_change_at": "2026-06-17T16:07:50.401-0500",
-      "notified_reasons": []
-    },
-    "PS-1619": {
-      "key": "PS-1619",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-06-17T16:07:26.343-0500",
-      "last_status_change_at": "2026-06-17T16:07:26.325-0500",
-      "notified_reasons": []
-    },
-    "PS-1636": {
-      "key": "PS-1636",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "rau",
-      "updated": "2026-06-17T16:06:55.274-0500",
-      "last_status_change_at": "2026-06-17T16:06:55.257-0500",
       "notified_reasons": []
     },
     "PS-1617": {
