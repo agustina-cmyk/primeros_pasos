@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-19T23:59:58.988322+00:00",
+  "last_run_at": "2026-06-20T03:28:44.727752+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1614": {
+      "key": "PS-1614",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-06-19T21:12:08.735-0500",
+      "last_status_change_at": "2026-06-09T10:34:41.639-0500",
+      "notified_reasons": []
+    },
     "PS-1647": {
       "key": "PS-1647",
       "vertical": "core",
@@ -36,15 +45,6 @@
       "assignee": "Andrew Ortiz",
       "updated": "2026-06-18T09:12:26.251-0500",
       "last_status_change_at": "2026-06-08T08:49:26.773-0500",
-      "notified_reasons": []
-    },
-    "PS-1614": {
-      "key": "PS-1614",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-06-16T15:48:34.291-0500",
-      "last_status_change_at": "2026-06-09T10:34:41.639-0500",
       "notified_reasons": []
     },
     "PS-1569": {
