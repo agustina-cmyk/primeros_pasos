@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-20T03:28:44.727752+00:00",
+  "last_run_at": "2026-06-20T07:12:39.239283+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1614": {
@@ -18,15 +18,6 @@
       "assignee": null,
       "updated": "2026-06-19T15:27:44.137-0500",
       "last_status_change_at": "2026-06-19T15:27:37.009-0500",
-      "notified_reasons": []
-    },
-    "PS-1641": {
-      "key": "PS-1641",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-06-19T11:39:29.493-0500",
-      "last_status_change_at": "2026-06-19T11:39:29.474-0500",
       "notified_reasons": []
     },
     "PS-1642": {
@@ -270,24 +261,6 @@
       "assignee": null,
       "updated": "2026-06-19T18:07:46.331-0500",
       "last_status_change_at": "2026-06-19T18:07:16.707-0500",
-      "notified_reasons": []
-    },
-    "PS-1646": {
-      "key": "PS-1646",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-06-19T16:23:55.750-0500",
-      "last_status_change_at": "2026-06-19T16:23:55.733-0500",
-      "notified_reasons": []
-    },
-    "PS-1622": {
-      "key": "PS-1622",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-06-19T15:00:29.433-0500",
-      "last_status_change_at": "2026-06-19T15:00:29.410-0500",
       "notified_reasons": []
     },
     "PS-1645": {
