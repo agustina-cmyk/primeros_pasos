@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-22T16:26:45.202243+00:00",
+  "last_run_at": "2026-06-22T19:53:43.302733+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1651": {
+      "key": "PS-1651",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-22T13:25:28.783-0500",
+      "last_status_change_at": "2026-06-22T13:25:20.248-0500",
+      "notified_reasons": []
+    },
     "PS-1647": {
       "key": "PS-1647",
       "vertical": "core",
@@ -137,6 +146,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1650": {
+      "key": "PS-1650",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-22T11:40:40.214-0500",
+      "last_status_change_at": "2026-06-22T11:40:32.301-0500",
+      "notified_reasons": []
+    },
     "PS-1643": {
       "key": "PS-1643",
       "vertical": "fe",
@@ -254,6 +272,42 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1564": {
+      "key": "PS-1564",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-06-22T14:41:32.571-0500",
+      "last_status_change_at": "2026-06-22T14:41:32.546-0500",
+      "notified_reasons": []
+    },
+    "PS-1560": {
+      "key": "PS-1560",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-06-22T14:41:09.311-0500",
+      "last_status_change_at": "2026-06-22T14:41:09.283-0500",
+      "notified_reasons": []
+    },
+    "PS-1585": {
+      "key": "PS-1585",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-06-22T14:34:46.374-0500",
+      "last_status_change_at": "2026-06-22T14:34:46.348-0500",
+      "notified_reasons": []
+    },
+    "PS-1627": {
+      "key": "PS-1627",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-06-22T14:33:08.315-0500",
+      "last_status_change_at": "2026-06-22T14:33:08.291-0500",
+      "notified_reasons": []
+    },
     "PS-1649": {
       "key": "PS-1649",
       "vertical": "verification",
@@ -299,15 +353,6 @@
       "last_status_change_at": "2026-06-19T14:46:47.334-0500",
       "notified_reasons": []
     },
-    "PS-1585": {
-      "key": "PS-1585",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-06-18T09:38:49.302-0500",
-      "last_status_change_at": "2026-06-18T09:38:49.302-0500",
-      "notified_reasons": []
-    },
     "PS-1638": {
       "key": "PS-1638",
       "vertical": "verification",
@@ -315,15 +360,6 @@
       "assignee": null,
       "updated": "2026-06-17T15:55:49.514-0500",
       "last_status_change_at": "2026-06-17T15:55:08.028-0500",
-      "notified_reasons": []
-    },
-    "PS-1627": {
-      "key": "PS-1627",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-06-16T13:36:09.884-0500",
-      "last_status_change_at": "2026-06-16T13:34:46.823-0500",
       "notified_reasons": []
     },
     "PS-1634": {
@@ -380,15 +416,6 @@
       "last_status_change_at": "2026-05-29T15:55:46.420-0500",
       "notified_reasons": []
     },
-    "PS-1564": {
-      "key": "PS-1564",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-25T16:23:19.313-0500",
-      "last_status_change_at": "2026-05-25T16:19:24.426-0500",
-      "notified_reasons": []
-    },
     "PS-1579": {
       "key": "PS-1579",
       "vertical": "verification",
@@ -396,15 +423,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-05-25T14:20:38.078-0500",
       "last_status_change_at": "2026-05-22T17:18:24.088-0500",
-      "notified_reasons": []
-    },
-    "PS-1560": {
-      "key": "PS-1560",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-05-25T10:40:48.968-0500",
-      "last_status_change_at": "2026-05-25T10:40:48.968-0500",
       "notified_reasons": []
     },
     "PS-1550": {
