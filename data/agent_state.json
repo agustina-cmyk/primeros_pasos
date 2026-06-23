@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-23T16:46:40.228190+00:00",
+  "last_run_at": "2026-06-23T19:02:00.277748+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1653": {
+      "key": "PS-1653",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-06-23T13:55:44.386-0500",
+      "last_status_change_at": "2026-06-23T13:55:05.309-0500",
+      "notified_reasons": []
+    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
@@ -137,6 +146,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1643": {
+      "key": "PS-1643",
+      "vertical": "fe",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-06-23T12:02:14.979-0500",
+      "last_status_change_at": "2026-06-23T12:02:14.979-0500",
+      "notified_reasons": []
+    },
     "PS-1644": {
       "key": "PS-1644",
       "vertical": "fe",
@@ -153,15 +171,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-23T07:55:06.741-0500",
       "last_status_change_at": "2026-06-23T07:55:06.741-0500",
-      "notified_reasons": []
-    },
-    "PS-1643": {
-      "key": "PS-1643",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-06-22T11:24:08.668-0500",
-      "last_status_change_at": "2026-06-19T13:11:17.619-0500",
       "notified_reasons": []
     },
     "PS-1637": {
@@ -263,6 +272,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1649": {
+      "key": "PS-1649",
+      "vertical": "verification",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-06-23T13:44:07.174-0500",
+      "last_status_change_at": "2026-06-23T13:44:07.174-0500",
+      "notified_reasons": []
+    },
+    "PS-1652": {
+      "key": "PS-1652",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-23T12:49:18.659-0500",
+      "last_status_change_at": "2026-06-23T12:48:50.684-0500",
+      "notified_reasons": []
+    },
     "PS-1638": {
       "key": "PS-1638",
       "vertical": "verification",
@@ -279,15 +306,6 @@
       "assignee": null,
       "updated": "2026-06-22T21:12:13.225-0500",
       "last_status_change_at": "2026-06-12T14:55:13.070-0500",
-      "notified_reasons": []
-    },
-    "PS-1649": {
-      "key": "PS-1649",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-06-22T08:17:37.977-0500",
-      "last_status_change_at": "2026-06-22T08:17:37.977-0500",
       "notified_reasons": []
     },
     "PS-1616": {
