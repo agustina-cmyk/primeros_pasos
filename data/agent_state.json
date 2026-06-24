@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-06-24T02:08:01.920637+00:00",
+  "last_run_at": "2026-06-24T06:28:33.253663+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1653": {
-      "key": "PS-1653",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-06-23T13:55:44.386-0500",
-      "last_status_change_at": "2026-06-23T13:55:05.309-0500",
-      "notified_reasons": []
-    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
