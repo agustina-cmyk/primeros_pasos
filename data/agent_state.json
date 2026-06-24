@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-24T22:44:44.189163+00:00",
+  "last_run_at": "2026-06-24T23:58:02.748212+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -284,10 +284,10 @@
     "PS-1658": {
       "key": "PS-1658",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "TEST IN PROGRESS",
       "assignee": "Mauro Capolupo",
-      "updated": "2026-06-24T17:24:38.792-0500",
-      "last_status_change_at": "2026-06-24T17:24:32.158-0500",
+      "updated": "2026-06-24T17:53:19.934-0500",
+      "last_status_change_at": "2026-06-24T17:53:19.934-0500",
       "notified_reasons": []
     },
     "PS-1657": {
