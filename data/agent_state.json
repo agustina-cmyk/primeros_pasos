@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-25T12:36:44.915763+00:00",
+  "last_run_at": "2026-06-25T15:37:15.030542+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1642": {
+      "key": "PS-1642",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-25T08:25:35.537-0500",
+      "last_status_change_at": "2026-06-18T16:54:23.272-0500",
+      "notified_reasons": []
+    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
@@ -18,15 +27,6 @@
       "assignee": "abrahan",
       "updated": "2026-06-19T21:12:08.735-0500",
       "last_status_change_at": "2026-06-09T10:34:41.639-0500",
-      "notified_reasons": []
-    },
-    "PS-1642": {
-      "key": "PS-1642",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-18T16:54:56.670-0500",
-      "last_status_change_at": "2026-06-18T16:54:23.272-0500",
       "notified_reasons": []
     },
     "PS-1607": {
