@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-25T21:59:43.815058+00:00",
+  "last_run_at": "2026-06-25T23:17:12.573851+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1660": {
+      "key": "PS-1660",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-06-25T18:01:31.277-0500",
+      "last_status_change_at": "2026-06-25T18:01:31.247-0500",
+      "notified_reasons": []
+    },
     "PS-1661": {
       "key": "PS-1661",
       "vertical": "core",
@@ -9,15 +18,6 @@
       "assignee": "aldana",
       "updated": "2026-06-25T16:28:01.105-0500",
       "last_status_change_at": "2026-06-25T16:27:51.914-0500",
-      "notified_reasons": []
-    },
-    "PS-1660": {
-      "key": "PS-1660",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-25T16:01:28.655-0500",
-      "last_status_change_at": "2026-06-25T16:01:11.655-0500",
       "notified_reasons": []
     },
     "PS-1642": {
