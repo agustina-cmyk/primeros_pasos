@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-06-26T01:35:41.890531+00:00",
+  "last_run_at": "2026-06-26T06:01:05.254816+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1660": {
-      "key": "PS-1660",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-06-25T18:01:31.277-0500",
-      "last_status_change_at": "2026-06-25T18:01:31.247-0500",
-      "notified_reasons": []
-    },
     "PS-1661": {
       "key": "PS-1661",
       "vertical": "core",
@@ -18,33 +9,6 @@
       "assignee": "aldana",
       "updated": "2026-06-25T16:28:01.105-0500",
       "last_status_change_at": "2026-06-25T16:27:51.914-0500",
-      "notified_reasons": []
-    },
-    "PS-1642": {
-      "key": "PS-1642",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-06-25T15:57:55.845-0500",
-      "last_status_change_at": "2026-06-25T15:57:55.823-0500",
-      "notified_reasons": []
-    },
-    "PS-1517": {
-      "key": "PS-1517",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-06-25T15:57:33.039-0500",
-      "last_status_change_at": "2026-06-25T15:57:33.015-0500",
-      "notified_reasons": []
-    },
-    "PS-1659": {
-      "key": "PS-1659",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-06-25T14:25:16.196-0500",
-      "last_status_change_at": "2026-06-25T14:25:16.174-0500",
       "notified_reasons": []
     },
     "PS-1651": {
