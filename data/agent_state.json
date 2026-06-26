@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-26T11:59:18.770079+00:00",
+  "last_run_at": "2026-06-26T14:17:05.032148+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1661": {
@@ -261,6 +261,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1662": {
+      "key": "PS-1662",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-06-26T08:50:28.616-0500",
+      "last_status_change_at": "2026-06-26T08:50:28.595-0500",
       "notified_reasons": []
     },
     "PS-1658": {
