@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-06-30T12:28:27.485900+00:00",
+  "last_run_at": "2026-06-30T15:08:19.357842+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -263,13 +263,22 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
-    "PS-1667": {
-      "key": "PS-1667",
+    "PS-1668": {
+      "key": "PS-1668",
       "vertical": "verification",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-06-29T17:24:52.777-0500",
-      "last_status_change_at": "2026-06-29T17:24:45.034-0500",
+      "updated": "2026-06-30T09:52:12.763-0500",
+      "last_status_change_at": "2026-06-30T09:52:01.481-0500",
+      "notified_reasons": []
+    },
+    "PS-1667": {
+      "key": "PS-1667",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-06-30T08:26:47.732-0500",
+      "last_status_change_at": "2026-06-30T08:26:46.739-0500",
       "notified_reasons": []
     },
     "PS-1666": {
