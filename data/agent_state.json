@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-06-30T21:12:31.527242+00:00",
+  "last_run_at": "2026-06-30T22:48:21.125842+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1674": {
+      "key": "PS-1674",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-06-30T17:24:21.565-0500",
+      "last_status_change_at": "2026-06-30T17:19:08.200-0500",
+      "notified_reasons": []
+    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
@@ -284,10 +293,10 @@
     "PS-1673": {
       "key": "PS-1673",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DISCARDED",
       "assignee": null,
-      "updated": "2026-06-30T14:57:59.453-0500",
-      "last_status_change_at": "2026-06-30T14:57:50.230-0500",
+      "updated": "2026-06-30T16:22:55.774-0500",
+      "last_status_change_at": "2026-06-30T16:22:55.746-0500",
       "notified_reasons": []
     },
     "PS-1672": {
