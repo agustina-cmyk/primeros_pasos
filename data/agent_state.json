@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-02T17:26:04.143936+00:00",
+  "last_run_at": "2026-07-02T18:55:38.667462+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1678": {
@@ -128,6 +128,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1680": {
+      "key": "PS-1680",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": "Damian Fixel",
+      "updated": "2026-07-02T13:33:41.382-0500",
+      "last_status_change_at": "2026-07-02T13:33:34.485-0500",
+      "notified_reasons": []
+    },
     "PS-1670": {
       "key": "PS-1670",
       "vertical": "fe",
@@ -198,6 +207,15 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
+      "notified_reasons": []
+    },
+    "PS-1681": {
+      "key": "PS-1681",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-02T13:41:13.652-0500",
+      "last_status_change_at": "2026-07-02T13:41:05.082-0500",
       "notified_reasons": []
     },
     "PS-1654": {
