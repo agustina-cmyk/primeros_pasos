@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-07-02T01:30:19.120371+00:00",
+  "last_run_at": "2026-07-02T05:32:00.953018+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1674": {
-      "key": "PS-1674",
+    "PS-1678": {
+      "key": "PS-1678",
       "vertical": "core",
-      "status": "DISCARDED",
+      "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-07-01T15:52:57.492-0500",
-      "last_status_change_at": "2026-07-01T15:52:57.470-0500",
+      "updated": "2026-07-01T22:15:00.075-0500",
+      "last_status_change_at": "2026-07-01T22:14:20.321-0500",
       "notified_reasons": []
     },
     "PS-1651": {
