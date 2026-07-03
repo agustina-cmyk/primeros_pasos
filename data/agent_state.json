@@ -1,22 +1,13 @@
 {
-  "last_run_at": "2026-07-03T01:51:11.727161+00:00",
+  "last_run_at": "2026-07-03T05:43:17.859979+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1678": {
-      "key": "PS-1678",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-07-02T08:41:30.998-0500",
-      "last_status_change_at": "2026-07-02T08:41:30.973-0500",
-      "notified_reasons": []
-    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-06-22T13:25:28.783-0500",
+      "updated": "2026-07-02T21:12:06.688-0500",
       "last_status_change_at": "2026-06-22T13:25:20.248-0500",
       "notified_reasons": []
     },
@@ -315,15 +306,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-07-02T10:12:37.362-0500",
       "last_status_change_at": "2026-07-02T10:12:37.362-0500",
-      "notified_reasons": []
-    },
-    "PS-1679": {
-      "key": "PS-1679",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-02T09:36:00.728-0500",
-      "last_status_change_at": "2026-07-02T09:36:00.703-0500",
       "notified_reasons": []
     },
     "PS-1672": {
