@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-07-06T22:44:10.416512+00:00",
+  "last_run_at": "2026-07-06T23:58:37.368645+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1685": {
       "key": "PS-1685",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-06T16:41:21.563-0500",
-      "last_status_change_at": "2026-07-06T16:41:14.007-0500",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-07-06T17:54:04.901-0500",
+      "last_status_change_at": "2026-07-06T17:54:04.892-0500",
       "notified_reasons": []
     },
     "PS-1651": {
@@ -317,6 +317,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1677": {
+      "key": "PS-1677",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-06T18:35:53.436-0500",
+      "last_status_change_at": "2026-07-06T18:35:53.409-0500",
+      "notified_reasons": []
+    },
     "PS-1671": {
       "key": "PS-1671",
       "vertical": "verification",
@@ -351,15 +360,6 @@
       "assignee": null,
       "updated": "2026-07-03T12:11:46.335-0500",
       "last_status_change_at": "2026-07-03T12:11:38.422-0500",
-      "notified_reasons": []
-    },
-    "PS-1677": {
-      "key": "PS-1677",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-02T10:12:37.362-0500",
-      "last_status_change_at": "2026-07-02T10:12:37.362-0500",
       "notified_reasons": []
     },
     "PS-1672": {
