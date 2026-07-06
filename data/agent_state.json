@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-06T17:34:36.877456+00:00",
+  "last_run_at": "2026-07-06T19:40:21.282363+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -119,6 +119,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1670": {
+      "key": "PS-1670",
+      "vertical": "fe",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-07-06T13:34:20.007-0500",
+      "last_status_change_at": "2026-07-06T13:34:20.007-0500",
+      "notified_reasons": []
+    },
     "PS-1669": {
       "key": "PS-1669",
       "vertical": "fe",
@@ -126,15 +135,6 @@
       "assignee": "Andrew Ortiz",
       "updated": "2026-07-06T12:03:39.264-0500",
       "last_status_change_at": "2026-06-30T12:22:23.631-0500",
-      "notified_reasons": []
-    },
-    "PS-1670": {
-      "key": "PS-1670",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "Damian Fixel",
-      "updated": "2026-07-06T11:33:39.931-0500",
-      "last_status_change_at": "2026-06-30T12:24:22.029-0500",
       "notified_reasons": []
     },
     "PS-1650": {
@@ -311,10 +311,10 @@
     "PS-1671": {
       "key": "PS-1671",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Damian Fixel",
-      "updated": "2026-07-06T11:33:34.917-0500",
-      "last_status_change_at": "2026-06-30T12:26:00.095-0500",
+      "updated": "2026-07-06T13:34:24.604-0500",
+      "last_status_change_at": "2026-07-06T13:34:24.604-0500",
       "notified_reasons": []
     },
     "PS-1657": {
