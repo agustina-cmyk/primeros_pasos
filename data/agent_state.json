@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-08T15:41:06.678363+00:00",
+  "last_run_at": "2026-07-08T17:18:34.642187+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -308,6 +308,105 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1668": {
+      "key": "PS-1668",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-08T12:16:25.142-0500",
+      "last_status_change_at": "2026-06-30T09:52:01.481-0500",
+      "notified_reasons": []
+    },
+    "PS-1672": {
+      "key": "PS-1672",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T12:11:50.806-0500",
+      "last_status_change_at": "2026-07-08T12:10:19.882-0500",
+      "notified_reasons": []
+    },
+    "PS-1657": {
+      "key": "PS-1657",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T12:09:38.457-0500",
+      "last_status_change_at": "2026-07-08T12:09:36.752-0500",
+      "notified_reasons": []
+    },
+    "PS-1634": {
+      "key": "PS-1634",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T12:01:54.723-0500",
+      "last_status_change_at": "2026-07-08T12:01:54.723-0500",
+      "notified_reasons": []
+    },
+    "PS-1550": {
+      "key": "PS-1550",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:45:48.779-0500",
+      "last_status_change_at": "2026-07-08T11:45:48.779-0500",
+      "notified_reasons": []
+    },
+    "PS-1191": {
+      "key": "PS-1191",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:43:51.344-0500",
+      "last_status_change_at": "2026-07-08T11:43:39.446-0500",
+      "notified_reasons": []
+    },
+    "PS-1173": {
+      "key": "PS-1173",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:34:11.264-0500",
+      "last_status_change_at": "2026-07-08T11:33:50.292-0500",
+      "notified_reasons": []
+    },
+    "PS-1684": {
+      "key": "PS-1684",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:28:31.687-0500",
+      "last_status_change_at": "2026-07-08T11:28:31.687-0500",
+      "notified_reasons": []
+    },
+    "PS-1666": {
+      "key": "PS-1666",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:25:58.135-0500",
+      "last_status_change_at": "2026-07-08T11:25:36.996-0500",
+      "notified_reasons": []
+    },
+    "PS-1630": {
+      "key": "PS-1630",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:25:53.586-0500",
+      "last_status_change_at": "2026-07-08T11:18:03.018-0500",
+      "notified_reasons": []
+    },
+    "PS-1590": {
+      "key": "PS-1590",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T11:25:49.098-0500",
+      "last_status_change_at": "2026-07-08T11:24:14.844-0500",
+      "notified_reasons": []
+    },
     "PS-1691": {
       "key": "PS-1691",
       "vertical": "verification",
@@ -362,24 +461,6 @@
       "last_status_change_at": "2026-07-06T13:34:24.604-0500",
       "notified_reasons": []
     },
-    "PS-1657": {
-      "key": "PS-1657",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-04T21:12:06.953-0500",
-      "last_status_change_at": "2026-06-24T17:04:54.447-0500",
-      "notified_reasons": []
-    },
-    "PS-1684": {
-      "key": "PS-1684",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-03T16:48:45.797-0500",
-      "last_status_change_at": "2026-07-03T16:48:39.789-0500",
-      "notified_reasons": []
-    },
     "PS-1682": {
       "key": "PS-1682",
       "vertical": "verification",
@@ -387,42 +468,6 @@
       "assignee": null,
       "updated": "2026-07-03T12:11:46.335-0500",
       "last_status_change_at": "2026-07-03T12:11:38.422-0500",
-      "notified_reasons": []
-    },
-    "PS-1672": {
-      "key": "PS-1672",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-30T14:26:26.843-0500",
-      "last_status_change_at": "2026-06-30T14:26:15.657-0500",
-      "notified_reasons": []
-    },
-    "PS-1668": {
-      "key": "PS-1668",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-30T09:52:12.763-0500",
-      "last_status_change_at": "2026-06-30T09:52:01.481-0500",
-      "notified_reasons": []
-    },
-    "PS-1666": {
-      "key": "PS-1666",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-29T15:03:51.908-0500",
-      "last_status_change_at": "2026-06-29T15:03:44.281-0500",
-      "notified_reasons": []
-    },
-    "PS-1634": {
-      "key": "PS-1634",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-26T21:12:07.291-0500",
-      "last_status_change_at": "2026-06-16T10:58:56.191-0500",
       "notified_reasons": []
     },
     "PS-1658": {
@@ -443,15 +488,6 @@
       "last_status_change_at": "2026-06-24T16:53:21.566-0500",
       "notified_reasons": []
     },
-    "PS-1630": {
-      "key": "PS-1630",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-24T12:42:26.218-0500",
-      "last_status_change_at": "2026-06-12T14:55:13.070-0500",
-      "notified_reasons": []
-    },
     "PS-1649": {
       "key": "PS-1649",
       "vertical": "verification",
@@ -461,15 +497,6 @@
       "last_status_change_at": "2026-06-23T13:44:07.174-0500",
       "notified_reasons": []
     },
-    "PS-1590": {
-      "key": "PS-1590",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-06-05T21:12:10.271-0500",
-      "last_status_change_at": "2026-05-26T15:11:11.975-0500",
-      "notified_reasons": []
-    },
     "PS-1568": {
       "key": "PS-1568",
       "vertical": "verification",
@@ -477,33 +504,6 @@
       "assignee": "abrahan",
       "updated": "2026-05-29T16:30:54.781-0500",
       "last_status_change_at": "2026-05-29T15:55:46.420-0500",
-      "notified_reasons": []
-    },
-    "PS-1550": {
-      "key": "PS-1550",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-23T21:12:09.971-0500",
-      "last_status_change_at": "2026-05-13T12:39:31.158-0500",
-      "notified_reasons": []
-    },
-    "PS-1191": {
-      "key": "PS-1191",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-02-09T21:12:08.426-0500",
-      "last_status_change_at": "2026-01-30T11:49:06.534-0500",
-      "notified_reasons": []
-    },
-    "PS-1173": {
-      "key": "PS-1173",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-02-09T18:40:16.426-0500",
-      "last_status_change_at": "2026-01-27T19:33:57.919-0500",
       "notified_reasons": []
     }
   },
