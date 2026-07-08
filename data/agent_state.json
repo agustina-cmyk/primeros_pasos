@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-08T17:18:34.642187+00:00",
+  "last_run_at": "2026-07-08T18:53:24.523754+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -308,13 +308,76 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
-    "PS-1668": {
-      "key": "PS-1668",
+    "PS-1692": {
+      "key": "PS-1692",
       "vertical": "verification",
       "status": "Tareas por hacer",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-08T12:16:25.142-0500",
-      "last_status_change_at": "2026-06-30T09:52:01.481-0500",
+      "assignee": null,
+      "updated": "2026-07-08T12:31:48.413-0500",
+      "last_status_change_at": "2026-07-08T12:31:40.347-0500",
+      "notified_reasons": []
+    },
+    "PS-1688": {
+      "key": "PS-1688",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Andrew Ortiz",
+      "updated": "2026-07-08T12:26:08.589-0500",
+      "last_status_change_at": "2026-07-08T12:26:08.566-0500",
+      "notified_reasons": []
+    },
+    "PS-1590": {
+      "key": "PS-1590",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:26:07.505-0500",
+      "last_status_change_at": "2026-07-08T11:24:14.844-0500",
+      "notified_reasons": []
+    },
+    "PS-1630": {
+      "key": "PS-1630",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:26:05.867-0500",
+      "last_status_change_at": "2026-07-08T11:18:03.018-0500",
+      "notified_reasons": []
+    },
+    "PS-1684": {
+      "key": "PS-1684",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:26:03.968-0500",
+      "last_status_change_at": "2026-07-08T11:28:31.687-0500",
+      "notified_reasons": []
+    },
+    "PS-1173": {
+      "key": "PS-1173",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:26:01.862-0500",
+      "last_status_change_at": "2026-07-08T11:33:50.292-0500",
+      "notified_reasons": []
+    },
+    "PS-1191": {
+      "key": "PS-1191",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:26:00.225-0500",
+      "last_status_change_at": "2026-07-08T11:43:39.446-0500",
+      "notified_reasons": []
+    },
+    "PS-1550": {
+      "key": "PS-1550",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-08T12:25:58.007-0500",
+      "last_status_change_at": "2026-07-08T11:45:48.779-0500",
       "notified_reasons": []
     },
     "PS-1672": {
@@ -322,98 +385,89 @@
       "vertical": "verification",
       "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T12:11:50.806-0500",
-      "last_status_change_at": "2026-07-08T12:10:19.882-0500",
-      "notified_reasons": []
-    },
-    "PS-1657": {
-      "key": "PS-1657",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T12:09:38.457-0500",
-      "last_status_change_at": "2026-07-08T12:09:36.752-0500",
-      "notified_reasons": []
-    },
-    "PS-1634": {
-      "key": "PS-1634",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T12:01:54.723-0500",
-      "last_status_change_at": "2026-07-08T12:01:54.723-0500",
-      "notified_reasons": []
-    },
-    "PS-1550": {
-      "key": "PS-1550",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:45:48.779-0500",
-      "last_status_change_at": "2026-07-08T11:45:48.779-0500",
-      "notified_reasons": []
-    },
-    "PS-1191": {
-      "key": "PS-1191",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:43:51.344-0500",
-      "last_status_change_at": "2026-07-08T11:43:39.446-0500",
-      "notified_reasons": []
-    },
-    "PS-1173": {
-      "key": "PS-1173",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:34:11.264-0500",
-      "last_status_change_at": "2026-07-08T11:33:50.292-0500",
-      "notified_reasons": []
-    },
-    "PS-1684": {
-      "key": "PS-1684",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:28:31.687-0500",
-      "last_status_change_at": "2026-07-08T11:28:31.687-0500",
+      "updated": "2026-07-08T12:25:45.317-0500",
+      "last_status_change_at": "2026-07-08T12:25:45.317-0500",
       "notified_reasons": []
     },
     "PS-1666": {
       "key": "PS-1666",
       "vertical": "verification",
-      "status": "On Hold",
+      "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:25:58.135-0500",
-      "last_status_change_at": "2026-07-08T11:25:36.996-0500",
+      "updated": "2026-07-08T12:25:39.075-0500",
+      "last_status_change_at": "2026-07-08T12:25:39.075-0500",
       "notified_reasons": []
     },
-    "PS-1630": {
-      "key": "PS-1630",
+    "PS-1649": {
+      "key": "PS-1649",
       "vertical": "verification",
-      "status": "On Hold",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:25:53.586-0500",
-      "last_status_change_at": "2026-07-08T11:18:03.018-0500",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-08T12:22:48.838-0500",
+      "last_status_change_at": "2026-07-08T12:22:48.812-0500",
       "notified_reasons": []
     },
-    "PS-1590": {
-      "key": "PS-1590",
+    "PS-1645": {
+      "key": "PS-1645",
       "vertical": "verification",
-      "status": "On Hold",
+      "status": "Tareas por hacer",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-07-08T11:25:49.098-0500",
-      "last_status_change_at": "2026-07-08T11:24:14.844-0500",
+      "updated": "2026-07-08T12:21:53.242-0500",
+      "last_status_change_at": "2026-07-08T12:21:53.242-0500",
+      "notified_reasons": []
+    },
+    "PS-1634": {
+      "key": "PS-1634",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T12:21:47.015-0500",
+      "last_status_change_at": "2026-07-08T12:21:47.015-0500",
+      "notified_reasons": []
+    },
+    "PS-1657": {
+      "key": "PS-1657",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-08T12:21:39.201-0500",
+      "last_status_change_at": "2026-07-08T12:21:39.201-0500",
+      "notified_reasons": []
+    },
+    "PS-1690": {
+      "key": "PS-1690",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-08T12:21:29.327-0500",
+      "last_status_change_at": "2026-07-08T12:21:29.327-0500",
       "notified_reasons": []
     },
     "PS-1691": {
       "key": "PS-1691",
       "vertical": "verification",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-08T08:35:41.306-0500",
+      "assignee": "abrahan",
+      "updated": "2026-07-08T12:19:07.438-0500",
       "last_status_change_at": "2026-07-08T08:35:22.952-0500",
+      "notified_reasons": []
+    },
+    "PS-1682": {
+      "key": "PS-1682",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-08T12:17:07.533-0500",
+      "last_status_change_at": "2026-07-03T12:11:38.422-0500",
+      "notified_reasons": []
+    },
+    "PS-1668": {
+      "key": "PS-1668",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-08T12:16:25.142-0500",
+      "last_status_change_at": "2026-06-30T09:52:01.481-0500",
       "notified_reasons": []
     },
     "PS-1686": {
@@ -434,24 +488,6 @@
       "last_status_change_at": "2026-07-08T08:13:56.152-0500",
       "notified_reasons": []
     },
-    "PS-1690": {
-      "key": "PS-1690",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-08T08:11:53.090-0500",
-      "last_status_change_at": "2026-07-08T08:11:39.683-0500",
-      "notified_reasons": []
-    },
-    "PS-1688": {
-      "key": "PS-1688",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-07-07T21:21:13.236-0500",
-      "last_status_change_at": "2026-07-07T21:20:11.488-0500",
-      "notified_reasons": []
-    },
     "PS-1671": {
       "key": "PS-1671",
       "vertical": "verification",
@@ -461,15 +497,6 @@
       "last_status_change_at": "2026-07-06T13:34:24.604-0500",
       "notified_reasons": []
     },
-    "PS-1682": {
-      "key": "PS-1682",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-03T12:11:46.335-0500",
-      "last_status_change_at": "2026-07-03T12:11:38.422-0500",
-      "notified_reasons": []
-    },
     "PS-1658": {
       "key": "PS-1658",
       "vertical": "verification",
@@ -477,24 +504,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-06-24T17:53:19.934-0500",
       "last_status_change_at": "2026-06-24T17:53:19.934-0500",
-      "notified_reasons": []
-    },
-    "PS-1645": {
-      "key": "PS-1645",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-06-24T16:53:21.566-0500",
-      "last_status_change_at": "2026-06-24T16:53:21.566-0500",
-      "notified_reasons": []
-    },
-    "PS-1649": {
-      "key": "PS-1649",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-06-23T13:44:07.174-0500",
-      "last_status_change_at": "2026-06-23T13:44:07.174-0500",
       "notified_reasons": []
     },
     "PS-1568": {
