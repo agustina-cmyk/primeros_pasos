@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-08T18:53:24.523754+00:00",
+  "last_run_at": "2026-07-08T20:16:52.656051+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -311,10 +311,10 @@
     "PS-1692": {
       "key": "PS-1692",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": null,
-      "updated": "2026-07-08T12:31:48.413-0500",
-      "last_status_change_at": "2026-07-08T12:31:40.347-0500",
+      "updated": "2026-07-08T14:11:09.312-0500",
+      "last_status_change_at": "2026-07-08T14:11:09.312-0500",
       "notified_reasons": []
     },
     "PS-1688": {
