@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-07-09T10:18:58.297787+00:00",
+  "last_run_at": "2026-07-09T15:52:04.693344+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1693": {
+      "key": "PS-1693",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-09T10:49:34.914-0500",
+      "last_status_change_at": "2026-07-09T10:49:25.830-0500",
+      "notified_reasons": []
+    },
     "PS-1651": {
       "key": "PS-1651",
       "vertical": "core",
@@ -308,6 +317,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1692": {
+      "key": "PS-1692",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-09T10:37:30.156-0500",
+      "last_status_change_at": "2026-07-09T10:37:28.145-0500",
+      "notified_reasons": []
+    },
+    "PS-1684": {
+      "key": "PS-1684",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": "abrahan",
+      "updated": "2026-07-09T10:30:52.036-0500",
+      "last_status_change_at": "2026-07-08T11:28:31.687-0500",
+      "notified_reasons": []
+    },
     "PS-1682": {
       "key": "PS-1682",
       "vertical": "verification",
@@ -335,15 +362,6 @@
       "last_status_change_at": "2026-07-08T16:30:25.922-0500",
       "notified_reasons": []
     },
-    "PS-1692": {
-      "key": "PS-1692",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-08T16:07:34.512-0500",
-      "last_status_change_at": "2026-07-08T14:11:09.312-0500",
-      "notified_reasons": []
-    },
     "PS-1590": {
       "key": "PS-1590",
       "vertical": "verification",
@@ -360,15 +378,6 @@
       "assignee": null,
       "updated": "2026-07-08T12:26:05.867-0500",
       "last_status_change_at": "2026-07-08T11:18:03.018-0500",
-      "notified_reasons": []
-    },
-    "PS-1684": {
-      "key": "PS-1684",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": null,
-      "updated": "2026-07-08T12:26:03.968-0500",
-      "last_status_change_at": "2026-07-08T11:28:31.687-0500",
       "notified_reasons": []
     },
     "PS-1173": {
