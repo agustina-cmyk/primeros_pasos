@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-09T02:47:02.208992+00:00",
+  "last_run_at": "2026-07-09T06:34:20.667544+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1651": {
@@ -326,15 +326,6 @@
       "last_status_change_at": "2026-07-08T12:21:53.242-0500",
       "notified_reasons": []
     },
-    "PS-1668": {
-      "key": "PS-1668",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-08T17:33:02.814-0500",
-      "last_status_change_at": "2026-07-08T17:33:02.792-0500",
-      "notified_reasons": []
-    },
     "PS-1657": {
       "key": "PS-1657",
       "vertical": "verification",
@@ -351,15 +342,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-07-08T16:07:34.512-0500",
       "last_status_change_at": "2026-07-08T14:11:09.312-0500",
-      "notified_reasons": []
-    },
-    "PS-1688": {
-      "key": "PS-1688",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-07-08T12:26:08.589-0500",
-      "last_status_change_at": "2026-07-08T12:26:08.566-0500",
       "notified_reasons": []
     },
     "PS-1590": {
@@ -434,15 +416,6 @@
       "last_status_change_at": "2026-07-08T12:25:39.075-0500",
       "notified_reasons": []
     },
-    "PS-1649": {
-      "key": "PS-1649",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-08T12:22:48.838-0500",
-      "last_status_change_at": "2026-07-08T12:22:48.812-0500",
-      "notified_reasons": []
-    },
     "PS-1634": {
       "key": "PS-1634",
       "vertical": "verification",
@@ -468,24 +441,6 @@
       "assignee": "abrahan",
       "updated": "2026-07-08T12:19:07.438-0500",
       "last_status_change_at": "2026-07-08T08:35:22.952-0500",
-      "notified_reasons": []
-    },
-    "PS-1686": {
-      "key": "PS-1686",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-07-08T08:14:05.543-0500",
-      "last_status_change_at": "2026-07-08T08:14:05.517-0500",
-      "notified_reasons": []
-    },
-    "PS-1689": {
-      "key": "PS-1689",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-07-08T08:13:56.171-0500",
-      "last_status_change_at": "2026-07-08T08:13:56.152-0500",
       "notified_reasons": []
     },
     "PS-1671": {
