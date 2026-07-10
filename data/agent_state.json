@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-10T01:49:26.261203+00:00",
+  "last_run_at": "2026-07-10T05:53:38.751609+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1693": {
@@ -128,6 +128,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1665": {
+      "key": "PS-1665",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-07-09T21:12:05.525-0500",
+      "last_status_change_at": "2026-06-29T13:29:26.695-0500",
+      "notified_reasons": []
+    },
     "PS-1694": {
       "key": "PS-1694",
       "vertical": "fe",
@@ -171,15 +180,6 @@
       "assignee": "Andrew Ortiz",
       "updated": "2026-07-03T13:13:10.152-0500",
       "last_status_change_at": "2026-07-03T13:13:02.051-0500",
-      "notified_reasons": []
-    },
-    "PS-1665": {
-      "key": "PS-1665",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-06-29T13:30:47.034-0500",
-      "last_status_change_at": "2026-06-29T13:29:26.695-0500",
       "notified_reasons": []
     },
     "PS-1637": {
@@ -335,24 +335,6 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
-    "PS-1672": {
-      "key": "PS-1672",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-09T17:53:56.725-0500",
-      "last_status_change_at": "2026-07-09T17:53:56.706-0500",
-      "notified_reasons": []
-    },
-    "PS-1645": {
-      "key": "PS-1645",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-09T17:38:00.626-0500",
-      "last_status_change_at": "2026-07-09T17:38:00.604-0500",
-      "notified_reasons": []
-    },
     "PS-1634": {
       "key": "PS-1634",
       "vertical": "verification",
@@ -387,15 +369,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-07-09T12:07:25.057-0500",
       "last_status_change_at": "2026-07-09T12:07:25.057-0500",
-      "notified_reasons": []
-    },
-    "PS-1692": {
-      "key": "PS-1692",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-09T10:37:30.156-0500",
-      "last_status_change_at": "2026-07-09T10:37:28.145-0500",
       "notified_reasons": []
     },
     "PS-1684": {
