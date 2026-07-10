@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-10T22:30:59.709477+00:00",
+  "last_run_at": "2026-07-10T23:29:36.013175+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -353,6 +353,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1634": {
+      "key": "PS-1634",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-07-10T18:03:19.765-0500",
+      "last_status_change_at": "2026-07-10T18:03:19.765-0500",
+      "notified_reasons": []
+    },
+    "PS-1590": {
+      "key": "PS-1590",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-07-10T17:42:54.644-0500",
+      "last_status_change_at": "2026-07-10T17:42:54.644-0500",
+      "notified_reasons": []
+    },
     "PS-1696": {
       "key": "PS-1696",
       "vertical": "verification",
@@ -380,15 +398,6 @@
       "last_status_change_at": "2026-07-10T12:11:08.480-0500",
       "notified_reasons": []
     },
-    "PS-1634": {
-      "key": "PS-1634",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-09T16:25:32.555-0500",
-      "last_status_change_at": "2026-07-08T12:21:47.015-0500",
-      "notified_reasons": []
-    },
     "PS-1684": {
       "key": "PS-1684",
       "vertical": "verification",
@@ -414,15 +423,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-07-08T16:30:25.922-0500",
       "last_status_change_at": "2026-07-08T16:30:25.922-0500",
-      "notified_reasons": []
-    },
-    "PS-1590": {
-      "key": "PS-1590",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": null,
-      "updated": "2026-07-08T12:26:07.505-0500",
-      "last_status_change_at": "2026-07-08T11:24:14.844-0500",
       "notified_reasons": []
     },
     "PS-1630": {
