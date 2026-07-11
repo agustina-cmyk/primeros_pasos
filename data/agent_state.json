@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-11T04:00:11.869652+00:00",
+  "last_run_at": "2026-07-11T06:13:01.802203+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -227,42 +227,6 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
-    "PS-1654": {
-      "key": "PS-1654",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-07-10T13:44:18.412-0500",
-      "last_status_change_at": "2026-07-10T13:44:18.395-0500",
-      "notified_reasons": []
-    },
-    "PS-1681": {
-      "key": "PS-1681",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-07-10T13:43:47.120-0500",
-      "last_status_change_at": "2026-07-10T13:43:47.096-0500",
-      "notified_reasons": []
-    },
-    "PS-1687": {
-      "key": "PS-1687",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-07-10T13:43:34.053-0500",
-      "last_status_change_at": "2026-07-10T13:43:34.031-0500",
-      "notified_reasons": []
-    },
-    "PS-1699": {
-      "key": "PS-1699",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-07-10T13:42:25.859-0500",
-      "last_status_change_at": "2026-07-10T13:42:25.840-0500",
-      "notified_reasons": []
-    },
     "PS-1697": {
       "key": "PS-1697",
       "vertical": "payments",
@@ -387,15 +351,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-07-10T14:26:33.443-0500",
       "last_status_change_at": "2026-07-10T14:26:18.020-0500",
-      "notified_reasons": []
-    },
-    "PS-1690": {
-      "key": "PS-1690",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-10T12:11:19.063-0500",
-      "last_status_change_at": "2026-07-10T12:11:08.480-0500",
       "notified_reasons": []
     },
     "PS-1684": {
