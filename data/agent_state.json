@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-11T00:56:58.937520+00:00",
+  "last_run_at": "2026-07-11T04:00:11.869652+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -137,6 +137,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1669": {
+      "key": "PS-1669",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": "Andrew Ortiz",
+      "updated": "2026-07-10T21:12:07.621-0500",
+      "last_status_change_at": "2026-06-30T12:22:23.631-0500",
+      "notified_reasons": []
+    },
     "PS-1665": {
       "key": "PS-1665",
       "vertical": "fe",
@@ -171,15 +180,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-07-06T13:34:20.007-0500",
       "last_status_change_at": "2026-07-06T13:34:20.007-0500",
-      "notified_reasons": []
-    },
-    "PS-1669": {
-      "key": "PS-1669",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-07-06T12:03:39.264-0500",
-      "last_status_change_at": "2026-06-30T12:22:23.631-0500",
       "notified_reasons": []
     },
     "PS-1683": {
