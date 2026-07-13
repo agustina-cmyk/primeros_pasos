@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-13T20:49:18.349898+00:00",
+  "last_run_at": "2026-07-13T21:44:32.871472+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -317,6 +317,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1173": {
+      "key": "PS-1173",
+      "vertical": "verification",
+      "status": "On Hold",
+      "assignee": null,
+      "updated": "2026-07-13T16:39:17.749-0500",
+      "last_status_change_at": "2026-07-08T11:33:50.292-0500",
+      "notified_reasons": []
+    },
     "PS-1634": {
       "key": "PS-1634",
       "vertical": "verification",
@@ -387,24 +396,6 @@
       "assignee": null,
       "updated": "2026-07-08T12:26:05.867-0500",
       "last_status_change_at": "2026-07-08T11:18:03.018-0500",
-      "notified_reasons": []
-    },
-    "PS-1173": {
-      "key": "PS-1173",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": null,
-      "updated": "2026-07-08T12:26:01.862-0500",
-      "last_status_change_at": "2026-07-08T11:33:50.292-0500",
-      "notified_reasons": []
-    },
-    "PS-1191": {
-      "key": "PS-1191",
-      "vertical": "verification",
-      "status": "On Hold",
-      "assignee": null,
-      "updated": "2026-07-08T12:26:00.225-0500",
-      "last_status_change_at": "2026-07-08T11:43:39.446-0500",
       "notified_reasons": []
     },
     "PS-1550": {
