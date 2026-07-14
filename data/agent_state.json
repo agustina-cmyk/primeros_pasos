@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-14T01:19:57.966256+00:00",
+  "last_run_at": "2026-07-14T04:22:08.288405+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -137,6 +137,15 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
+    "PS-1683": {
+      "key": "PS-1683",
+      "vertical": "fe",
+      "status": "Tareas por hacer",
+      "assignee": "Andrew Ortiz",
+      "updated": "2026-07-13T21:12:06.627-0500",
+      "last_status_change_at": "2026-07-03T13:13:02.051-0500",
+      "notified_reasons": []
+    },
     "PS-1669": {
       "key": "PS-1669",
       "vertical": "fe",
@@ -180,15 +189,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-07-06T13:34:20.007-0500",
       "last_status_change_at": "2026-07-06T13:34:20.007-0500",
-      "notified_reasons": []
-    },
-    "PS-1683": {
-      "key": "PS-1683",
-      "vertical": "fe",
-      "status": "Tareas por hacer",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-07-03T13:13:10.152-0500",
-      "last_status_change_at": "2026-07-03T13:13:02.051-0500",
       "notified_reasons": []
     },
     "PS-1637": {
@@ -317,6 +317,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1682": {
+      "key": "PS-1682",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-07-13T21:12:06.622-0500",
+      "last_status_change_at": "2026-07-03T12:11:38.422-0500",
+      "notified_reasons": []
+    },
     "PS-1630": {
       "key": "PS-1630",
       "vertical": "verification",
@@ -378,15 +387,6 @@
       "assignee": "abrahan",
       "updated": "2026-07-09T10:30:52.036-0500",
       "last_status_change_at": "2026-07-08T11:28:31.687-0500",
-      "notified_reasons": []
-    },
-    "PS-1682": {
-      "key": "PS-1682",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-07-08T21:16:14.246-0500",
-      "last_status_change_at": "2026-07-03T12:11:38.422-0500",
       "notified_reasons": []
     },
     "PS-1657": {
