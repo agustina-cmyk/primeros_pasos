@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-14T04:22:08.288405+00:00",
+  "last_run_at": "2026-07-14T06:33:04.032654+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1698": {
@@ -324,15 +324,6 @@
       "assignee": "abrahan",
       "updated": "2026-07-13T21:12:06.622-0500",
       "last_status_change_at": "2026-07-03T12:11:38.422-0500",
-      "notified_reasons": []
-    },
-    "PS-1630": {
-      "key": "PS-1630",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-07-13T17:35:22.375-0500",
-      "last_status_change_at": "2026-07-13T17:35:22.351-0500",
       "notified_reasons": []
     },
     "PS-1173": {
