@@ -1,34 +1,7 @@
 {
-  "last_run_at": "2026-07-15T03:43:17.356148+00:00",
+  "last_run_at": "2026-07-15T06:06:49.826561+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1698": {
-      "key": "PS-1698",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-07-14T16:08:30.655-0500",
-      "last_status_change_at": "2026-07-14T16:08:30.629-0500",
-      "notified_reasons": []
-    },
-    "PS-1527": {
-      "key": "PS-1527",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "aldana",
-      "updated": "2026-07-14T15:45:27.512-0500",
-      "last_status_change_at": "2026-07-14T15:45:27.489-0500",
-      "notified_reasons": []
-    },
-    "PS-1240": {
-      "key": "PS-1240",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "aldana",
-      "updated": "2026-07-14T15:43:20.488-0500",
-      "last_status_change_at": "2026-07-14T15:43:20.460-0500",
-      "notified_reasons": []
-    },
     "PS-1700": {
       "key": "PS-1700",
       "vertical": "core",
@@ -342,24 +315,6 @@
       "assignee": null,
       "updated": "2026-07-14T12:06:26.128-0500",
       "last_status_change_at": "2026-07-14T12:06:18.276-0500",
-      "notified_reasons": []
-    },
-    "PS-1173": {
-      "key": "PS-1173",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-14T11:40:01.159-0500",
-      "last_status_change_at": "2026-07-14T11:39:56.860-0500",
-      "notified_reasons": []
-    },
-    "PS-1590": {
-      "key": "PS-1590",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-07-14T11:20:36.302-0500",
-      "last_status_change_at": "2026-07-14T11:20:33.858-0500",
       "notified_reasons": []
     },
     "PS-1682": {
