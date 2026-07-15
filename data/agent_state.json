@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-15T14:17:54.313237+00:00",
+  "last_run_at": "2026-07-15T15:59:06.523522+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1700": {
@@ -299,6 +299,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1696": {
+      "key": "PS-1696",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-07-15T09:59:35.855-0500",
+      "last_status_change_at": "2026-07-10T14:42:30.728-0500",
+      "notified_reasons": []
+    },
     "PS-1702": {
       "key": "PS-1702",
       "vertical": "verification",
@@ -333,15 +342,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-07-10T18:03:19.765-0500",
       "last_status_change_at": "2026-07-10T18:03:19.765-0500",
-      "notified_reasons": []
-    },
-    "PS-1696": {
-      "key": "PS-1696",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-10T14:42:32.343-0500",
-      "last_status_change_at": "2026-07-10T14:42:30.728-0500",
       "notified_reasons": []
     },
     "PS-1695": {
