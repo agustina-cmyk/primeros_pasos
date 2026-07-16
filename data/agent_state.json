@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-15T23:27:32.510280+00:00",
+  "last_run_at": "2026-07-16T00:55:14.913169+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1700": {
@@ -302,10 +302,10 @@
     "PS-1704": {
       "key": "PS-1704",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Vicente Matallana",
-      "updated": "2026-07-15T18:10:14.098-0500",
-      "last_status_change_at": "2026-07-15T18:10:14.098-0500",
+      "updated": "2026-07-15T19:35:49.309-0500",
+      "last_status_change_at": "2026-07-15T19:35:49.284-0500",
       "notified_reasons": []
     },
     "PS-1703": {
