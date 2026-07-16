@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-07-16T21:55:45.605305+00:00",
+  "last_run_at": "2026-07-16T22:47:48.759414+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1707": {
       "key": "PS-1707",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-16T16:44:34.201-0500",
-      "last_status_change_at": "2026-07-16T16:43:33.197-0500",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-07-16T17:35:22.334-0500",
+      "last_status_change_at": "2026-07-16T17:35:22.307-0500",
       "notified_reasons": []
     },
     "PS-1706": {
