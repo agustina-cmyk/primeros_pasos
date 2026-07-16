@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-16T03:55:25.498798+00:00",
+  "last_run_at": "2026-07-16T06:10:17.586423+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1700": {
@@ -297,24 +297,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1703": {
-      "key": "PS-1703",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-15T20:53:28.538-0500",
-      "last_status_change_at": "2026-07-15T20:53:28.514-0500",
-      "notified_reasons": []
-    },
-    "PS-1704": {
-      "key": "PS-1704",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-15T19:35:49.309-0500",
-      "last_status_change_at": "2026-07-15T19:35:49.284-0500",
       "notified_reasons": []
     },
     "PS-1696": {
