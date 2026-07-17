@@ -1,34 +1,7 @@
 {
-  "last_run_at": "2026-07-17T04:40:38.835102+00:00",
+  "last_run_at": "2026-07-17T07:10:27.243005+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1707": {
-      "key": "PS-1707",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-07-16T17:35:22.334-0500",
-      "last_status_change_at": "2026-07-16T17:35:22.307-0500",
-      "notified_reasons": []
-    },
-    "PS-1706": {
-      "key": "PS-1706",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-07-16T15:33:10.296-0500",
-      "last_status_change_at": "2026-07-16T15:33:10.275-0500",
-      "notified_reasons": []
-    },
-    "PS-1700": {
-      "key": "PS-1700",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-07-16T15:06:56.590-0500",
-      "last_status_change_at": "2026-07-16T15:06:36.834-0500",
-      "notified_reasons": []
-    },
     "PS-1693": {
       "key": "PS-1693",
       "vertical": "core",
