@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-17T21:13:45.337797+00:00",
+  "last_run_at": "2026-07-17T22:12:17.967049+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1708": {
@@ -313,8 +313,17 @@
       "vertical": "verification",
       "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-07-17T15:20:23.594-0500",
+      "updated": "2026-07-17T16:52:33.709-0500",
       "last_status_change_at": "2026-07-17T15:20:23.594-0500",
+      "notified_reasons": []
+    },
+    "PS-1711": {
+      "key": "PS-1711",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-17T16:51:22.534-0500",
+      "last_status_change_at": "2026-07-17T16:24:49.899-0500",
       "notified_reasons": []
     },
     "PS-1666": {
