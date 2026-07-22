@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-22T22:53:06.295307+00:00",
+  "last_run_at": "2026-07-22T23:54:26.994846+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1693": {
@@ -293,10 +293,10 @@
     "PS-1714": {
       "key": "PS-1714",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Vicente Matallana",
-      "updated": "2026-07-22T17:44:48.390-0500",
-      "last_status_change_at": "2026-07-22T17:39:36.834-0500",
+      "updated": "2026-07-22T18:15:00.014-0500",
+      "last_status_change_at": "2026-07-22T18:15:00.014-0500",
       "notified_reasons": []
     },
     "PS-1695": {
