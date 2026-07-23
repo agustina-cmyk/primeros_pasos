@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-23T14:39:39.171303+00:00",
+  "last_run_at": "2026-07-23T16:19:25.484943+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1693": {
@@ -293,10 +293,10 @@
     "PS-1657": {
       "key": "PS-1657",
       "vertical": "verification",
-      "status": "TEST IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Vicente Matallana",
-      "updated": "2026-07-22T20:45:25.867-0500",
-      "last_status_change_at": "2026-07-22T20:45:25.867-0500",
+      "updated": "2026-07-23T09:53:30.794-0500",
+      "last_status_change_at": "2026-07-23T09:53:30.771-0500",
       "notified_reasons": []
     },
     "PS-1705": {
