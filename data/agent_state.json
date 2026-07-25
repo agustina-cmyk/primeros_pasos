@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-25T01:30:12.489652+00:00",
+  "last_run_at": "2026-07-25T04:43:09.559207+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1716": {
@@ -299,6 +299,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1702": {
+      "key": "PS-1702",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-24T21:12:26.662-0500",
+      "last_status_change_at": "2026-07-14T16:37:47.862-0500",
+      "notified_reasons": []
+    },
     "PS-1715": {
       "key": "PS-1715",
       "vertical": "verification",
@@ -351,15 +360,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-07-15T09:59:35.855-0500",
       "last_status_change_at": "2026-07-10T14:42:30.728-0500",
-      "notified_reasons": []
-    },
-    "PS-1702": {
-      "key": "PS-1702",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-14T16:37:54.667-0500",
-      "last_status_change_at": "2026-07-14T16:37:47.862-0500",
       "notified_reasons": []
     },
     "PS-1682": {
