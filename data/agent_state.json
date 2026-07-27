@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-27T01:06:35.834390+00:00",
+  "last_run_at": "2026-07-27T05:01:53.066768+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1716": {
@@ -351,15 +351,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-07-17T17:19:39.467-0500",
       "last_status_change_at": "2026-07-17T16:24:49.899-0500",
-      "notified_reasons": []
-    },
-    "PS-1696": {
-      "key": "PS-1696",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-07-15T09:59:35.855-0500",
-      "last_status_change_at": "2026-07-10T14:42:30.728-0500",
       "notified_reasons": []
     },
     "PS-1682": {
