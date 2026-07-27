@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-07-27T18:53:36.116668+00:00",
+  "last_run_at": "2026-07-27T20:13:28.188489+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1717": {
       "key": "PS-1717",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-27T12:17:58.136-0500",
-      "last_status_change_at": "2026-07-27T12:12:37.958-0500",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-07-27T14:15:50.418-0500",
+      "last_status_change_at": "2026-07-27T14:15:50.398-0500",
       "notified_reasons": []
     },
     "PS-1716": {
