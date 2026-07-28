@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-07-28T04:36:23.304657+00:00",
+  "last_run_at": "2026-07-28T07:32:06.942347+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1716": {
-      "key": "PS-1716",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-07-27T15:39:56.326-0500",
-      "last_status_change_at": "2026-07-27T15:39:56.303-0500",
-      "notified_reasons": []
-    },
-    "PS-1717": {
-      "key": "PS-1717",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-07-27T14:15:50.418-0500",
-      "last_status_change_at": "2026-07-27T14:15:50.398-0500",
-      "notified_reasons": []
-    },
     "PS-1693": {
       "key": "PS-1693",
       "vertical": "core",
