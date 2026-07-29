@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-07-29T12:28:39.810764+00:00",
+  "last_run_at": "2026-07-29T14:40:08.636257+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1719": {
+      "key": "PS-1719",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-07-29T08:50:53.331-0500",
+      "last_status_change_at": "2026-07-29T08:35:16.952-0500",
+      "notified_reasons": []
+    },
     "PS-1693": {
       "key": "PS-1693",
       "vertical": "core",
