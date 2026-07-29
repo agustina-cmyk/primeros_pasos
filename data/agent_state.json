@@ -1,7 +1,43 @@
 {
-  "last_run_at": "2026-07-29T14:40:08.636257+00:00",
+  "last_run_at": "2026-07-29T16:15:56.311687+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-561": {
+      "key": "PS-561",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-07-29T11:02:18.590-0500",
+      "last_status_change_at": "2025-03-05T11:10:39.231-0500",
+      "notified_reasons": []
+    },
+    "PS-1722": {
+      "key": "PS-1722",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-29T11:02:18.552-0500",
+      "last_status_change_at": "2026-07-29T11:02:01.881-0500",
+      "notified_reasons": []
+    },
+    "PS-1717": {
+      "key": "PS-1717",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-07-29T11:02:13.164-0500",
+      "last_status_change_at": "2026-07-27T14:15:50.398-0500",
+      "notified_reasons": []
+    },
+    "PS-1721": {
+      "key": "PS-1721",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-29T11:02:08.265-0500",
+      "last_status_change_at": "2026-07-29T10:54:19.651-0500",
+      "notified_reasons": []
+    },
     "PS-1719": {
       "key": "PS-1719",
       "vertical": "core",
@@ -259,7 +295,7 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": "Gustavo Corrales",
-      "updated": "2026-07-28T13:22:55.016-0500",
+      "updated": "2026-07-29T11:05:24.856-0500",
       "last_status_change_at": "2026-07-28T13:20:59.055-0500",
       "notified_reasons": []
     },
@@ -306,6 +342,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1720": {
+      "key": "PS-1720",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-07-29T10:35:31.431-0500",
+      "last_status_change_at": "2026-07-29T10:34:57.378-0500",
       "notified_reasons": []
     },
     "PS-1702": {
