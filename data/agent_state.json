@@ -1,23 +1,23 @@
 {
-  "last_run_at": "2026-07-30T18:11:16.135050+00:00",
+  "last_run_at": "2026-07-30T19:59:52.696908+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1721": {
+      "key": "PS-1721",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-07-30T14:54:17.147-0500",
+      "last_status_change_at": "2026-07-30T14:54:17.131-0500",
+      "notified_reasons": []
+    },
     "PS-1722": {
       "key": "PS-1722",
       "vertical": "core",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-29T11:02:18.552-0500",
-      "last_status_change_at": "2026-07-29T11:02:01.881-0500",
-      "notified_reasons": []
-    },
-    "PS-1721": {
-      "key": "PS-1721",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-29T11:02:08.265-0500",
-      "last_status_change_at": "2026-07-29T10:54:19.651-0500",
+      "assignee": "aldana",
+      "updated": "2026-07-30T14:53:57.724-0500",
+      "last_status_change_at": "2026-07-30T14:53:51.125-0500",
       "notified_reasons": []
     },
     "PS-1719": {
