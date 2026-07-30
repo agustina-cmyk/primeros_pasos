@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-07-30T03:50:35.136017+00:00",
+  "last_run_at": "2026-07-30T06:18:08.523956+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1723": {
-      "key": "PS-1723",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-07-29T12:00:29.736-0500",
-      "last_status_change_at": "2026-07-29T12:00:12.767-0500",
-      "notified_reasons": []
-    },
-    "PS-561": {
-      "key": "PS-561",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-07-29T11:02:18.590-0500",
-      "last_status_change_at": "2025-03-05T11:10:39.231-0500",
-      "notified_reasons": []
-    },
     "PS-1722": {
       "key": "PS-1722",
       "vertical": "core",
@@ -27,15 +9,6 @@
       "assignee": null,
       "updated": "2026-07-29T11:02:18.552-0500",
       "last_status_change_at": "2026-07-29T11:02:01.881-0500",
-      "notified_reasons": []
-    },
-    "PS-1717": {
-      "key": "PS-1717",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-07-29T11:02:13.164-0500",
-      "last_status_change_at": "2026-07-27T14:15:50.398-0500",
       "notified_reasons": []
     },
     "PS-1721": {
@@ -360,15 +333,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1720": {
-      "key": "PS-1720",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-07-29T16:09:46.589-0500",
-      "last_status_change_at": "2026-07-29T16:09:46.569-0500",
       "notified_reasons": []
     },
     "PS-1684": {
