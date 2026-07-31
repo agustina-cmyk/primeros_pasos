@@ -1,34 +1,7 @@
 {
-  "last_run_at": "2026-07-31T01:45:55.491403+00:00",
+  "last_run_at": "2026-07-31T05:23:51.847180+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1727": {
-      "key": "PS-1727",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-07-30T19:18:55.260-0500",
-      "last_status_change_at": "2026-07-30T19:18:55.220-0500",
-      "notified_reasons": []
-    },
-    "PS-1729": {
-      "key": "PS-1729",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-07-30T19:18:19.538-0500",
-      "last_status_change_at": "2026-07-30T19:17:47.427-0500",
-      "notified_reasons": []
-    },
-    "PS-1721": {
-      "key": "PS-1721",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-07-30T14:54:17.147-0500",
-      "last_status_change_at": "2026-07-30T14:54:17.131-0500",
-      "notified_reasons": []
-    },
     "PS-1722": {
       "key": "PS-1722",
       "vertical": "core",
@@ -252,15 +225,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
-      "notified_reasons": []
-    },
-    "PS-1728": {
-      "key": "PS-1728",
-      "vertical": "payments",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-07-30T19:18:21.878-0500",
-      "last_status_change_at": "2026-07-30T19:18:21.862-0500",
       "notified_reasons": []
     },
     "PS-1726": {
