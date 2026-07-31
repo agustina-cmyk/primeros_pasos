@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-07-31T21:35:18.687743+00:00",
+  "last_run_at": "2026-07-31T22:50:33.873720+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1732": {
+      "key": "PS-1732",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "Gustavo Corrales",
+      "updated": "2026-07-31T16:55:37.794-0500",
+      "last_status_change_at": "2026-07-31T16:55:30.970-0500",
+      "notified_reasons": []
+    },
     "PS-1719": {
       "key": "PS-1719",
       "vertical": "core",
