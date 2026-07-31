@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-07-31T18:50:24.927583+00:00",
+  "last_run_at": "2026-07-31T20:14:42.323403+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1722": {
@@ -348,8 +348,8 @@
       "key": "PS-1730",
       "vertical": "verification",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-31T12:31:19.750-0500",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-07-31T14:20:36.354-0500",
       "last_status_change_at": "2026-07-31T12:31:11.834-0500",
       "notified_reasons": []
     },
