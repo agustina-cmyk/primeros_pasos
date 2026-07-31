@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-07-30T23:53:22.132274+00:00",
+  "last_run_at": "2026-07-31T01:45:55.491403+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1727": {
       "key": "PS-1727",
       "vertical": "core",
-      "status": "Tareas por hacer",
+      "status": "Finalizada",
       "assignee": "aldana",
-      "updated": "2026-07-30T17:28:39.157-0500",
-      "last_status_change_at": "2026-07-30T17:28:32.363-0500",
+      "updated": "2026-07-30T19:18:55.260-0500",
+      "last_status_change_at": "2026-07-30T19:18:55.220-0500",
+      "notified_reasons": []
+    },
+    "PS-1729": {
+      "key": "PS-1729",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-07-30T19:18:19.538-0500",
+      "last_status_change_at": "2026-07-30T19:17:47.427-0500",
       "notified_reasons": []
     },
     "PS-1721": {
@@ -248,10 +257,10 @@
     "PS-1728": {
       "key": "PS-1728",
       "vertical": "payments",
-      "status": "Tareas por hacer",
+      "status": "DISCARDED",
       "assignee": null,
-      "updated": "2026-07-30T18:39:33.049-0500",
-      "last_status_change_at": "2026-07-30T18:39:26.430-0500",
+      "updated": "2026-07-30T19:18:21.878-0500",
+      "last_status_change_at": "2026-07-30T19:18:21.862-0500",
       "notified_reasons": []
     },
     "PS-1726": {
