@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-01T01:47:01.771342+00:00",
+  "last_run_at": "2026-08-01T05:17:01.646243+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1732": {
@@ -9,15 +9,6 @@
       "assignee": "Gustavo Corrales",
       "updated": "2026-07-31T16:55:37.794-0500",
       "last_status_change_at": "2026-07-31T16:55:30.970-0500",
-      "notified_reasons": []
-    },
-    "PS-1719": {
-      "key": "PS-1719",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-07-31T15:28:13.502-0500",
-      "last_status_change_at": "2026-07-31T15:28:13.479-0500",
       "notified_reasons": []
     },
     "PS-1722": {
@@ -234,15 +225,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-09T10:43:28.618-0500",
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
-      "notified_reasons": []
-    },
-    "PS-1731": {
-      "key": "PS-1731",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-07-31T15:30:23.397-0500",
-      "last_status_change_at": "2026-07-31T15:30:23.379-0500",
       "notified_reasons": []
     },
     "PS-1726": {
