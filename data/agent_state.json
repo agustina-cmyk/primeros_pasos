@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-03T22:51:53.587833+00:00",
+  "last_run_at": "2026-08-03T23:59:39.592027+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1734": {
@@ -371,6 +371,33 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1738": {
+      "key": "PS-1738",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-08-03T18:56:45.738-0500",
+      "last_status_change_at": "2026-08-03T18:56:40.117-0500",
+      "notified_reasons": []
+    },
+    "PS-1710": {
+      "key": "PS-1710",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-08-03T18:55:43.564-0500",
+      "last_status_change_at": "2026-08-03T18:55:43.540-0500",
+      "notified_reasons": []
+    },
+    "PS-1737": {
+      "key": "PS-1737",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-03T17:51:25.706-0500",
+      "last_status_change_at": "2026-08-03T17:51:18.306-0500",
+      "notified_reasons": []
+    },
     "PS-1715": {
       "key": "PS-1715",
       "vertical": "verification",
@@ -450,15 +477,6 @@
       "assignee": "abrahan",
       "updated": "2026-07-18T09:12:06.238-0500",
       "last_status_change_at": "2026-07-08T08:35:22.952-0500",
-      "notified_reasons": []
-    },
-    "PS-1710": {
-      "key": "PS-1710",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-07-17T21:16:41.558-0500",
-      "last_status_change_at": "2026-07-17T21:16:41.558-0500",
       "notified_reasons": []
     },
     "PS-1658": {
