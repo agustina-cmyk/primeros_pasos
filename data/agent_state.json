@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-03T21:37:13.801633+00:00",
+  "last_run_at": "2026-08-03T22:51:53.587833+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1734": {
@@ -7,8 +7,17 @@
       "vertical": "core",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-08-03T15:53:54.061-0500",
+      "updated": "2026-08-03T17:42:03.570-0500",
       "last_status_change_at": "2026-08-03T15:30:35.669-0500",
+      "notified_reasons": []
+    },
+    "PS-1736": {
+      "key": "PS-1736",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-03T17:22:55.501-0500",
+      "last_status_change_at": "2026-08-03T17:16:11.106-0500",
       "notified_reasons": []
     },
     "PS-1735": {
