@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-03T18:43:20.754585+00:00",
+  "last_run_at": "2026-08-03T20:20:46.238287+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1733": {
@@ -7,7 +7,7 @@
       "vertical": "core",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-08-03T11:55:55.621-0500",
+      "updated": "2026-08-03T13:59:14.900-0500",
       "last_status_change_at": "2026-08-03T11:53:09.474-0500",
       "notified_reasons": []
     },
