@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-08-04T17:10:54.560361+00:00",
+  "last_run_at": "2026-08-04T19:02:19.049007+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1739": {
+      "key": "PS-1739",
+      "vertical": "core",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Gustavo Corrales",
+      "updated": "2026-08-04T13:57:36.262-0500",
+      "last_status_change_at": "2026-08-04T13:57:28.375-0500",
+      "notified_reasons": []
+    },
+    "PS-1734": {
+      "key": "PS-1734",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-08-04T13:55:34.516-0500",
+      "last_status_change_at": "2026-08-04T13:55:34.492-0500",
+      "notified_reasons": []
+    },
     "PS-1735": {
       "key": "PS-1735",
       "vertical": "core",
@@ -9,15 +27,6 @@
       "assignee": "Ander",
       "updated": "2026-08-04T11:08:49.801-0500",
       "last_status_change_at": "2026-08-04T11:07:55.932-0500",
-      "notified_reasons": []
-    },
-    "PS-1734": {
-      "key": "PS-1734",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-03T17:42:03.570-0500",
-      "last_status_change_at": "2026-08-03T15:30:35.669-0500",
       "notified_reasons": []
     },
     "PS-1736": {
