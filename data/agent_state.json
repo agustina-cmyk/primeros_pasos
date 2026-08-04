@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-04T15:15:45.789326+00:00",
+  "last_run_at": "2026-08-04T17:10:54.560361+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1735": {
+      "key": "PS-1735",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-08-04T11:08:49.801-0500",
+      "last_status_change_at": "2026-08-04T11:07:55.932-0500",
+      "notified_reasons": []
+    },
     "PS-1734": {
       "key": "PS-1734",
       "vertical": "core",
@@ -18,15 +27,6 @@
       "assignee": null,
       "updated": "2026-08-03T17:22:55.501-0500",
       "last_status_change_at": "2026-08-03T17:16:11.106-0500",
-      "notified_reasons": []
-    },
-    "PS-1735": {
-      "key": "PS-1735",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "Ander",
-      "updated": "2026-08-03T15:51:34.514-0500",
-      "last_status_change_at": "2026-08-03T15:32:37.836-0500",
       "notified_reasons": []
     },
     "PS-1733": {
@@ -371,6 +371,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1737": {
+      "key": "PS-1737",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-08-04T11:52:31.394-0500",
+      "last_status_change_at": "2026-08-04T10:48:46.108-0500",
+      "notified_reasons": []
+    },
     "PS-1684": {
       "key": "PS-1684",
       "vertical": "verification",
@@ -396,15 +405,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-08-03T19:17:36.182-0500",
       "last_status_change_at": "2026-08-03T18:56:40.117-0500",
-      "notified_reasons": []
-    },
-    "PS-1737": {
-      "key": "PS-1737",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-03T17:51:25.706-0500",
-      "last_status_change_at": "2026-08-03T17:51:18.306-0500",
       "notified_reasons": []
     },
     "PS-1715": {
