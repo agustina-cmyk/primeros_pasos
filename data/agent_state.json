@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-03T23:59:39.592027+00:00",
+  "last_run_at": "2026-08-04T02:14:10.534513+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1734": {
@@ -376,7 +376,7 @@
       "vertical": "verification",
       "status": "DEV IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-08-03T18:56:45.738-0500",
+      "updated": "2026-08-03T19:17:36.182-0500",
       "last_status_change_at": "2026-08-03T18:56:40.117-0500",
       "notified_reasons": []
     },
