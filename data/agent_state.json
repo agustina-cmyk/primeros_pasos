@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-05T03:53:07.485377+00:00",
+  "last_run_at": "2026-08-05T06:18:57.701789+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1614": {
@@ -18,24 +18,6 @@
       "assignee": "Gustavo Corrales",
       "updated": "2026-08-04T13:57:36.262-0500",
       "last_status_change_at": "2026-08-04T13:57:28.375-0500",
-      "notified_reasons": []
-    },
-    "PS-1734": {
-      "key": "PS-1734",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-08-04T13:55:34.516-0500",
-      "last_status_change_at": "2026-08-04T13:55:34.492-0500",
-      "notified_reasons": []
-    },
-    "PS-1735": {
-      "key": "PS-1735",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-08-04T11:08:49.801-0500",
-      "last_status_change_at": "2026-08-04T11:07:55.932-0500",
       "notified_reasons": []
     },
     "PS-1736": {
@@ -173,15 +155,6 @@
       "last_status_change_at": "2026-03-30T10:07:36.657-0500",
       "notified_reasons": []
     },
-    "PS-1665": {
-      "key": "PS-1665",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-08-04T16:29:22.002-0500",
-      "last_status_change_at": "2026-08-04T16:29:21.982-0500",
-      "notified_reasons": []
-    },
     "PS-1637": {
       "key": "PS-1637",
       "vertical": "fe",
@@ -189,15 +162,6 @@
       "assignee": "abrahan",
       "updated": "2026-08-04T16:09:48.388-0500",
       "last_status_change_at": "2026-08-04T16:09:48.388-0500",
-      "notified_reasons": []
-    },
-    "PS-1694": {
-      "key": "PS-1694",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-08-04T09:30:46.421-0500",
-      "last_status_change_at": "2026-08-04T09:30:46.400-0500",
       "notified_reasons": []
     },
     "PS-1709": {
@@ -378,33 +342,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1737": {
-      "key": "PS-1737",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-08-04T17:12:44.914-0500",
-      "last_status_change_at": "2026-08-04T17:12:44.895-0500",
-      "notified_reasons": []
-    },
-    "PS-1684": {
-      "key": "PS-1684",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-08-04T09:31:00.839-0500",
-      "last_status_change_at": "2026-08-04T09:31:00.819-0500",
-      "notified_reasons": []
-    },
-    "PS-1682": {
-      "key": "PS-1682",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-08-04T09:30:53.902-0500",
-      "last_status_change_at": "2026-08-04T09:30:53.880-0500",
       "notified_reasons": []
     },
     "PS-1738": {
