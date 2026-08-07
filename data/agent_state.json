@@ -1,7 +1,25 @@
 {
-  "last_run_at": "2026-08-07T12:05:28.891832+00:00",
+  "last_run_at": "2026-08-07T13:46:12.657827+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1414": {
+      "key": "PS-1414",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-07T08:18:16.574-0500",
+      "last_status_change_at": "2026-08-07T08:18:16.556-0500",
+      "notified_reasons": []
+    },
+    "PS-1516": {
+      "key": "PS-1516",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-07T08:17:45.624-0500",
+      "last_status_change_at": "2026-08-07T08:17:45.596-0500",
+      "notified_reasons": []
+    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -119,15 +137,6 @@
       "last_status_change_at": "2026-05-07T11:12:30.648-0500",
       "notified_reasons": []
     },
-    "PS-1516": {
-      "key": "PS-1516",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-05-16T21:12:54.751-0500",
-      "last_status_change_at": "2026-05-06T14:42:33.761-0500",
-      "notified_reasons": []
-    },
     "PS-1519": {
       "key": "PS-1519",
       "vertical": "core",
@@ -135,15 +144,6 @@
       "assignee": "Emiliano Gallardo",
       "updated": "2026-05-08T13:44:03.710-0500",
       "last_status_change_at": "2026-05-08T13:44:03.710-0500",
-      "notified_reasons": []
-    },
-    "PS-1414": {
-      "key": "PS-1414",
-      "vertical": "core",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-04-16T10:34:29.511-0500",
-      "last_status_change_at": "2026-03-31T10:09:08.795-0500",
       "notified_reasons": []
     },
     "PS-1391": {
