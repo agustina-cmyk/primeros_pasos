@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-08T00:46:40.751808+00:00",
+  "last_run_at": "2026-08-08T02:49:43.681213+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1741": {
@@ -304,7 +304,7 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": "Gustavo Corrales",
-      "updated": "2026-07-29T11:26:00.198-0500",
+      "updated": "2026-08-07T21:12:06.492-0500",
       "last_status_change_at": "2026-07-28T13:20:59.055-0500",
       "notified_reasons": []
     },
