@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-08T04:03:46.963054+00:00",
+  "last_run_at": "2026-08-08T05:14:26.599569+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1741": {
@@ -9,24 +9,6 @@
       "assignee": "aldana",
       "updated": "2026-08-07T15:02:01.517-0500",
       "last_status_change_at": "2026-08-07T15:02:01.517-0500",
-      "notified_reasons": []
-    },
-    "PS-1414": {
-      "key": "PS-1414",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-08-07T08:18:16.574-0500",
-      "last_status_change_at": "2026-08-07T08:18:16.556-0500",
-      "notified_reasons": []
-    },
-    "PS-1516": {
-      "key": "PS-1516",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-08-07T08:17:45.624-0500",
-      "last_status_change_at": "2026-08-07T08:17:45.596-0500",
       "notified_reasons": []
     },
     "PS-1614": {
