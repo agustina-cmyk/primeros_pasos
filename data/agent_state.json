@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-09T00:51:09.660427+00:00",
+  "last_run_at": "2026-08-09T02:57:10.406560+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1722": {
+      "key": "PS-1722",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "aldana",
+      "updated": "2026-08-08T21:12:05.785-0500",
+      "last_status_change_at": "2026-07-30T14:53:51.125-0500",
+      "notified_reasons": []
+    },
     "PS-1741": {
       "key": "PS-1741",
       "vertical": "core",
@@ -54,15 +63,6 @@
       "assignee": "Gustavo Corrales",
       "updated": "2026-07-31T16:55:37.794-0500",
       "last_status_change_at": "2026-07-31T16:55:30.970-0500",
-      "notified_reasons": []
-    },
-    "PS-1722": {
-      "key": "PS-1722",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": "aldana",
-      "updated": "2026-07-30T14:53:57.724-0500",
-      "last_status_change_at": "2026-07-30T14:53:51.125-0500",
       "notified_reasons": []
     },
     "PS-1693": {
@@ -227,6 +227,15 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1725": {
+      "key": "PS-1725",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-08T21:12:05.784-0500",
+      "last_status_change_at": "2026-07-29T17:20:30.962-0500",
+      "notified_reasons": []
+    },
     "PS-1726": {
       "key": "PS-1726",
       "vertical": "payments",
@@ -234,15 +243,6 @@
       "assignee": null,
       "updated": "2026-07-30T12:31:15.916-0500",
       "last_status_change_at": "2026-07-30T12:31:07.806-0500",
-      "notified_reasons": []
-    },
-    "PS-1725": {
-      "key": "PS-1725",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-29T17:30:48.223-0500",
-      "last_status_change_at": "2026-07-29T17:20:30.962-0500",
       "notified_reasons": []
     },
     "PS-1697": {
