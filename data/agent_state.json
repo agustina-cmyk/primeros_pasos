@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-11T04:47:04.514667+00:00",
+  "last_run_at": "2026-08-11T05:47:08.330331+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1732": {
@@ -9,15 +9,6 @@
       "assignee": "Gustavo Corrales",
       "updated": "2026-08-10T21:12:07.746-0500",
       "last_status_change_at": "2026-07-31T16:55:30.970-0500",
-      "notified_reasons": []
-    },
-    "PS-1741": {
-      "key": "PS-1741",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-08-10T14:56:47.115-0500",
-      "last_status_change_at": "2026-08-10T14:56:47.086-0500",
       "notified_reasons": []
     },
     "PS-1722": {
@@ -351,15 +342,6 @@
       "assignee": null,
       "updated": "2026-08-10T17:04:28.742-0500",
       "last_status_change_at": "2026-08-10T17:04:22.599-0500",
-      "notified_reasons": []
-    },
-    "PS-1743": {
-      "key": "PS-1743",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-08-10T16:26:24.446-0500",
-      "last_status_change_at": "2026-08-10T16:26:24.419-0500",
       "notified_reasons": []
     },
     "PS-1742": {
