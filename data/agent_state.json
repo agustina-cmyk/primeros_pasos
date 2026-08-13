@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-08-13T20:30:05.012038+00:00",
+  "last_run_at": "2026-08-13T21:15:07.749291+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1707": {
+      "key": "PS-1707",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-08-13T15:29:20.671-0500",
+      "last_status_change_at": "2026-07-16T17:35:22.307-0500",
+      "notified_reasons": []
+    },
+    "PS-1414": {
+      "key": "PS-1414",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-13T15:29:15.190-0500",
+      "last_status_change_at": "2026-08-07T08:18:16.556-0500",
+      "notified_reasons": []
+    },
+    "PS-1352": {
+      "key": "PS-1352",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-13T15:29:14.171-0500",
+      "last_status_change_at": "2026-03-30T16:48:17.305-0500",
+      "notified_reasons": []
+    },
     "PS-1747": {
       "key": "PS-1747",
       "vertical": "core",
@@ -288,6 +315,15 @@
       "assignee": null,
       "updated": "2026-03-22T21:12:32.211-0500",
       "last_status_change_at": "2026-03-12T10:10:34.229-0500",
+      "notified_reasons": []
+    },
+    "PS-1748": {
+      "key": "PS-1748",
+      "vertical": "sin_vertical",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-08-13T15:29:20.716-0500",
+      "last_status_change_at": "2026-08-13T15:29:09.371-0500",
       "notified_reasons": []
     },
     "PS-1718": {
