@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-13T03:06:14.779275+00:00",
+  "last_run_at": "2026-08-13T05:15:56.709769+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1732": {
@@ -218,15 +218,6 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
-    "PS-1746": {
-      "key": "PS-1746",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-08-12T10:07:53.135-0500",
-      "last_status_change_at": "2026-08-12T10:07:53.107-0500",
-      "notified_reasons": []
-    },
     "PS-1745": {
       "key": "PS-1745",
       "vertical": "payments",
@@ -342,15 +333,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1738": {
-      "key": "PS-1738",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-08-12T00:20:53.475-0500",
-      "last_status_change_at": "2026-08-12T00:20:53.434-0500",
       "notified_reasons": []
     },
     "PS-1730": {
