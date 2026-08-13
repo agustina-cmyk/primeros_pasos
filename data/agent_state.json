@@ -1,22 +1,13 @@
 {
-  "last_run_at": "2026-08-13T21:15:07.749291+00:00",
+  "last_run_at": "2026-08-13T22:09:08.137346+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1707": {
-      "key": "PS-1707",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-08-13T15:29:20.671-0500",
-      "last_status_change_at": "2026-07-16T17:35:22.307-0500",
-      "notified_reasons": []
-    },
     "PS-1414": {
       "key": "PS-1414",
       "vertical": "core",
       "status": "Finalizada",
       "assignee": "abrahan",
-      "updated": "2026-08-13T15:29:15.190-0500",
+      "updated": "2026-08-13T16:25:37.894-0500",
       "last_status_change_at": "2026-08-07T08:18:16.556-0500",
       "notified_reasons": []
     },
@@ -25,8 +16,17 @@
       "vertical": "core",
       "status": "Finalizada",
       "assignee": "abrahan",
-      "updated": "2026-08-13T15:29:14.171-0500",
+      "updated": "2026-08-13T16:25:27.274-0500",
       "last_status_change_at": "2026-03-30T16:48:17.305-0500",
+      "notified_reasons": []
+    },
+    "PS-1707": {
+      "key": "PS-1707",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-08-13T15:29:20.671-0500",
+      "last_status_change_at": "2026-07-16T17:35:22.307-0500",
       "notified_reasons": []
     },
     "PS-1747": {
