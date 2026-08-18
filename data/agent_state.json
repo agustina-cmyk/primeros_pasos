@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-18T16:55:25.289927+00:00",
+  "last_run_at": "2026-08-18T17:18:13.025007+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1753": {
@@ -7,7 +7,7 @@
       "vertical": "core",
       "status": "Finalizada",
       "assignee": "Ander",
-      "updated": "2026-08-18T11:53:44.189-0500",
+      "updated": "2026-08-18T11:55:39.984-0500",
       "last_status_change_at": "2026-08-18T11:53:44.170-0500",
       "notified_reasons": []
     },
