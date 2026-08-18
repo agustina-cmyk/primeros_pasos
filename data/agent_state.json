@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-08-18T16:18:50.604414+00:00",
+  "last_run_at": "2026-08-18T16:55:25.289927+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1753": {
       "key": "PS-1753",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-18T10:03:17.770-0500",
-      "last_status_change_at": "2026-08-18T10:02:54.508-0500",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-08-18T11:53:44.189-0500",
+      "last_status_change_at": "2026-08-18T11:53:44.170-0500",
       "notified_reasons": []
     },
     "PS-1750": {
@@ -362,6 +362,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1691": {
+      "key": "PS-1691",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-18T11:26:04.098-0500",
+      "last_status_change_at": "2026-08-18T11:26:04.075-0500",
+      "notified_reasons": []
+    },
+    "PS-1568": {
+      "key": "PS-1568",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "abrahan",
+      "updated": "2026-08-18T11:25:45.057-0500",
+      "last_status_change_at": "2026-08-18T11:25:45.031-0500",
+      "notified_reasons": []
+    },
     "PS-1752": {
       "key": "PS-1752",
       "vertical": "verification",
@@ -434,15 +452,6 @@
       "last_status_change_at": "2026-07-20T08:37:15.283-0500",
       "notified_reasons": []
     },
-    "PS-1691": {
-      "key": "PS-1691",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-07-18T09:12:06.238-0500",
-      "last_status_change_at": "2026-07-08T08:35:22.952-0500",
-      "notified_reasons": []
-    },
     "PS-1658": {
       "key": "PS-1658",
       "vertical": "verification",
@@ -450,15 +459,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-06-24T17:53:19.934-0500",
       "last_status_change_at": "2026-06-24T17:53:19.934-0500",
-      "notified_reasons": []
-    },
-    "PS-1568": {
-      "key": "PS-1568",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-05-29T16:30:54.781-0500",
-      "last_status_change_at": "2026-05-29T15:55:46.420-0500",
       "notified_reasons": []
     }
   },
