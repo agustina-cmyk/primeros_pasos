@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-19T10:18:04.035258+00:00",
+  "last_run_at": "2026-08-19T10:52:39.714366+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1736": {
@@ -221,10 +221,10 @@
     "PS-1754": {
       "key": "PS-1754",
       "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-18T17:05:04.373-0500",
-      "last_status_change_at": "2026-08-18T16:55:17.097-0500",
+      "status": "Finalizada",
+      "assignee": "msimbeni",
+      "updated": "2026-08-19T05:34:46.116-0500",
+      "last_status_change_at": "2026-08-19T05:34:46.095-0500",
       "notified_reasons": []
     },
     "PS-1745": {
