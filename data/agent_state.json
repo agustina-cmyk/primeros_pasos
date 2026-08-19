@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-08-19T05:00:05.909295+00:00",
+  "last_run_at": "2026-08-19T05:28:32.464537+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1750": {
-      "key": "PS-1750",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-08-18T15:22:47.283-0500",
-      "last_status_change_at": "2026-08-18T15:21:12.445-0500",
-      "notified_reasons": []
-    },
-    "PS-1753": {
-      "key": "PS-1753",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-08-18T11:55:39.984-0500",
-      "last_status_change_at": "2026-08-18T11:53:44.170-0500",
-      "notified_reasons": []
-    },
     "PS-1736": {
       "key": "PS-1736",
       "vertical": "core",
@@ -369,24 +351,6 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
-      "notified_reasons": []
-    },
-    "PS-1691": {
-      "key": "PS-1691",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-08-18T11:26:04.098-0500",
-      "last_status_change_at": "2026-08-18T11:26:04.075-0500",
-      "notified_reasons": []
-    },
-    "PS-1568": {
-      "key": "PS-1568",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-08-18T11:25:45.057-0500",
-      "last_status_change_at": "2026-08-18T11:25:45.031-0500",
       "notified_reasons": []
     },
     "PS-1752": {
