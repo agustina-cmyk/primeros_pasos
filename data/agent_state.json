@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-20T17:24:39.271266+00:00",
+  "last_run_at": "2026-08-20T17:53:52.855741+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1761": {
+      "key": "PS-1761",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-20T12:35:13.253-0500",
+      "last_status_change_at": "2026-08-20T12:35:06.049-0500",
+      "notified_reasons": []
+    },
     "PS-1755": {
       "key": "PS-1755",
       "vertical": "core",
