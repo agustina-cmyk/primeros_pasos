@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-20T05:01:02.577030+00:00",
+  "last_run_at": "2026-08-20T05:32:49.371038+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1755": {
@@ -9,15 +9,6 @@
       "assignee": null,
       "updated": "2026-08-19T16:24:51.953-0500",
       "last_status_change_at": "2026-08-19T16:24:43.612-0500",
-      "notified_reasons": []
-    },
-    "PS-1519": {
-      "key": "PS-1519",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-08-19T14:24:19.404-0500",
-      "last_status_change_at": "2026-08-19T14:24:19.381-0500",
       "notified_reasons": []
     },
     "PS-1736": {
@@ -227,15 +218,6 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
-    "PS-1754": {
-      "key": "PS-1754",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "msimbeni",
-      "updated": "2026-08-19T05:34:46.116-0500",
-      "last_status_change_at": "2026-08-19T05:34:46.095-0500",
-      "notified_reasons": []
-    },
     "PS-1745": {
       "key": "PS-1745",
       "vertical": "payments",
@@ -396,33 +378,6 @@
       "assignee": null,
       "updated": "2026-08-19T20:54:18.540-0500",
       "last_status_change_at": "2026-08-19T20:54:09.687-0500",
-      "notified_reasons": []
-    },
-    "PS-1714": {
-      "key": "PS-1714",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-08-19T20:54:15.241-0500",
-      "last_status_change_at": "2026-07-22T20:40:27.529-0500",
-      "notified_reasons": []
-    },
-    "PS-1752": {
-      "key": "PS-1752",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-08-19T19:55:10.525-0500",
-      "last_status_change_at": "2026-08-19T19:55:10.498-0500",
-      "notified_reasons": []
-    },
-    "PS-1101": {
-      "key": "PS-1101",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-08-19T19:45:03.999-0500",
-      "last_status_change_at": "2026-01-05T15:21:49.399-0500",
       "notified_reasons": []
     },
     "PS-1742": {
