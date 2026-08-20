@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-20T15:02:10.699229+00:00",
+  "last_run_at": "2026-08-20T15:56:01.631098+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1755": {
@@ -356,10 +356,10 @@
     "PS-1756": {
       "key": "PS-1756",
       "vertical": "verification",
-      "status": "Tareas por hacer",
+      "status": "Finalizada",
       "assignee": "Andrew Ortiz",
-      "updated": "2026-08-20T07:46:52.389-0500",
-      "last_status_change_at": "2026-08-19T19:44:55.692-0500",
+      "updated": "2026-08-20T10:04:55.461-0500",
+      "last_status_change_at": "2026-08-20T10:04:55.438-0500",
       "notified_reasons": []
     },
     "PS-1759": {
