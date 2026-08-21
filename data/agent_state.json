@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-21T04:08:55.009343+00:00",
+  "last_run_at": "2026-08-21T05:01:31.619644+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1763": {
@@ -387,15 +387,6 @@
       "assignee": null,
       "updated": "2026-08-20T21:12:07.480-0500",
       "last_status_change_at": "2026-08-10T17:04:22.599-0500",
-      "notified_reasons": []
-    },
-    "PS-1756": {
-      "key": "PS-1756",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-08-20T10:04:55.461-0500",
-      "last_status_change_at": "2026-08-20T10:04:55.438-0500",
       "notified_reasons": []
     },
     "PS-1759": {
