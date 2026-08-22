@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-22T02:08:52.343600+00:00",
+  "last_run_at": "2026-08-22T03:13:17.094906+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1763": {
@@ -245,6 +245,15 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1745": {
+      "key": "PS-1745",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-21T21:12:07.172-0500",
+      "last_status_change_at": "2026-08-11T13:09:56.894-0500",
+      "notified_reasons": []
+    },
     "PS-1760": {
       "key": "PS-1760",
       "vertical": "payments",
@@ -252,15 +261,6 @@
       "assignee": null,
       "updated": "2026-08-20T01:21:26.227-0500",
       "last_status_change_at": "2026-08-20T01:21:18.880-0500",
-      "notified_reasons": []
-    },
-    "PS-1745": {
-      "key": "PS-1745",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-11T13:37:24.399-0500",
-      "last_status_change_at": "2026-08-11T13:09:56.894-0500",
       "notified_reasons": []
     },
     "PS-1726": {
