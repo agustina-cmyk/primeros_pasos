@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-24T00:36:56.472959+00:00",
+  "last_run_at": "2026-08-24T02:16:36.615190+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1762": {
@@ -313,7 +313,7 @@
       "vertical": "sin_vertical",
       "status": "Tareas por hacer",
       "assignee": "abrahan",
-      "updated": "2026-08-13T15:29:20.716-0500",
+      "updated": "2026-08-23T21:12:05.948-0500",
       "last_status_change_at": "2026-08-13T15:29:09.371-0500",
       "notified_reasons": []
     },
