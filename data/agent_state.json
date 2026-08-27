@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-08-26T23:50:32.599497+00:00",
+  "last_run_at": "2026-08-27T05:33:57.485016+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1764": {
-      "key": "PS-1764",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-08-26T17:58:48.959-0500",
-      "last_status_change_at": "2026-08-26T17:58:48.935-0500",
-      "notified_reasons": []
-    },
     "PS-1765": {
       "key": "PS-1765",
       "vertical": "core",
