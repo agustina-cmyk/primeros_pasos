@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-27T05:33:57.485016+00:00",
+  "last_run_at": "2026-08-27T17:02:02.230330+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1769": {
+      "key": "PS-1769",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-08-27T10:03:17.272-0500",
+      "last_status_change_at": "2026-08-27T10:03:17.246-0500",
+      "notified_reasons": []
+    },
     "PS-1765": {
       "key": "PS-1765",
       "vertical": "core",
@@ -218,6 +227,24 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1770": {
+      "key": "PS-1770",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-27T10:39:11.859-0500",
+      "last_status_change_at": "2026-08-27T10:39:04.154-0500",
+      "notified_reasons": []
+    },
+    "PS-1697": {
+      "key": "PS-1697",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": null,
+      "updated": "2026-08-27T09:22:38.618-0500",
+      "last_status_change_at": "2026-08-27T09:22:38.596-0500",
+      "notified_reasons": []
+    },
     "PS-1745": {
       "key": "PS-1745",
       "vertical": "payments",
@@ -252,15 +279,6 @@
       "assignee": null,
       "updated": "2026-08-08T21:12:05.784-0500",
       "last_status_change_at": "2026-07-29T17:20:30.962-0500",
-      "notified_reasons": []
-    },
-    "PS-1697": {
-      "key": "PS-1697",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-07-19T21:12:07.139-0500",
-      "last_status_change_at": "2026-07-09T16:27:51.782-0500",
       "notified_reasons": []
     },
     "PS-1556": {
@@ -351,6 +369,24 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1768": {
+      "key": "PS-1768",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-27T09:35:10.353-0500",
+      "last_status_change_at": "2026-08-27T09:28:27.636-0500",
+      "notified_reasons": []
+    },
+    "PS-1767": {
+      "key": "PS-1767",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Damian Fixel",
+      "updated": "2026-08-27T08:43:59.175-0500",
+      "last_status_change_at": "2026-08-27T08:36:13.687-0500",
       "notified_reasons": []
     },
     "PS-1766": {
