@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-28T13:30:24.641294+00:00",
+  "last_run_at": "2026-08-28T23:09:55.276362+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1772": {
+      "key": "PS-1772",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-08-28T15:44:16.755-0500",
+      "last_status_change_at": "2026-08-28T15:44:02.064-0500",
+      "notified_reasons": []
+    },
     "PS-1765": {
       "key": "PS-1765",
       "vertical": "core",
