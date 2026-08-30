@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-08-30T13:53:02.153212+00:00",
+  "last_run_at": "2026-08-30T17:50:37.449365+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1755": {
@@ -218,6 +218,15 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1760": {
+      "key": "PS-1760",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-30T09:12:05.308-0500",
+      "last_status_change_at": "2026-08-20T01:21:18.880-0500",
+      "notified_reasons": []
+    },
     "PS-1770": {
       "key": "PS-1770",
       "vertical": "payments",
@@ -234,15 +243,6 @@
       "assignee": null,
       "updated": "2026-08-21T21:12:07.172-0500",
       "last_status_change_at": "2026-08-11T13:09:56.894-0500",
-      "notified_reasons": []
-    },
-    "PS-1760": {
-      "key": "PS-1760",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-20T01:21:26.227-0500",
-      "last_status_change_at": "2026-08-20T01:21:18.880-0500",
       "notified_reasons": []
     },
     "PS-1726": {
@@ -353,6 +353,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1758": {
+      "key": "PS-1758",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-30T09:12:05.306-0500",
+      "last_status_change_at": "2026-08-19T22:57:18.385-0500",
+      "notified_reasons": []
+    },
+    "PS-1759": {
+      "key": "PS-1759",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-30T09:12:05.303-0500",
+      "last_status_change_at": "2026-08-19T23:07:30.532-0500",
+      "notified_reasons": []
+    },
     "PS-1757": {
       "key": "PS-1757",
       "vertical": "verification",
@@ -387,24 +405,6 @@
       "assignee": null,
       "updated": "2026-08-26T09:21:20.495-0500",
       "last_status_change_at": "2026-08-26T09:21:07.308-0500",
-      "notified_reasons": []
-    },
-    "PS-1759": {
-      "key": "PS-1759",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-21T08:56:38.217-0500",
-      "last_status_change_at": "2026-08-19T23:07:30.532-0500",
-      "notified_reasons": []
-    },
-    "PS-1758": {
-      "key": "PS-1758",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-19T23:12:10.925-0500",
-      "last_status_change_at": "2026-08-19T22:57:18.385-0500",
       "notified_reasons": []
     },
     "PS-1742": {
