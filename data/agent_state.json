@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-08-30T02:12:01.862475+00:00",
+  "last_run_at": "2026-08-30T08:25:54.098678+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1755": {
+      "key": "PS-1755",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-29T21:12:04.955-0500",
+      "last_status_change_at": "2026-08-19T16:24:43.612-0500",
+      "notified_reasons": []
+    },
     "PS-1765": {
       "key": "PS-1765",
       "vertical": "core",
@@ -9,15 +18,6 @@
       "assignee": "Mauro Capolupo",
       "updated": "2026-08-25T16:22:16.219-0500",
       "last_status_change_at": "2026-08-25T14:24:51.882-0500",
-      "notified_reasons": []
-    },
-    "PS-1755": {
-      "key": "PS-1755",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-19T16:24:51.953-0500",
-      "last_status_change_at": "2026-08-19T16:24:43.612-0500",
       "notified_reasons": []
     },
     "PS-1736": {
@@ -353,6 +353,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1757": {
+      "key": "PS-1757",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-08-29T21:12:05.047-0500",
+      "last_status_change_at": "2026-08-19T20:54:09.687-0500",
+      "notified_reasons": []
+    },
     "PS-1768": {
       "key": "PS-1768",
       "vertical": "verification",
@@ -396,15 +405,6 @@
       "assignee": null,
       "updated": "2026-08-19T23:12:10.925-0500",
       "last_status_change_at": "2026-08-19T22:57:18.385-0500",
-      "notified_reasons": []
-    },
-    "PS-1757": {
-      "key": "PS-1757",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-08-19T20:54:18.540-0500",
-      "last_status_change_at": "2026-08-19T20:54:09.687-0500",
       "notified_reasons": []
     },
     "PS-1742": {
