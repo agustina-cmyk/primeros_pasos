@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-04T09:14:24.152984+00:00",
+  "last_run_at": "2026-09-04T13:38:27.452195+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1789": {
@@ -248,10 +248,10 @@
     "PS-1790": {
       "key": "PS-1790",
       "vertical": "payments",
-      "status": "Tareas por hacer",
+      "status": "READY FOR TEST",
       "assignee": null,
-      "updated": "2026-09-03T23:13:42.041-0500",
-      "last_status_change_at": "2026-09-03T23:13:36.893-0500",
+      "updated": "2026-09-04T08:24:51.585-0500",
+      "last_status_change_at": "2026-09-04T08:24:28.908-0500",
       "notified_reasons": []
     },
     "PS-1760": {
