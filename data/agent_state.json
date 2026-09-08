@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-09-08T15:35:37.914252+00:00",
+  "last_run_at": "2026-09-08T19:07:09.916298+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1805": {
+      "key": "PS-1805",
+      "vertical": "core",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-09-08T13:24:52.906-0500",
+      "last_status_change_at": "2026-09-08T13:24:52.906-0500",
+      "notified_reasons": []
+    },
+    "PS-1792": {
+      "key": "PS-1792",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-09-08T12:39:32.115-0500",
+      "last_status_change_at": "2026-09-08T12:38:50.797-0500",
+      "notified_reasons": []
+    },
+    "PS-1804": {
+      "key": "PS-1804",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-09-08T11:06:57.921-0500",
+      "last_status_change_at": "2026-09-08T11:06:54.471-0500",
+      "notified_reasons": []
+    },
     "PS-1781": {
       "key": "PS-1781",
       "vertical": "core",
@@ -27,15 +54,6 @@
       "assignee": "aldana",
       "updated": "2026-09-04T15:57:07.044-0500",
       "last_status_change_at": "2026-09-04T15:57:03.964-0500",
-      "notified_reasons": []
-    },
-    "PS-1792": {
-      "key": "PS-1792",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-04T11:50:08.897-0500",
-      "last_status_change_at": "2026-09-04T11:50:01.209-0500",
       "notified_reasons": []
     },
     "PS-1787": {
@@ -410,10 +428,19 @@
     "PS-1802": {
       "key": "PS-1802",
       "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-09-08T13:10:32.468-0500",
+      "last_status_change_at": "2026-09-08T13:10:32.450-0500",
+      "notified_reasons": []
+    },
+    "PS-1806": {
+      "key": "PS-1806",
+      "vertical": "verification",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-09-08T07:45:08.679-0500",
-      "last_status_change_at": "2026-09-08T07:44:17.842-0500",
+      "updated": "2026-09-08T12:45:40.585-0500",
+      "last_status_change_at": "2026-09-08T12:44:44.095-0500",
       "notified_reasons": []
     },
     "PS-1800": {
