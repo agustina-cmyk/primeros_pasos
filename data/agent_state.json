@@ -1,34 +1,7 @@
 {
-  "last_run_at": "2026-09-08T01:53:16.014021+00:00",
+  "last_run_at": "2026-09-08T06:42:31.987777+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1801": {
-      "key": "PS-1801",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-07T15:15:14.903-0500",
-      "last_status_change_at": "2026-09-07T15:15:14.885-0500",
-      "notified_reasons": []
-    },
-    "PS-1799": {
-      "key": "PS-1799",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-09-07T11:40:44.278-0500",
-      "last_status_change_at": "2026-09-07T11:40:44.260-0500",
-      "notified_reasons": []
-    },
-    "PS-1795": {
-      "key": "PS-1795",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-09-07T10:47:28.858-0500",
-      "last_status_change_at": "2026-09-07T10:47:28.841-0500",
-      "notified_reasons": []
-    },
     "PS-1781": {
       "key": "PS-1781",
       "vertical": "core",
