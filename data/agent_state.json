@@ -1,7 +1,34 @@
 {
-  "last_run_at": "2026-09-09T22:05:45.043186+00:00",
+  "last_run_at": "2026-09-10T00:22:44.418057+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1811": {
+      "key": "PS-1811",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-09T17:26:24.530-0500",
+      "last_status_change_at": "2026-09-09T17:25:44.652-0500",
+      "notified_reasons": []
+    },
+    "PS-1809": {
+      "key": "PS-1809",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-09T17:25:51.615-0500",
+      "last_status_change_at": "2026-09-09T11:37:42.887-0500",
+      "notified_reasons": []
+    },
+    "PS-1810": {
+      "key": "PS-1810",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-09T17:12:42.551-0500",
+      "last_status_change_at": "2026-09-09T17:10:46.943-0500",
+      "notified_reasons": []
+    },
     "PS-1787": {
       "key": "PS-1787",
       "vertical": "core",
@@ -18,15 +45,6 @@
       "assignee": "aldana",
       "updated": "2026-09-09T14:55:13.751-0500",
       "last_status_change_at": "2026-09-09T14:54:37.825-0500",
-      "notified_reasons": []
-    },
-    "PS-1809": {
-      "key": "PS-1809",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-09T11:38:04.520-0500",
-      "last_status_change_at": "2026-09-09T11:37:42.887-0500",
       "notified_reasons": []
     },
     "PS-1807": {
@@ -434,6 +452,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1800": {
+      "key": "PS-1800",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-09-09T17:59:07.279-0500",
+      "last_status_change_at": "2026-09-09T17:59:07.263-0500",
+      "notified_reasons": []
+    },
     "PS-1796": {
       "key": "PS-1796",
       "vertical": "verification",
@@ -441,15 +468,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-09-09T16:28:02.784-0500",
       "last_status_change_at": "2026-09-09T16:10:24.890-0500",
-      "notified_reasons": []
-    },
-    "PS-1800": {
-      "key": "PS-1800",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-09-09T16:24:15.640-0500",
-      "last_status_change_at": "2026-09-09T16:24:15.640-0500",
       "notified_reasons": []
     },
     "PS-1784": {
