@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-09-10T09:22:27.540922+00:00",
+  "last_run_at": "2026-09-10T13:44:12.668185+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1810": {
+      "key": "PS-1810",
+      "vertical": "core",
+      "status": "TEST IN PROGRESS",
+      "assignee": "Emiliano Gallardo",
+      "updated": "2026-09-10T07:26:23.172-0500",
+      "last_status_change_at": "2026-09-10T07:26:23.172-0500",
+      "notified_reasons": []
+    },
     "PS-1811": {
       "key": "PS-1811",
       "vertical": "core",
@@ -18,15 +27,6 @@
       "assignee": null,
       "updated": "2026-09-09T17:25:51.615-0500",
       "last_status_change_at": "2026-09-09T11:37:42.887-0500",
-      "notified_reasons": []
-    },
-    "PS-1810": {
-      "key": "PS-1810",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-09T17:12:42.551-0500",
-      "last_status_change_at": "2026-09-09T17:10:46.943-0500",
       "notified_reasons": []
     },
     "PS-1787": {
