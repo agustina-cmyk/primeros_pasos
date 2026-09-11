@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-09-11T04:55:52.855516+00:00",
+  "last_run_at": "2026-09-11T09:15:35.988966+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1739": {
-      "key": "PS-1739",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Gustavo Corrales",
-      "updated": "2026-09-10T16:40:53.454-0500",
-      "last_status_change_at": "2026-09-10T16:40:53.429-0500",
-      "notified_reasons": []
-    },
-    "PS-1391": {
-      "key": "PS-1391",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-09-10T14:46:34.158-0500",
-      "last_status_change_at": "2026-09-10T14:29:44.593-0500",
-      "notified_reasons": []
-    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -38,15 +20,6 @@
       "last_status_change_at": "2026-09-09T16:56:46.553-0500",
       "notified_reasons": []
     },
-    "PS-1755": {
-      "key": "PS-1755",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-10T14:08:39.349-0500",
-      "last_status_change_at": "2026-09-10T13:41:55.863-0500",
-      "notified_reasons": []
-    },
     "PS-1518": {
       "key": "PS-1518",
       "vertical": "core",
@@ -54,105 +27,6 @@
       "assignee": null,
       "updated": "2026-09-10T14:07:56.179-0500",
       "last_status_change_at": "2026-05-07T11:12:30.648-0500",
-      "notified_reasons": []
-    },
-    "PS-1809": {
-      "key": "PS-1809",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-09-10T11:59:45.846-0500",
-      "last_status_change_at": "2026-09-10T10:41:38.091-0500",
-      "notified_reasons": []
-    },
-    "PS-1811": {
-      "key": "PS-1811",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T11:16:42.717-0500",
-      "last_status_change_at": "2026-09-10T11:16:03.437-0500",
-      "notified_reasons": []
-    },
-    "PS-1807": {
-      "key": "PS-1807",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "abrahan",
-      "updated": "2026-09-10T11:14:31.586-0500",
-      "last_status_change_at": "2026-09-10T11:14:31.565-0500",
-      "notified_reasons": []
-    },
-    "PS-1693": {
-      "key": "PS-1693",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T11:13:56.019-0500",
-      "last_status_change_at": "2026-09-10T10:58:23.031-0500",
-      "notified_reasons": []
-    },
-    "PS-1569": {
-      "key": "PS-1569",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T11:09:45.349-0500",
-      "last_status_change_at": "2026-09-10T11:09:45.330-0500",
-      "notified_reasons": []
-    },
-    "PS-1722": {
-      "key": "PS-1722",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "aldana",
-      "updated": "2026-09-10T11:08:51.362-0500",
-      "last_status_change_at": "2026-09-10T10:57:57.057-0500",
-      "notified_reasons": []
-    },
-    "PS-1539": {
-      "key": "PS-1539",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T11:00:51.171-0500",
-      "last_status_change_at": "2026-09-10T11:00:51.143-0500",
-      "notified_reasons": []
-    },
-    "PS-1651": {
-      "key": "PS-1651",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T10:58:52.979-0500",
-      "last_status_change_at": "2026-09-10T10:58:52.957-0500",
-      "notified_reasons": []
-    },
-    "PS-1732": {
-      "key": "PS-1732",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": "Gustavo Corrales",
-      "updated": "2026-09-10T10:55:33.460-0500",
-      "last_status_change_at": "2026-09-10T10:55:33.442-0500",
-      "notified_reasons": []
-    },
-    "PS-1733": {
-      "key": "PS-1733",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": null,
-      "updated": "2026-09-10T10:54:40.303-0500",
-      "last_status_change_at": "2026-09-10T10:54:40.275-0500",
-      "notified_reasons": []
-    },
-    "PS-1736": {
-      "key": "PS-1736",
-      "vertical": "core",
-      "status": "DISCARDED",
-      "assignee": null,
-      "updated": "2026-09-10T10:53:53.825-0500",
-      "last_status_change_at": "2026-09-10T10:53:53.803-0500",
       "notified_reasons": []
     },
     "PS-1810": {
@@ -443,15 +317,6 @@
       "last_status_change_at": "2026-09-10T18:46:34.729-0500",
       "notified_reasons": []
     },
-    "PS-1124": {
-      "key": "PS-1124",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-09-10T17:07:42.656-0500",
-      "last_status_change_at": "2026-02-02T14:27:50.250-0500",
-      "notified_reasons": []
-    },
     "PS-1814": {
       "key": "PS-1814",
       "vertical": "verification",
@@ -459,15 +324,6 @@
       "assignee": "abrahan",
       "updated": "2026-09-10T15:36:04.274-0500",
       "last_status_change_at": "2026-09-10T14:06:33.415-0500",
-      "notified_reasons": []
-    },
-    "PS-1813": {
-      "key": "PS-1813",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-09-10T15:35:55.402-0500",
-      "last_status_change_at": "2026-09-10T15:35:55.379-0500",
       "notified_reasons": []
     },
     "PS-1812": {
