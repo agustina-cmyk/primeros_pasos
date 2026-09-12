@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-12T00:25:51.115247+00:00",
+  "last_run_at": "2026-09-12T04:48:09.753230+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1821": {
@@ -356,10 +356,19 @@
     "PS-1825": {
       "key": "PS-1825",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "TEST IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-09-11T19:15:27.157-0500",
-      "last_status_change_at": "2026-09-11T19:04:33.653-0500",
+      "updated": "2026-09-11T20:00:10.452-0500",
+      "last_status_change_at": "2026-09-11T20:00:04.924-0500",
+      "notified_reasons": []
+    },
+    "PS-1820": {
+      "key": "PS-1820",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-11T19:59:57.244-0500",
+      "last_status_change_at": "2026-09-11T19:59:57.244-0500",
       "notified_reasons": []
     },
     "PS-1758": {
@@ -378,15 +387,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-09-11T19:00:28.947-0500",
       "last_status_change_at": "2026-09-11T19:00:28.917-0500",
-      "notified_reasons": []
-    },
-    "PS-1820": {
-      "key": "PS-1820",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-09-11T18:57:53.968-0500",
-      "last_status_change_at": "2026-09-11T18:57:53.968-0500",
       "notified_reasons": []
     },
     "PS-1822": {
