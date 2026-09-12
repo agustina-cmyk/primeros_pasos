@@ -1,43 +1,7 @@
 {
-  "last_run_at": "2026-09-12T04:48:09.753230+00:00",
+  "last_run_at": "2026-09-12T08:56:32.513088+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1821": {
-      "key": "PS-1821",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-11T13:15:12.195-0500",
-      "last_status_change_at": "2026-09-11T13:15:12.173-0500",
-      "notified_reasons": []
-    },
-    "PS-1818": {
-      "key": "PS-1818",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-11T11:23:39.307-0500",
-      "last_status_change_at": "2026-09-11T11:23:34.645-0500",
-      "notified_reasons": []
-    },
-    "PS-1819": {
-      "key": "PS-1819",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-11T11:07:25.992-0500",
-      "last_status_change_at": "2026-09-11T11:07:25.971-0500",
-      "notified_reasons": []
-    },
-    "PS-1755": {
-      "key": "PS-1755",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-11T10:14:23.125-0500",
-      "last_status_change_at": "2026-09-10T13:41:55.863-0500",
-      "notified_reasons": []
-    },
     "PS-1614": {
       "key": "PS-1614",
       "vertical": "core",
@@ -380,24 +344,6 @@
       "last_status_change_at": "2026-09-09T16:02:55.708-0500",
       "notified_reasons": []
     },
-    "PS-1759": {
-      "key": "PS-1759",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-09-11T19:00:28.947-0500",
-      "last_status_change_at": "2026-09-11T19:00:28.917-0500",
-      "notified_reasons": []
-    },
-    "PS-1822": {
-      "key": "PS-1822",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-09-11T18:30:24.060-0500",
-      "last_status_change_at": "2026-09-11T18:30:24.039-0500",
-      "notified_reasons": []
-    },
     "PS-1812": {
       "key": "PS-1812",
       "vertical": "verification",
@@ -423,24 +369,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-09-11T17:40:46.250-0500",
       "last_status_change_at": "2026-09-09T16:10:24.890-0500",
-      "notified_reasons": []
-    },
-    "PS-1823": {
-      "key": "PS-1823",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-09-11T17:39:13.053-0500",
-      "last_status_change_at": "2026-09-11T17:39:13.033-0500",
-      "notified_reasons": []
-    },
-    "PS-1815": {
-      "key": "PS-1815",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-09-11T09:51:57.934-0500",
-      "last_status_change_at": "2026-09-11T09:51:57.911-0500",
       "notified_reasons": []
     },
     "PS-1814": {
