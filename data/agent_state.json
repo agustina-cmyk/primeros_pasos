@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-14T16:41:51.852994+00:00",
+  "last_run_at": "2026-09-14T20:41:27.180449+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1810": {
@@ -7,7 +7,7 @@
       "vertical": "core",
       "status": "Finalizada",
       "assignee": "Emiliano Gallardo",
-      "updated": "2026-09-14T10:55:07.013-0500",
+      "updated": "2026-09-14T11:48:26.898-0500",
       "last_status_change_at": "2026-09-14T10:54:20.490-0500",
       "notified_reasons": []
     },
