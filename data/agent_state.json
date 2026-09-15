@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-15T17:27:24.507031+00:00",
+  "last_run_at": "2026-09-15T20:20:46.383831+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1781": {
@@ -146,6 +146,33 @@
       "last_status_change_at": "2026-05-27T16:17:02.205-0500",
       "notified_reasons": []
     },
+    "PS-1826": {
+      "key": "PS-1826",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": "raul",
+      "updated": "2026-09-15T14:52:52.393-0500",
+      "last_status_change_at": "2026-09-14T09:05:46.849-0500",
+      "notified_reasons": []
+    },
+    "PS-1836": {
+      "key": "PS-1836",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": "raul",
+      "updated": "2026-09-15T14:50:54.761-0500",
+      "last_status_change_at": "2026-09-15T12:40:04.035-0500",
+      "notified_reasons": []
+    },
+    "PS-1817": {
+      "key": "PS-1817",
+      "vertical": "payments",
+      "status": "Tareas por hacer",
+      "assignee": "raul",
+      "updated": "2026-09-15T14:50:25.392-0500",
+      "last_status_change_at": "2026-09-11T08:56:22.297-0500",
+      "notified_reasons": []
+    },
     "PS-1835": {
       "key": "PS-1835",
       "vertical": "payments",
@@ -155,15 +182,6 @@
       "last_status_change_at": "2026-09-15T11:04:51.767-0500",
       "notified_reasons": []
     },
-    "PS-1817": {
-      "key": "PS-1817",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-14T09:43:32.460-0500",
-      "last_status_change_at": "2026-09-11T08:56:22.297-0500",
-      "notified_reasons": []
-    },
     "PS-1828": {
       "key": "PS-1828",
       "vertical": "payments",
@@ -171,15 +189,6 @@
       "assignee": null,
       "updated": "2026-09-14T09:36:06.164-0500",
       "last_status_change_at": "2026-09-14T09:35:59.022-0500",
-      "notified_reasons": []
-    },
-    "PS-1826": {
-      "key": "PS-1826",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-14T09:05:54.731-0500",
-      "last_status_change_at": "2026-09-14T09:05:46.849-0500",
       "notified_reasons": []
     },
     "PS-1671": {
@@ -353,13 +362,40 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1837": {
+      "key": "PS-1837",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-15T15:06:14.877-0500",
+      "last_status_change_at": "2026-09-15T15:06:14.854-0500",
+      "notified_reasons": []
+    },
+    "PS-1838": {
+      "key": "PS-1838",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-15T15:05:50.008-0500",
+      "last_status_change_at": "2026-09-15T15:03:36.651-0500",
+      "notified_reasons": []
+    },
     "PS-1834": {
       "key": "PS-1834",
       "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-15T15:02:51.352-0500",
+      "last_status_change_at": "2026-09-15T15:02:51.329-0500",
+      "notified_reasons": []
+    },
+    "PS-1839": {
+      "key": "PS-1839",
+      "vertical": "verification",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-09-15T10:42:00.234-0500",
-      "last_status_change_at": "2026-09-15T10:39:22.907-0500",
+      "updated": "2026-09-15T14:10:40.386-0500",
+      "last_status_change_at": "2026-09-15T14:09:15.650-0500",
       "notified_reasons": []
     },
     "PS-1831": {
