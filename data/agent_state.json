@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-15T02:17:05.531541+00:00",
+  "last_run_at": "2026-09-15T07:55:41.618153+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1830": {
@@ -18,15 +18,6 @@
       "assignee": "aldana",
       "updated": "2026-09-14T16:11:37.195-0500",
       "last_status_change_at": "2026-09-04T15:57:03.964-0500",
-      "notified_reasons": []
-    },
-    "PS-1810": {
-      "key": "PS-1810",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Emiliano Gallardo",
-      "updated": "2026-09-14T11:48:26.898-0500",
-      "last_status_change_at": "2026-09-14T10:54:20.490-0500",
       "notified_reasons": []
     },
     "PS-1787": {
@@ -378,24 +369,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-09-14T16:33:48.998-0500",
       "last_status_change_at": "2026-09-14T16:32:43.766-0500",
-      "notified_reasons": []
-    },
-    "PS-1825": {
-      "key": "PS-1825",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Camilo Lesmes",
-      "updated": "2026-09-14T16:11:37.627-0500",
-      "last_status_change_at": "2026-09-14T16:11:37.606-0500",
-      "notified_reasons": []
-    },
-    "PS-1768": {
-      "key": "PS-1768",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-09-14T10:53:37.547-0500",
-      "last_status_change_at": "2026-09-14T10:53:37.527-0500",
       "notified_reasons": []
     },
     "PS-1820": {
