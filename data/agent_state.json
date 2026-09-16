@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-09-16T15:43:29.631217+00:00",
+  "last_run_at": "2026-09-16T19:11:53.962642+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1847": {
       "key": "PS-1847",
       "vertical": "core",
-      "status": "Tareas por hacer",
+      "status": "Finalizada",
       "assignee": "abrahan",
-      "updated": "2026-09-16T10:10:38.442-0500",
-      "last_status_change_at": "2026-09-16T10:05:56.734-0500",
+      "updated": "2026-09-16T11:17:28.690-0500",
+      "last_status_change_at": "2026-09-16T11:10:19.442-0500",
       "notified_reasons": []
     },
     "PS-1789": {
