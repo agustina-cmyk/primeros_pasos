@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-09-16T11:52:50.483752+00:00",
+  "last_run_at": "2026-09-16T15:43:29.631217+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1847": {
+      "key": "PS-1847",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-09-16T10:10:38.442-0500",
+      "last_status_change_at": "2026-09-16T10:05:56.734-0500",
+      "notified_reasons": []
+    },
     "PS-1789": {
       "key": "PS-1789",
       "vertical": "core",
@@ -133,35 +142,44 @@
       "vertical": "payments",
       "status": "Tareas por hacer",
       "assignee": "raul",
-      "updated": "2026-09-15T14:52:52.393-0500",
+      "updated": "2026-09-16T10:22:14.532-0500",
       "last_status_change_at": "2026-09-14T09:05:46.849-0500",
-      "notified_reasons": []
-    },
-    "PS-1836": {
-      "key": "PS-1836",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": "raul",
-      "updated": "2026-09-15T14:50:54.761-0500",
-      "last_status_change_at": "2026-09-15T12:40:04.035-0500",
-      "notified_reasons": []
-    },
-    "PS-1817": {
-      "key": "PS-1817",
-      "vertical": "payments",
-      "status": "Tareas por hacer",
-      "assignee": "raul",
-      "updated": "2026-09-15T14:50:25.392-0500",
-      "last_status_change_at": "2026-09-11T08:56:22.297-0500",
       "notified_reasons": []
     },
     "PS-1835": {
       "key": "PS-1835",
       "vertical": "payments",
       "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-15T11:04:58.530-0500",
+      "assignee": "Danna Salamanca",
+      "updated": "2026-09-16T10:20:25.983-0500",
       "last_status_change_at": "2026-09-15T11:04:51.767-0500",
+      "notified_reasons": []
+    },
+    "PS-1836": {
+      "key": "PS-1836",
+      "vertical": "payments",
+      "status": "On Hold",
+      "assignee": "raul",
+      "updated": "2026-09-16T10:15:34.446-0500",
+      "last_status_change_at": "2026-09-16T10:15:34.446-0500",
+      "notified_reasons": []
+    },
+    "PS-1846": {
+      "key": "PS-1846",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": "raul",
+      "updated": "2026-09-16T10:14:58.911-0500",
+      "last_status_change_at": "2026-09-16T10:14:58.889-0500",
+      "notified_reasons": []
+    },
+    "PS-1817": {
+      "key": "PS-1817",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": "raul",
+      "updated": "2026-09-16T10:14:07.512-0500",
+      "last_status_change_at": "2026-09-16T10:14:07.488-0500",
       "notified_reasons": []
     },
     "PS-1828": {
