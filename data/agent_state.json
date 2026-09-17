@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-09-17T00:43:05.146125+00:00",
+  "last_run_at": "2026-09-17T05:36:08.149338+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1848": {
-      "key": "PS-1848",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-16T16:37:05.205-0500",
-      "last_status_change_at": "2026-09-16T16:34:42.150-0500",
-      "notified_reasons": []
-    },
-    "PS-1847": {
-      "key": "PS-1847",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-09-16T11:17:28.690-0500",
-      "last_status_change_at": "2026-09-16T11:10:19.442-0500",
-      "notified_reasons": []
-    },
     "PS-1789": {
       "key": "PS-1789",
       "vertical": "core",
@@ -171,24 +153,6 @@
       "assignee": "raul",
       "updated": "2026-09-16T10:15:34.446-0500",
       "last_status_change_at": "2026-09-16T10:15:34.446-0500",
-      "notified_reasons": []
-    },
-    "PS-1846": {
-      "key": "PS-1846",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-09-16T10:14:58.911-0500",
-      "last_status_change_at": "2026-09-16T10:14:58.889-0500",
-      "notified_reasons": []
-    },
-    "PS-1817": {
-      "key": "PS-1817",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "raul",
-      "updated": "2026-09-16T10:14:07.512-0500",
-      "last_status_change_at": "2026-09-16T10:14:07.488-0500",
       "notified_reasons": []
     },
     "PS-1828": {
