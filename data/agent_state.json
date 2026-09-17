@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-09-17T15:22:37.897521+00:00",
+  "last_run_at": "2026-09-17T19:08:39.254140+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1854": {
+      "key": "PS-1854",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-17T13:16:14.931-0500",
+      "last_status_change_at": "2026-09-17T13:02:22.584-0500",
+      "notified_reasons": []
+    },
     "PS-1789": {
       "key": "PS-1789",
       "vertical": "core",
@@ -333,6 +342,33 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1852": {
+      "key": "PS-1852",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Mauro Capolupo",
+      "updated": "2026-09-17T14:05:40.316-0500",
+      "last_status_change_at": "2026-09-17T11:20:23.326-0500",
+      "notified_reasons": []
+    },
+    "PS-1853": {
+      "key": "PS-1853",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-17T12:27:37.278-0500",
+      "last_status_change_at": "2026-09-17T12:27:37.278-0500",
+      "notified_reasons": []
+    },
+    "PS-1851": {
+      "key": "PS-1851",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-17T11:18:51.074-0500",
+      "last_status_change_at": "2026-09-17T11:18:43.725-0500",
       "notified_reasons": []
     },
     "PS-1850": {
