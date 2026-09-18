@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-18T17:26:36.276012+00:00",
+  "last_run_at": "2026-09-18T19:48:42.588171+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1857": {
@@ -81,6 +81,15 @@
       "assignee": "Damian Fixel",
       "updated": "2026-06-23T12:02:14.979-0500",
       "last_status_change_at": "2026-06-23T12:02:14.979-0500",
+      "notified_reasons": []
+    },
+    "PS-1859": {
+      "key": "PS-1859",
+      "vertical": "payments",
+      "status": "Finalizada",
+      "assignee": "raul",
+      "updated": "2026-09-18T14:02:06.949-0500",
+      "last_status_change_at": "2026-09-18T14:02:06.918-0500",
       "notified_reasons": []
     },
     "PS-1826": {
@@ -293,10 +302,10 @@
     "PS-1856": {
       "key": "PS-1856",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-09-17T18:41:22.143-0500",
-      "last_status_change_at": "2026-09-17T18:41:20.492-0500",
+      "updated": "2026-09-18T13:05:21.518-0500",
+      "last_status_change_at": "2026-09-18T13:05:21.495-0500",
       "notified_reasons": []
     },
     "PS-1852": {
