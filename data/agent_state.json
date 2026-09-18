@@ -1,25 +1,7 @@
 {
-  "last_run_at": "2026-09-18T00:31:51.010767+00:00",
+  "last_run_at": "2026-09-18T05:23:49.154379+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1855": {
-      "key": "PS-1855",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-09-17T16:08:41.386-0500",
-      "last_status_change_at": "2026-09-17T16:08:38.523-0500",
-      "notified_reasons": []
-    },
-    "PS-1854": {
-      "key": "PS-1854",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-17T14:38:36.113-0500",
-      "last_status_change_at": "2026-09-17T14:35:44.594-0500",
-      "notified_reasons": []
-    },
     "PS-1789": {
       "key": "PS-1789",
       "vertical": "core",
@@ -36,69 +18,6 @@
       "assignee": null,
       "updated": "2026-09-10T14:07:56.179-0500",
       "last_status_change_at": "2026-05-07T11:12:30.648-0500",
-      "notified_reasons": []
-    },
-    "PS-1637": {
-      "key": "PS-1637",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-09-17T07:59:24.047-0500",
-      "last_status_change_at": "2026-09-17T07:59:24.025-0500",
-      "notified_reasons": []
-    },
-    "PS-1591": {
-      "key": "PS-1591",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-17T07:58:42.264-0500",
-      "last_status_change_at": "2026-09-17T07:58:42.244-0500",
-      "notified_reasons": []
-    },
-    "PS-1607": {
-      "key": "PS-1607",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-09-17T07:58:11.820-0500",
-      "last_status_change_at": "2026-09-17T07:58:11.812-0500",
-      "notified_reasons": []
-    },
-    "PS-1644": {
-      "key": "PS-1644",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-17T07:57:29.630-0500",
-      "last_status_change_at": "2026-09-17T07:57:29.612-0500",
-      "notified_reasons": []
-    },
-    "PS-1680": {
-      "key": "PS-1680",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-17T07:56:52.334-0500",
-      "last_status_change_at": "2026-09-17T07:56:52.313-0500",
-      "notified_reasons": []
-    },
-    "PS-1670": {
-      "key": "PS-1670",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-17T07:56:33.446-0500",
-      "last_status_change_at": "2026-09-17T07:56:33.426-0500",
-      "notified_reasons": []
-    },
-    "PS-1669": {
-      "key": "PS-1669",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Andrew Ortiz",
-      "updated": "2026-09-17T07:55:57.601-0500",
-      "last_status_change_at": "2026-09-17T07:55:57.581-0500",
       "notified_reasons": []
     },
     "PS-1827": {
@@ -396,15 +315,6 @@
       "assignee": "abrahan",
       "updated": "2026-09-17T09:34:27.149-0500",
       "last_status_change_at": "2026-09-17T09:34:20.006-0500",
-      "notified_reasons": []
-    },
-    "PS-1849": {
-      "key": "PS-1849",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Mauro Capolupo",
-      "updated": "2026-09-17T08:46:33.016-0500",
-      "last_status_change_at": "2026-09-17T08:46:32.987-0500",
       "notified_reasons": []
     },
     "PS-1845": {
