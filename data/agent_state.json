@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-18T22:01:58.921867+00:00",
+  "last_run_at": "2026-09-19T00:27:34.861837+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1857": {
@@ -302,10 +302,10 @@
     "PS-1856": {
       "key": "PS-1856",
       "vertical": "verification",
-      "status": "Finalizada",
+      "status": "TEST IN PROGRESS",
       "assignee": "Camilo Lesmes",
-      "updated": "2026-09-18T13:05:21.518-0500",
-      "last_status_change_at": "2026-09-18T13:05:21.495-0500",
+      "updated": "2026-09-18T18:00:14.975-0500",
+      "last_status_change_at": "2026-09-18T18:00:14.975-0500",
       "notified_reasons": []
     },
     "PS-1852": {
