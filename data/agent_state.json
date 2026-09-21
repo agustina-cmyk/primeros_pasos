@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-21T02:10:18.413442+00:00",
+  "last_run_at": "2026-09-21T08:05:08.927339+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1789": {
@@ -272,6 +272,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1814": {
+      "key": "PS-1814",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-09-20T21:12:08.118-0500",
+      "last_status_change_at": "2026-09-10T14:06:33.415-0500",
+      "notified_reasons": []
+    },
+    "PS-1812": {
+      "key": "PS-1812",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-09-20T21:12:08.118-0500",
+      "last_status_change_at": "2026-09-11T18:08:38.019-0500",
+      "notified_reasons": []
+    },
     "PS-1856": {
       "key": "PS-1856",
       "vertical": "verification",
@@ -362,15 +380,6 @@
       "last_status_change_at": "2026-09-09T16:02:55.708-0500",
       "notified_reasons": []
     },
-    "PS-1812": {
-      "key": "PS-1812",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-09-11T18:10:21.426-0500",
-      "last_status_change_at": "2026-09-11T18:08:38.019-0500",
-      "notified_reasons": []
-    },
     "PS-1824": {
       "key": "PS-1824",
       "vertical": "verification",
@@ -387,15 +396,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-09-11T17:40:46.250-0500",
       "last_status_change_at": "2026-09-09T16:10:24.890-0500",
-      "notified_reasons": []
-    },
-    "PS-1814": {
-      "key": "PS-1814",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-09-10T15:36:04.274-0500",
-      "last_status_change_at": "2026-09-10T14:06:33.415-0500",
       "notified_reasons": []
     },
     "PS-1715": {
