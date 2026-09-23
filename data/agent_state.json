@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-09-23T01:35:29.223264+00:00",
+  "last_run_at": "2026-09-23T06:54:45.199647+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1860": {
-      "key": "PS-1860",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-09-22T10:09:04.062-0500",
-      "last_status_change_at": "2026-09-22T10:09:04.044-0500",
-      "notified_reasons": []
-    },
     "PS-1789": {
       "key": "PS-1789",
       "vertical": "core",
@@ -288,15 +279,6 @@
       "assignee": "Andrea Perez",
       "updated": "2026-09-22T18:32:12.767-0500",
       "last_status_change_at": "2026-09-22T18:32:06.506-0500",
-      "notified_reasons": []
-    },
-    "PS-1845": {
-      "key": "PS-1845",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-09-22T17:35:54.490-0500",
-      "last_status_change_at": "2026-09-22T17:35:54.470-0500",
       "notified_reasons": []
     },
     "PS-1839": {
