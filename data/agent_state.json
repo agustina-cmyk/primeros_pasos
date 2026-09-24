@@ -1,7 +1,16 @@
 {
-  "last_run_at": "2026-09-24T17:24:30.689581+00:00",
+  "last_run_at": "2026-09-24T20:36:43.959686+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1867": {
+      "key": "PS-1867",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-09-24T12:54:20.638-0500",
+      "last_status_change_at": "2026-09-23T11:54:35.311-0500",
+      "notified_reasons": []
+    },
     "PS-1518": {
       "key": "PS-1518",
       "vertical": "core",
@@ -9,15 +18,6 @@
       "assignee": "aldana",
       "updated": "2026-09-23T15:51:50.124-0500",
       "last_status_change_at": "2026-09-23T15:51:46.788-0500",
-      "notified_reasons": []
-    },
-    "PS-1867": {
-      "key": "PS-1867",
-      "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-23T11:54:42.628-0500",
-      "last_status_change_at": "2026-09-23T11:54:35.311-0500",
       "notified_reasons": []
     },
     "PS-1789": {
