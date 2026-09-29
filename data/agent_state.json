@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-09-29T18:45:47.278590+00:00",
+  "last_run_at": "2026-09-29T22:45:41.465024+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1518": {
@@ -218,6 +218,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1877": {
+      "key": "PS-1877",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-09-29T15:53:44.741-0500",
+      "last_status_change_at": "2026-09-28T13:51:33.319-0500",
+      "notified_reasons": []
+    },
     "PS-1875": {
       "key": "PS-1875",
       "vertical": "verification",
@@ -252,15 +261,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-09-28T21:30:15.378-0500",
       "last_status_change_at": "2026-09-10T10:21:50.121-0500",
-      "notified_reasons": []
-    },
-    "PS-1877": {
-      "key": "PS-1877",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-09-28T21:26:30.687-0500",
-      "last_status_change_at": "2026-09-28T13:51:33.319-0500",
       "notified_reasons": []
     },
     "PS-1874": {
