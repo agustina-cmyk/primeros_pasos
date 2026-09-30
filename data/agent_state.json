@@ -1,14 +1,14 @@
 {
-  "last_run_at": "2026-09-30T14:23:55.166813+00:00",
+  "last_run_at": "2026-09-30T19:32:32.091112+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1867": {
       "key": "PS-1867",
       "vertical": "core",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-09-24T12:54:20.638-0500",
-      "last_status_change_at": "2026-09-23T11:54:35.311-0500",
+      "status": "Finalizada",
+      "assignee": "aldana",
+      "updated": "2026-09-30T12:31:00.090-0500",
+      "last_status_change_at": "2026-09-30T12:30:17.558-0500",
       "notified_reasons": []
     },
     "PS-1789": {
@@ -194,10 +194,55 @@
     "PS-1877": {
       "key": "PS-1877",
       "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-09-30T14:23:20.413-0500",
+      "last_status_change_at": "2026-09-30T11:01:38.303-0500",
+      "notified_reasons": []
+    },
+    "PS-1839": {
+      "key": "PS-1839",
+      "vertical": "verification",
       "status": "Tareas por hacer",
-      "assignee": "Ezequiel Ramirez",
-      "updated": "2026-09-29T15:53:44.741-0500",
-      "last_status_change_at": "2026-09-28T13:51:33.319-0500",
+      "assignee": "abrahan",
+      "updated": "2026-09-30T12:34:24.152-0500",
+      "last_status_change_at": "2026-09-15T14:09:15.650-0500",
+      "notified_reasons": []
+    },
+    "PS-1882": {
+      "key": "PS-1882",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-30T11:57:29.191-0500",
+      "last_status_change_at": "2026-09-30T11:54:25.363-0500",
+      "notified_reasons": []
+    },
+    "PS-1881": {
+      "key": "PS-1881",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-30T11:57:27.046-0500",
+      "last_status_change_at": "2026-09-30T11:53:24.521-0500",
+      "notified_reasons": []
+    },
+    "PS-1880": {
+      "key": "PS-1880",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-30T11:57:24.717-0500",
+      "last_status_change_at": "2026-09-30T11:52:53.755-0500",
+      "notified_reasons": []
+    },
+    "PS-1879": {
+      "key": "PS-1879",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-09-30T11:57:21.890-0500",
+      "last_status_change_at": "2026-09-30T11:52:22.993-0500",
       "notified_reasons": []
     },
     "PS-1875": {
@@ -252,15 +297,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-09-27T21:12:07.435-0500",
       "last_status_change_at": "2026-09-17T11:18:43.725-0500",
-      "notified_reasons": []
-    },
-    "PS-1839": {
-      "key": "PS-1839",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-09-25T21:12:06.301-0500",
-      "last_status_change_at": "2026-09-15T14:09:15.650-0500",
       "notified_reasons": []
     },
     "PS-1844": {
