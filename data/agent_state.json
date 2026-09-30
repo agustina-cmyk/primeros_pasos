@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-09-30T01:44:49.590418+00:00",
+  "last_run_at": "2026-09-30T07:40:21.843325+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1518": {
-      "key": "PS-1518",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "aldana",
-      "updated": "2026-09-29T08:49:05.116-0500",
-      "last_status_change_at": "2026-09-29T08:48:51.182-0500",
-      "notified_reasons": []
-    },
     "PS-1867": {
       "key": "PS-1867",
       "vertical": "core",
@@ -36,15 +27,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-09-29T07:27:41.673-0500",
       "last_status_change_at": "2026-09-29T07:27:41.673-0500",
-      "notified_reasons": []
-    },
-    "PS-1643": {
-      "key": "PS-1643",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-29T07:21:23.811-0500",
-      "last_status_change_at": "2026-09-29T07:21:23.786-0500",
       "notified_reasons": []
     },
     "PS-1827": {
@@ -81,15 +63,6 @@
       "assignee": "Andrew Ortiz",
       "updated": "2026-07-13T21:12:06.627-0500",
       "last_status_change_at": "2026-07-03T13:13:02.051-0500",
-      "notified_reasons": []
-    },
-    "PS-1671": {
-      "key": "PS-1671",
-      "vertical": "payments",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-29T07:27:24.657-0500",
-      "last_status_change_at": "2026-09-29T07:27:24.635-0500",
       "notified_reasons": []
     },
     "PS-1828": {
@@ -234,15 +207,6 @@
       "assignee": "Damian Fixel",
       "updated": "2026-09-29T11:32:59.566-0500",
       "last_status_change_at": "2026-09-29T07:21:02.412-0500",
-      "notified_reasons": []
-    },
-    "PS-1878": {
-      "key": "PS-1878",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-09-29T09:58:38.100-0500",
-      "last_status_change_at": "2026-09-29T09:58:38.079-0500",
       "notified_reasons": []
     },
     "PS-1767": {
