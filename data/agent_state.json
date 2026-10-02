@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-02T07:09:27.692593+00:00",
+  "last_run_at": "2026-10-02T13:59:54.543719+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1789": {
@@ -14,10 +14,10 @@
     "PS-1864": {
       "key": "PS-1864",
       "vertical": "fe",
-      "status": "TEST IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Damian Fixel",
-      "updated": "2026-09-29T07:27:41.673-0500",
-      "last_status_change_at": "2026-09-29T07:27:41.673-0500",
+      "updated": "2026-10-02T08:28:11.931-0500",
+      "last_status_change_at": "2026-10-02T08:28:11.906-0500",
       "notified_reasons": []
     },
     "PS-1827": {
@@ -182,6 +182,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1875": {
+      "key": "PS-1875",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ezequiel Ramirez",
+      "updated": "2026-10-02T08:29:11.880-0500",
+      "last_status_change_at": "2026-09-29T07:21:02.412-0500",
+      "notified_reasons": []
+    },
+    "PS-1850": {
+      "key": "PS-1850",
+      "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Damian Fixel",
+      "updated": "2026-10-02T08:28:35.869-0500",
+      "last_status_change_at": "2026-10-02T08:28:35.847-0500",
+      "notified_reasons": []
+    },
     "PS-1884": {
       "key": "PS-1884",
       "vertical": "verification",
@@ -234,15 +252,6 @@
       "assignee": "abrahan",
       "updated": "2026-09-30T12:34:24.152-0500",
       "last_status_change_at": "2026-09-15T14:09:15.650-0500",
-      "notified_reasons": []
-    },
-    "PS-1875": {
-      "key": "PS-1875",
-      "vertical": "verification",
-      "status": "DEV IN PROGRESS",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-29T11:32:59.566-0500",
-      "last_status_change_at": "2026-09-29T07:21:02.412-0500",
       "notified_reasons": []
     },
     "PS-1767": {
@@ -306,15 +315,6 @@
       "assignee": "abrahan",
       "updated": "2026-09-25T14:32:20.206-0500",
       "last_status_change_at": "2026-09-25T13:17:26.126-0500",
-      "notified_reasons": []
-    },
-    "PS-1850": {
-      "key": "PS-1850",
-      "vertical": "verification",
-      "status": "TEST IN PROGRESS",
-      "assignee": "Damian Fixel",
-      "updated": "2026-09-25T09:59:00.657-0500",
-      "last_status_change_at": "2026-09-25T09:57:47.130-0500",
       "notified_reasons": []
     },
     "PS-1788": {
