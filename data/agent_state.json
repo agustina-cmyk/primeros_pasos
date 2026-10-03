@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-03T01:32:46.320047+00:00",
+  "last_run_at": "2026-10-03T07:14:36.191162+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1887": {
@@ -18,15 +18,6 @@
       "assignee": "aldana",
       "updated": "2026-09-15T08:12:01.948-0500",
       "last_status_change_at": "2026-09-04T15:57:03.964-0500",
-      "notified_reasons": []
-    },
-    "PS-1864": {
-      "key": "PS-1864",
-      "vertical": "fe",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-10-02T08:28:11.931-0500",
-      "last_status_change_at": "2026-10-02T08:28:11.906-0500",
       "notified_reasons": []
     },
     "PS-1827": {
@@ -191,6 +182,15 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1865": {
+      "key": "PS-1865",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-10-02T21:12:06.303-0500",
+      "last_status_change_at": "2026-09-22T10:24:55.614-0500",
+      "notified_reasons": []
+    },
     "PS-1890": {
       "key": "PS-1890",
       "vertical": "verification",
@@ -218,69 +218,6 @@
       "last_status_change_at": "2026-10-02T18:05:37.959-0500",
       "notified_reasons": []
     },
-    "PS-1874": {
-      "key": "PS-1874",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:52:18.039-0500",
-      "last_status_change_at": "2026-10-02T17:52:18.022-0500",
-      "notified_reasons": []
-    },
-    "PS-1884": {
-      "key": "PS-1884",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:51:03.109-0500",
-      "last_status_change_at": "2026-10-02T17:50:57.576-0500",
-      "notified_reasons": []
-    },
-    "PS-1758": {
-      "key": "PS-1758",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:45:51.909-0500",
-      "last_status_change_at": "2026-10-02T17:45:51.886-0500",
-      "notified_reasons": []
-    },
-    "PS-1882": {
-      "key": "PS-1882",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:45:42.973-0500",
-      "last_status_change_at": "2026-10-02T17:45:42.953-0500",
-      "notified_reasons": []
-    },
-    "PS-1881": {
-      "key": "PS-1881",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:45:30.134-0500",
-      "last_status_change_at": "2026-10-02T17:45:30.109-0500",
-      "notified_reasons": []
-    },
-    "PS-1880": {
-      "key": "PS-1880",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:45:20.934-0500",
-      "last_status_change_at": "2026-10-02T17:45:20.926-0500",
-      "notified_reasons": []
-    },
-    "PS-1879": {
-      "key": "PS-1879",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-02T17:45:06.528-0500",
-      "last_status_change_at": "2026-10-02T17:43:50.258-0500",
-      "notified_reasons": []
-    },
     "PS-1886": {
       "key": "PS-1886",
       "vertical": "verification",
@@ -297,15 +234,6 @@
       "assignee": "Ezequiel Ramirez",
       "updated": "2026-10-02T08:29:11.880-0500",
       "last_status_change_at": "2026-09-29T07:21:02.412-0500",
-      "notified_reasons": []
-    },
-    "PS-1850": {
-      "key": "PS-1850",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Damian Fixel",
-      "updated": "2026-10-02T08:28:35.869-0500",
-      "last_status_change_at": "2026-10-02T08:28:35.847-0500",
       "notified_reasons": []
     },
     "PS-1839": {
@@ -378,15 +306,6 @@
       "assignee": "Camilo Lesmes",
       "updated": "2026-09-24T18:15:38.124-0500",
       "last_status_change_at": "2026-09-10T09:53:07.142-0500",
-      "notified_reasons": []
-    },
-    "PS-1865": {
-      "key": "PS-1865",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-09-24T18:07:21.935-0500",
-      "last_status_change_at": "2026-09-22T10:24:55.614-0500",
       "notified_reasons": []
     },
     "PS-1814": {
