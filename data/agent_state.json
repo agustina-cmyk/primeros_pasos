@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-05T13:30:24.340776+00:00",
+  "last_run_at": "2026-10-05T21:12:54.989041+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1887": {
@@ -182,6 +182,33 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1891": {
+      "key": "PS-1891",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-10-05T14:22:51.129-0500",
+      "last_status_change_at": "2026-10-05T14:21:01.548-0500",
+      "notified_reasons": []
+    },
+    "PS-1888": {
+      "key": "PS-1888",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-10-05T11:17:54.721-0500",
+      "last_status_change_at": "2026-10-02T18:05:37.959-0500",
+      "notified_reasons": []
+    },
+    "PS-1889": {
+      "key": "PS-1889",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "abrahan",
+      "updated": "2026-10-05T11:06:42.097-0500",
+      "last_status_change_at": "2026-10-02T18:13:19.444-0500",
+      "notified_reasons": []
+    },
     "PS-1865": {
       "key": "PS-1865",
       "vertical": "verification",
@@ -198,24 +225,6 @@
       "assignee": null,
       "updated": "2026-10-02T18:38:55.107-0500",
       "last_status_change_at": "2026-10-02T18:38:48.169-0500",
-      "notified_reasons": []
-    },
-    "PS-1889": {
-      "key": "PS-1889",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-10-02T18:13:26.414-0500",
-      "last_status_change_at": "2026-10-02T18:13:19.444-0500",
-      "notified_reasons": []
-    },
-    "PS-1888": {
-      "key": "PS-1888",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": null,
-      "updated": "2026-10-02T18:05:44.183-0500",
-      "last_status_change_at": "2026-10-02T18:05:37.959-0500",
       "notified_reasons": []
     },
     "PS-1886": {
