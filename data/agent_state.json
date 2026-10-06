@@ -1,14 +1,41 @@
 {
-  "last_run_at": "2026-10-06T15:20:56.510303+00:00",
+  "last_run_at": "2026-10-06T20:26:59.018735+00:00",
   "last_message_sent_at": null,
   "tickets": {
+    "PS-1896": {
+      "key": "PS-1896",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-10-06T15:16:02.302-0500",
+      "last_status_change_at": "2026-10-06T14:32:47.199-0500",
+      "notified_reasons": []
+    },
+    "PS-1895": {
+      "key": "PS-1895",
+      "vertical": "core",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-10-06T11:37:22.885-0500",
+      "last_status_change_at": "2026-10-06T11:37:15.606-0500",
+      "notified_reasons": []
+    },
     "PS-1892": {
       "key": "PS-1892",
       "vertical": "core",
-      "status": "Tareas por hacer",
+      "status": "DEV IN PROGRESS",
       "assignee": "Ander",
-      "updated": "2026-10-06T09:51:10.234-0500",
-      "last_status_change_at": "2026-10-05T18:25:43.731-0500",
+      "updated": "2026-10-06T11:19:51.513-0500",
+      "last_status_change_at": "2026-10-06T11:19:51.513-0500",
+      "notified_reasons": []
+    },
+    "PS-1893": {
+      "key": "PS-1893",
+      "vertical": "core",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Ander",
+      "updated": "2026-10-06T11:08:10.503-0500",
+      "last_status_change_at": "2026-10-06T11:08:10.503-0500",
       "notified_reasons": []
     },
     "PS-1887": {
@@ -189,6 +216,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1894": {
+      "key": "PS-1894",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Camilo Lesmes",
+      "updated": "2026-10-06T11:45:06.386-0500",
+      "last_status_change_at": "2026-10-06T11:45:05.605-0500",
       "notified_reasons": []
     },
     "PS-1873": {
