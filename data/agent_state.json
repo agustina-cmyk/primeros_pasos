@@ -1,13 +1,13 @@
 {
-  "last_run_at": "2026-10-06T08:17:07.710365+00:00",
+  "last_run_at": "2026-10-06T15:20:56.510303+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1892": {
       "key": "PS-1892",
       "vertical": "core",
       "status": "Tareas por hacer",
-      "assignee": "aldana",
-      "updated": "2026-10-05T18:25:50.941-0500",
+      "assignee": "Ander",
+      "updated": "2026-10-06T09:51:10.234-0500",
       "last_status_change_at": "2026-10-05T18:25:43.731-0500",
       "notified_reasons": []
     },
@@ -29,6 +29,15 @@
       "last_status_change_at": "2026-09-04T15:57:03.964-0500",
       "notified_reasons": []
     },
+    "PS-1614": {
+      "key": "PS-1614",
+      "vertical": "fe",
+      "status": "DEV IN PROGRESS",
+      "assignee": "abrahan",
+      "updated": "2026-10-06T10:18:59.909-0500",
+      "last_status_change_at": "2026-08-04T15:59:04.295-0500",
+      "notified_reasons": []
+    },
     "PS-1827": {
       "key": "PS-1827",
       "vertical": "fe",
@@ -36,15 +45,6 @@
       "assignee": null,
       "updated": "2026-09-15T16:31:18.939-0500",
       "last_status_change_at": "2026-09-15T16:31:18.939-0500",
-      "notified_reasons": []
-    },
-    "PS-1614": {
-      "key": "PS-1614",
-      "vertical": "fe",
-      "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-09-15T08:08:53.693-0500",
-      "last_status_change_at": "2026-08-04T15:59:04.295-0500",
       "notified_reasons": []
     },
     "PS-1709": {
