@@ -1,52 +1,7 @@
 {
-  "last_run_at": "2026-10-07T03:08:40.915735+00:00",
+  "last_run_at": "2026-10-07T10:27:26.704837+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1895": {
-      "key": "PS-1895",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Gustavo Corrales",
-      "updated": "2026-10-06T17:17:21.519-0500",
-      "last_status_change_at": "2026-10-06T17:16:40.150-0500",
-      "notified_reasons": []
-    },
-    "PS-1897": {
-      "key": "PS-1897",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-10-06T16:42:09.363-0500",
-      "last_status_change_at": "2026-10-06T16:42:09.342-0500",
-      "notified_reasons": []
-    },
-    "PS-1892": {
-      "key": "PS-1892",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-10-06T16:40:31.260-0500",
-      "last_status_change_at": "2026-10-06T16:40:31.239-0500",
-      "notified_reasons": []
-    },
-    "PS-1896": {
-      "key": "PS-1896",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-10-06T15:39:52.118-0500",
-      "last_status_change_at": "2026-10-06T15:16:02.270-0500",
-      "notified_reasons": []
-    },
-    "PS-1893": {
-      "key": "PS-1893",
-      "vertical": "core",
-      "status": "Finalizada",
-      "assignee": "Ander",
-      "updated": "2026-10-06T15:26:08.847-0500",
-      "last_status_change_at": "2026-10-06T15:26:08.826-0500",
-      "notified_reasons": []
-    },
     "PS-1887": {
       "key": "PS-1887",
       "vertical": "core",
