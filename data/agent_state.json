@@ -1,14 +1,23 @@
 {
-  "last_run_at": "2026-10-07T17:29:54.673690+00:00",
+  "last_run_at": "2026-10-07T22:12:25.528165+00:00",
   "last_message_sent_at": null,
   "tickets": {
-    "PS-1898": {
-      "key": "PS-1898",
+    "PS-1899": {
+      "key": "PS-1899",
       "vertical": "core",
       "status": "Tareas por hacer",
       "assignee": null,
-      "updated": "2026-10-07T11:48:46.702-0500",
-      "last_status_change_at": "2026-10-07T11:48:29.338-0500",
+      "updated": "2026-10-07T17:10:17.405-0500",
+      "last_status_change_at": "2026-10-07T16:19:55.933-0500",
+      "notified_reasons": []
+    },
+    "PS-1898": {
+      "key": "PS-1898",
+      "vertical": "core",
+      "status": "Finalizada",
+      "assignee": "Ander",
+      "updated": "2026-10-07T16:23:22.288-0500",
+      "last_status_change_at": "2026-10-07T16:23:22.271-0500",
       "notified_reasons": []
     },
     "PS-1887": {
@@ -189,6 +198,15 @@
       "assignee": null,
       "updated": "2025-09-26T16:57:12.571-0500",
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
+      "notified_reasons": []
+    },
+    "PS-1900": {
+      "key": "PS-1900",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": "Camila",
+      "updated": "2026-10-07T16:30:23.511-0500",
+      "last_status_change_at": "2026-10-07T16:30:16.456-0500",
       "notified_reasons": []
     },
     "PS-1894": {
