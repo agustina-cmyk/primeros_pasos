@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-08T09:13:14.354207+00:00",
+  "last_run_at": "2026-10-08T16:40:30.629072+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1887": {
@@ -182,6 +182,24 @@
       "last_status_change_at": "2025-09-26T16:56:23.163-0500",
       "notified_reasons": []
     },
+    "PS-1891": {
+      "key": "PS-1891",
+      "vertical": "verification",
+      "status": "DEV IN PROGRESS",
+      "assignee": "Damian Fixel",
+      "updated": "2026-10-08T11:00:57.641-0500",
+      "last_status_change_at": "2026-10-08T11:00:57.641-0500",
+      "notified_reasons": []
+    },
+    "PS-1903": {
+      "key": "PS-1903",
+      "vertical": "verification",
+      "status": "Tareas por hacer",
+      "assignee": null,
+      "updated": "2026-10-08T09:48:30.699-0500",
+      "last_status_change_at": "2026-10-08T09:48:21.989-0500",
+      "notified_reasons": []
+    },
     "PS-1902": {
       "key": "PS-1902",
       "vertical": "verification",
@@ -216,15 +234,6 @@
       "assignee": "abrahan",
       "updated": "2026-10-05T21:12:06.142-0500",
       "last_status_change_at": "2026-09-25T13:17:26.126-0500",
-      "notified_reasons": []
-    },
-    "PS-1891": {
-      "key": "PS-1891",
-      "vertical": "verification",
-      "status": "Tareas por hacer",
-      "assignee": "abrahan",
-      "updated": "2026-10-05T14:22:51.129-0500",
-      "last_status_change_at": "2026-10-05T14:21:01.548-0500",
       "notified_reasons": []
     },
     "PS-1888": {
