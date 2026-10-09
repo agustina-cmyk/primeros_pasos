@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-09T15:24:30.039621+00:00",
+  "last_run_at": "2026-10-09T20:11:29.242671+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1904": {
@@ -185,19 +185,28 @@
     "PS-1888": {
       "key": "PS-1888",
       "vertical": "verification",
+      "status": "Finalizada",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-10-09T13:09:03.819-0500",
+      "last_status_change_at": "2026-10-09T13:09:03.800-0500",
+      "notified_reasons": []
+    },
+    "PS-1908": {
+      "key": "PS-1908",
+      "vertical": "verification",
       "status": "DEV IN PROGRESS",
-      "assignee": "abrahan",
-      "updated": "2026-10-09T10:15:27.875-0500",
-      "last_status_change_at": "2026-10-08T14:18:34.681-0500",
+      "assignee": "Vicente Matallana",
+      "updated": "2026-10-09T11:19:27.859-0500",
+      "last_status_change_at": "2026-10-09T11:19:27.859-0500",
       "notified_reasons": []
     },
     "PS-1907": {
       "key": "PS-1907",
       "vertical": "verification",
-      "status": "DEV IN PROGRESS",
+      "status": "Finalizada",
       "assignee": "Vicente Matallana",
-      "updated": "2026-10-09T08:26:38.339-0500",
-      "last_status_change_at": "2026-10-09T08:26:36.546-0500",
+      "updated": "2026-10-09T10:46:15.433-0500",
+      "last_status_change_at": "2026-10-09T10:46:15.411-0500",
       "notified_reasons": []
     },
     "PS-1906": {
