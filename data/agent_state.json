@@ -1,5 +1,5 @@
 {
-  "last_run_at": "2026-10-10T00:08:19.571479+00:00",
+  "last_run_at": "2026-10-10T06:06:42.651557+00:00",
   "last_message_sent_at": null,
   "tickets": {
     "PS-1904": {
@@ -209,51 +209,6 @@
       "last_status_change_at": "2026-10-09T18:06:38.004-0500",
       "notified_reasons": []
     },
-    "PS-1902": {
-      "key": "PS-1902",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-10-09T16:41:05.699-0500",
-      "last_status_change_at": "2026-10-09T16:41:05.682-0500",
-      "notified_reasons": []
-    },
-    "PS-1886": {
-      "key": "PS-1886",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-10-09T16:40:52.387-0500",
-      "last_status_change_at": "2026-10-09T16:40:52.365-0500",
-      "notified_reasons": []
-    },
-    "PS-1824": {
-      "key": "PS-1824",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-10-09T16:40:41.047-0500",
-      "last_status_change_at": "2026-10-09T16:40:41.028-0500",
-      "notified_reasons": []
-    },
-    "PS-1814": {
-      "key": "PS-1814",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "abrahan",
-      "updated": "2026-10-09T16:40:27.805-0500",
-      "last_status_change_at": "2026-10-09T16:40:27.787-0500",
-      "notified_reasons": []
-    },
-    "PS-1888": {
-      "key": "PS-1888",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-09T13:09:03.819-0500",
-      "last_status_change_at": "2026-10-09T13:09:03.800-0500",
-      "notified_reasons": []
-    },
     "PS-1908": {
       "key": "PS-1908",
       "vertical": "verification",
@@ -261,15 +216,6 @@
       "assignee": "Vicente Matallana",
       "updated": "2026-10-09T11:19:27.859-0500",
       "last_status_change_at": "2026-10-09T11:19:27.859-0500",
-      "notified_reasons": []
-    },
-    "PS-1907": {
-      "key": "PS-1907",
-      "vertical": "verification",
-      "status": "Finalizada",
-      "assignee": "Vicente Matallana",
-      "updated": "2026-10-09T10:46:15.433-0500",
-      "last_status_change_at": "2026-10-09T10:46:15.411-0500",
       "notified_reasons": []
     },
     "PS-1906": {
